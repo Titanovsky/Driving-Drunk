@@ -1,0 +1,193 @@
+{
+  "RootObject": {
+    "__guid": "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1",
+    "__version": 1,
+    "Flags": 0,
+    "Name": "Road",
+    "Position": "0,0,0",
+    "Rotation": "0,0,0,1",
+    "Scale": "3.924605,20.09634,0.05156219",
+    "Tags": "",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "NetworkInterpolation": true,
+    "NetworkOrphaned": 0,
+    "OwnerTransfer": 1,
+    "Components": [
+      {
+        "__type": "Sandbox.ModelRenderer",
+        "__guid": "fe4e0698-4519-4f23-94d7-11e4fbe3da66",
+        "__enabled": true,
+        "BodyGroups": 18446744073709551615,
+        "CreateAttachments": false,
+        "MaterialGroup": null,
+        "MaterialOverride": null,
+        "Materials": null,
+        "Model": "models/dev/box.vmdl",
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "RenderOptions": {
+          "GameLayer": true,
+          "OverlayLayer": false,
+          "BloomLayer": false,
+          "AfterUILayer": false
+        },
+        "RenderType": "On",
+        "Tint": "0.06047,0.06047,0.06047,1"
+      },
+      {
+        "__type": "Sandbox.BoxCollider",
+        "__guid": "4c14b2f1-a517-4262-8963-68fade933262",
+        "__enabled": true,
+        "Center": "0,0,0",
+        "Elasticity": null,
+        "Friction": null,
+        "IsTrigger": false,
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "OnObjectTriggerEnter": null,
+        "OnObjectTriggerExit": null,
+        "OnTriggerEnter": null,
+        "OnTriggerExit": null,
+        "RollingResistance": null,
+        "Scale": "50,50,50",
+        "Static": true,
+        "Surface": null,
+        "SurfaceVelocity": "0,0,0"
+      },
+      {
+        "__type": "Road",
+        "__guid": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f",
+        "__enabled": true,
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "Spawners": [
+          {
+            "_type": "gameobject",
+            "go": "92640e46-29f5-4213-b757-deee4e948539"
+          },
+          {
+            "_type": "gameobject",
+            "go": "14392cd7-3c79-4a3e-a720-6e68c0ad47f1"
+          },
+          {
+            "_type": "gameobject",
+            "go": "ebcb6bf4-cce2-47ef-b9fa-dee6a6f5bedc"
+          },
+          {
+            "_type": "gameobject",
+            "go": "5509e3dc-8b22-4b3f-b5e2-fb7f685bb1a5"
+          }
+        ]
+      }
+    ],
+    "Children": [
+      {
+        "__guid": "92640e46-29f5-4213-b757-deee4e948539",
+        "__version": 1,
+        "Flags": 0,
+        "Name": "Spawn Car",
+        "Position": "10.62733,-23.01614,173.2306",
+        "Rotation": "0,0,0,1",
+        "Scale": "1,1,1",
+        "Tags": "",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "NetworkOrphaned": 0,
+        "OwnerTransfer": 1,
+        "Components": [],
+        "Children": []
+      },
+      {
+        "__guid": "14392cd7-3c79-4a3e-a720-6e68c0ad47f1",
+        "__version": 1,
+        "Flags": 0,
+        "Name": "Spawn Car (1)",
+        "Position": "12.1249,23.47794,173.2306",
+        "Rotation": "0,0,0,1",
+        "Scale": "1,1,1",
+        "Tags": "",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "NetworkOrphaned": 0,
+        "OwnerTransfer": 1,
+        "Components": [],
+        "Children": []
+      },
+      {
+        "__guid": "ebcb6bf4-cce2-47ef-b9fa-dee6a6f5bedc",
+        "__version": 1,
+        "Flags": 0,
+        "Name": "Spawn Car (2)",
+        "Position": "-17.36913,23.47794,173.2306",
+        "Rotation": "0,0,0,1",
+        "Scale": "1,1,1",
+        "Tags": "",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "NetworkOrphaned": 0,
+        "OwnerTransfer": 1,
+        "Components": [],
+        "Children": []
+      },
+      {
+        "__guid": "5509e3dc-8b22-4b3f-b5e2-fb7f685bb1a5",
+        "__version": 1,
+        "Flags": 0,
+        "Name": "Spawn Car (3)",
+        "Position": "-17.36913,-22.9223,173.2306",
+        "Rotation": "0,0,0,1",
+        "Scale": "1,1,1",
+        "Tags": "",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "NetworkOrphaned": 0,
+        "OwnerTransfer": 1,
+        "Components": [],
+        "Children": []
+      }
+    ],
+    "__properties": {
+      "NetworkInterpolation": true,
+      "TimeScale": 1,
+      "WantsSystemScene": true,
+      "Metadata": {},
+      "NavMesh": {
+        "Enabled": false,
+        "IncludeStaticBodies": true,
+        "IncludeKeyframedBodies": true,
+        "EditorAutoUpdate": true,
+        "AgentHeight": 64,
+        "AgentRadius": 16,
+        "AgentStepSize": 18,
+        "AgentMaxSlope": 40,
+        "ExcludedBodies": "",
+        "IncludedBodies": ""
+      }
+    },
+    "__variables": []
+  },
+  "ResourceVersion": 2,
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "DontBreakAsTemplate": false,
+  "__references": [],
+  "__version": 2
+}

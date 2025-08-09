@@ -1,7 +1,7 @@
 {
   "Title": "Driving Drunk",
   "Type": "game",
-  "Org": "local",
+  "Org": "titanovsky",
   "Ident": "d_d",
   "Schema": 1,
   "IncludeSourceFiles": false,
