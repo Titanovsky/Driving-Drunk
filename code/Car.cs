@@ -38,6 +38,6 @@ public sealed class Car : Component, Component.ITriggerListener
 		var ply = other.GetComponent<Player>();
 		if (!ply.IsValid()) return;
 
-		ply.Die();
+		ply.Die(this);
 	}
 }

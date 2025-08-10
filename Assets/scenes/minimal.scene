@@ -203,7 +203,7 @@
           "AimStrengthEyes": 1,
           "AimStrengthHead": 1,
           "AirFriction": 0.1,
-          "AltMoveButton": "run",
+          "AltMoveButton": "",
           "Body": {
             "_type": "component",
             "component_id": "f4d0f7a7-7cfb-43fa-8580-f3356519e620",
@@ -251,7 +251,7 @@
           "RotateWithGround": true,
           "RotationAngleLimit": 45,
           "RotationSpeed": 1,
-          "RunByDefault": false,
+          "RunByDefault": true,
           "RunSpeed": 320,
           "ShowColliderComponents": false,
           "ShowRigidbodyComponent": false,
@@ -339,6 +339,18 @@
           "__type": "Player",
           "__guid": "3530e072-a1ce-458c-ba83-cd5d83fc98ac",
           "__enabled": true,
+          "body": {
+            "_type": "component",
+            "component_id": "0d928ab7-e817-49df-b788-f6718a6f9e8d",
+            "go": "2c92077d-4cb8-467e-834c-7a3c1e77007d",
+            "component_type": "SkinnedModelRenderer"
+          },
+          "controller": {
+            "_type": "component",
+            "component_id": "ea8fa43d-5ad6-4039-8ab7-2e0966950a18",
+            "go": "407ac432-67bf-4bfc-ab69-cc1fd0a8d88c",
+            "component_type": "PlayerController"
+          },
           "OnComponentDestroy": null,
           "OnComponentDisabled": null,
           "OnComponentEnabled": null,
@@ -533,37 +545,6 @@
               "Strength": 0.5,
               "Threshold": 1.25,
               "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "Sandbox.Tonemapping",
-              "__guid": "9d76f362-7227-40eb-a189-69353c780c46",
-              "__enabled": true,
-              "__version": 3,
-              "AutoExposureEnabled": true,
-              "ExposureCompensation": 0,
-              "ExposureMethod": "RGB",
-              "MaximumExposure": 2,
-              "MinimumExposure": 1,
-              "Mode": "HableFilmic",
-              "OnComponentDestroy": null,
-              "OnComponentDisabled": null,
-              "OnComponentEnabled": null,
-              "OnComponentFixedUpdate": null,
-              "OnComponentStart": null,
-              "OnComponentUpdate": null,
-              "Rate": 1
-            },
-            {
-              "__type": "Sandbox.Sharpen",
-              "__guid": "0bffee5e-19f2-41c4-88f9-faefbcce6bf4",
-              "__enabled": true,
-              "OnComponentDestroy": null,
-              "OnComponentDisabled": null,
-              "OnComponentEnabled": null,
-              "OnComponentFixedUpdate": null,
-              "OnComponentStart": null,
-              "OnComponentUpdate": null,
-              "Scale": 0.2
             }
           ],
           "Children": []
@@ -672,32 +653,134 @@
           },
           {
             "Target": {
-              "Type": "GameObject",
-              "IdValue": "14392cd7-3c79-4a3e-a720-6e68c0ad47f1"
+              "Type": "Component",
+              "IdValue": "2c83d66f-c045-4223-b9e7-aaaff99d7e62"
             },
-            "Property": "Rotation",
-            "Value": "0,0,1,-0.00000004371139"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "ebcb6bf4-cce2-47ef-b9fa-dee6a6f5bedc"
-            },
-            "Property": "Rotation",
-            "Value": "0,0,1,-0.00000004371139"
+            "Property": "Mesh",
+            "Value": {
+              "Topology": "H4sIAAAAAAAACl2QCQ7CMAwEp4Qj3NBy/f+laMRGsohUVbFn1+t04ANs+Z0VsM69AwfgBFyAKZ9MPXdgk3qLnsI+Um/h/me9i2ZXfFvYOazafTJN0XRgKZmPyWtfXvYVL73PZRd52WdYPa7xtC8veys7u6t17/7t6Tn0ZtFjvIXZR895zjKjPWf4NiOrGt+ivpXZ3XnozaOndVn9vvVkkTjEAQAA",
+              "Position": "-287.8037,-101.2826,-16.79005",
+              "Rotation": "0,0,0,1",
+              "Positions": [
+                "-98.76761,-905.5538,1.401409",
+                "98.76762,-905.5538,1.401409",
+                "98.76762,905.5538,1.401409",
+                "-98.76761,905.5538,1.401409",
+                "-98.76761,905.5538,-1.401409",
+                "98.76762,905.5538,-1.401409",
+                "98.76762,-905.5538,-1.401409",
+                "-98.76761,-905.5538,-1.401409"
+              ],
+              "TextureCoord": [
+                "1,4.105312",
+                "0.2283782,0.9890515",
+                "1,-3.105313",
+                "-9.957104,0.9890512",
+                "0,-3.105313",
+                "-0.7716219,0.9890515",
+                "0,4.105312",
+                "-3.192176,0.9890512",
+                "1.771622,-3.192176",
+                "0.7716218,1.010949",
+                "1.771622,10.9571",
+                "4.192176,1.010948",
+                "0.2283782,10.9571",
+                "1.771622,1.010949",
+                "0.2283782,-3.192176",
+                "10.9571,1.010948",
+                "10.9571,0.9890512",
+                "0.2283782,1.010949",
+                "-3.192176,1.010948",
+                "0.7716218,0.9890515",
+                "-9.957104,1.010948",
+                "1.771622,0.9890515",
+                "4.192176,0.9890512",
+                "-0.7716219,1.010949"
+              ],
+              "TextureUAxis": [
+                "1,0,0",
+                "1,0,-0",
+                "0,-1,0",
+                "0,1,0",
+                "-1,0,0",
+                "1,-0,0"
+              ],
+              "TextureVAxis": [
+                "0,-1,0",
+                "0,-1,0",
+                "0,0,-1",
+                "-0,0,-1",
+                "0,0,-1",
+                "-0,0,-1"
+              ],
+              "TextureScale": [
+                "0.7716219,0.9811409",
+                "0.25,0.25",
+                "0.25,0.2500034",
+                "0.2499999,0.2500034",
+                "0.25,0.2499945",
+                "0.25,0.2499945"
+              ],
+              "TextureOffset": [
+                "244.9853,24.77051",
+                "127.2148,46.69031",
+                "46.69031,444.8405",
+                "465.3088,444.8405",
+                "384.7854,444.8384",
+                "127.2147,444.8384"
+              ],
+              "MaterialIndex": [
+                0,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "EdgeFlags": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "Materials": [
+                "materials/road1.vmat",
+                "materials/dev/reflectivity_30.vmat"
+              ]
+            }
           }
         ],
         "MovedObjects": []
       },
       "__PrefabIdToInstanceId": {
         "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1": "01e56760-698d-4eb3-aeb2-04ae02542e43",
-        "fe4e0698-4519-4f23-94d7-11e4fbe3da66": "940f5c57-74f5-4170-8fd1-1f5912bb603c",
         "92640e46-29f5-4213-b757-deee4e948539": "ad4585f3-7e74-4abb-abb2-4259e09f5528",
-        "14392cd7-3c79-4a3e-a720-6e68c0ad47f1": "ebf5a1c7-5f2a-47b4-bc1d-19765cadec43",
         "ebcb6bf4-cce2-47ef-b9fa-dee6a6f5bedc": "54bde243-973a-4cad-abc9-4a890b5f9793",
-        "5509e3dc-8b22-4b3f-b5e2-fb7f685bb1a5": "6792744a-5a31-49bb-bc6e-8ccca91fcfa0",
-        "4c14b2f1-a517-4262-8963-68fade933262": "44b3b0bd-92dd-4dce-83cd-561db56a6286",
-        "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f": "080d6c5b-6410-441c-be95-7bdae0093980"
+        "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f": "080d6c5b-6410-441c-be95-7bdae0093980",
+        "e98975fa-1c94-49bc-bbd1-c84323f9cf0a": "fe2e5bdc-7da9-41c9-a3d2-8ee975809548",
+        "aa6dee25-bba0-4f0d-8adc-c7d617712997": "1f95f054-f81d-4f25-83e8-af2ee53914c5",
+        "afdcf159-1039-4fe9-a81e-f45e8831a22e": "177aef50-35a3-47e2-9691-47fd6bb00623",
+        "2c83d66f-c045-4223-b9e7-aaaff99d7e62": "6f4ce26f-6044-4db2-b69d-a73874a99c13"
       }
     },
     {
@@ -722,64 +805,264 @@
               "IdValue": "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1"
             },
             "Property": "Position",
-            "Value": "181.3281,-117.5816,-16.71294"
+            "Value": "-92.3642,-117.5816,-16.71294"
+          },
+          {
+            "Target": {
+              "Type": "Component",
+              "IdValue": "2c83d66f-c045-4223-b9e7-aaaff99d7e62"
+            },
+            "Property": "Mesh",
+            "Value": {
+              "Topology": "H4sIAAAAAAAACl2QCQ7CMAwEp4Qj3NBy/f+laMRGsohUVbFn1+t04ANs+Z0VsM69AwfgBFyAKZ9MPXdgk3qLnsI+Um/h/me9i2ZXfFvYOazafTJN0XRgKZmPyWtfXvYVL73PZRd52WdYPa7xtC8veys7u6t17/7t6Tn0ZtFjvIXZR895zjKjPWf4NiOrGt+ivpXZ3XnozaOndVn9vvVkkTjEAQAA",
+              "Position": "-92.21369,-101.2826,-16.79005",
+              "Rotation": "0,0,0,1",
+              "Positions": [
+                "-98.76761,-905.5538,1.401409",
+                "98.76762,-905.5538,1.401409",
+                "98.76762,905.5538,1.401409",
+                "-98.76761,905.5538,1.401409",
+                "-98.76761,905.5538,-1.401409",
+                "98.76762,905.5538,-1.401409",
+                "98.76762,-905.5538,-1.401409",
+                "-98.76761,-905.5538,-1.401409"
+              ],
+              "TextureCoord": [
+                "1,4.105312",
+                "0.2283782,0.9890515",
+                "1,-3.105313",
+                "-9.957104,0.9890512",
+                "0,-3.105313",
+                "-0.7716219,0.9890515",
+                "0,4.105312",
+                "-3.192176,0.9890512",
+                "1.771622,-3.192176",
+                "0.7716218,1.010949",
+                "1.771622,10.9571",
+                "4.192176,1.010948",
+                "0.2283782,10.9571",
+                "1.771622,1.010949",
+                "0.2283782,-3.192176",
+                "10.9571,1.010948",
+                "10.9571,0.9890512",
+                "0.2283782,1.010949",
+                "-3.192176,1.010948",
+                "0.7716218,0.9890515",
+                "-9.957104,1.010948",
+                "1.771622,0.9890515",
+                "4.192176,0.9890512",
+                "-0.7716219,1.010949"
+              ],
+              "TextureUAxis": [
+                "1,0,0",
+                "1,0,-0",
+                "0,-1,0",
+                "0,1,0",
+                "-1,0,0",
+                "1,-0,0"
+              ],
+              "TextureVAxis": [
+                "0,-1,0",
+                "0,-1,0",
+                "0,0,-1",
+                "-0,0,-1",
+                "0,0,-1",
+                "-0,0,-1"
+              ],
+              "TextureScale": [
+                "0.7716219,0.9811409",
+                "0.25,0.25",
+                "0.25,0.2500034",
+                "0.2499999,0.2500034",
+                "0.25,0.2499945",
+                "0.25,0.2499945"
+              ],
+              "TextureOffset": [
+                "247.5063,24.77051",
+                "368.8548,46.69031",
+                "46.69031,444.8405",
+                "465.3088,444.8405",
+                "143.1453,444.8384",
+                "368.8548,444.8384"
+              ],
+              "MaterialIndex": [
+                0,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "EdgeFlags": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "Materials": [
+                "materials/road1.vmat",
+                "materials/dev/reflectivity_30.vmat"
+              ]
+            }
           }
         ],
         "MovedObjects": []
       },
       "__PrefabIdToInstanceId": {
         "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1": "3890c495-d061-4d0b-bfcf-6988510238f9",
-        "fe4e0698-4519-4f23-94d7-11e4fbe3da66": "3c343992-01b4-4c11-b1d5-b1eafa517a14",
         "92640e46-29f5-4213-b757-deee4e948539": "edff4817-0500-43e5-b8d4-ebbc79c2e475",
-        "14392cd7-3c79-4a3e-a720-6e68c0ad47f1": "1e660f18-0fe4-4abc-9261-8e424103b45c",
         "ebcb6bf4-cce2-47ef-b9fa-dee6a6f5bedc": "13a4796c-5c3e-4038-85ba-052c087a78e8",
-        "5509e3dc-8b22-4b3f-b5e2-fb7f685bb1a5": "a7466112-0408-4c16-ab2f-b1be9b9262a8",
-        "4c14b2f1-a517-4262-8963-68fade933262": "b2d75a9c-3a3d-4fd6-8aef-af2c17cd75b8",
-        "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f": "07038d9d-8029-4993-bcbd-6a7cb285a449"
+        "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f": "07038d9d-8029-4993-bcbd-6a7cb285a449",
+        "e98975fa-1c94-49bc-bbd1-c84323f9cf0a": "0d1aa0b2-375f-47ec-b92b-da990d3eedb0",
+        "aa6dee25-bba0-4f0d-8adc-c7d617712997": "8ba6da76-2911-46da-953c-90ce6dcd8167",
+        "afdcf159-1039-4fe9-a81e-f45e8831a22e": "dd59fb54-ecc1-4fa3-850f-f2adff4ddeeb",
+        "2c83d66f-c045-4223-b9e7-aaaff99d7e62": "87f9d6b3-27f4-44bb-b939-5d76c81787b9"
       }
     },
     {
       "__guid": "93073b48-2799-4e3b-a9ef-3406583e5255",
       "__version": 1,
-      "Flags": 0,
-      "Name": "cactus",
-      "Position": "-516.4282,-183.8164,-17.78571",
-      "Rotation": "0,0,0,1",
-      "Scale": "1,1,1",
-      "Tags": "",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkInterpolation": true,
-      "NetworkOrphaned": 0,
-      "OwnerTransfer": 1,
-      "Components": [
-        {
-          "__type": "Sandbox.ModelRenderer",
-          "__guid": "3721bb70-7055-425d-a621-2aba318b12c8",
-          "__enabled": true,
-          "BodyGroups": 18446744073709551615,
-          "CreateAttachments": false,
-          "MaterialGroup": null,
-          "MaterialOverride": null,
-          "Materials": null,
-          "Model": "models/sand_valley/cactus.vmdl",
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "RenderOptions": {
-            "GameLayer": true,
-            "OverlayLayer": false,
-            "BloomLayer": false,
-            "AfterUILayer": false
-          },
-          "RenderType": "On",
-          "Tint": "1,1,1,1"
-        }
-      ],
-      "Children": []
+      "__Prefab": "prefabs/props/cactus.prefab",
+      "__PrefabInstancePatch": {
+        "AddedObjects": [],
+        "RemovedObjects": [],
+        "PropertyOverrides": [
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "558e7911-6b5d-494b-99a0-447a0fd73614"
+            },
+            "Property": "Position",
+            "Value": "-516.4282,-232.2663,-17.78571"
+          }
+        ],
+        "MovedObjects": []
+      },
+      "__PrefabIdToInstanceId": {
+        "558e7911-6b5d-494b-99a0-447a0fd73614": "93073b48-2799-4e3b-a9ef-3406583e5255",
+        "ade3b084-2583-4cc7-97ea-29ec71fdf724": "3721bb70-7055-425d-a621-2aba318b12c8",
+        "f70e04c9-5787-49d1-aa27-270498a30685": "77f85ed8-46c0-4a02-8cf8-dee6d73fb6c9"
+      }
+    },
+    {
+      "__guid": "e99b61cb-5137-4ce6-b103-7fc866153712",
+      "__version": 1,
+      "__Prefab": "prefabs/props/rock_a.prefab",
+      "__PrefabInstancePatch": {
+        "AddedObjects": [],
+        "RemovedObjects": [],
+        "PropertyOverrides": [
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "b437434b-41e3-4869-abf1-68d1ca3406bf"
+            },
+            "Property": "Position",
+            "Value": "-530.4265,-141.6454,-17.7857"
+          }
+        ],
+        "MovedObjects": []
+      },
+      "__PrefabIdToInstanceId": {
+        "b437434b-41e3-4869-abf1-68d1ca3406bf": "e99b61cb-5137-4ce6-b103-7fc866153712",
+        "4a120778-d0e6-459a-84b8-ef2b9f055d5e": "59f0cdbf-5342-4030-b35d-7f14106d812f",
+        "8bc3d621-d708-4b5e-b924-31dd859491af": "8608914b-5214-4f8e-9389-f19fe3a7f117"
+      }
+    },
+    {
+      "__guid": "d8b8388b-8d9f-45c7-b51d-91e46bf664f0",
+      "__version": 1,
+      "__Prefab": "prefabs/props/rock_b.prefab",
+      "__PrefabInstancePatch": {
+        "AddedObjects": [],
+        "RemovedObjects": [],
+        "PropertyOverrides": [
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "cbb165d3-2da6-4d0f-91c7-850f799f429d"
+            },
+            "Property": "Position",
+            "Value": "-574.5475,-284.1146,-24.29811"
+          }
+        ],
+        "MovedObjects": []
+      },
+      "__PrefabIdToInstanceId": {
+        "cbb165d3-2da6-4d0f-91c7-850f799f429d": "d8b8388b-8d9f-45c7-b51d-91e46bf664f0",
+        "9399e01f-c271-4a76-8b69-6dcae749cac2": "3b9f3bb3-0da5-4407-b135-b2a716a30549",
+        "ee51426f-eb7a-485b-9b66-c5a0216405d2": "347f9b6b-28ec-4980-9a45-0abed3566e35"
+      }
+    },
+    {
+      "__guid": "294269a8-79f3-4c53-83ae-e32d63c65455",
+      "__version": 1,
+      "__Prefab": "prefabs/props/rock_c.prefab",
+      "__PrefabInstancePatch": {
+        "AddedObjects": [],
+        "RemovedObjects": [],
+        "PropertyOverrides": [
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "2cef42b7-1882-40cc-9a8d-9f090e1a55f1"
+            },
+            "Property": "Position",
+            "Value": "-540.525,79.28484,-17.7857"
+          }
+        ],
+        "MovedObjects": []
+      },
+      "__PrefabIdToInstanceId": {
+        "2cef42b7-1882-40cc-9a8d-9f090e1a55f1": "294269a8-79f3-4c53-83ae-e32d63c65455",
+        "ae7de87e-3130-4188-a78a-3a4b5043eeda": "f28eea9e-18b8-49d5-9817-53a9789645cf",
+        "1592eebe-fb06-4065-84a9-38256da231c2": "1aa8beb2-d88a-4b58-a922-17491ed1100a"
+      }
+    },
+    {
+      "__guid": "9b4f8b31-2f9b-4305-ae65-08d16ae96b48",
+      "__version": 1,
+      "__Prefab": "prefabs/props/rock_d.prefab",
+      "__PrefabInstancePatch": {
+        "AddedObjects": [],
+        "RemovedObjects": [],
+        "PropertyOverrides": [
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "45de8625-7890-4db5-9a45-3a2b2420c745"
+            },
+            "Property": "Position",
+            "Value": "-642.5602,-18.43649,-35.47703"
+          }
+        ],
+        "MovedObjects": []
+      },
+      "__PrefabIdToInstanceId": {
+        "45de8625-7890-4db5-9a45-3a2b2420c745": "9b4f8b31-2f9b-4305-ae65-08d16ae96b48",
+        "42d0ff2d-cc3d-4a67-a337-1e063edb5f5f": "3c1b6be3-fe3f-4b89-87c3-93cfd7680f5e",
+        "019c7384-8628-4be4-976e-f28b5ba4e2e9": "8e34dab3-6f68-4849-807e-f4e17f2cff84"
+      }
     }
   ],
   "SceneProperties": {
@@ -805,8 +1088,6 @@
   "ResourceVersion": 3,
   "Title": "minimal",
   "Description": null,
-  "__references": [
-    "ambi.cactus#50912"
-  ],
+  "__references": [],
   "__version": 3
 }
