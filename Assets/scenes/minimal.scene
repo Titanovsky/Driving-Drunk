@@ -659,7 +659,7 @@
             },
             "Property": "Mesh",
             "Value": {
-              "Topology": "H4sIAAAAAAAACl2QCQ7CMAwEp4Qj3NBy/f+laMRGsohUVbFn1+t04ANs+Z0VsM69AwfgBFyAKZ9MPXdgk3qLnsI+Um/h/me9i2ZXfFvYOazafTJN0XRgKZmPyWtfXvYVL73PZRd52WdYPa7xtC8veys7u6t17/7t6Tn0ZtFjvIXZR895zjKjPWf4NiOrGt+ivpXZ3XnozaOndVn9vvVkkTjEAQAA",
+              "Topology": "H4sIAAAAAAAACoWQ2QoCQQwES1dXUfC+/v9HI4UdmAdhB4aQTDpT6T3wAWZ+Zw1skt+BA/AETsAq157xXIGqKutT9Ay9j9S92z9/vaO3thvmTum9pbcWzgwcw2vuX/K/MmtJL8s5e5vL4t6XYWd3tW5u9M2e1qt1RnshuxzNJ5uMvumP3hjbP70YvZLdHVpvdKb15v4CSw/ShsQBAAA=",
               "Position": "-287.8037,-101.2826,-16.79005",
               "Rotation": "0,0,0,1",
               "Positions": [
@@ -717,24 +717,24 @@
               "TextureScale": [
                 "0.7716222,0.9811409",
                 "0.25,0.25",
-                "0.25,0.2500041",
-                "0.2499999,0.2500041",
+                "0.4999999,0.5000082",
+                "0.4999997,0.5000082",
                 "0.2500001,0.2499932",
                 "0.25,0.2499932"
               ],
               "TextureOffset": [
                 "244.9851,24.77014",
-                "127.2147,46.68945",
-                "46.68994,444.8407",
-                "465.3091,444.8407",
-                "384.7862,444.8381",
-                "127.2147,444.8381"
+                "511.398,5.015625",
+                "23.34497,222.4203",
+                "232.6545,222.4203",
+                "0.6022949,511.6917",
+                "511.3979,511.6917"
               ],
               "MaterialIndex": [
                 0,
                 1,
-                1,
-                1,
+                0,
+                0,
                 1,
                 1
               ],
@@ -765,8 +765,7 @@
                 0
               ],
               "Materials": [
-                "materials/road1.vmat",
-                "materials/dev/reflectivity_30.vmat"
+                "materials/road1.vmat"
               ]
             }
           }
@@ -815,7 +814,7 @@
             },
             "Property": "Mesh",
             "Value": {
-              "Topology": "H4sIAAAAAAAACl2QCQ7CMAwEp4Qj3NBy/f+laMRGsohUVbFn1+t04ANs+Z0VsM69AwfgBFyAKZ9MPXdgk3qLnsI+Um/h/me9i2ZXfFvYOazafTJN0XRgKZmPyWtfXvYVL73PZRd52WdYPa7xtC8veys7u6t17/7t6Tn0ZtFjvIXZR895zjKjPWf4NiOrGt+ivpXZ3XnozaOndVn9vvVkkTjEAQAA",
+              "Topology": "H4sIAAAAAAAACoWQ2QoCQQwES1dXUfC+/v9HI4UdmAdhB4aQTDpT6T3wAWZ+Zw1skt+BA/AETsAq157xXIGqKutT9Ay9j9S92z9/vaO3thvmTum9pbcWzgwcw2vuX/K/MmtJL8s5e5vL4t6XYWd3tW5u9M2e1qt1RnshuxzNJ5uMvumP3hjbP70YvZLdHVpvdKb15v4CSw/ShsQBAAA=",
               "Position": "-92.21369,-101.2826,-16.79005",
               "Rotation": "0,0,0,1",
               "Positions": [
@@ -873,24 +872,24 @@
               "TextureScale": [
                 "0.7716222,0.9811409",
                 "0.25,0.25",
-                "0.25,0.2500041",
-                "0.2499999,0.2500041",
+                "0.4999999,0.5000082",
+                "0.4999997,0.5000082",
                 "0.2500001,0.2499932",
                 "0.25,0.2499932"
               ],
               "TextureOffset": [
                 "247.5062,24.77014",
-                "368.8547,46.68945",
-                "46.68994,444.8407",
-                "465.3091,444.8407",
-                "143.1457,444.8381",
-                "368.8548,444.8381"
+                "511.398,5.015625",
+                "23.34497,222.4203",
+                "232.6545,222.4203",
+                "0.6022949,511.6917",
+                "511.3979,511.6917"
               ],
               "MaterialIndex": [
                 0,
                 1,
-                1,
-                1,
+                0,
+                0,
                 1,
                 1
               ],
@@ -921,8 +920,7 @@
                 0
               ],
               "Materials": [
-                "materials/road1.vmat",
-                "materials/dev/reflectivity_30.vmat"
+                "materials/road1.vmat"
               ]
             }
           }

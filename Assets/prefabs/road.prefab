@@ -139,7 +139,7 @@
             "HideInGame": false,
             "IsTrigger": false,
             "Mesh": {
-              "Topology": "H4sIAAAAAAAACl2QCQ7CMAwEp4Qj3NBy/f+laMRGsohUVbFn1+t04ANs+Z0VsM69AwfgBFyAKZ9MPXdgk3qLnsI+Um/h/me9i2ZXfFvYOazafTJN0XRgKZmPyWtfXvYVL73PZRd52WdYPa7xtC8veys7u6t17/7t6Tn0ZtFjvIXZR895zjKjPWf4NiOrGt+ivpXZ3XnozaOndVn9vvVkkTjEAQAA",
+              "Topology": "H4sIAAAAAAAACoWQ2QoCQQwES1dXUfC+/v9HI4UdmAdhB4aQTDpT6T3wAWZ+Zw1skt+BA/AETsAq157xXIGqKutT9Ay9j9S92z9/vaO3thvmTum9pbcWzgwcw2vuX/K/MmtJL8s5e5vL4t6XYWd3tW5u9M2e1qt1RnshuxzNJ5uMvumP3hjbP70YvZLdHVpvdKb15v4CSw/ShsQBAAA=",
               "Position": "0.1505051,16.29901,-0.07711399",
               "Rotation": "0,0,0,1",
               "Positions": [
@@ -213,8 +213,8 @@
               "MaterialIndex": [
                 0,
                 1,
-                1,
-                1,
+                0,
+                0,
                 1,
                 1
               ],
@@ -245,8 +245,7 @@
                 0
               ],
               "Materials": [
-                "materials/road1.vmat",
-                "materials/dev/reflectivity_30.vmat"
+                "materials/road1.vmat"
               ]
             },
             "OnComponentDestroy": null,
