@@ -221,8 +221,8 @@
             "go": "31350950-3626-4353-8905-0cd4ed62f619"
           },
           "DeaccelerationTime": 0,
-          "DuckedHeight": 36,
-          "DuckedSpeed": 70,
+          "DuckedHeight": 0,
+          "DuckedSpeed": 0,
           "EnableFootstepSounds": true,
           "EnablePressing": false,
           "EyeDistanceFromTop": 8,
@@ -307,33 +307,6 @@
           "Priority": 0,
           "StepDownHeight": 18,
           "StepUpHeight": 18
-        },
-        {
-          "__type": "Sandbox.Movement.MoveModeSwim",
-          "__guid": "870bc662-7775-4054-b540-777fd92b9036",
-          "__enabled": true,
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "Priority": 10,
-          "SwimLevel": 0.7
-        },
-        {
-          "__type": "Sandbox.Movement.MoveModeLadder",
-          "__guid": "8f490a9b-b26d-4472-8a5b-aab36409a1d0",
-          "__enabled": true,
-          "ClimbableTags": "ladder",
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "Priority": 5,
-          "Speed": 1
         },
         {
           "__type": "Player",
@@ -526,7 +499,7 @@
               "RenderTags": "",
               "TargetEye": "None",
               "Viewport": "0,0,1,1",
-              "ZFar": 10000,
+              "ZFar": 16373,
               "ZNear": 10
             },
             {
@@ -1728,7 +1701,7 @@
               "IdValue": "558e7911-6b5d-494b-99a0-447a0fd73614"
             },
             "Property": "Position",
-            "Value": "-2081.302,-232.2663,-17.78571"
+            "Value": "-1929.484,-281.7323,-17.78571"
           }
         ],
         "MovedObjects": []
@@ -1753,7 +1726,7 @@
               "IdValue": "b437434b-41e3-4869-abf1-68d1ca3406bf"
             },
             "Property": "Position",
-            "Value": "-2095.3,-141.6454,-17.7857"
+            "Value": "-2095.3,-203.4007,-17.7857"
           }
         ],
         "MovedObjects": []

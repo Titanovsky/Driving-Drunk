@@ -1,5 +1,6 @@
 using Sandbox;
 using Sandbox.Services;
+using System.Threading.Tasks;
 
 public sealed class Player : Component
 {
@@ -30,6 +31,13 @@ public sealed class Player : Component
         IsAlive = false;
 
         Log.Info("Die");
+
+        _ = RespawnAsync(2.4f);
+    }
+
+    private async Task RespawnAsync(float seconds)
+    {
+        await Task.DelaySeconds(seconds);
 
         Respawn();
     }
