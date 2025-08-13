@@ -38,7 +38,7 @@ public sealed class CarManager : Component
         foreach (var road in Roads)
         {
             Transform randomSpawn = road.GetRandomSpawnPoint();
-            Vector3 pos = randomSpawn.Position + new Vector3(0, 0, 10f); // чуть выше спавнит
+            Vector3 pos = randomSpawn.Position;
             Rotation ang = randomSpawn.Rotation;
 
             var obj = CarPrefab.Clone(pos, ang);
