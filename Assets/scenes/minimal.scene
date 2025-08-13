@@ -184,7 +184,7 @@
       "__version": 1,
       "Flags": 0,
       "Name": "Player",
-      "Position": "-618.7102,-86.16731,15.32813",
+      "Position": "-2058.836,-86.16731,15.32813",
       "Rotation": "0,0,0,1",
       "Scale": "1,1,1",
       "Tags": "",
@@ -664,36 +664,36 @@
                 "Position": "1634.676,-617.4258,88.74274",
                 "Rotation": "0,0,0,1",
                 "Positions": [
-                  "-4127.835,-9.682251,106.5136",
+                  "-3936.028,-9.682251,106.5136",
                   "4319.031,-9.682251,106.5136",
                   "4319.031,9.682251,106.5136",
-                  "-4127.835,9.682251,106.5136",
-                  "-4127.835,9.682251,-106.5136",
+                  "-3936.028,9.682251,106.5136",
+                  "-3936.028,9.682251,-106.5136",
                   "4319.031,9.682251,-106.5136",
                   "4319.031,-9.682251,-106.5136",
-                  "-4127.835,-9.682251,-106.5136"
+                  "-3936.028,-9.682251,-106.5136"
                 ],
                 "TextureCoord": [
                   "46.74243,5.075643",
-                  "-19.24871,-0.8321376",
+                  "-17.75022,-0.8321376",
                   "46.74243,4.924357",
                   "-4.075643,-0.8321376",
-                  "-19.24871,4.924357",
+                  "-17.75022,4.924357",
                   "-45.74243,-0.8321375",
-                  "-19.24871,5.075643",
+                  "-17.75022,5.075643",
                   "4.924357,-0.8321375",
                   "46.74243,4.924357",
-                  "20.24871,0.8321376",
+                  "18.75022,0.8321376",
                   "46.74243,5.075643",
                   "-3.924357,0.8321375",
-                  "-19.24871,5.075643",
+                  "-17.75022,5.075643",
                   "46.74243,0.8321375",
-                  "-19.24871,4.924357",
+                  "-17.75022,4.924357",
                   "5.075643,0.8321376",
                   "5.075643,-0.8321375",
-                  "-19.24871,0.8321375",
+                  "-17.75022,0.8321375",
                   "4.924357,0.8321376",
-                  "20.24871,-0.8321375",
+                  "18.75022,-0.8321375",
                   "-4.075643,0.8321375",
                   "46.74243,-0.8321376",
                   "-3.924357,-0.8321376",
@@ -819,36 +819,36 @@
                 "Position": "1634.676,379.3123,88.74274",
                 "Rotation": "0,0,0,1",
                 "Positions": [
-                  "-4128.927,-9.682251,106.5136",
+                  "-3938.766,-9.682251,106.5136",
                   "4319.613,-9.682251,106.5136",
                   "4319.613,9.682251,106.5136",
-                  "-4128.927,9.682251,106.5136",
-                  "-4128.927,9.682251,-106.5136",
+                  "-3938.766,9.682251,106.5136",
+                  "-3938.766,9.682251,-106.5136",
                   "4319.613,9.682251,-106.5136",
                   "4319.613,-9.682251,-106.5136",
-                  "-4128.927,-9.682251,-106.5136"
+                  "-3938.766,-9.682251,-106.5136"
                 ],
                 "TextureCoord": [
                   "46.74698,-1.924357",
-                  "-19.25724,-0.8321376",
+                  "-17.77161,-0.8321376",
                   "46.74698,-2.075643",
                   "2.924357,-0.8321376",
-                  "-19.25724,-2.075643",
+                  "-17.77161,-2.075643",
                   "-45.74698,-0.8321375",
-                  "-19.25724,-1.924357",
+                  "-17.77161,-1.924357",
                   "-2.075643,-0.8321377",
                   "46.74698,-2.075643",
-                  "20.25724,0.8321376",
+                  "18.77161,0.8321376",
                   "46.74698,-1.924357",
                   "3.075643,0.8321377",
-                  "-19.25724,-1.924357",
+                  "-17.77161,-1.924357",
                   "46.74698,0.8321375",
-                  "-19.25724,-2.075643",
+                  "-17.77161,-2.075643",
                   "-1.924357,0.8321376",
                   "-1.924357,-0.8321377",
-                  "-19.25724,0.8321375",
+                  "-17.77161,0.8321375",
                   "-2.075643,0.8321376",
-                  "20.25724,-0.8321375",
+                  "18.77161,-0.8321375",
                   "2.924357,0.8321377",
                   "46.74698,-0.8321376",
                   "3.075643,-0.8321376",
@@ -949,7 +949,7 @@
           "__version": 1,
           "Flags": 0,
           "Name": "Invis Wall (2)",
-          "Position": "-2463.447,-1.434105,-3.218216",
+          "Position": "-2271.538,-1.434105,-3.218216",
           "Rotation": "0,0,0.7071067,0.7071068",
           "Scale": "1,1,1",
           "Tags": "",
@@ -971,7 +971,7 @@
               "IsTrigger": false,
               "Mesh": {
                 "Topology": "H4sIAAAAAAAACl2QCQ7CMAwEp4Qj3NBy/f+laMRGsohUVbFn1+t04ANs+Z0VsM69AwfgBFyAKZ9MPXdgk3qLnsI+Um/h/me9i2ZXfFvYOazafTJN0XRgKZmPyWtfXvYVL73PZRd52WdYPa7xtC8veys7u6t17/7t6Tn0ZtFjvIXZR895zjKjPWf4NiOrGt+ivpXZ3XnozaOndVn9vvVkkTjEAQAA",
-                "Position": "-2483.897,-119.2868,88.74274",
+                "Position": "-2291.989,-119.2868,88.74274",
                 "Rotation": "0,0,0.7071067,0.7071068",
                 "Positions": [
                   "-487.7976,-9.682121,106.5136",
@@ -1034,12 +1034,12 @@
                   "0.25,0.25"
                 ],
                 "TextureOffset": [
-                  "250.1631,207.3372",
-                  "250.1631,207.3372",
-                  "207.3374,354.971",
-                  "304.6345,354.971",
-                  "261.8279,354.971",
-                  "250.1721,354.9709"
+                  "250.1631,463.7239",
+                  "250.1631,463.7239",
+                  "463.7241,354.971",
+                  "48.25073,354.971",
+                  "261.8284,354.971",
+                  "250.1715,354.9709"
                 ],
                 "MaterialIndex": [
                   0,
@@ -1426,7 +1426,7 @@
               "IdValue": "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1"
             },
             "Property": "Position",
-            "Value": "-287.9542,-117.5816,-16.71294"
+            "Value": "-1712.919,-117.5816,-16.71294"
           },
           {
             "Target": {
@@ -1436,7 +1436,7 @@
             "Property": "Mesh",
             "Value": {
               "Topology": "H4sIAAAAAAAACoWQ2QoCQQwES1dXUfC+/v9HI4UdmAdhB4aQTDpT6T3wAWZ+Zw1skt+BA/AETsAq157xXIGqKutT9Ay9j9S92z9/vaO3thvmTum9pbcWzgwcw2vuX/K/MmtJL8s5e5vL4t6XYWd3tW5u9M2e1qt1RnshuxzNJ5uMvumP3hjbP70YvZLdHVpvdKb15v4CSw/ShsQBAAA=",
-              "Position": "-287.8037,-101.2826,-16.79005",
+              "Position": "-1712.768,-101.2826,-16.79005",
               "Rotation": "0,0,0,1",
               "Positions": [
                 "-98.76762,-1124.251,1.401409",
@@ -1491,7 +1491,7 @@
                 "-0,0,-1"
               ],
               "TextureScale": [
-                "0.7716222,0.9811409",
+                "0.7716219,0.9811409",
                 "0.25,0.25",
                 "0.4999999,0.5000082",
                 "0.4999997,0.5000082",
@@ -1499,7 +1499,7 @@
                 "0.25,0.2499932"
               ],
               "TextureOffset": [
-                "244.9851,24.77014",
+                "43.69849,24.77014",
                 "511.398,5.015625",
                 "23.34497,222.4203",
                 "232.6545,222.4203",
@@ -1581,7 +1581,7 @@
               "IdValue": "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1"
             },
             "Property": "Position",
-            "Value": "-92.3642,-117.5816,-16.71294"
+            "Value": "-1517.329,-117.5816,-16.71294"
           },
           {
             "Target": {
@@ -1591,7 +1591,7 @@
             "Property": "Mesh",
             "Value": {
               "Topology": "H4sIAAAAAAAACoWQ2QoCQQwES1dXUfC+/v9HI4UdmAdhB4aQTDpT6T3wAWZ+Zw1skt+BA/AETsAq157xXIGqKutT9Ay9j9S92z9/vaO3thvmTum9pbcWzgwcw2vuX/K/MmtJL8s5e5vL4t6XYWd3tW5u9M2e1qt1RnshuxzNJ5uMvumP3hjbP70YvZLdHVpvdKb15v4CSw/ShsQBAAA=",
-              "Position": "-92.21369,-101.2826,-16.79005",
+              "Position": "-1517.178,-101.2826,-16.79005",
               "Rotation": "0,0,0,1",
               "Positions": [
                 "-98.76762,-1124.251,1.401409",
@@ -1646,7 +1646,7 @@
                 "-0,0,-1"
               ],
               "TextureScale": [
-                "0.7716222,0.9811409",
+                "0.7716219,0.9811409",
                 "0.25,0.25",
                 "0.4999999,0.5000082",
                 "0.4999997,0.5000082",
@@ -1654,7 +1654,7 @@
                 "0.25,0.2499932"
               ],
               "TextureOffset": [
-                "247.5062,24.77014",
+                "46.21948,24.77014",
                 "511.398,5.015625",
                 "23.34497,222.4203",
                 "232.6545,222.4203",
@@ -1728,7 +1728,7 @@
               "IdValue": "558e7911-6b5d-494b-99a0-447a0fd73614"
             },
             "Property": "Position",
-            "Value": "-516.4282,-232.2663,-17.78571"
+            "Value": "-2081.302,-232.2663,-17.78571"
           }
         ],
         "MovedObjects": []
@@ -1753,7 +1753,7 @@
               "IdValue": "b437434b-41e3-4869-abf1-68d1ca3406bf"
             },
             "Property": "Position",
-            "Value": "-530.4265,-141.6454,-17.7857"
+            "Value": "-2095.3,-141.6454,-17.7857"
           }
         ],
         "MovedObjects": []
@@ -1778,7 +1778,7 @@
               "IdValue": "cbb165d3-2da6-4d0f-91c7-850f799f429d"
             },
             "Property": "Position",
-            "Value": "-574.5475,-284.1146,-24.29811"
+            "Value": "-2139.421,-284.1146,-24.29811"
           }
         ],
         "MovedObjects": []
@@ -1803,7 +1803,7 @@
               "IdValue": "2cef42b7-1882-40cc-9a8d-9f090e1a55f1"
             },
             "Property": "Position",
-            "Value": "-540.525,79.28484,-17.7857"
+            "Value": "-2099.062,266.8851,-17.7857"
           }
         ],
         "MovedObjects": []
@@ -1828,7 +1828,7 @@
               "IdValue": "45de8625-7890-4db5-9a45-3a2b2420c745"
             },
             "Property": "Position",
-            "Value": "-642.5602,-18.43649,-35.47703"
+            "Value": "-2207.434,-18.43649,-35.47703"
           }
         ],
         "MovedObjects": []
@@ -1842,116 +1842,29 @@
     {
       "__guid": "dbe637c0-6e90-41a0-b998-2c9641c801dd",
       "__version": 1,
-      "Flags": 0,
-      "Name": "palm-detailed-bend",
-      "Position": "-500.9716,-17.7305,-17.78564",
-      "Rotation": "0,0,0,1",
-      "Scale": "0.6453007,0.6453007,0.6453007",
-      "Tags": "",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkInterpolation": true,
-      "NetworkOrphaned": 0,
-      "OwnerTransfer": 1,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "01cfe012-cb0d-46a5-8a5f-bc9b49a36dfd",
-          "__enabled": true,
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": false,
-          "MaterialGroup": null,
-          "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "OnPropBreak": null,
-          "OnPropTakeDamage": null,
-          "StartAsleep": false,
-          "Tint": "0.27684,0.66977,0.13395,1"
-        },
-        {
-          "__type": "Sandbox.ModelRenderer",
-          "__guid": "d7de0a67-6c2f-4b4d-8db6-d2feef01bafb",
-          "__enabled": true,
-          "BodyGroups": 18446744073709551615,
-          "CreateAttachments": false,
-          "MaterialGroup": null,
-          "MaterialOverride": null,
-          "Materials": null,
-          "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "RenderOptions": {
-            "GameLayer": true,
-            "OverlayLayer": false,
-            "BloomLayer": false,
-            "AfterUILayer": false
-          },
-          "RenderType": "On",
-          "Tint": "0.27684,0.66977,0.13395,1"
-        },
-        {
-          "__type": "Sandbox.ModelCollider",
-          "__guid": "0a37a408-33a5-473f-bc1c-f4233c549890",
-          "__enabled": true,
-          "Elasticity": null,
-          "Friction": null,
-          "IsTrigger": false,
-          "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "OnObjectTriggerEnter": null,
-          "OnObjectTriggerExit": null,
-          "OnTriggerEnter": null,
-          "OnTriggerExit": null,
-          "RollingResistance": null,
-          "Static": false,
-          "Surface": null,
-          "SurfaceVelocity": "0,0,0"
-        },
-        {
-          "__type": "Sandbox.Rigidbody",
-          "__guid": "08b54919-b497-405f-a752-0fc059dd6f8b",
-          "__enabled": true,
-          "AngularDamping": 0,
-          "Gravity": true,
-          "LinearDamping": 0,
-          "Locking": {
-            "X": false,
-            "Y": false,
-            "Z": false,
-            "Pitch": false,
-            "Yaw": false,
-            "Roll": false
-          },
-          "MassCenterOverride": "0,0,0",
-          "MassOverride": 0,
-          "MotionEnabled": true,
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "OverrideMassCenter": false,
-          "RigidbodyFlags": 0,
-          "StartAsleep": false
-        }
-      ],
-      "Children": []
+      "__Prefab": "prefabs/props/palm.prefab",
+      "__PrefabInstancePatch": {
+        "AddedObjects": [],
+        "RemovedObjects": [],
+        "PropertyOverrides": [
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+            },
+            "Property": "Position",
+            "Value": "-1935.403,-17.7305,-17.78564"
+          }
+        ],
+        "MovedObjects": []
+      },
+      "__PrefabIdToInstanceId": {
+        "92221169-c5ad-4b07-8205-56f6489813c1": "dbe637c0-6e90-41a0-b998-2c9641c801dd",
+        "0c781ee5-94d5-44dd-b43c-223e686b594a": "01cfe012-cb0d-46a5-8a5f-bc9b49a36dfd",
+        "cac1c7ff-df62-4594-b1b3-284cdd7c5d87": "d7de0a67-6c2f-4b4d-8db6-d2feef01bafb",
+        "b4b3031f-7059-498d-95c6-769fbab3b6bb": "0a37a408-33a5-473f-bc1c-f4233c549890",
+        "fb3192ec-8573-4051-81b2-b335ca8bb246": "08b54919-b497-405f-a752-0fc059dd6f8b"
+      }
     }
   ],
   "SceneProperties": {
@@ -1977,8 +1890,6 @@
   "ResourceVersion": 3,
   "Title": "minimal",
   "Description": null,
-  "__references": [
-    "kenneynl.palmdetailedbend#87816"
-  ],
+  "__references": [],
   "__version": 3
 }

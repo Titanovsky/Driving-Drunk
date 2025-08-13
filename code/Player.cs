@@ -10,6 +10,7 @@ public sealed class Player : Component
     public bool IsAlive { get; set; } = true;
 
     private GameObject _corp;
+    private Transform _transformRespawn;
 
     public void Die(Car killer)
     {
@@ -24,10 +25,30 @@ public sealed class Player : Component
         rb.Velocity *= direction * killer.Speed * 100f;
 
         body.Enabled = false;
-        //controller.UseCameraControls = false;
         controller.Enabled = false;
 
         IsAlive = false;
+
+        Log.Info("Die");
+
+        Respawn();
+    }
+
+    public void Respawn()
+    {
+        if (_corp.IsValid())
+            _corp.Destroy();
+
+        WorldPosition = _transformRespawn.Position;
+        WorldRotation = _transformRespawn.Rotation;
+
+        controller.ColliderObject.Enabled = true;
+        body.Enabled = true;
+        controller.Enabled = true;
+
+        IsAlive = true;
+
+        Log.Info("Respawn");
     }
 
     private void UpdateTeleportToCorp()
@@ -36,6 +57,11 @@ public sealed class Player : Component
 
         WorldPosition = _corp.WorldPosition;
         Log.Info("Die");
+    }
+
+    protected override void OnStart()
+    {
+        _transformRespawn = WorldTransform;
     }
 
     protected override void OnUpdate()
