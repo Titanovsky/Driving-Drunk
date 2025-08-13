@@ -24,27 +24,26 @@
             "_type": "gameobject",
             "prefab": "prefabs/car.prefab"
           },
-          "DelaySpawnCars": 1,
+          "MaxDelaySpawnCar": 4,
+          "MinDelaySpawnCar": 1,
           "OnComponentDestroy": null,
           "OnComponentDisabled": null,
           "OnComponentEnabled": null,
           "OnComponentFixedUpdate": null,
           "OnComponentStart": null,
           "OnComponentUpdate": null,
-          "Roads": [
-            {
-              "_type": "component",
-              "component_id": "080d6c5b-6410-441c-be95-7bdae0093980",
-              "go": "01e56760-698d-4eb3-aeb2-04ae02542e43",
-              "component_type": "Road"
-            },
-            {
-              "_type": "component",
-              "component_id": "07038d9d-8029-4993-bcbd-6a7cb285a449",
-              "go": "3890c495-d061-4d0b-bfcf-6988510238f9",
-              "component_type": "Road"
-            }
-          ]
+          "Roads": []
+        },
+        {
+          "__type": "Gameplay",
+          "__guid": "1b3b5da3-577d-430d-ad16-7b740d7d4a4c",
+          "__enabled": true,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null
         }
       ],
       "Children": []
@@ -324,6 +323,12 @@
             "go": "407ac432-67bf-4bfc-ab69-cc1fd0a8d88c",
             "component_type": "PlayerController"
           },
+          "HudWorld": {
+            "_type": "component",
+            "component_id": "3ff5939e-065d-42ee-ace3-13ff79167ede",
+            "go": "be51c403-8e1d-4c8f-a53f-3516cca197fc",
+            "component_type": "HudWorld"
+          },
           "OnComponentDestroy": null,
           "OnComponentDisabled": null,
           "OnComponentEnabled": null,
@@ -331,6 +336,30 @@
           "OnComponentStart": null,
           "OnComponentUpdate": null,
           "speed": 10
+        },
+        {
+          "__type": "Sandbox.Dresser",
+          "__guid": "c7d7bd29-db75-4908-8188-2d9c79096f88",
+          "__enabled": true,
+          "ApplyHeightScale": true,
+          "BodyTarget": {
+            "_type": "component",
+            "component_id": "0d928ab7-e817-49df-b788-f6718a6f9e8d",
+            "go": "2c92077d-4cb8-467e-834c-7a3c1e77007d",
+            "component_type": "SkinnedModelRenderer"
+          },
+          "Clothing": [],
+          "ManualAge": 0.09,
+          "ManualHeight": 1,
+          "ManualTint": 0.084337346,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Source": "LocalUser",
+          "WorkshopItems": []
         }
       ],
       "Children": [
@@ -425,7 +454,7 @@
               "BoneMergeTarget": null,
               "CreateAttachments": false,
               "CreateBoneObjects": false,
-              "MaterialGroup": null,
+              "MaterialGroup": "default",
               "MaterialOverride": null,
               "Materials": null,
               "Model": "models/citizen/citizen.vmdl",
@@ -518,6 +547,58 @@
               "Strength": 0.5,
               "Threshold": 1.25,
               "Tint": "1,1,1,1"
+            }
+          ],
+          "Children": []
+        },
+        {
+          "__guid": "be51c403-8e1d-4c8f-a53f-3516cca197fc",
+          "__version": 1,
+          "Flags": 0,
+          "Name": "HUD World",
+          "Position": "0,0,94.12682",
+          "Rotation": "0,0,0,1",
+          "Scale": "1,1,1",
+          "Tags": "",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "NetworkOrphaned": 0,
+          "OwnerTransfer": 1,
+          "Components": [
+            {
+              "__type": "Sandbox.HudWorld",
+              "__guid": "3ff5939e-065d-42ee-ace3-13ff79167ede",
+              "__enabled": true,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null
+            },
+            {
+              "__type": "Sandbox.WorldPanel",
+              "__guid": "8ea2b369-5db9-486c-a0dc-a17f7ae6cc8f",
+              "__enabled": true,
+              "HorizontalAlign": "Center",
+              "InteractionRange": 1000,
+              "LookAtCamera": true,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "PanelSize": "1800,400",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RenderScale": 1,
+              "VerticalAlign": "Center"
             }
           ],
           "Children": []
@@ -752,7 +833,7 @@
               "OnObjectTriggerExit": null,
               "OnTriggerEnter": null,
               "OnTriggerExit": null,
-              "RenderType": "On",
+              "RenderType": "Off",
               "RollingResistance": null,
               "SmoothingAngle": 40,
               "Static": true,
@@ -907,7 +988,7 @@
               "OnObjectTriggerExit": null,
               "OnTriggerEnter": null,
               "OnTriggerExit": null,
-              "RenderType": "On",
+              "RenderType": "Off",
               "RollingResistance": null,
               "SmoothingAngle": 40,
               "Static": true,
@@ -1062,7 +1143,7 @@
               "OnObjectTriggerExit": null,
               "OnTriggerEnter": null,
               "OnTriggerExit": null,
-              "RenderType": "On",
+              "RenderType": "Off",
               "RollingResistance": null,
               "SmoothingAngle": 40,
               "Static": true,
@@ -1217,7 +1298,7 @@
               "OnObjectTriggerExit": null,
               "OnTriggerEnter": null,
               "OnTriggerExit": null,
-              "RenderType": "On",
+              "RenderType": "Off",
               "RollingResistance": null,
               "SmoothingAngle": 40,
               "Static": true,
@@ -1232,7 +1313,7 @@
           "__version": 1,
           "Flags": 0,
           "Name": "Finish Line",
-          "Position": "5714.876,175.9223,-107.6865",
+          "Position": "5714.876,45.45475,-108.6155",
           "Rotation": "0,0,0,1",
           "Scale": "1,1,1",
           "Tags": "",
@@ -1254,17 +1335,17 @@
               "IsTrigger": false,
               "Mesh": {
                 "Topology": "H4sIAAAAAAAACl2QCQ7CMAwEp4Qj3NBy/f+laMRGsohUVbFn1+t04ANs+Z0VsM69AwfgBFyAKZ9MPXdgk3qLnsI+Um/h/me9i2ZXfFvYOazafTJN0XRgKZmPyWtfXvYVL73PZRd52WdYPa7xtC8veys7u6t17/7t6Tn0ZtFjvIXZR895zjKjPWf4NiOrGt+ivpXZ3XnozaOndVn9vvVkkTjEAQAA",
-                "Position": "5694.426,58.06957,-15.72556",
+                "Position": "5694.426,-72.39795,-16.65457",
                 "Rotation": "0,0,0,1",
                 "Positions": [
-                  "-43.25488,-1361.674,0.1283188",
-                  "43.25488,-1361.674,0.1283188",
-                  "43.25488,1100.739,0.1283188",
-                  "-43.25488,1100.739,0.1283188",
-                  "-43.25488,1100.739,-1.986357",
-                  "43.25488,1100.739,-1.986357",
-                  "43.25488,-1361.674,-1.986357",
-                  "-43.25488,-1361.674,-1.986357"
+                  "-43.25488,-1231.206,1.057339",
+                  "43.25488,-1231.206,1.057339",
+                  "43.25488,1231.206,1.057339",
+                  "-43.25488,1231.206,1.057339",
+                  "-43.25488,1231.206,-1.057337",
+                  "43.25488,1231.206,-1.057337",
+                  "43.25488,-1231.206,-1.057337",
+                  "-43.25488,-1231.206,-1.057337"
                 ],
                 "TextureCoord": [
                   "44.82563,10.18441",
@@ -1311,18 +1392,18 @@
                 "TextureScale": [
                   "0.25,0.25",
                   "0.25,0.25",
-                  "0.25,0.25",
-                  "0.25,0.2499998",
-                  "0.25,0.2499998",
-                  "0.25,0.2499998"
+                  "0.25,0.2499999",
+                  "0.25,0.2499989",
+                  "0.25,0.2499989",
+                  "0.25,0.2499989"
                 ],
                 "TextureOffset": [
-                  "0,0",
-                  "262.2969,232.2783",
-                  "0,0",
-                  "279.7217,449.0977",
-                  "249.7031,449.0977",
-                  "262.2969,449.0977"
+                  "0,502.1299",
+                  "262.2969,222.4082",
+                  "502.1299,508.2839",
+                  "289.5918,445.3814",
+                  "249.7031,445.3814",
+                  "262.2969,445.3814"
                 ],
                 "MaterialIndex": [
                   1,
@@ -1373,7 +1454,7 @@
               "OnObjectTriggerExit": null,
               "OnTriggerEnter": null,
               "OnTriggerExit": null,
-              "RenderType": "On",
+              "RenderType": "Off",
               "RollingResistance": null,
               "SmoothingAngle": 40,
               "Static": true,
@@ -1381,7 +1462,61 @@
               "SurfaceVelocity": "0,0,0"
             }
           ],
-          "Children": []
+          "Children": [
+            {
+              "__guid": "9019fbed-14d4-4684-8d05-ff18d49d868d",
+              "__version": 1,
+              "Flags": 0,
+              "Name": "Cube",
+              "Position": "0,-44.16639,55.83413",
+              "Rotation": "0,0,0,1",
+              "Scale": "1.75517,19.84776,2.316783",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "OwnerTransfer": 1,
+              "Components": [
+                {
+                  "__type": "Sandbox.BoxCollider",
+                  "__guid": "e26c4352-def3-4900-b5b6-fbfdcea1e95e",
+                  "__enabled": true,
+                  "Center": "0,0,0",
+                  "Elasticity": null,
+                  "Friction": null,
+                  "IsTrigger": true,
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OnObjectTriggerEnter": null,
+                  "OnObjectTriggerExit": null,
+                  "OnTriggerEnter": null,
+                  "OnTriggerExit": null,
+                  "RollingResistance": null,
+                  "Scale": "50,50,50",
+                  "Static": true,
+                  "Surface": null,
+                  "SurfaceVelocity": "0,0,0"
+                },
+                {
+                  "__type": "TriggerFinish",
+                  "__guid": "c8421fc8-a5ac-410a-92ec-2e43111ff9f2",
+                  "__enabled": true,
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null
+                }
+              ],
+              "Children": []
+            }
+          ]
         }
       ]
     },
@@ -1688,6 +1823,2951 @@
       }
     },
     {
+      "__guid": "6a432f52-7c80-43ef-967d-bee75a701bf5",
+      "__version": 1,
+      "__Prefab": "prefabs/road.prefab",
+      "__PrefabInstancePatch": {
+        "AddedObjects": [],
+        "RemovedObjects": [],
+        "PropertyOverrides": [
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1"
+            },
+            "Property": "Name",
+            "Value": "road (1)"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1"
+            },
+            "Property": "Position",
+            "Value": "-816.6706,-117.5816,-16.71294"
+          },
+          {
+            "Target": {
+              "Type": "Component",
+              "IdValue": "2c83d66f-c045-4223-b9e7-aaaff99d7e62"
+            },
+            "Property": "Mesh",
+            "Value": {
+              "Topology": "H4sIAAAAAAAACoWQ2QoCQQwES1dXUfC+/v9HI4UdmAdhB4aQTDpT6T3wAWZ+Zw1skt+BA/AETsAq157xXIGqKutT9Ay9j9S92z9/vaO3thvmTum9pbcWzgwcw2vuX/K/MmtJL8s5e5vL4t6XYWd3tW5u9M2e1qt1RnshuxzNJ5uMvumP3hjbP70YvZLdHVpvdKb15v4CSw/ShsQBAAA=",
+              "Position": "-816.5201,-101.2826,-16.79005",
+              "Rotation": "0,0,0,1",
+              "Positions": [
+                "-98.76762,-1124.251,1.401409",
+                "98.76762,-1124.251,1.401409",
+                "98.76762,1184.494,1.401409",
+                "-98.76762,1184.494,1.401409",
+                "-98.76762,1184.494,-1.401409",
+                "98.76762,1184.494,-1.401409",
+                "98.76762,-1124.251,-1.401409",
+                "-98.76762,-1124.251,-1.401409"
+              ],
+              "TextureCoord": [
+                "-0.0000004172325,4.976017",
+                "-2.771622,0.9890514",
+                "-0.0000004172325,-4.215868",
+                "-8.665677,0.9890513",
+                "-1,-4.215868",
+                "2.228379,0.9890514",
+                "-1,4.976017",
+                "-8.371398,0.9890513",
+                "-1.228378,-8.371398",
+                "3.771622,1.010949",
+                "-1.228378,9.665671",
+                "9.3714,1.010948",
+                "-2.771622,9.665671",
+                "-1.228378,1.010949",
+                "-2.771622,-8.371398",
+                "9.665671,1.010948",
+                "9.665671,0.9890513",
+                "-2.771622,1.010949",
+                "-8.371398,1.010948",
+                "3.771622,0.9890514",
+                "-8.665677,1.010948",
+                "-1.228378,0.9890514",
+                "9.3714,0.9890513",
+                "2.228379,1.010949"
+              ],
+              "TextureUAxis": [
+                "1,0,0",
+                "1,0,-0",
+                "0,-1,0",
+                "0,1,0",
+                "-1,0,0",
+                "1,-0,0"
+              ],
+              "TextureVAxis": [
+                "0,-1,0",
+                "0,-1,0",
+                "0,0,-1",
+                "-0,0,-1",
+                "0,0,-1",
+                "-0,0,-1"
+              ],
+              "TextureScale": [
+                "0.7716225,0.9811407",
+                "0.25,0.25",
+                "0.4999999,0.5000082",
+                "0.4999997,0.5000082",
+                "0.2500001,0.2499932",
+                "0.25,0.2499932"
+              ],
+              "TextureOffset": [
+                "162.1859,24.77002",
+                "511.398,5.015625",
+                "23.34497,222.4203",
+                "232.6545,222.4203",
+                "0.6022949,511.6917",
+                "511.3979,511.6917"
+              ],
+              "MaterialIndex": [
+                0,
+                1,
+                0,
+                0,
+                1,
+                1
+              ],
+              "EdgeFlags": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "Materials": [
+                "materials/road1.vmat"
+              ]
+            }
+          }
+        ],
+        "MovedObjects": []
+      },
+      "__PrefabIdToInstanceId": {
+        "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1": "6a432f52-7c80-43ef-967d-bee75a701bf5",
+        "92640e46-29f5-4213-b757-deee4e948539": "90540f90-9fc3-49e3-a068-540a45dc5055",
+        "ebcb6bf4-cce2-47ef-b9fa-dee6a6f5bedc": "f3ec1601-1054-465a-88bf-77e02ddc6703",
+        "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f": "fdc3509a-8fba-464b-ad20-81539daee048",
+        "e98975fa-1c94-49bc-bbd1-c84323f9cf0a": "dbc491e0-5635-4a73-8b0d-ce42eb946ae3",
+        "aa6dee25-bba0-4f0d-8adc-c7d617712997": "fb2b8357-40ba-45a9-8284-28bea4096f14",
+        "afdcf159-1039-4fe9-a81e-f45e8831a22e": "8a84bbfe-58ea-43c3-89d4-5c6fc6719072",
+        "2c83d66f-c045-4223-b9e7-aaaff99d7e62": "47ac6e08-3d51-4ec2-8f6e-7c7173cf9c9e"
+      }
+    },
+    {
+      "__guid": "eebf4d03-d943-420f-b2de-cbfcbe11f439",
+      "__version": 1,
+      "__Prefab": "prefabs/road.prefab",
+      "__PrefabInstancePatch": {
+        "AddedObjects": [],
+        "RemovedObjects": [],
+        "PropertyOverrides": [
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1"
+            },
+            "Property": "Name",
+            "Value": "Road (2)"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1"
+            },
+            "Property": "Position",
+            "Value": "-621.0806,-117.5816,-16.71294"
+          },
+          {
+            "Target": {
+              "Type": "Component",
+              "IdValue": "2c83d66f-c045-4223-b9e7-aaaff99d7e62"
+            },
+            "Property": "Mesh",
+            "Value": {
+              "Topology": "H4sIAAAAAAAACoWQ2QoCQQwES1dXUfC+/v9HI4UdmAdhB4aQTDpT6T3wAWZ+Zw1skt+BA/AETsAq157xXIGqKutT9Ay9j9S92z9/vaO3thvmTum9pbcWzgwcw2vuX/K/MmtJL8s5e5vL4t6XYWd3tW5u9M2e1qt1RnshuxzNJ5uMvumP3hjbP70YvZLdHVpvdKb15v4CSw/ShsQBAAA=",
+              "Position": "-620.9301,-101.2826,-16.79005",
+              "Rotation": "0,0,0,1",
+              "Positions": [
+                "-98.76762,-1124.251,1.401409",
+                "98.76762,-1124.251,1.401409",
+                "98.76762,1184.494,1.401409",
+                "-98.76762,1184.494,1.401409",
+                "-98.76762,1184.494,-1.401409",
+                "98.76762,1184.494,-1.401409",
+                "98.76762,-1124.251,-1.401409",
+                "-98.76762,-1124.251,-1.401409"
+              ],
+              "TextureCoord": [
+                "-0.0000004172325,4.976017",
+                "-2.771622,0.9890514",
+                "-0.0000004172325,-4.215868",
+                "-8.665677,0.9890513",
+                "-1,-4.215868",
+                "2.228379,0.9890514",
+                "-1,4.976017",
+                "-8.371398,0.9890513",
+                "-1.228378,-8.371398",
+                "3.771622,1.010949",
+                "-1.228378,9.665671",
+                "9.3714,1.010948",
+                "-2.771622,9.665671",
+                "-1.228378,1.010949",
+                "-2.771622,-8.371398",
+                "9.665671,1.010948",
+                "9.665671,0.9890513",
+                "-2.771622,1.010949",
+                "-8.371398,1.010948",
+                "3.771622,0.9890514",
+                "-8.665677,1.010948",
+                "-1.228378,0.9890514",
+                "9.3714,0.9890513",
+                "2.228379,1.010949"
+              ],
+              "TextureUAxis": [
+                "1,0,0",
+                "1,0,-0",
+                "0,-1,0",
+                "0,1,0",
+                "-1,0,0",
+                "1,-0,0"
+              ],
+              "TextureVAxis": [
+                "0,-1,0",
+                "0,-1,0",
+                "0,0,-1",
+                "-0,0,-1",
+                "0,0,-1",
+                "-0,0,-1"
+              ],
+              "TextureScale": [
+                "0.7716225,0.9811407",
+                "0.25,0.25",
+                "0.4999999,0.5000082",
+                "0.4999997,0.5000082",
+                "0.2500001,0.2499932",
+                "0.25,0.2499932"
+              ],
+              "TextureOffset": [
+                "164.7071,24.77002",
+                "511.398,5.015625",
+                "23.34497,222.4203",
+                "232.6545,222.4203",
+                "0.6022949,511.6917",
+                "511.3979,511.6917"
+              ],
+              "MaterialIndex": [
+                0,
+                1,
+                0,
+                0,
+                1,
+                1
+              ],
+              "EdgeFlags": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "Materials": [
+                "materials/road1.vmat"
+              ]
+            }
+          }
+        ],
+        "MovedObjects": []
+      },
+      "__PrefabIdToInstanceId": {
+        "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1": "eebf4d03-d943-420f-b2de-cbfcbe11f439",
+        "92640e46-29f5-4213-b757-deee4e948539": "93c8b713-2f9b-41c3-93b2-c9c705bf2488",
+        "ebcb6bf4-cce2-47ef-b9fa-dee6a6f5bedc": "93acd367-9ce1-4821-94e7-19f30ee90b1f",
+        "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f": "72ceb8b3-253a-43e4-9966-95f31de542d9",
+        "e98975fa-1c94-49bc-bbd1-c84323f9cf0a": "bf7c1aa9-d9a0-4065-9bbc-e46dee7f3d0a",
+        "aa6dee25-bba0-4f0d-8adc-c7d617712997": "77eeaeff-1b07-405a-9143-0db831c1f800",
+        "afdcf159-1039-4fe9-a81e-f45e8831a22e": "e31d9f80-4210-4f47-bf7b-a8c842018029",
+        "2c83d66f-c045-4223-b9e7-aaaff99d7e62": "8be2f5b7-c23d-4fa1-b24b-c4e59ad2ee38"
+      }
+    },
+    {
+      "__guid": "123f7516-494c-481f-8fa5-d6af8babd61c",
+      "__version": 1,
+      "__Prefab": "prefabs/road.prefab",
+      "__PrefabInstancePatch": {
+        "AddedObjects": [],
+        "RemovedObjects": [],
+        "PropertyOverrides": [
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1"
+            },
+            "Property": "Name",
+            "Value": "road (2)"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1"
+            },
+            "Property": "Position",
+            "Value": "-256.2047,-117.5816,-16.71294"
+          },
+          {
+            "Target": {
+              "Type": "Component",
+              "IdValue": "2c83d66f-c045-4223-b9e7-aaaff99d7e62"
+            },
+            "Property": "Mesh",
+            "Value": {
+              "Topology": "H4sIAAAAAAAACoWQ2QoCQQwES1dXUfC+/v9HI4UdmAdhB4aQTDpT6T3wAWZ+Zw1skt+BA/AETsAq157xXIGqKutT9Ay9j9S92z9/vaO3thvmTum9pbcWzgwcw2vuX/K/MmtJL8s5e5vL4t6XYWd3tW5u9M2e1qt1RnshuxzNJ5uMvumP3hjbP70YvZLdHVpvdKb15v4CSw/ShsQBAAA=",
+              "Position": "-256.0542,-101.2826,-16.79005",
+              "Rotation": "0,0,0,1",
+              "Positions": [
+                "-98.76762,-1124.251,1.401409",
+                "98.76762,-1124.251,1.401409",
+                "98.76762,1184.494,1.401409",
+                "-98.76762,1184.494,1.401409",
+                "-98.76762,1184.494,-1.401409",
+                "98.76762,1184.494,-1.401409",
+                "98.76762,-1124.251,-1.401409",
+                "-98.76762,-1124.251,-1.401409"
+              ],
+              "TextureCoord": [
+                "-0.0000004172325,4.976017",
+                "-2.771622,0.9890514",
+                "-0.0000004172325,-4.215868",
+                "-8.665677,0.9890513",
+                "-1,-4.215868",
+                "2.228379,0.9890514",
+                "-1,4.976017",
+                "-8.371398,0.9890513",
+                "-1.228378,-8.371398",
+                "3.771622,1.010949",
+                "-1.228378,9.665671",
+                "9.3714,1.010948",
+                "-2.771622,9.665671",
+                "-1.228378,1.010949",
+                "-2.771622,-8.371398",
+                "9.665671,1.010948",
+                "9.665671,0.9890513",
+                "-2.771622,1.010949",
+                "-8.371398,1.010948",
+                "3.771622,0.9890514",
+                "-8.665677,1.010948",
+                "-1.228378,0.9890514",
+                "9.3714,0.9890513",
+                "2.228379,1.010949"
+              ],
+              "TextureUAxis": [
+                "1,0,0",
+                "1,0,-0",
+                "0,-1,0",
+                "0,1,0",
+                "-1,0,0",
+                "1,-0,0"
+              ],
+              "TextureVAxis": [
+                "0,-1,0",
+                "0,-1,0",
+                "0,0,-1",
+                "-0,0,-1",
+                "0,0,-1",
+                "-0,0,-1"
+              ],
+              "TextureScale": [
+                "0.7716222,0.9811409",
+                "0.25,0.25",
+                "0.4999999,0.5000082",
+                "0.4999997,0.5000082",
+                "0.2500001,0.2499932",
+                "0.25,0.2499932"
+              ],
+              "TextureOffset": [
+                "203.8387,24.77014",
+                "511.398,5.015625",
+                "23.34497,222.4203",
+                "232.6545,222.4203",
+                "0.6022949,511.6917",
+                "511.3979,511.6917"
+              ],
+              "MaterialIndex": [
+                0,
+                1,
+                0,
+                0,
+                1,
+                1
+              ],
+              "EdgeFlags": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "Materials": [
+                "materials/road1.vmat"
+              ]
+            }
+          }
+        ],
+        "MovedObjects": []
+      },
+      "__PrefabIdToInstanceId": {
+        "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1": "123f7516-494c-481f-8fa5-d6af8babd61c",
+        "92640e46-29f5-4213-b757-deee4e948539": "cde1c903-36eb-4d68-8fb1-aff60991ea1e",
+        "ebcb6bf4-cce2-47ef-b9fa-dee6a6f5bedc": "ead43a28-74f0-4fcf-8526-1fb160946c7e",
+        "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f": "0173f2bd-889d-477f-9d58-f5c07a82ec14",
+        "e98975fa-1c94-49bc-bbd1-c84323f9cf0a": "e0bf18a4-804a-4131-85bc-70b0f2b35054",
+        "aa6dee25-bba0-4f0d-8adc-c7d617712997": "c07d9679-5d6c-4a88-81d6-cc559e045a2d",
+        "afdcf159-1039-4fe9-a81e-f45e8831a22e": "5f9d76d0-b67d-4c9d-8b86-59d07fd27cd4",
+        "2c83d66f-c045-4223-b9e7-aaaff99d7e62": "c4787045-3781-4b2e-b91e-65cc38d9de1a"
+      }
+    },
+    {
+      "__guid": "1899a7e4-8f18-4815-80a0-b85e7334c2ce",
+      "__version": 1,
+      "__Prefab": "prefabs/road.prefab",
+      "__PrefabInstancePatch": {
+        "AddedObjects": [],
+        "RemovedObjects": [],
+        "PropertyOverrides": [
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1"
+            },
+            "Property": "Name",
+            "Value": "Road (3)"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1"
+            },
+            "Property": "Position",
+            "Value": "-60.61475,-117.5816,-16.71294"
+          },
+          {
+            "Target": {
+              "Type": "Component",
+              "IdValue": "2c83d66f-c045-4223-b9e7-aaaff99d7e62"
+            },
+            "Property": "Mesh",
+            "Value": {
+              "Topology": "H4sIAAAAAAAACoWQ2QoCQQwES1dXUfC+/v9HI4UdmAdhB4aQTDpT6T3wAWZ+Zw1skt+BA/AETsAq157xXIGqKutT9Ay9j9S92z9/vaO3thvmTum9pbcWzgwcw2vuX/K/MmtJL8s5e5vL4t6XYWd3tW5u9M2e1qt1RnshuxzNJ5uMvumP3hjbP70YvZLdHVpvdKb15v4CSw/ShsQBAAA=",
+              "Position": "-60.46424,-101.2826,-16.79005",
+              "Rotation": "0,0,0,1",
+              "Positions": [
+                "-98.76762,-1124.251,1.401409",
+                "98.76762,-1124.251,1.401409",
+                "98.76762,1184.494,1.401409",
+                "-98.76762,1184.494,1.401409",
+                "-98.76762,1184.494,-1.401409",
+                "98.76762,1184.494,-1.401409",
+                "98.76762,-1124.251,-1.401409",
+                "-98.76762,-1124.251,-1.401409"
+              ],
+              "TextureCoord": [
+                "-0.0000004172325,4.976017",
+                "-2.771622,0.9890514",
+                "-0.0000004172325,-4.215868",
+                "-8.665677,0.9890513",
+                "-1,-4.215868",
+                "2.228379,0.9890514",
+                "-1,4.976017",
+                "-8.371398,0.9890513",
+                "-1.228378,-8.371398",
+                "3.771622,1.010949",
+                "-1.228378,9.665671",
+                "9.3714,1.010948",
+                "-2.771622,9.665671",
+                "-1.228378,1.010949",
+                "-2.771622,-8.371398",
+                "9.665671,1.010948",
+                "9.665671,0.9890513",
+                "-2.771622,1.010949",
+                "-8.371398,1.010948",
+                "3.771622,0.9890514",
+                "-8.665677,1.010948",
+                "-1.228378,0.9890514",
+                "9.3714,0.9890513",
+                "2.228379,1.010949"
+              ],
+              "TextureUAxis": [
+                "1,0,0",
+                "1,0,-0",
+                "0,-1,0",
+                "0,1,0",
+                "-1,0,0",
+                "1,-0,0"
+              ],
+              "TextureVAxis": [
+                "0,-1,0",
+                "0,-1,0",
+                "0,0,-1",
+                "-0,0,-1",
+                "0,0,-1",
+                "-0,0,-1"
+              ],
+              "TextureScale": [
+                "0.7716222,0.9811409",
+                "0.25,0.25",
+                "0.4999999,0.5000082",
+                "0.4999997,0.5000082",
+                "0.2500001,0.2499932",
+                "0.25,0.2499932"
+              ],
+              "TextureOffset": [
+                "206.3598,24.77014",
+                "511.398,5.015625",
+                "23.34497,222.4203",
+                "232.6545,222.4203",
+                "0.6022949,511.6917",
+                "511.3979,511.6917"
+              ],
+              "MaterialIndex": [
+                0,
+                1,
+                0,
+                0,
+                1,
+                1
+              ],
+              "EdgeFlags": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "Materials": [
+                "materials/road1.vmat"
+              ]
+            }
+          }
+        ],
+        "MovedObjects": []
+      },
+      "__PrefabIdToInstanceId": {
+        "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1": "1899a7e4-8f18-4815-80a0-b85e7334c2ce",
+        "92640e46-29f5-4213-b757-deee4e948539": "5280bfe9-36b7-4de2-b214-5aff43462396",
+        "ebcb6bf4-cce2-47ef-b9fa-dee6a6f5bedc": "6f9936de-6372-48d7-b447-6f61fc902133",
+        "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f": "00da64a1-727b-4ee0-a1a2-a806e879364b",
+        "e98975fa-1c94-49bc-bbd1-c84323f9cf0a": "96256844-3d63-41bd-b099-afc1b045b3ec",
+        "aa6dee25-bba0-4f0d-8adc-c7d617712997": "3b22a594-0b2e-4078-b868-2306f0a33b69",
+        "afdcf159-1039-4fe9-a81e-f45e8831a22e": "7ed2251d-102d-47fe-a8d0-89b56c7c664c",
+        "2c83d66f-c045-4223-b9e7-aaaff99d7e62": "ad2129e8-aadc-43e6-affb-d4285ce5c137"
+      }
+    },
+    {
+      "__guid": "b9b33632-eecd-4783-ae15-970884696944",
+      "__version": 1,
+      "__Prefab": "prefabs/road.prefab",
+      "__PrefabInstancePatch": {
+        "AddedObjects": [],
+        "RemovedObjects": [],
+        "PropertyOverrides": [
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1"
+            },
+            "Property": "Name",
+            "Value": "road (3)"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1"
+            },
+            "Property": "Position",
+            "Value": "1098.35,-117.5816,-16.71294"
+          },
+          {
+            "Target": {
+              "Type": "Component",
+              "IdValue": "2c83d66f-c045-4223-b9e7-aaaff99d7e62"
+            },
+            "Property": "Mesh",
+            "Value": {
+              "Topology": "H4sIAAAAAAAACoWQ2QoCQQwES1dXUfC+/v9HI4UdmAdhB4aQTDpT6T3wAWZ+Zw1skt+BA/AETsAq157xXIGqKutT9Ay9j9S92z9/vaO3thvmTum9pbcWzgwcw2vuX/K/MmtJL8s5e5vL4t6XYWd3tW5u9M2e1qt1RnshuxzNJ5uMvumP3hjbP70YvZLdHVpvdKb15v4CSw/ShsQBAAA=",
+              "Position": "1098.5,-101.2826,-16.79005",
+              "Rotation": "0,0,0,1",
+              "Positions": [
+                "-98.76762,-1124.251,1.401409",
+                "98.76762,-1124.251,1.401409",
+                "98.76762,1184.494,1.401409",
+                "-98.76762,1184.494,1.401409",
+                "-98.76762,1184.494,-1.401409",
+                "98.76762,1184.494,-1.401409",
+                "98.76762,-1124.251,-1.401409",
+                "-98.76762,-1124.251,-1.401409"
+              ],
+              "TextureCoord": [
+                "-0.0000004172325,4.976017",
+                "-2.771622,0.9890514",
+                "-0.0000004172325,-4.215868",
+                "-8.665677,0.9890513",
+                "-1,-4.215868",
+                "2.228379,0.9890514",
+                "-1,4.976017",
+                "-8.371398,0.9890513",
+                "-1.228378,-8.371398",
+                "3.771622,1.010949",
+                "-1.228378,9.665671",
+                "9.3714,1.010948",
+                "-2.771622,9.665671",
+                "-1.228378,1.010949",
+                "-2.771622,-8.371398",
+                "9.665671,1.010948",
+                "9.665671,0.9890513",
+                "-2.771622,1.010949",
+                "-8.371398,1.010948",
+                "3.771622,0.9890514",
+                "-8.665677,1.010948",
+                "-1.228378,0.9890514",
+                "9.3714,0.9890513",
+                "2.228379,1.010949"
+              ],
+              "TextureUAxis": [
+                "1,0,0",
+                "1,0,-0",
+                "0,-1,0",
+                "0,1,0",
+                "-1,0,0",
+                "1,-0,0"
+              ],
+              "TextureVAxis": [
+                "0,-1,0",
+                "0,-1,0",
+                "0,0,-1",
+                "-0,0,-1",
+                "0,0,-1",
+                "-0,0,-1"
+              ],
+              "TextureScale": [
+                "0.7716219,0.9811409",
+                "0.25,0.25",
+                "0.4999999,0.5000082",
+                "0.4999997,0.5000082",
+                "0.2500001,0.2499932",
+                "0.25,0.2499932"
+              ],
+              "TextureOffset": [
+                "240.3751,24.77014",
+                "511.398,5.015625",
+                "23.34497,222.4203",
+                "232.6545,222.4203",
+                "0.6022949,511.6917",
+                "511.3979,511.6917"
+              ],
+              "MaterialIndex": [
+                0,
+                1,
+                0,
+                0,
+                1,
+                1
+              ],
+              "EdgeFlags": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "Materials": [
+                "materials/road1.vmat"
+              ]
+            }
+          }
+        ],
+        "MovedObjects": []
+      },
+      "__PrefabIdToInstanceId": {
+        "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1": "b9b33632-eecd-4783-ae15-970884696944",
+        "92640e46-29f5-4213-b757-deee4e948539": "3cc250c5-3879-4a0a-9085-0f67a211545f",
+        "ebcb6bf4-cce2-47ef-b9fa-dee6a6f5bedc": "9c968aa1-e065-40f7-919f-aab908b14e34",
+        "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f": "cb9a30d7-aea3-4824-bf79-b170380b22e7",
+        "e98975fa-1c94-49bc-bbd1-c84323f9cf0a": "c61cb330-8e00-42f5-93d7-6367d1f95fca",
+        "aa6dee25-bba0-4f0d-8adc-c7d617712997": "c28cc347-805d-4c14-95b1-8f6421a59310",
+        "afdcf159-1039-4fe9-a81e-f45e8831a22e": "d8305535-42ff-48bd-af56-aa63c00d047b",
+        "2c83d66f-c045-4223-b9e7-aaaff99d7e62": "684c0f8b-b6c0-4fd1-bf83-b40587eabe2b"
+      }
+    },
+    {
+      "__guid": "dd015ad0-9a15-4191-a98c-dba2da6671a8",
+      "__version": 1,
+      "__Prefab": "prefabs/road.prefab",
+      "__PrefabInstancePatch": {
+        "AddedObjects": [],
+        "RemovedObjects": [],
+        "PropertyOverrides": [
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1"
+            },
+            "Property": "Name",
+            "Value": "Road (4)"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1"
+            },
+            "Property": "Position",
+            "Value": "1293.94,-117.5816,-16.71294"
+          },
+          {
+            "Target": {
+              "Type": "Component",
+              "IdValue": "2c83d66f-c045-4223-b9e7-aaaff99d7e62"
+            },
+            "Property": "Mesh",
+            "Value": {
+              "Topology": "H4sIAAAAAAAACoWQ2QoCQQwES1dXUfC+/v9HI4UdmAdhB4aQTDpT6T3wAWZ+Zw1skt+BA/AETsAq157xXIGqKutT9Ay9j9S92z9/vaO3thvmTum9pbcWzgwcw2vuX/K/MmtJL8s5e5vL4t6XYWd3tW5u9M2e1qt1RnshuxzNJ5uMvumP3hjbP70YvZLdHVpvdKb15v4CSw/ShsQBAAA=",
+              "Position": "1294.09,-101.2826,-16.79005",
+              "Rotation": "0,0,0,1",
+              "Positions": [
+                "-98.76762,-1124.251,1.401409",
+                "98.76762,-1124.251,1.401409",
+                "98.76762,1184.494,1.401409",
+                "-98.76762,1184.494,1.401409",
+                "-98.76762,1184.494,-1.401409",
+                "98.76762,1184.494,-1.401409",
+                "98.76762,-1124.251,-1.401409",
+                "-98.76762,-1124.251,-1.401409"
+              ],
+              "TextureCoord": [
+                "-0.0000004172325,4.976017",
+                "-2.771622,0.9890514",
+                "-0.0000004172325,-4.215868",
+                "-8.665677,0.9890513",
+                "-1,-4.215868",
+                "2.228379,0.9890514",
+                "-1,4.976017",
+                "-8.371398,0.9890513",
+                "-1.228378,-8.371398",
+                "3.771622,1.010949",
+                "-1.228378,9.665671",
+                "9.3714,1.010948",
+                "-2.771622,9.665671",
+                "-1.228378,1.010949",
+                "-2.771622,-8.371398",
+                "9.665671,1.010948",
+                "9.665671,0.9890513",
+                "-2.771622,1.010949",
+                "-8.371398,1.010948",
+                "3.771622,0.9890514",
+                "-8.665677,1.010948",
+                "-1.228378,0.9890514",
+                "9.3714,0.9890513",
+                "2.228379,1.010949"
+              ],
+              "TextureUAxis": [
+                "1,0,0",
+                "1,0,-0",
+                "0,-1,0",
+                "0,1,0",
+                "-1,0,0",
+                "1,-0,0"
+              ],
+              "TextureVAxis": [
+                "0,-1,0",
+                "0,-1,0",
+                "0,0,-1",
+                "-0,0,-1",
+                "0,0,-1",
+                "-0,0,-1"
+              ],
+              "TextureScale": [
+                "0.7716219,0.9811409",
+                "0.25,0.25",
+                "0.4999999,0.5000082",
+                "0.4999997,0.5000082",
+                "0.2500001,0.2499932",
+                "0.25,0.2499932"
+              ],
+              "TextureOffset": [
+                "242.8961,24.77014",
+                "511.398,5.015625",
+                "23.34497,222.4203",
+                "232.6545,222.4203",
+                "0.6022949,511.6917",
+                "511.3979,511.6917"
+              ],
+              "MaterialIndex": [
+                0,
+                1,
+                0,
+                0,
+                1,
+                1
+              ],
+              "EdgeFlags": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "Materials": [
+                "materials/road1.vmat"
+              ]
+            }
+          }
+        ],
+        "MovedObjects": []
+      },
+      "__PrefabIdToInstanceId": {
+        "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1": "dd015ad0-9a15-4191-a98c-dba2da6671a8",
+        "92640e46-29f5-4213-b757-deee4e948539": "20d9f25c-b653-4a59-9537-0e8a7b36fe7f",
+        "ebcb6bf4-cce2-47ef-b9fa-dee6a6f5bedc": "f0e9f5a5-0230-4d34-8fc4-54221d950219",
+        "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f": "1da324e8-f1da-4692-8fa0-8c331dec2ab5",
+        "e98975fa-1c94-49bc-bbd1-c84323f9cf0a": "66b5003a-4576-46ec-9a6b-9d4415642b1f",
+        "aa6dee25-bba0-4f0d-8adc-c7d617712997": "9a828fc8-eb1c-4574-addb-6467906c6290",
+        "afdcf159-1039-4fe9-a81e-f45e8831a22e": "324f2359-0898-428c-bf5f-faa4cd2ff44a",
+        "2c83d66f-c045-4223-b9e7-aaaff99d7e62": "9aff52cc-fc64-4a61-8e1f-2f90ecd7c8b2"
+      }
+    },
+    {
+      "__guid": "4a9aab96-7e4c-48af-9a5d-4a817b937664",
+      "__version": 1,
+      "__Prefab": "prefabs/road.prefab",
+      "__PrefabInstancePatch": {
+        "AddedObjects": [],
+        "RemovedObjects": [],
+        "PropertyOverrides": [
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1"
+            },
+            "Property": "Name",
+            "Value": "road (4)"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1"
+            },
+            "Property": "Position",
+            "Value": "1759.632,-117.5816,-16.71294"
+          },
+          {
+            "Target": {
+              "Type": "Component",
+              "IdValue": "2c83d66f-c045-4223-b9e7-aaaff99d7e62"
+            },
+            "Property": "Mesh",
+            "Value": {
+              "Topology": "H4sIAAAAAAAACoWQ2QoCQQwES1dXUfC+/v9HI4UdmAdhB4aQTDpT6T3wAWZ+Zw1skt+BA/AETsAq157xXIGqKutT9Ay9j9S92z9/vaO3thvmTum9pbcWzgwcw2vuX/K/MmtJL8s5e5vL4t6XYWd3tW5u9M2e1qt1RnshuxzNJ5uMvumP3hjbP70YvZLdHVpvdKb15v4CSw/ShsQBAAA=",
+              "Position": "1759.783,-101.2826,-16.79005",
+              "Rotation": "0,0,0,1",
+              "Positions": [
+                "-98.76762,-1124.251,1.401409",
+                "98.76762,-1124.251,1.401409",
+                "98.76762,1184.494,1.401409",
+                "-98.76762,1184.494,1.401409",
+                "-98.76762,1184.494,-1.401409",
+                "98.76762,1184.494,-1.401409",
+                "98.76762,-1124.251,-1.401409",
+                "-98.76762,-1124.251,-1.401409"
+              ],
+              "TextureCoord": [
+                "-0.0000004172325,4.976017",
+                "-2.771622,0.9890514",
+                "-0.0000004172325,-4.215868",
+                "-8.665677,0.9890513",
+                "-1,-4.215868",
+                "2.228379,0.9890514",
+                "-1,4.976017",
+                "-8.371398,0.9890513",
+                "-1.228378,-8.371398",
+                "3.771622,1.010949",
+                "-1.228378,9.665671",
+                "9.3714,1.010948",
+                "-2.771622,9.665671",
+                "-1.228378,1.010949",
+                "-2.771622,-8.371398",
+                "9.665671,1.010948",
+                "9.665671,0.9890513",
+                "-2.771622,1.010949",
+                "-8.371398,1.010948",
+                "3.771622,0.9890514",
+                "-8.665677,1.010948",
+                "-1.228378,0.9890514",
+                "9.3714,0.9890513",
+                "2.228379,1.010949"
+              ],
+              "TextureUAxis": [
+                "1,0,0",
+                "1,0,-0",
+                "0,-1,0",
+                "0,1,0",
+                "-1,0,0",
+                "1,-0,0"
+              ],
+              "TextureVAxis": [
+                "0,-1,0",
+                "0,-1,0",
+                "0,0,-1",
+                "-0,0,-1",
+                "0,0,-1",
+                "-0,0,-1"
+              ],
+              "TextureScale": [
+                "0.7716219,0.9811409",
+                "0.25,0.25",
+                "0.4999999,0.5000082",
+                "0.4999997,0.5000082",
+                "0.2500001,0.2499932",
+                "0.25,0.2499932"
+              ],
+              "TextureOffset": [
+                "151.3718,24.77014",
+                "511.398,5.015625",
+                "23.34497,222.4203",
+                "232.6545,222.4203",
+                "0.6022949,511.6917",
+                "511.3979,511.6917"
+              ],
+              "MaterialIndex": [
+                0,
+                1,
+                0,
+                0,
+                1,
+                1
+              ],
+              "EdgeFlags": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "Materials": [
+                "materials/road1.vmat"
+              ]
+            }
+          }
+        ],
+        "MovedObjects": []
+      },
+      "__PrefabIdToInstanceId": {
+        "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1": "4a9aab96-7e4c-48af-9a5d-4a817b937664",
+        "92640e46-29f5-4213-b757-deee4e948539": "bd40c097-a18d-42ac-bb23-73317cd0a0fa",
+        "ebcb6bf4-cce2-47ef-b9fa-dee6a6f5bedc": "5b24a282-cb6d-4a8c-9982-39ab63aa89a7",
+        "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f": "10ccf77f-b409-4f0b-a794-a6406e2512df",
+        "e98975fa-1c94-49bc-bbd1-c84323f9cf0a": "a9a3860a-51b3-42b3-8bba-6ddfa40a302d",
+        "aa6dee25-bba0-4f0d-8adc-c7d617712997": "7ffb1c24-fe08-431e-b785-ac4215915c70",
+        "afdcf159-1039-4fe9-a81e-f45e8831a22e": "a31fe15c-4877-4124-8c44-05c1be275ae8",
+        "2c83d66f-c045-4223-b9e7-aaaff99d7e62": "3a58dbbb-7f98-44bf-a1e3-244efdb7b452"
+      }
+    },
+    {
+      "__guid": "cc5ac739-3dc6-4718-87a9-1366d36806a2",
+      "__version": 1,
+      "__Prefab": "prefabs/road.prefab",
+      "__PrefabInstancePatch": {
+        "AddedObjects": [],
+        "RemovedObjects": [],
+        "PropertyOverrides": [
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1"
+            },
+            "Property": "Name",
+            "Value": "Road (5)"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1"
+            },
+            "Property": "Position",
+            "Value": "1955.222,-117.5816,-16.71294"
+          },
+          {
+            "Target": {
+              "Type": "Component",
+              "IdValue": "2c83d66f-c045-4223-b9e7-aaaff99d7e62"
+            },
+            "Property": "Mesh",
+            "Value": {
+              "Topology": "H4sIAAAAAAAACoWQ2QoCQQwES1dXUfC+/v9HI4UdmAdhB4aQTDpT6T3wAWZ+Zw1skt+BA/AETsAq157xXIGqKutT9Ay9j9S92z9/vaO3thvmTum9pbcWzgwcw2vuX/K/MmtJL8s5e5vL4t6XYWd3tW5u9M2e1qt1RnshuxzNJ5uMvumP3hjbP70YvZLdHVpvdKb15v4CSw/ShsQBAAA=",
+              "Position": "1955.373,-101.2826,-16.79005",
+              "Rotation": "0,0,0,1",
+              "Positions": [
+                "-98.76762,-1124.251,1.401409",
+                "98.76762,-1124.251,1.401409",
+                "98.76762,1184.494,1.401409",
+                "-98.76762,1184.494,1.401409",
+                "-98.76762,1184.494,-1.401409",
+                "98.76762,1184.494,-1.401409",
+                "98.76762,-1124.251,-1.401409",
+                "-98.76762,-1124.251,-1.401409"
+              ],
+              "TextureCoord": [
+                "-0.0000004172325,4.976017",
+                "-2.771622,0.9890514",
+                "-0.0000004172325,-4.215868",
+                "-8.665677,0.9890513",
+                "-1,-4.215868",
+                "2.228379,0.9890514",
+                "-1,4.976017",
+                "-8.371398,0.9890513",
+                "-1.228378,-8.371398",
+                "3.771622,1.010949",
+                "-1.228378,9.665671",
+                "9.3714,1.010948",
+                "-2.771622,9.665671",
+                "-1.228378,1.010949",
+                "-2.771622,-8.371398",
+                "9.665671,1.010948",
+                "9.665671,0.9890513",
+                "-2.771622,1.010949",
+                "-8.371398,1.010948",
+                "3.771622,0.9890514",
+                "-8.665677,1.010948",
+                "-1.228378,0.9890514",
+                "9.3714,0.9890513",
+                "2.228379,1.010949"
+              ],
+              "TextureUAxis": [
+                "1,0,0",
+                "1,0,-0",
+                "0,-1,0",
+                "0,1,0",
+                "-1,0,0",
+                "1,-0,0"
+              ],
+              "TextureVAxis": [
+                "0,-1,0",
+                "0,-1,0",
+                "0,0,-1",
+                "-0,0,-1",
+                "0,0,-1",
+                "-0,0,-1"
+              ],
+              "TextureScale": [
+                "0.7716225,0.9811407",
+                "0.25,0.25",
+                "0.4999999,0.5000082",
+                "0.4999997,0.5000082",
+                "0.2500001,0.2499932",
+                "0.25,0.2499932"
+              ],
+              "TextureOffset": [
+                "153.8945,24.77002",
+                "511.398,5.015625",
+                "23.34497,222.4203",
+                "232.6545,222.4203",
+                "0.6022949,511.6917",
+                "511.3979,511.6917"
+              ],
+              "MaterialIndex": [
+                0,
+                1,
+                0,
+                0,
+                1,
+                1
+              ],
+              "EdgeFlags": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "Materials": [
+                "materials/road1.vmat"
+              ]
+            }
+          }
+        ],
+        "MovedObjects": []
+      },
+      "__PrefabIdToInstanceId": {
+        "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1": "cc5ac739-3dc6-4718-87a9-1366d36806a2",
+        "92640e46-29f5-4213-b757-deee4e948539": "7cb6a5ed-3401-49b8-84ae-fcdfb87ede45",
+        "ebcb6bf4-cce2-47ef-b9fa-dee6a6f5bedc": "18ffd4eb-5e47-481e-beaf-a41b15a5ae55",
+        "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f": "7cd01d84-72a0-450b-a5c5-4cef2eff2b6d",
+        "e98975fa-1c94-49bc-bbd1-c84323f9cf0a": "91eecbed-a38e-42b1-855e-9a2d5193c6c6",
+        "aa6dee25-bba0-4f0d-8adc-c7d617712997": "795a7422-4a27-4af1-9f3a-57ef53045fe9",
+        "afdcf159-1039-4fe9-a81e-f45e8831a22e": "f49e9b9e-3648-44bc-bc45-d88c2a1c5269",
+        "2c83d66f-c045-4223-b9e7-aaaff99d7e62": "c4e4cd87-c689-4c18-b12f-b1a83286adaa"
+      }
+    },
+    {
+      "__guid": "73356f8f-2f49-4ad0-8a1b-7b9f3cfc4d14",
+      "__version": 1,
+      "__Prefab": "prefabs/road.prefab",
+      "__PrefabInstancePatch": {
+        "AddedObjects": [],
+        "RemovedObjects": [],
+        "PropertyOverrides": [
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1"
+            },
+            "Property": "Name",
+            "Value": "road (5)"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1"
+            },
+            "Property": "Position",
+            "Value": "2317.113,-117.5816,-16.71294"
+          },
+          {
+            "Target": {
+              "Type": "Component",
+              "IdValue": "2c83d66f-c045-4223-b9e7-aaaff99d7e62"
+            },
+            "Property": "Mesh",
+            "Value": {
+              "Topology": "H4sIAAAAAAAACoWQ2QoCQQwES1dXUfC+/v9HI4UdmAdhB4aQTDpT6T3wAWZ+Zw1skt+BA/AETsAq157xXIGqKutT9Ay9j9S92z9/vaO3thvmTum9pbcWzgwcw2vuX/K/MmtJL8s5e5vL4t6XYWd3tW5u9M2e1qt1RnshuxzNJ5uMvumP3hjbP70YvZLdHVpvdKb15v4CSw/ShsQBAAA=",
+              "Position": "2317.264,-101.2826,-16.79005",
+              "Rotation": "0,0,0,1",
+              "Positions": [
+                "-98.76762,-1124.251,1.401409",
+                "98.76762,-1124.251,1.401409",
+                "98.76762,1184.494,1.401409",
+                "-98.76762,1184.494,1.401409",
+                "-98.76762,1184.494,-1.401409",
+                "98.76762,1184.494,-1.401409",
+                "98.76762,-1124.251,-1.401409",
+                "-98.76762,-1124.251,-1.401409"
+              ],
+              "TextureCoord": [
+                "-0.0000004172325,4.976017",
+                "-2.771622,0.9890514",
+                "-0.0000004172325,-4.215868",
+                "-8.665677,0.9890513",
+                "-1,-4.215868",
+                "2.228379,0.9890514",
+                "-1,4.976017",
+                "-8.371398,0.9890513",
+                "-1.228378,-8.371398",
+                "3.771622,1.010949",
+                "-1.228378,9.665671",
+                "9.3714,1.010948",
+                "-2.771622,9.665671",
+                "-1.228378,1.010949",
+                "-2.771622,-8.371398",
+                "9.665671,1.010948",
+                "9.665671,0.9890513",
+                "-2.771622,1.010949",
+                "-8.371398,1.010948",
+                "3.771622,0.9890514",
+                "-8.665677,1.010948",
+                "-1.228378,0.9890514",
+                "9.3714,0.9890513",
+                "2.228379,1.010949"
+              ],
+              "TextureUAxis": [
+                "1,0,0",
+                "1,0,-0",
+                "0,-1,0",
+                "0,1,0",
+                "-1,0,0",
+                "1,-0,0"
+              ],
+              "TextureVAxis": [
+                "0,-1,0",
+                "0,-1,0",
+                "0,0,-1",
+                "-0,0,-1",
+                "0,0,-1",
+                "-0,0,-1"
+              ],
+              "TextureScale": [
+                "0.7716219,0.9811409",
+                "0.25,0.25",
+                "0.4999999,0.5000082",
+                "0.4999997,0.5000082",
+                "0.2500001,0.2499932",
+                "0.25,0.2499932"
+              ],
+              "TextureOffset": [
+                "196.8926,24.77014",
+                "511.398,5.015625",
+                "23.34497,222.4203",
+                "232.6545,222.4203",
+                "0.6022949,511.6917",
+                "511.3979,511.6917"
+              ],
+              "MaterialIndex": [
+                0,
+                1,
+                0,
+                0,
+                1,
+                1
+              ],
+              "EdgeFlags": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "Materials": [
+                "materials/road1.vmat"
+              ]
+            }
+          }
+        ],
+        "MovedObjects": []
+      },
+      "__PrefabIdToInstanceId": {
+        "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1": "73356f8f-2f49-4ad0-8a1b-7b9f3cfc4d14",
+        "92640e46-29f5-4213-b757-deee4e948539": "866d76c5-1c04-4aff-aa29-9217c51eac8a",
+        "ebcb6bf4-cce2-47ef-b9fa-dee6a6f5bedc": "4fe1fee7-1f5b-4c16-9291-047afaea1b08",
+        "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f": "10b8e583-f181-4b84-a546-37c01a2660bc",
+        "e98975fa-1c94-49bc-bbd1-c84323f9cf0a": "37ac24dc-cf69-4d03-8f2d-12e1d83803e9",
+        "aa6dee25-bba0-4f0d-8adc-c7d617712997": "8895b4d7-d566-4149-a871-396e1fe62297",
+        "afdcf159-1039-4fe9-a81e-f45e8831a22e": "f7dc221e-2c03-45fe-8a7e-2ba70d90b056",
+        "2c83d66f-c045-4223-b9e7-aaaff99d7e62": "6c15ecf1-6796-4ddd-8a2d-b410a90666a7"
+      }
+    },
+    {
+      "__guid": "5fa3280a-8bed-4053-ba5e-4ea90fa02703",
+      "__version": 1,
+      "__Prefab": "prefabs/road.prefab",
+      "__PrefabInstancePatch": {
+        "AddedObjects": [],
+        "RemovedObjects": [],
+        "PropertyOverrides": [
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1"
+            },
+            "Property": "Name",
+            "Value": "Road (6)"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1"
+            },
+            "Property": "Position",
+            "Value": "2512.703,-117.5816,-16.71294"
+          },
+          {
+            "Target": {
+              "Type": "Component",
+              "IdValue": "2c83d66f-c045-4223-b9e7-aaaff99d7e62"
+            },
+            "Property": "Mesh",
+            "Value": {
+              "Topology": "H4sIAAAAAAAACoWQ2QoCQQwES1dXUfC+/v9HI4UdmAdhB4aQTDpT6T3wAWZ+Zw1skt+BA/AETsAq157xXIGqKutT9Ay9j9S92z9/vaO3thvmTum9pbcWzgwcw2vuX/K/MmtJL8s5e5vL4t6XYWd3tW5u9M2e1qt1RnshuxzNJ5uMvumP3hjbP70YvZLdHVpvdKb15v4CSw/ShsQBAAA=",
+              "Position": "2512.854,-101.2826,-16.79005",
+              "Rotation": "0,0,0,1",
+              "Positions": [
+                "-98.76762,-1124.251,1.401409",
+                "98.76762,-1124.251,1.401409",
+                "98.76762,1184.494,1.401409",
+                "-98.76762,1184.494,1.401409",
+                "-98.76762,1184.494,-1.401409",
+                "98.76762,1184.494,-1.401409",
+                "98.76762,-1124.251,-1.401409",
+                "-98.76762,-1124.251,-1.401409"
+              ],
+              "TextureCoord": [
+                "-0.0000004172325,4.976017",
+                "-2.771622,0.9890514",
+                "-0.0000004172325,-4.215868",
+                "-8.665677,0.9890513",
+                "-1,-4.215868",
+                "2.228379,0.9890514",
+                "-1,4.976017",
+                "-8.371398,0.9890513",
+                "-1.228378,-8.371398",
+                "3.771622,1.010949",
+                "-1.228378,9.665671",
+                "9.3714,1.010948",
+                "-2.771622,9.665671",
+                "-1.228378,1.010949",
+                "-2.771622,-8.371398",
+                "9.665671,1.010948",
+                "9.665671,0.9890513",
+                "-2.771622,1.010949",
+                "-8.371398,1.010948",
+                "3.771622,0.9890514",
+                "-8.665677,1.010948",
+                "-1.228378,0.9890514",
+                "9.3714,0.9890513",
+                "2.228379,1.010949"
+              ],
+              "TextureUAxis": [
+                "1,0,0",
+                "1,0,-0",
+                "0,-1,0",
+                "0,1,0",
+                "-1,0,0",
+                "1,-0,0"
+              ],
+              "TextureVAxis": [
+                "0,-1,0",
+                "0,-1,0",
+                "0,0,-1",
+                "-0,0,-1",
+                "0,0,-1",
+                "-0,0,-1"
+              ],
+              "TextureScale": [
+                "0.7716219,0.9811409",
+                "0.25,0.25",
+                "0.4999999,0.5000082",
+                "0.4999997,0.5000082",
+                "0.2500001,0.2499932",
+                "0.25,0.2499932"
+              ],
+              "TextureOffset": [
+                "199.4136,24.77014",
+                "511.398,5.015625",
+                "23.34497,222.4203",
+                "232.6545,222.4203",
+                "0.6022949,511.6917",
+                "511.3979,511.6917"
+              ],
+              "MaterialIndex": [
+                0,
+                1,
+                0,
+                0,
+                1,
+                1
+              ],
+              "EdgeFlags": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "Materials": [
+                "materials/road1.vmat"
+              ]
+            }
+          }
+        ],
+        "MovedObjects": []
+      },
+      "__PrefabIdToInstanceId": {
+        "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1": "5fa3280a-8bed-4053-ba5e-4ea90fa02703",
+        "92640e46-29f5-4213-b757-deee4e948539": "3a6935c5-5650-4fa5-ac27-9662eff11598",
+        "ebcb6bf4-cce2-47ef-b9fa-dee6a6f5bedc": "d59f9f85-715e-4312-97cb-4d79a2dfdcc4",
+        "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f": "35fc7bbb-9f0a-428c-a05a-d72f2bed540d",
+        "e98975fa-1c94-49bc-bbd1-c84323f9cf0a": "3a1bb9ef-8169-453e-b523-48ee8d704485",
+        "aa6dee25-bba0-4f0d-8adc-c7d617712997": "18258dfb-2133-4391-895e-6a7280b30aaa",
+        "afdcf159-1039-4fe9-a81e-f45e8831a22e": "9969154d-3f9b-4f78-b2a2-502df9513bbc",
+        "2c83d66f-c045-4223-b9e7-aaaff99d7e62": "3fb91e19-ae5d-4f39-b0f6-987b74c90d52"
+      }
+    },
+    {
+      "__guid": "87fef11a-e73a-43e7-b427-fc51c660b2da",
+      "__version": 1,
+      "__Prefab": "prefabs/road.prefab",
+      "__PrefabInstancePatch": {
+        "AddedObjects": [],
+        "RemovedObjects": [],
+        "PropertyOverrides": [
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1"
+            },
+            "Property": "Name",
+            "Value": "road (6)"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1"
+            },
+            "Property": "Position",
+            "Value": "2778.804,-117.5816,-16.71294"
+          },
+          {
+            "Target": {
+              "Type": "Component",
+              "IdValue": "2c83d66f-c045-4223-b9e7-aaaff99d7e62"
+            },
+            "Property": "Mesh",
+            "Value": {
+              "Topology": "H4sIAAAAAAAACoWQ2QoCQQwES1dXUfC+/v9HI4UdmAdhB4aQTDpT6T3wAWZ+Zw1skt+BA/AETsAq157xXIGqKutT9Ay9j9S92z9/vaO3thvmTum9pbcWzgwcw2vuX/K/MmtJL8s5e5vL4t6XYWd3tW5u9M2e1qt1RnshuxzNJ5uMvumP3hjbP70YvZLdHVpvdKb15v4CSw/ShsQBAAA=",
+              "Position": "2778.954,-101.2826,-16.79005",
+              "Rotation": "0,0,0,1",
+              "Positions": [
+                "-98.76762,-1124.251,1.401409",
+                "98.76762,-1124.251,1.401409",
+                "98.76762,1184.494,1.401409",
+                "-98.76762,1184.494,1.401409",
+                "-98.76762,1184.494,-1.401409",
+                "98.76762,1184.494,-1.401409",
+                "98.76762,-1124.251,-1.401409",
+                "-98.76762,-1124.251,-1.401409"
+              ],
+              "TextureCoord": [
+                "-0.0000004172325,4.976017",
+                "-2.771622,0.9890514",
+                "-0.0000004172325,-4.215868",
+                "-8.665677,0.9890513",
+                "-1,-4.215868",
+                "2.228379,0.9890514",
+                "-1,4.976017",
+                "-8.371398,0.9890513",
+                "-1.228378,-8.371398",
+                "3.771622,1.010949",
+                "-1.228378,9.665671",
+                "9.3714,1.010948",
+                "-2.771622,9.665671",
+                "-1.228378,1.010949",
+                "-2.771622,-8.371398",
+                "9.665671,1.010948",
+                "9.665671,0.9890513",
+                "-2.771622,1.010949",
+                "-8.371398,1.010948",
+                "3.771622,0.9890514",
+                "-8.665677,1.010948",
+                "-1.228378,0.9890514",
+                "9.3714,0.9890513",
+                "2.228379,1.010949"
+              ],
+              "TextureUAxis": [
+                "1,0,0",
+                "1,0,-0",
+                "0,-1,0",
+                "0,1,0",
+                "-1,0,0",
+                "1,-0,0"
+              ],
+              "TextureVAxis": [
+                "0,-1,0",
+                "0,-1,0",
+                "0,0,-1",
+                "-0,0,-1",
+                "0,0,-1",
+                "-0,0,-1"
+              ],
+              "TextureScale": [
+                "0.7716219,0.9811409",
+                "0.25,0.25",
+                "0.4999999,0.5000082",
+                "0.4999997,0.5000082",
+                "0.2500001,0.2499932",
+                "0.25,0.2499932"
+              ],
+              "TextureOffset": [
+                "110.5547,24.77014",
+                "511.398,5.015625",
+                "23.34497,222.4203",
+                "232.6545,222.4203",
+                "0.6022949,511.6917",
+                "511.3979,511.6917"
+              ],
+              "MaterialIndex": [
+                0,
+                1,
+                0,
+                0,
+                1,
+                1
+              ],
+              "EdgeFlags": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "Materials": [
+                "materials/road1.vmat"
+              ]
+            }
+          }
+        ],
+        "MovedObjects": []
+      },
+      "__PrefabIdToInstanceId": {
+        "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1": "87fef11a-e73a-43e7-b427-fc51c660b2da",
+        "92640e46-29f5-4213-b757-deee4e948539": "5fbba621-1bcd-4299-b220-6e9300bb711b",
+        "ebcb6bf4-cce2-47ef-b9fa-dee6a6f5bedc": "76c45dd6-5e56-484e-8051-8afa4085cb81",
+        "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f": "4786d192-013e-4d12-860d-1d01c7e24d75",
+        "e98975fa-1c94-49bc-bbd1-c84323f9cf0a": "538a0ed8-1817-4bc7-aa76-cc0c1d370b37",
+        "aa6dee25-bba0-4f0d-8adc-c7d617712997": "e6cbd27a-2ab0-493d-8418-4d02ef0961d1",
+        "afdcf159-1039-4fe9-a81e-f45e8831a22e": "31ee1782-5019-4a51-b403-eced251ca703",
+        "2c83d66f-c045-4223-b9e7-aaaff99d7e62": "3506c009-0e25-4543-b998-34e5a2a408d6"
+      }
+    },
+    {
+      "__guid": "79c580bd-31ba-4aa3-b9f6-ab9633075826",
+      "__version": 1,
+      "__Prefab": "prefabs/road.prefab",
+      "__PrefabInstancePatch": {
+        "AddedObjects": [],
+        "RemovedObjects": [],
+        "PropertyOverrides": [
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1"
+            },
+            "Property": "Name",
+            "Value": "Road (7)"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1"
+            },
+            "Property": "Position",
+            "Value": "2974.394,-117.5816,-16.71294"
+          },
+          {
+            "Target": {
+              "Type": "Component",
+              "IdValue": "2c83d66f-c045-4223-b9e7-aaaff99d7e62"
+            },
+            "Property": "Mesh",
+            "Value": {
+              "Topology": "H4sIAAAAAAAACoWQ2QoCQQwES1dXUfC+/v9HI4UdmAdhB4aQTDpT6T3wAWZ+Zw1skt+BA/AETsAq157xXIGqKutT9Ay9j9S92z9/vaO3thvmTum9pbcWzgwcw2vuX/K/MmtJL8s5e5vL4t6XYWd3tW5u9M2e1qt1RnshuxzNJ5uMvumP3hjbP70YvZLdHVpvdKb15v4CSw/ShsQBAAA=",
+              "Position": "2974.544,-101.2826,-16.79005",
+              "Rotation": "0,0,0,1",
+              "Positions": [
+                "-98.76762,-1124.251,1.401409",
+                "98.76762,-1124.251,1.401409",
+                "98.76762,1184.494,1.401409",
+                "-98.76762,1184.494,1.401409",
+                "-98.76762,1184.494,-1.401409",
+                "98.76762,1184.494,-1.401409",
+                "98.76762,-1124.251,-1.401409",
+                "-98.76762,-1124.251,-1.401409"
+              ],
+              "TextureCoord": [
+                "-0.0000004172325,4.976017",
+                "-2.771622,0.9890514",
+                "-0.0000004172325,-4.215868",
+                "-8.665677,0.9890513",
+                "-1,-4.215868",
+                "2.228379,0.9890514",
+                "-1,4.976017",
+                "-8.371398,0.9890513",
+                "-1.228378,-8.371398",
+                "3.771622,1.010949",
+                "-1.228378,9.665671",
+                "9.3714,1.010948",
+                "-2.771622,9.665671",
+                "-1.228378,1.010949",
+                "-2.771622,-8.371398",
+                "9.665671,1.010948",
+                "9.665671,0.9890513",
+                "-2.771622,1.010949",
+                "-8.371398,1.010948",
+                "3.771622,0.9890514",
+                "-8.665677,1.010948",
+                "-1.228378,0.9890514",
+                "9.3714,0.9890513",
+                "2.228379,1.010949"
+              ],
+              "TextureUAxis": [
+                "1,0,0",
+                "1,0,-0",
+                "0,-1,0",
+                "0,1,0",
+                "-1,0,0",
+                "1,-0,0"
+              ],
+              "TextureVAxis": [
+                "0,-1,0",
+                "0,-1,0",
+                "0,0,-1",
+                "-0,0,-1",
+                "0,0,-1",
+                "-0,0,-1"
+              ],
+              "TextureScale": [
+                "0.7716219,0.9811409",
+                "0.25,0.25",
+                "0.4999999,0.5000082",
+                "0.4999997,0.5000082",
+                "0.2500001,0.2499932",
+                "0.25,0.2499932"
+              ],
+              "TextureOffset": [
+                "113.0757,24.77014",
+                "511.398,5.015625",
+                "23.34497,222.4203",
+                "232.6545,222.4203",
+                "0.6022949,511.6917",
+                "511.3979,511.6917"
+              ],
+              "MaterialIndex": [
+                0,
+                1,
+                0,
+                0,
+                1,
+                1
+              ],
+              "EdgeFlags": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "Materials": [
+                "materials/road1.vmat"
+              ]
+            }
+          }
+        ],
+        "MovedObjects": []
+      },
+      "__PrefabIdToInstanceId": {
+        "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1": "79c580bd-31ba-4aa3-b9f6-ab9633075826",
+        "92640e46-29f5-4213-b757-deee4e948539": "01937881-2205-4972-a388-277eadd2e476",
+        "ebcb6bf4-cce2-47ef-b9fa-dee6a6f5bedc": "a27bc0c1-71a1-477b-8f08-60d13cf85ad0",
+        "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f": "2a30b44f-2ad9-403b-b53b-795f26224ddc",
+        "e98975fa-1c94-49bc-bbd1-c84323f9cf0a": "944a155b-0b0c-4c60-b8d3-77de71fb643e",
+        "aa6dee25-bba0-4f0d-8adc-c7d617712997": "670fc8f1-d802-48ff-85bb-79f512b1e0e4",
+        "afdcf159-1039-4fe9-a81e-f45e8831a22e": "7fd75eca-c536-4160-b21e-f84292be996c",
+        "2c83d66f-c045-4223-b9e7-aaaff99d7e62": "028c6880-607d-4e24-a6ac-3a1750c81660"
+      }
+    },
+    {
+      "__guid": "0d83272d-ac3e-4d60-9129-f0b2330ecdf0",
+      "__version": 1,
+      "__Prefab": "prefabs/road.prefab",
+      "__PrefabInstancePatch": {
+        "AddedObjects": [],
+        "RemovedObjects": [],
+        "PropertyOverrides": [
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1"
+            },
+            "Property": "Name",
+            "Value": "road (7)"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1"
+            },
+            "Property": "Position",
+            "Value": "3623.784,-117.5816,-16.71294"
+          },
+          {
+            "Target": {
+              "Type": "Component",
+              "IdValue": "2c83d66f-c045-4223-b9e7-aaaff99d7e62"
+            },
+            "Property": "Mesh",
+            "Value": {
+              "Topology": "H4sIAAAAAAAACoWQ2QoCQQwES1dXUfC+/v9HI4UdmAdhB4aQTDpT6T3wAWZ+Zw1skt+BA/AETsAq157xXIGqKutT9Ay9j9S92z9/vaO3thvmTum9pbcWzgwcw2vuX/K/MmtJL8s5e5vL4t6XYWd3tW5u9M2e1qt1RnshuxzNJ5uMvumP3hjbP70YvZLdHVpvdKb15v4CSw/ShsQBAAA=",
+              "Position": "3623.935,-101.2826,-16.79005",
+              "Rotation": "0,0,0,1",
+              "Positions": [
+                "-98.76762,-1124.251,1.401409",
+                "98.76762,-1124.251,1.401409",
+                "98.76762,1184.494,1.401409",
+                "-98.76762,1184.494,1.401409",
+                "-98.76762,1184.494,-1.401409",
+                "98.76762,1184.494,-1.401409",
+                "98.76762,-1124.251,-1.401409",
+                "-98.76762,-1124.251,-1.401409"
+              ],
+              "TextureCoord": [
+                "-0.0000004172325,4.976017",
+                "-2.771622,0.9890514",
+                "-0.0000004172325,-4.215868",
+                "-8.665677,0.9890513",
+                "-1,-4.215868",
+                "2.228379,0.9890514",
+                "-1,4.976017",
+                "-8.371398,0.9890513",
+                "-1.228378,-8.371398",
+                "3.771622,1.010949",
+                "-1.228378,9.665671",
+                "9.3714,1.010948",
+                "-2.771622,9.665671",
+                "-1.228378,1.010949",
+                "-2.771622,-8.371398",
+                "9.665671,1.010948",
+                "9.665671,0.9890513",
+                "-2.771622,1.010949",
+                "-8.371398,1.010948",
+                "3.771622,0.9890514",
+                "-8.665677,1.010948",
+                "-1.228378,0.9890514",
+                "9.3714,0.9890513",
+                "2.228379,1.010949"
+              ],
+              "TextureUAxis": [
+                "1,0,0",
+                "1,0,-0",
+                "0,-1,0",
+                "0,1,0",
+                "-1,0,0",
+                "1,-0,0"
+              ],
+              "TextureVAxis": [
+                "0,-1,0",
+                "0,-1,0",
+                "0,0,-1",
+                "-0,0,-1",
+                "0,0,-1",
+                "-0,0,-1"
+              ],
+              "TextureScale": [
+                "0.7716219,0.9811409",
+                "0.25,0.25",
+                "0.4999999,0.5000082",
+                "0.4999997,0.5000082",
+                "0.2500001,0.2499932",
+                "0.25,0.2499932"
+              ],
+              "TextureOffset": [
+                "39.48438,24.77014",
+                "511.398,5.015625",
+                "23.34497,222.4203",
+                "232.6545,222.4203",
+                "0.6022949,511.6917",
+                "511.3979,511.6917"
+              ],
+              "MaterialIndex": [
+                0,
+                1,
+                0,
+                0,
+                1,
+                1
+              ],
+              "EdgeFlags": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "Materials": [
+                "materials/road1.vmat"
+              ]
+            }
+          }
+        ],
+        "MovedObjects": []
+      },
+      "__PrefabIdToInstanceId": {
+        "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1": "0d83272d-ac3e-4d60-9129-f0b2330ecdf0",
+        "92640e46-29f5-4213-b757-deee4e948539": "566c935e-4d78-42d8-881f-a9760b14b494",
+        "ebcb6bf4-cce2-47ef-b9fa-dee6a6f5bedc": "58ae223e-bb7d-491d-b94d-1a99781521e4",
+        "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f": "a1d53818-3c3c-4a72-882d-d325f8265160",
+        "e98975fa-1c94-49bc-bbd1-c84323f9cf0a": "bec88e4b-7fa4-4fb4-a301-096928011b01",
+        "aa6dee25-bba0-4f0d-8adc-c7d617712997": "82adf60f-c592-4944-a96e-e81127aedc69",
+        "afdcf159-1039-4fe9-a81e-f45e8831a22e": "fc5f9a55-bd36-4942-afb4-d2262fee0401",
+        "2c83d66f-c045-4223-b9e7-aaaff99d7e62": "6a7dcde3-7e28-4a23-b84e-e0c4a8da111e"
+      }
+    },
+    {
+      "__guid": "2e872c38-793e-410c-ab84-c96c87b847ba",
+      "__version": 1,
+      "__Prefab": "prefabs/road.prefab",
+      "__PrefabInstancePatch": {
+        "AddedObjects": [],
+        "RemovedObjects": [],
+        "PropertyOverrides": [
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1"
+            },
+            "Property": "Name",
+            "Value": "Road (8)"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1"
+            },
+            "Property": "Position",
+            "Value": "3819.374,-117.5816,-16.71294"
+          },
+          {
+            "Target": {
+              "Type": "Component",
+              "IdValue": "2c83d66f-c045-4223-b9e7-aaaff99d7e62"
+            },
+            "Property": "Mesh",
+            "Value": {
+              "Topology": "H4sIAAAAAAAACoWQ2QoCQQwES1dXUfC+/v9HI4UdmAdhB4aQTDpT6T3wAWZ+Zw1skt+BA/AETsAq157xXIGqKutT9Ay9j9S92z9/vaO3thvmTum9pbcWzgwcw2vuX/K/MmtJL8s5e5vL4t6XYWd3tW5u9M2e1qt1RnshuxzNJ5uMvumP3hjbP70YvZLdHVpvdKb15v4CSw/ShsQBAAA=",
+              "Position": "3819.525,-101.2826,-16.79005",
+              "Rotation": "0,0,0,1",
+              "Positions": [
+                "-98.76762,-1124.251,1.401409",
+                "98.76762,-1124.251,1.401409",
+                "98.76762,1184.494,1.401409",
+                "-98.76762,1184.494,1.401409",
+                "-98.76762,1184.494,-1.401409",
+                "98.76762,1184.494,-1.401409",
+                "98.76762,-1124.251,-1.401409",
+                "-98.76762,-1124.251,-1.401409"
+              ],
+              "TextureCoord": [
+                "-0.0000004172325,4.976017",
+                "-2.771622,0.9890514",
+                "-0.0000004172325,-4.215868",
+                "-8.665677,0.9890513",
+                "-1,-4.215868",
+                "2.228379,0.9890514",
+                "-1,4.976017",
+                "-8.371398,0.9890513",
+                "-1.228378,-8.371398",
+                "3.771622,1.010949",
+                "-1.228378,9.665671",
+                "9.3714,1.010948",
+                "-2.771622,9.665671",
+                "-1.228378,1.010949",
+                "-2.771622,-8.371398",
+                "9.665671,1.010948",
+                "9.665671,0.9890513",
+                "-2.771622,1.010949",
+                "-8.371398,1.010948",
+                "3.771622,0.9890514",
+                "-8.665677,1.010948",
+                "-1.228378,0.9890514",
+                "9.3714,0.9890513",
+                "2.228379,1.010949"
+              ],
+              "TextureUAxis": [
+                "1,0,0",
+                "1,0,-0",
+                "0,-1,0",
+                "0,1,0",
+                "-1,0,0",
+                "1,-0,0"
+              ],
+              "TextureVAxis": [
+                "0,-1,0",
+                "0,-1,0",
+                "0,0,-1",
+                "-0,0,-1",
+                "0,0,-1",
+                "-0,0,-1"
+              ],
+              "TextureScale": [
+                "0.7716219,0.9811409",
+                "0.25,0.25",
+                "0.4999999,0.5000082",
+                "0.4999997,0.5000082",
+                "0.2500001,0.2499932",
+                "0.25,0.2499932"
+              ],
+              "TextureOffset": [
+                "42.00537,24.77014",
+                "511.398,5.015625",
+                "23.34497,222.4203",
+                "232.6545,222.4203",
+                "0.6022949,511.6917",
+                "511.3979,511.6917"
+              ],
+              "MaterialIndex": [
+                0,
+                1,
+                0,
+                0,
+                1,
+                1
+              ],
+              "EdgeFlags": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "Materials": [
+                "materials/road1.vmat"
+              ]
+            }
+          }
+        ],
+        "MovedObjects": []
+      },
+      "__PrefabIdToInstanceId": {
+        "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1": "2e872c38-793e-410c-ab84-c96c87b847ba",
+        "92640e46-29f5-4213-b757-deee4e948539": "780946ce-6019-47dc-bbe4-d21ae1d255cc",
+        "ebcb6bf4-cce2-47ef-b9fa-dee6a6f5bedc": "6de4c077-1320-4205-9036-2c1d2fe023d2",
+        "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f": "87585f9a-c14b-4980-812d-4abe30c0cb35",
+        "e98975fa-1c94-49bc-bbd1-c84323f9cf0a": "3898316f-9545-4ffe-a938-eb74e74552d2",
+        "aa6dee25-bba0-4f0d-8adc-c7d617712997": "e5de0578-2d82-486d-a380-f6cdcf37b327",
+        "afdcf159-1039-4fe9-a81e-f45e8831a22e": "49a5e3ef-c01d-445d-85af-cceed11fa794",
+        "2c83d66f-c045-4223-b9e7-aaaff99d7e62": "f79a1fd9-589e-40de-9649-74f51de41735"
+      }
+    },
+    {
+      "__guid": "3da00386-0eb6-4d6c-b3b8-ca1c107291a4",
+      "__version": 1,
+      "__Prefab": "prefabs/road.prefab",
+      "__PrefabInstancePatch": {
+        "AddedObjects": [],
+        "RemovedObjects": [],
+        "PropertyOverrides": [
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1"
+            },
+            "Property": "Name",
+            "Value": "road (8)"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1"
+            },
+            "Property": "Position",
+            "Value": "4015.664,-117.5816,-16.71294"
+          },
+          {
+            "Target": {
+              "Type": "Component",
+              "IdValue": "2c83d66f-c045-4223-b9e7-aaaff99d7e62"
+            },
+            "Property": "Mesh",
+            "Value": {
+              "Topology": "H4sIAAAAAAAACoWQ2QoCQQwES1dXUfC+/v9HI4UdmAdhB4aQTDpT6T3wAWZ+Zw1skt+BA/AETsAq157xXIGqKutT9Ay9j9S92z9/vaO3thvmTum9pbcWzgwcw2vuX/K/MmtJL8s5e5vL4t6XYWd3tW5u9M2e1qt1RnshuxzNJ5uMvumP3hjbP70YvZLdHVpvdKb15v4CSw/ShsQBAAA=",
+              "Position": "4015.814,-101.2826,-16.79005",
+              "Rotation": "0,0,0,1",
+              "Positions": [
+                "-98.76762,-1124.251,1.401409",
+                "98.76762,-1124.251,1.401409",
+                "98.76762,1184.494,1.401409",
+                "-98.76762,1184.494,1.401409",
+                "-98.76762,1184.494,-1.401409",
+                "98.76762,1184.494,-1.401409",
+                "98.76762,-1124.251,-1.401409",
+                "-98.76762,-1124.251,-1.401409"
+              ],
+              "TextureCoord": [
+                "-0.0000004172325,4.976017",
+                "-2.771622,0.9890514",
+                "-0.0000004172325,-4.215868",
+                "-8.665677,0.9890513",
+                "-1,-4.215868",
+                "2.228379,0.9890514",
+                "-1,4.976017",
+                "-8.371398,0.9890513",
+                "-1.228378,-8.371398",
+                "3.771622,1.010949",
+                "-1.228378,9.665671",
+                "9.3714,1.010948",
+                "-2.771622,9.665671",
+                "-1.228378,1.010949",
+                "-2.771622,-8.371398",
+                "9.665671,1.010948",
+                "9.665671,0.9890513",
+                "-2.771622,1.010949",
+                "-8.371398,1.010948",
+                "3.771622,0.9890514",
+                "-8.665677,1.010948",
+                "-1.228378,0.9890514",
+                "9.3714,0.9890513",
+                "2.228379,1.010949"
+              ],
+              "TextureUAxis": [
+                "1,0,0",
+                "1,0,-0",
+                "0,-1,0",
+                "0,1,0",
+                "-1,0,0",
+                "1,-0,0"
+              ],
+              "TextureVAxis": [
+                "0,-1,0",
+                "0,-1,0",
+                "0,0,-1",
+                "-0,0,-1",
+                "0,0,-1",
+                "-0,0,-1"
+              ],
+              "TextureScale": [
+                "0.771623,0.9811409",
+                "0.25,0.25",
+                "0.4999999,0.5000082",
+                "0.4999997,0.5000082",
+                "0.2500001,0.2499932",
+                "0.25,0.2499932"
+              ],
+              "TextureOffset": [
+                "43.62646,24.77014",
+                "511.398,5.015625",
+                "23.34497,222.4203",
+                "232.6545,222.4203",
+                "0.6022949,511.6917",
+                "511.3979,511.6917"
+              ],
+              "MaterialIndex": [
+                0,
+                1,
+                0,
+                0,
+                1,
+                1
+              ],
+              "EdgeFlags": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "Materials": [
+                "materials/road1.vmat"
+              ]
+            }
+          }
+        ],
+        "MovedObjects": []
+      },
+      "__PrefabIdToInstanceId": {
+        "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1": "3da00386-0eb6-4d6c-b3b8-ca1c107291a4",
+        "92640e46-29f5-4213-b757-deee4e948539": "02da81a7-836c-40e0-b977-9c54bd7f52b4",
+        "ebcb6bf4-cce2-47ef-b9fa-dee6a6f5bedc": "f11fafa3-4b00-439c-ab19-0449b8d159d6",
+        "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f": "0030dc29-9476-4d3d-bfc2-4c728e899c7f",
+        "e98975fa-1c94-49bc-bbd1-c84323f9cf0a": "e7bc4aeb-2ddf-4a92-af6a-80c0b2b667a4",
+        "aa6dee25-bba0-4f0d-8adc-c7d617712997": "345befaa-f9af-4b78-8a13-3a3ca5f8d3df",
+        "afdcf159-1039-4fe9-a81e-f45e8831a22e": "275bb5e6-fc59-4f76-93f9-3e59f4350b69",
+        "2c83d66f-c045-4223-b9e7-aaaff99d7e62": "5fa6baa4-1fe8-4f29-8066-dca3b586259e"
+      }
+    },
+    {
+      "__guid": "896e0917-c6d8-4987-8a83-d50cb0ffd3e7",
+      "__version": 1,
+      "__Prefab": "prefabs/road.prefab",
+      "__PrefabInstancePatch": {
+        "AddedObjects": [],
+        "RemovedObjects": [],
+        "PropertyOverrides": [
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1"
+            },
+            "Property": "Name",
+            "Value": "Road (9)"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1"
+            },
+            "Property": "Position",
+            "Value": "4211.254,-117.5816,-16.71294"
+          },
+          {
+            "Target": {
+              "Type": "Component",
+              "IdValue": "2c83d66f-c045-4223-b9e7-aaaff99d7e62"
+            },
+            "Property": "Mesh",
+            "Value": {
+              "Topology": "H4sIAAAAAAAACoWQ2QoCQQwES1dXUfC+/v9HI4UdmAdhB4aQTDpT6T3wAWZ+Zw1skt+BA/AETsAq157xXIGqKutT9Ay9j9S92z9/vaO3thvmTum9pbcWzgwcw2vuX/K/MmtJL8s5e5vL4t6XYWd3tW5u9M2e1qt1RnshuxzNJ5uMvumP3hjbP70YvZLdHVpvdKb15v4CSw/ShsQBAAA=",
+              "Position": "4211.404,-101.2826,-16.79005",
+              "Rotation": "0,0,0,1",
+              "Positions": [
+                "-98.76762,-1124.251,1.401409",
+                "98.76762,-1124.251,1.401409",
+                "98.76762,1184.494,1.401409",
+                "-98.76762,1184.494,1.401409",
+                "-98.76762,1184.494,-1.401409",
+                "98.76762,1184.494,-1.401409",
+                "98.76762,-1124.251,-1.401409",
+                "-98.76762,-1124.251,-1.401409"
+              ],
+              "TextureCoord": [
+                "-0.0000004172325,4.976017",
+                "-2.771622,0.9890514",
+                "-0.0000004172325,-4.215868",
+                "-8.665677,0.9890513",
+                "-1,-4.215868",
+                "2.228379,0.9890514",
+                "-1,4.976017",
+                "-8.371398,0.9890513",
+                "-1.228378,-8.371398",
+                "3.771622,1.010949",
+                "-1.228378,9.665671",
+                "9.3714,1.010948",
+                "-2.771622,9.665671",
+                "-1.228378,1.010949",
+                "-2.771622,-8.371398",
+                "9.665671,1.010948",
+                "9.665671,0.9890513",
+                "-2.771622,1.010949",
+                "-8.371398,1.010948",
+                "3.771622,0.9890514",
+                "-8.665677,1.010948",
+                "-1.228378,0.9890514",
+                "9.3714,0.9890513",
+                "2.228379,1.010949"
+              ],
+              "TextureUAxis": [
+                "1,0,0",
+                "1,0,-0",
+                "0,-1,0",
+                "0,1,0",
+                "-1,0,0",
+                "1,-0,0"
+              ],
+              "TextureVAxis": [
+                "0,-1,0",
+                "0,-1,0",
+                "0,0,-1",
+                "-0,0,-1",
+                "0,0,-1",
+                "-0,0,-1"
+              ],
+              "TextureScale": [
+                "0.7716219,0.9811409",
+                "0.25,0.25",
+                "0.4999999,0.5000082",
+                "0.4999997,0.5000082",
+                "0.2500001,0.2499932",
+                "0.25,0.2499932"
+              ],
+              "TextureOffset": [
+                "46.14062,24.77014",
+                "511.398,5.015625",
+                "23.34497,222.4203",
+                "232.6545,222.4203",
+                "0.6022949,511.6917",
+                "511.3979,511.6917"
+              ],
+              "MaterialIndex": [
+                0,
+                1,
+                0,
+                0,
+                1,
+                1
+              ],
+              "EdgeFlags": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "Materials": [
+                "materials/road1.vmat"
+              ]
+            }
+          }
+        ],
+        "MovedObjects": []
+      },
+      "__PrefabIdToInstanceId": {
+        "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1": "896e0917-c6d8-4987-8a83-d50cb0ffd3e7",
+        "92640e46-29f5-4213-b757-deee4e948539": "124b2a1b-d37f-480e-97ab-d8a4252e7f74",
+        "ebcb6bf4-cce2-47ef-b9fa-dee6a6f5bedc": "ad4cf173-e991-46b1-86b5-3e61f45be35a",
+        "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f": "065a30d2-5aeb-407c-bd98-9800255dff74",
+        "e98975fa-1c94-49bc-bbd1-c84323f9cf0a": "b7d5efdd-bd0a-4656-8b23-0094a3f3e522",
+        "aa6dee25-bba0-4f0d-8adc-c7d617712997": "57e9307c-5ccd-41f3-bb87-937b554c9043",
+        "afdcf159-1039-4fe9-a81e-f45e8831a22e": "6dad68d3-3903-4411-bf17-b06079ff285e",
+        "2c83d66f-c045-4223-b9e7-aaaff99d7e62": "e90f9a1b-fe64-4f51-8323-8e552793bcb5"
+      }
+    },
+    {
+      "__guid": "3c03981d-957d-4619-87d5-971297131f5e",
+      "__version": 1,
+      "__Prefab": "prefabs/road.prefab",
+      "__PrefabInstancePatch": {
+        "AddedObjects": [],
+        "RemovedObjects": [],
+        "PropertyOverrides": [
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1"
+            },
+            "Property": "Name",
+            "Value": "road (9)"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1"
+            },
+            "Property": "Position",
+            "Value": "4402.312,-117.5816,-16.71294"
+          },
+          {
+            "Target": {
+              "Type": "Component",
+              "IdValue": "2c83d66f-c045-4223-b9e7-aaaff99d7e62"
+            },
+            "Property": "Mesh",
+            "Value": {
+              "Topology": "H4sIAAAAAAAACoWQ2QoCQQwES1dXUfC+/v9HI4UdmAdhB4aQTDpT6T3wAWZ+Zw1skt+BA/AETsAq157xXIGqKutT9Ay9j9S92z9/vaO3thvmTum9pbcWzgwcw2vuX/K/MmtJL8s5e5vL4t6XYWd3tW5u9M2e1qt1RnshuxzNJ5uMvumP3hjbP70YvZLdHVpvdKb15v4CSw/ShsQBAAA=",
+              "Position": "4402.462,-101.2826,-16.79005",
+              "Rotation": "0,0,0,1",
+              "Positions": [
+                "-98.76762,-1124.251,1.401409",
+                "98.76762,-1124.251,1.401409",
+                "98.76762,1184.494,1.401409",
+                "-98.76762,1184.494,1.401409",
+                "-98.76762,1184.494,-1.401409",
+                "98.76762,1184.494,-1.401409",
+                "98.76762,-1124.251,-1.401409",
+                "-98.76762,-1124.251,-1.401409"
+              ],
+              "TextureCoord": [
+                "-0.0000004172325,4.976017",
+                "-2.771622,0.9890514",
+                "-0.0000004172325,-4.215868",
+                "-8.665677,0.9890513",
+                "-1,-4.215868",
+                "2.228379,0.9890514",
+                "-1,4.976017",
+                "-8.371398,0.9890513",
+                "-1.228378,-8.371398",
+                "3.771622,1.010949",
+                "-1.228378,9.665671",
+                "9.3714,1.010948",
+                "-2.771622,9.665671",
+                "-1.228378,1.010949",
+                "-2.771622,-8.371398",
+                "9.665671,1.010948",
+                "9.665671,0.9890513",
+                "-2.771622,1.010949",
+                "-8.371398,1.010948",
+                "3.771622,0.9890514",
+                "-8.665677,1.010948",
+                "-1.228378,0.9890514",
+                "9.3714,0.9890513",
+                "2.228379,1.010949"
+              ],
+              "TextureUAxis": [
+                "1,0,0",
+                "1,0,-0",
+                "0,-1,0",
+                "0,1,0",
+                "-1,0,0",
+                "1,-0,0"
+              ],
+              "TextureVAxis": [
+                "0,-1,0",
+                "0,-1,0",
+                "0,0,-1",
+                "-0,0,-1",
+                "0,0,-1",
+                "-0,0,-1"
+              ],
+              "TextureScale": [
+                "0.7716219,0.9811409",
+                "0.25,0.25",
+                "0.4999999,0.5000082",
+                "0.4999997,0.5000082",
+                "0.2500001,0.2499932",
+                "0.25,0.2499932"
+              ],
+              "TextureOffset": [
+                "54.53467,24.77014",
+                "511.398,5.015625",
+                "23.34497,222.4203",
+                "232.6545,222.4203",
+                "0.6022949,511.6917",
+                "511.3979,511.6917"
+              ],
+              "MaterialIndex": [
+                0,
+                1,
+                0,
+                0,
+                1,
+                1
+              ],
+              "EdgeFlags": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "Materials": [
+                "materials/road1.vmat"
+              ]
+            }
+          }
+        ],
+        "MovedObjects": []
+      },
+      "__PrefabIdToInstanceId": {
+        "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1": "3c03981d-957d-4619-87d5-971297131f5e",
+        "92640e46-29f5-4213-b757-deee4e948539": "b103947f-9329-4f86-9325-83ea92e13341",
+        "ebcb6bf4-cce2-47ef-b9fa-dee6a6f5bedc": "bdd5e05e-c9ee-4b6e-8048-b0371577b886",
+        "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f": "83504c0a-8b2e-43e1-a382-fa815b29e0c1",
+        "e98975fa-1c94-49bc-bbd1-c84323f9cf0a": "d30c47ea-b684-4d31-9298-c845b6794c67",
+        "aa6dee25-bba0-4f0d-8adc-c7d617712997": "8f8a6a9c-ca23-4664-a470-815e2c042213",
+        "afdcf159-1039-4fe9-a81e-f45e8831a22e": "0737d3b5-afea-4b7b-80de-88f5a610737d",
+        "2c83d66f-c045-4223-b9e7-aaaff99d7e62": "9e8aa8f4-d5c0-4d3f-a832-e46931e15ee2"
+      }
+    },
+    {
+      "__guid": "9fe6098f-4943-4451-9866-49c8349259d5",
+      "__version": 1,
+      "__Prefab": "prefabs/road.prefab",
+      "__PrefabInstancePatch": {
+        "AddedObjects": [],
+        "RemovedObjects": [],
+        "PropertyOverrides": [
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1"
+            },
+            "Property": "Name",
+            "Value": "Road (10)"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1"
+            },
+            "Property": "Position",
+            "Value": "4597.902,-117.5816,-16.71294"
+          },
+          {
+            "Target": {
+              "Type": "Component",
+              "IdValue": "2c83d66f-c045-4223-b9e7-aaaff99d7e62"
+            },
+            "Property": "Mesh",
+            "Value": {
+              "Topology": "H4sIAAAAAAAACoWQ2QoCQQwES1dXUfC+/v9HI4UdmAdhB4aQTDpT6T3wAWZ+Zw1skt+BA/AETsAq157xXIGqKutT9Ay9j9S92z9/vaO3thvmTum9pbcWzgwcw2vuX/K/MmtJL8s5e5vL4t6XYWd3tW5u9M2e1qt1RnshuxzNJ5uMvumP3hjbP70YvZLdHVpvdKb15v4CSw/ShsQBAAA=",
+              "Position": "4598.052,-101.2826,-16.79005",
+              "Rotation": "0,0,0,1",
+              "Positions": [
+                "-98.76762,-1124.251,1.401409",
+                "98.76762,-1124.251,1.401409",
+                "98.76762,1184.494,1.401409",
+                "-98.76762,1184.494,1.401409",
+                "-98.76762,1184.494,-1.401409",
+                "98.76762,1184.494,-1.401409",
+                "98.76762,-1124.251,-1.401409",
+                "-98.76762,-1124.251,-1.401409"
+              ],
+              "TextureCoord": [
+                "-0.0000004172325,4.976017",
+                "-2.771622,0.9890514",
+                "-0.0000004172325,-4.215868",
+                "-8.665677,0.9890513",
+                "-1,-4.215868",
+                "2.228379,0.9890514",
+                "-1,4.976017",
+                "-8.371398,0.9890513",
+                "-1.228378,-8.371398",
+                "3.771622,1.010949",
+                "-1.228378,9.665671",
+                "9.3714,1.010948",
+                "-2.771622,9.665671",
+                "-1.228378,1.010949",
+                "-2.771622,-8.371398",
+                "9.665671,1.010948",
+                "9.665671,0.9890513",
+                "-2.771622,1.010949",
+                "-8.371398,1.010948",
+                "3.771622,0.9890514",
+                "-8.665677,1.010948",
+                "-1.228378,0.9890514",
+                "9.3714,0.9890513",
+                "2.228379,1.010949"
+              ],
+              "TextureUAxis": [
+                "1,0,0",
+                "1,0,-0",
+                "0,-1,0",
+                "0,1,0",
+                "-1,0,0",
+                "1,-0,0"
+              ],
+              "TextureVAxis": [
+                "0,-1,0",
+                "0,-1,0",
+                "0,0,-1",
+                "-0,0,-1",
+                "0,0,-1",
+                "-0,0,-1"
+              ],
+              "TextureScale": [
+                "0.7716219,0.9811409",
+                "0.25,0.25",
+                "0.4999999,0.5000082",
+                "0.4999997,0.5000082",
+                "0.2500001,0.2499932",
+                "0.25,0.2499932"
+              ],
+              "TextureOffset": [
+                "57.05566,24.77014",
+                "511.398,5.015625",
+                "23.34497,222.4203",
+                "232.6545,222.4203",
+                "0.6022949,511.6917",
+                "511.3979,511.6917"
+              ],
+              "MaterialIndex": [
+                0,
+                1,
+                0,
+                0,
+                1,
+                1
+              ],
+              "EdgeFlags": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "Materials": [
+                "materials/road1.vmat"
+              ]
+            }
+          }
+        ],
+        "MovedObjects": []
+      },
+      "__PrefabIdToInstanceId": {
+        "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1": "9fe6098f-4943-4451-9866-49c8349259d5",
+        "92640e46-29f5-4213-b757-deee4e948539": "25a3eb50-5831-4441-ac31-94fdb8a44598",
+        "ebcb6bf4-cce2-47ef-b9fa-dee6a6f5bedc": "6848d113-3ef5-43cb-923a-3410d58b5343",
+        "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f": "6e6d669f-ec0b-49d7-b2c2-bac846c25082",
+        "e98975fa-1c94-49bc-bbd1-c84323f9cf0a": "6c43c357-d285-47ce-82b5-0e591fa55eb6",
+        "aa6dee25-bba0-4f0d-8adc-c7d617712997": "db484c07-003e-40af-bf83-7b96175dbfe3",
+        "afdcf159-1039-4fe9-a81e-f45e8831a22e": "9e955dbd-8442-41e0-860a-747aa39be25f",
+        "2c83d66f-c045-4223-b9e7-aaaff99d7e62": "07f93e55-bfee-45eb-86c1-96d044b94a6b"
+      }
+    },
+    {
+      "__guid": "99fc16d0-1341-43d8-9154-ea9821daa4ea",
+      "__version": 1,
+      "__Prefab": "prefabs/road.prefab",
+      "__PrefabInstancePatch": {
+        "AddedObjects": [],
+        "RemovedObjects": [],
+        "PropertyOverrides": [
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1"
+            },
+            "Property": "Name",
+            "Value": "Road (11)"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1"
+            },
+            "Property": "Position",
+            "Value": "5252.385,-117.5816,-16.71294"
+          },
+          {
+            "Target": {
+              "Type": "Component",
+              "IdValue": "2c83d66f-c045-4223-b9e7-aaaff99d7e62"
+            },
+            "Property": "Mesh",
+            "Value": {
+              "Topology": "H4sIAAAAAAAACoWQ2QoCQQwES1dXUfC+/v9HI4UdmAdhB4aQTDpT6T3wAWZ+Zw1skt+BA/AETsAq157xXIGqKutT9Ay9j9S92z9/vaO3thvmTum9pbcWzgwcw2vuX/K/MmtJL8s5e5vL4t6XYWd3tW5u9M2e1qt1RnshuxzNJ5uMvumP3hjbP70YvZLdHVpvdKb15v4CSw/ShsQBAAA=",
+              "Position": "5252.535,-101.2826,-16.79005",
+              "Rotation": "0,0,0,1",
+              "Positions": [
+                "-98.76762,-1124.251,1.401409",
+                "98.76762,-1124.251,1.401409",
+                "98.76762,1184.494,1.401409",
+                "-98.76762,1184.494,1.401409",
+                "-98.76762,1184.494,-1.401409",
+                "98.76762,1184.494,-1.401409",
+                "98.76762,-1124.251,-1.401409",
+                "-98.76762,-1124.251,-1.401409"
+              ],
+              "TextureCoord": [
+                "-0.0000004172325,4.976017",
+                "-2.771622,0.9890514",
+                "-0.0000004172325,-4.215868",
+                "-8.665677,0.9890513",
+                "-1,-4.215868",
+                "2.228379,0.9890514",
+                "-1,4.976017",
+                "-8.371398,0.9890513",
+                "-1.228378,-8.371398",
+                "3.771622,1.010949",
+                "-1.228378,9.665671",
+                "9.3714,1.010948",
+                "-2.771622,9.665671",
+                "-1.228378,1.010949",
+                "-2.771622,-8.371398",
+                "9.665671,1.010948",
+                "9.665671,0.9890513",
+                "-2.771622,1.010949",
+                "-8.371398,1.010948",
+                "3.771622,0.9890514",
+                "-8.665677,1.010948",
+                "-1.228378,0.9890514",
+                "9.3714,0.9890513",
+                "2.228379,1.010949"
+              ],
+              "TextureUAxis": [
+                "1,0,0",
+                "1,0,-0",
+                "0,-1,0",
+                "0,1,0",
+                "-1,0,0",
+                "1,-0,0"
+              ],
+              "TextureVAxis": [
+                "0,-1,0",
+                "0,-1,0",
+                "0,0,-1",
+                "-0,0,-1",
+                "0,0,-1",
+                "-0,0,-1"
+              ],
+              "TextureScale": [
+                "0.7716219,0.9811409",
+                "0.25,0.25",
+                "0.4999999,0.5000082",
+                "0.4999997,0.5000082",
+                "0.2500001,0.2499932",
+                "0.25,0.2499932"
+              ],
+              "TextureOffset": [
+                "232.8647,24.77014",
+                "511.398,5.015625",
+                "23.34497,222.4203",
+                "232.6545,222.4203",
+                "0.6022949,511.6917",
+                "511.3979,511.6917"
+              ],
+              "MaterialIndex": [
+                0,
+                1,
+                0,
+                0,
+                1,
+                1
+              ],
+              "EdgeFlags": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "Materials": [
+                "materials/road1.vmat"
+              ]
+            }
+          }
+        ],
+        "MovedObjects": []
+      },
+      "__PrefabIdToInstanceId": {
+        "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1": "99fc16d0-1341-43d8-9154-ea9821daa4ea",
+        "92640e46-29f5-4213-b757-deee4e948539": "24d1c5bb-482f-4d57-a03b-51bc441a9e15",
+        "ebcb6bf4-cce2-47ef-b9fa-dee6a6f5bedc": "165fae6e-fb21-41a1-b1f1-e49b8c08520d",
+        "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f": "f2c271eb-da35-47f6-8cee-993153fa5844",
+        "e98975fa-1c94-49bc-bbd1-c84323f9cf0a": "6284cb3f-f079-4967-9473-6a91caa0f524",
+        "aa6dee25-bba0-4f0d-8adc-c7d617712997": "71a6434a-4439-4cde-a027-b3272b70b934",
+        "afdcf159-1039-4fe9-a81e-f45e8831a22e": "94f1450c-4de0-4e74-989f-4c0bb89460a4",
+        "2c83d66f-c045-4223-b9e7-aaaff99d7e62": "bdda4faa-70a5-40dc-b015-54c45a36bbcf"
+      }
+    },
+    {
       "__guid": "93073b48-2799-4e3b-a9ef-3406583e5255",
       "__version": 1,
       "__Prefab": "prefabs/props/cactus.prefab",
@@ -1838,6 +4918,722 @@
         "b4b3031f-7059-498d-95c6-769fbab3b6bb": "0a37a408-33a5-473f-bc1c-f4233c549890",
         "fb3192ec-8573-4051-81b2-b335ca8bb246": "08b54919-b497-405f-a752-0fc059dd6f8b"
       }
+    },
+    {
+      "__guid": "f691c63a-5eb8-47d0-9441-e108e9411252",
+      "__version": 1,
+      "__Prefab": "prefabs/props/palm.prefab",
+      "__PrefabInstancePatch": {
+        "AddedObjects": [
+          {
+            "Id": {
+              "Type": "Component",
+              "IdValue": "0f2370bb-d7cc-4324-938f-34af287a7fae"
+            },
+            "Parent": {
+              "Type": "GameObject",
+              "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+            },
+            "PreviousElement": {
+              "Type": "Component",
+              "IdValue": "0c781ee5-94d5-44dd-b43c-223e686b594a"
+            },
+            "ContainerProperty": "Components",
+            "IsContainerArray": true,
+            "Data": {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "0f2370bb-d7cc-4324-938f-34af287a7fae",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "CreateAttachments": false,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Materials": null,
+              "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Tint": "0.27684,0.66977,0.13395,1"
+            }
+          },
+          {
+            "Id": {
+              "Type": "Component",
+              "IdValue": "36d4392f-29f3-4dea-b5f6-c0dbcd28b9d7"
+            },
+            "Parent": {
+              "Type": "GameObject",
+              "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+            },
+            "PreviousElement": {
+              "Type": "Component",
+              "IdValue": "0f2370bb-d7cc-4324-938f-34af287a7fae"
+            },
+            "ContainerProperty": "Components",
+            "IsContainerArray": true,
+            "Data": {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "36d4392f-29f3-4dea-b5f6-c0dbcd28b9d7",
+              "__enabled": true,
+              "Elasticity": null,
+              "Friction": null,
+              "IsTrigger": false,
+              "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnObjectTriggerEnter": null,
+              "OnObjectTriggerExit": null,
+              "OnTriggerEnter": null,
+              "OnTriggerExit": null,
+              "RollingResistance": null,
+              "Static": false,
+              "Surface": null,
+              "SurfaceVelocity": "0,0,0"
+            }
+          },
+          {
+            "Id": {
+              "Type": "Component",
+              "IdValue": "cc372c5a-8c5e-4255-86ee-76e2c27c55c2"
+            },
+            "Parent": {
+              "Type": "GameObject",
+              "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+            },
+            "PreviousElement": {
+              "Type": "Component",
+              "IdValue": "36d4392f-29f3-4dea-b5f6-c0dbcd28b9d7"
+            },
+            "ContainerProperty": "Components",
+            "IsContainerArray": true,
+            "Data": {
+              "__type": "Sandbox.Rigidbody",
+              "__guid": "cc372c5a-8c5e-4255-86ee-76e2c27c55c2",
+              "__enabled": true,
+              "AngularDamping": 0,
+              "Gravity": true,
+              "LinearDamping": 0,
+              "Locking": {
+                "X": false,
+                "Y": false,
+                "Z": false,
+                "Pitch": false,
+                "Yaw": false,
+                "Roll": false
+              },
+              "MassCenterOverride": "0,0,0",
+              "MassOverride": 0,
+              "MotionEnabled": true,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OverrideMassCenter": false,
+              "RigidbodyFlags": 0,
+              "StartAsleep": false
+            }
+          }
+        ],
+        "RemovedObjects": [
+          {
+            "Id": {
+              "Type": "Component",
+              "IdValue": "cac1c7ff-df62-4594-b1b3-284cdd7c5d87"
+            }
+          },
+          {
+            "Id": {
+              "Type": "Component",
+              "IdValue": "b4b3031f-7059-498d-95c6-769fbab3b6bb"
+            }
+          },
+          {
+            "Id": {
+              "Type": "Component",
+              "IdValue": "fb3192ec-8573-4051-81b2-b335ca8bb246"
+            }
+          }
+        ],
+        "PropertyOverrides": [
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+            },
+            "Property": "Name",
+            "Value": "Prop: Palm (1)"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+            },
+            "Property": "Position",
+            "Value": "-1276.956,-17.7305,-17.78564"
+          }
+        ],
+        "MovedObjects": []
+      },
+      "__PrefabIdToInstanceId": {
+        "92221169-c5ad-4b07-8205-56f6489813c1": "f691c63a-5eb8-47d0-9441-e108e9411252",
+        "0c781ee5-94d5-44dd-b43c-223e686b594a": "f958c23f-88b0-4077-befe-46f759837bad",
+        "cac1c7ff-df62-4594-b1b3-284cdd7c5d87": "8195b153-009d-43e1-8452-13b91be4f21f",
+        "b4b3031f-7059-498d-95c6-769fbab3b6bb": "54e2e7b7-1f95-471a-a2b2-87404b970e44",
+        "fb3192ec-8573-4051-81b2-b335ca8bb246": "0d10b84f-9962-42e6-9616-55266db23308"
+      }
+    },
+    {
+      "__guid": "11389265-7980-46e7-8150-f343990602c8",
+      "__version": 1,
+      "__Prefab": "prefabs/props/palm.prefab",
+      "__PrefabInstancePatch": {
+        "AddedObjects": [
+          {
+            "Id": {
+              "Type": "Component",
+              "IdValue": "f20cc330-15cb-431b-b3a4-d17a3511265d"
+            },
+            "Parent": {
+              "Type": "GameObject",
+              "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+            },
+            "PreviousElement": {
+              "Type": "Component",
+              "IdValue": "0c781ee5-94d5-44dd-b43c-223e686b594a"
+            },
+            "ContainerProperty": "Components",
+            "IsContainerArray": true,
+            "Data": {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "f20cc330-15cb-431b-b3a4-d17a3511265d",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "CreateAttachments": false,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Materials": null,
+              "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Tint": "0.27684,0.66977,0.13395,1"
+            }
+          },
+          {
+            "Id": {
+              "Type": "Component",
+              "IdValue": "31a5d4d4-766f-421c-83ae-6f316bb9e6ff"
+            },
+            "Parent": {
+              "Type": "GameObject",
+              "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+            },
+            "PreviousElement": {
+              "Type": "Component",
+              "IdValue": "f20cc330-15cb-431b-b3a4-d17a3511265d"
+            },
+            "ContainerProperty": "Components",
+            "IsContainerArray": true,
+            "Data": {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "31a5d4d4-766f-421c-83ae-6f316bb9e6ff",
+              "__enabled": true,
+              "Elasticity": null,
+              "Friction": null,
+              "IsTrigger": false,
+              "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnObjectTriggerEnter": null,
+              "OnObjectTriggerExit": null,
+              "OnTriggerEnter": null,
+              "OnTriggerExit": null,
+              "RollingResistance": null,
+              "Static": false,
+              "Surface": null,
+              "SurfaceVelocity": "0,0,0"
+            }
+          },
+          {
+            "Id": {
+              "Type": "Component",
+              "IdValue": "c2b31a64-3b0c-4e6f-a9eb-ae6383bb1de3"
+            },
+            "Parent": {
+              "Type": "GameObject",
+              "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+            },
+            "PreviousElement": {
+              "Type": "Component",
+              "IdValue": "31a5d4d4-766f-421c-83ae-6f316bb9e6ff"
+            },
+            "ContainerProperty": "Components",
+            "IsContainerArray": true,
+            "Data": {
+              "__type": "Sandbox.Rigidbody",
+              "__guid": "c2b31a64-3b0c-4e6f-a9eb-ae6383bb1de3",
+              "__enabled": true,
+              "AngularDamping": 0,
+              "Gravity": true,
+              "LinearDamping": 0,
+              "Locking": {
+                "X": false,
+                "Y": false,
+                "Z": false,
+                "Pitch": false,
+                "Yaw": false,
+                "Roll": false
+              },
+              "MassCenterOverride": "0,0,0",
+              "MassOverride": 0,
+              "MotionEnabled": true,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OverrideMassCenter": false,
+              "RigidbodyFlags": 0,
+              "StartAsleep": false
+            }
+          }
+        ],
+        "RemovedObjects": [
+          {
+            "Id": {
+              "Type": "Component",
+              "IdValue": "cac1c7ff-df62-4594-b1b3-284cdd7c5d87"
+            }
+          },
+          {
+            "Id": {
+              "Type": "Component",
+              "IdValue": "b4b3031f-7059-498d-95c6-769fbab3b6bb"
+            }
+          },
+          {
+            "Id": {
+              "Type": "Component",
+              "IdValue": "fb3192ec-8573-4051-81b2-b335ca8bb246"
+            }
+          }
+        ],
+        "PropertyOverrides": [
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+            },
+            "Property": "Name",
+            "Value": "Prop: Palm (2)"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+            },
+            "Property": "Position",
+            "Value": "-454.8987,-417.6574,-17.78564"
+          }
+        ],
+        "MovedObjects": []
+      },
+      "__PrefabIdToInstanceId": {
+        "92221169-c5ad-4b07-8205-56f6489813c1": "11389265-7980-46e7-8150-f343990602c8",
+        "0c781ee5-94d5-44dd-b43c-223e686b594a": "e00eb2b7-6685-4f33-852c-d96d209effbc",
+        "cac1c7ff-df62-4594-b1b3-284cdd7c5d87": "4dd31e71-8fec-4ac1-88a6-248c32ad8c9c",
+        "b4b3031f-7059-498d-95c6-769fbab3b6bb": "336def52-763c-4b98-83e1-4027903a4b75",
+        "fb3192ec-8573-4051-81b2-b335ca8bb246": "c5187c89-0445-4b11-b58f-df1a10492811"
+      }
+    },
+    {
+      "__guid": "c841b3ec-35ac-4b18-984e-c8509c02464c",
+      "__version": 1,
+      "__Prefab": "prefabs/props/palm.prefab",
+      "__PrefabInstancePatch": {
+        "AddedObjects": [
+          {
+            "Id": {
+              "Type": "Component",
+              "IdValue": "efa4a8ae-c08a-45ca-989c-eb2cb49708ea"
+            },
+            "Parent": {
+              "Type": "GameObject",
+              "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+            },
+            "PreviousElement": {
+              "Type": "Component",
+              "IdValue": "0c781ee5-94d5-44dd-b43c-223e686b594a"
+            },
+            "ContainerProperty": "Components",
+            "IsContainerArray": true,
+            "Data": {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "efa4a8ae-c08a-45ca-989c-eb2cb49708ea",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "CreateAttachments": false,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Materials": null,
+              "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Tint": "0.27684,0.66977,0.13395,1"
+            }
+          },
+          {
+            "Id": {
+              "Type": "Component",
+              "IdValue": "25a7e535-c602-46de-b559-fc38b72ad324"
+            },
+            "Parent": {
+              "Type": "GameObject",
+              "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+            },
+            "PreviousElement": {
+              "Type": "Component",
+              "IdValue": "efa4a8ae-c08a-45ca-989c-eb2cb49708ea"
+            },
+            "ContainerProperty": "Components",
+            "IsContainerArray": true,
+            "Data": {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "25a7e535-c602-46de-b559-fc38b72ad324",
+              "__enabled": true,
+              "Elasticity": null,
+              "Friction": null,
+              "IsTrigger": false,
+              "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnObjectTriggerEnter": null,
+              "OnObjectTriggerExit": null,
+              "OnTriggerEnter": null,
+              "OnTriggerExit": null,
+              "RollingResistance": null,
+              "Static": false,
+              "Surface": null,
+              "SurfaceVelocity": "0,0,0"
+            }
+          },
+          {
+            "Id": {
+              "Type": "Component",
+              "IdValue": "b6f077df-244e-4171-8022-8233aec8eae6"
+            },
+            "Parent": {
+              "Type": "GameObject",
+              "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+            },
+            "PreviousElement": {
+              "Type": "Component",
+              "IdValue": "25a7e535-c602-46de-b559-fc38b72ad324"
+            },
+            "ContainerProperty": "Components",
+            "IsContainerArray": true,
+            "Data": {
+              "__type": "Sandbox.Rigidbody",
+              "__guid": "b6f077df-244e-4171-8022-8233aec8eae6",
+              "__enabled": true,
+              "AngularDamping": 0,
+              "Gravity": true,
+              "LinearDamping": 0,
+              "Locking": {
+                "X": false,
+                "Y": false,
+                "Z": false,
+                "Pitch": false,
+                "Yaw": false,
+                "Roll": false
+              },
+              "MassCenterOverride": "0,0,0",
+              "MassOverride": 0,
+              "MotionEnabled": true,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OverrideMassCenter": false,
+              "RigidbodyFlags": 0,
+              "StartAsleep": false
+            }
+          }
+        ],
+        "RemovedObjects": [
+          {
+            "Id": {
+              "Type": "Component",
+              "IdValue": "cac1c7ff-df62-4594-b1b3-284cdd7c5d87"
+            }
+          },
+          {
+            "Id": {
+              "Type": "Component",
+              "IdValue": "b4b3031f-7059-498d-95c6-769fbab3b6bb"
+            }
+          },
+          {
+            "Id": {
+              "Type": "Component",
+              "IdValue": "fb3192ec-8573-4051-81b2-b335ca8bb246"
+            }
+          }
+        ],
+        "PropertyOverrides": [
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+            },
+            "Property": "Name",
+            "Value": "Prop: Palm (3)"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+            },
+            "Property": "Position",
+            "Value": "101.4911,-161.7279,-17.78564"
+          }
+        ],
+        "MovedObjects": []
+      },
+      "__PrefabIdToInstanceId": {
+        "92221169-c5ad-4b07-8205-56f6489813c1": "c841b3ec-35ac-4b18-984e-c8509c02464c",
+        "0c781ee5-94d5-44dd-b43c-223e686b594a": "5ca25174-4e36-46ad-baa9-e8d9814c8d87",
+        "cac1c7ff-df62-4594-b1b3-284cdd7c5d87": "83945bf5-57da-4ad1-ab88-426884c817cc",
+        "b4b3031f-7059-498d-95c6-769fbab3b6bb": "a79b1194-6fce-4862-9193-de3969d8f11a",
+        "fb3192ec-8573-4051-81b2-b335ca8bb246": "2f225ff7-1b4c-42bb-b8a9-3fab63c22d29"
+      }
+    },
+    {
+      "__guid": "35adf956-25b2-42fc-a16d-83bbf25e0958",
+      "__version": 1,
+      "__Prefab": "prefabs/props/palm.prefab",
+      "__PrefabInstancePatch": {
+        "AddedObjects": [
+          {
+            "Id": {
+              "Type": "Component",
+              "IdValue": "fd39e503-5787-46d3-8ae0-dd6c85e6c014"
+            },
+            "Parent": {
+              "Type": "GameObject",
+              "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+            },
+            "PreviousElement": {
+              "Type": "Component",
+              "IdValue": "0c781ee5-94d5-44dd-b43c-223e686b594a"
+            },
+            "ContainerProperty": "Components",
+            "IsContainerArray": true,
+            "Data": {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "fd39e503-5787-46d3-8ae0-dd6c85e6c014",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "CreateAttachments": false,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Materials": null,
+              "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Tint": "0.27684,0.66977,0.13395,1"
+            }
+          },
+          {
+            "Id": {
+              "Type": "Component",
+              "IdValue": "5f5d0f89-3e38-4711-8a39-686d03f6cd74"
+            },
+            "Parent": {
+              "Type": "GameObject",
+              "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+            },
+            "PreviousElement": {
+              "Type": "Component",
+              "IdValue": "fd39e503-5787-46d3-8ae0-dd6c85e6c014"
+            },
+            "ContainerProperty": "Components",
+            "IsContainerArray": true,
+            "Data": {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "5f5d0f89-3e38-4711-8a39-686d03f6cd74",
+              "__enabled": true,
+              "Elasticity": null,
+              "Friction": null,
+              "IsTrigger": false,
+              "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnObjectTriggerEnter": null,
+              "OnObjectTriggerExit": null,
+              "OnTriggerEnter": null,
+              "OnTriggerExit": null,
+              "RollingResistance": null,
+              "Static": false,
+              "Surface": null,
+              "SurfaceVelocity": "0,0,0"
+            }
+          },
+          {
+            "Id": {
+              "Type": "Component",
+              "IdValue": "c1530066-9fd4-4f03-ad5b-710b3509c079"
+            },
+            "Parent": {
+              "Type": "GameObject",
+              "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+            },
+            "PreviousElement": {
+              "Type": "Component",
+              "IdValue": "5f5d0f89-3e38-4711-8a39-686d03f6cd74"
+            },
+            "ContainerProperty": "Components",
+            "IsContainerArray": true,
+            "Data": {
+              "__type": "Sandbox.Rigidbody",
+              "__guid": "c1530066-9fd4-4f03-ad5b-710b3509c079",
+              "__enabled": true,
+              "AngularDamping": 0,
+              "Gravity": true,
+              "LinearDamping": 0,
+              "Locking": {
+                "X": false,
+                "Y": false,
+                "Z": false,
+                "Pitch": false,
+                "Yaw": false,
+                "Roll": false
+              },
+              "MassCenterOverride": "0,0,0",
+              "MassOverride": 0,
+              "MotionEnabled": true,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OverrideMassCenter": false,
+              "RigidbodyFlags": 0,
+              "StartAsleep": false
+            }
+          }
+        ],
+        "RemovedObjects": [
+          {
+            "Id": {
+              "Type": "Component",
+              "IdValue": "cac1c7ff-df62-4594-b1b3-284cdd7c5d87"
+            }
+          },
+          {
+            "Id": {
+              "Type": "Component",
+              "IdValue": "b4b3031f-7059-498d-95c6-769fbab3b6bb"
+            }
+          },
+          {
+            "Id": {
+              "Type": "Component",
+              "IdValue": "fb3192ec-8573-4051-81b2-b335ca8bb246"
+            }
+          }
+        ],
+        "PropertyOverrides": [
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+            },
+            "Property": "Name",
+            "Value": "Prop: Palm (4)"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+            },
+            "Property": "Position",
+            "Value": "1494.807,-161.7279,-17.78564"
+          }
+        ],
+        "MovedObjects": []
+      },
+      "__PrefabIdToInstanceId": {
+        "92221169-c5ad-4b07-8205-56f6489813c1": "35adf956-25b2-42fc-a16d-83bbf25e0958",
+        "0c781ee5-94d5-44dd-b43c-223e686b594a": "54837525-616c-4e0a-bab6-324a9247c53b",
+        "cac1c7ff-df62-4594-b1b3-284cdd7c5d87": "67a039f5-e879-483f-9371-77c8add9a93b",
+        "b4b3031f-7059-498d-95c6-769fbab3b6bb": "4c09854f-5851-4727-a6fa-33487967ce6c",
+        "fb3192ec-8573-4051-81b2-b335ca8bb246": "122ea57c-205b-431b-9e63-6cce3d45fc7e"
+      }
     }
   ],
   "SceneProperties": {
@@ -1863,6 +5659,8 @@
   "ResourceVersion": 3,
   "Title": "minimal",
   "Description": null,
-  "__references": [],
+  "__references": [
+    "kenneynl.palmdetailedbend#87816"
+  ],
   "__version": 3
 }

@@ -6,6 +6,7 @@ public sealed class Player : Component
 {
     [Property] public PlayerController controller;
     [Property] public ModelRenderer body;
+    [Property] public HudWorld HudWorld;
     [Property] public float speed = 10f;
 
     public bool IsAlive { get; set; } = true;
@@ -16,6 +17,7 @@ public sealed class Player : Component
     public void Die(Car killer)
     {
         if (!IsAlive) return;
+        IsAlive = false;
 
         controller.ColliderObject.Enabled = false;
 
@@ -25,10 +27,9 @@ public sealed class Player : Component
         var direction = killer.WorldRotation.Forward;
         rb.Velocity *= direction * killer.Speed * 100f;
 
-        body.Enabled = false;
+        body.GameObject.Enabled = false;
         controller.Enabled = false;
-
-        IsAlive = false;
+        HudWorld.Enabled = false;
 
         Log.Info("Die");
 
@@ -51,7 +52,8 @@ public sealed class Player : Component
         WorldRotation = _transformRespawn.Rotation;
 
         controller.ColliderObject.Enabled = true;
-        body.Enabled = true;
+        body.GameObject.Enabled = true;
+        HudWorld.Enabled = true;
         controller.Enabled = true;
 
         IsAlive = true;
@@ -64,12 +66,13 @@ public sealed class Player : Component
         if (IsAlive && !_corp.IsValid()) return;
 
         WorldPosition = _corp.WorldPosition;
-        Log.Info("Die");
     }
 
     protected override void OnStart()
     {
         _transformRespawn = WorldTransform;
+
+        HudWorld.Name = Connection.Local.DisplayName;
     }
 
     protected override void OnUpdate()
