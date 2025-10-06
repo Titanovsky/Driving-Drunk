@@ -188,7 +188,7 @@
       "Scale": "1,1,1",
       "Tags": "",
       "Enabled": true,
-      "NetworkMode": 2,
+      "NetworkMode": 1,
       "NetworkInterpolation": true,
       "NetworkOrphaned": 0,
       "OwnerTransfer": 1,
@@ -340,7 +340,7 @@
         {
           "__type": "Sandbox.Dresser",
           "__guid": "c7d7bd29-db75-4908-8188-2d9c79096f88",
-          "__enabled": true,
+          "__enabled": false,
           "ApplyHeightScale": true,
           "BodyTarget": {
             "_type": "component",
@@ -454,6 +454,7 @@
               "BoneMergeTarget": null,
               "CreateAttachments": false,
               "CreateBoneObjects": false,
+              "LodOverride": null,
               "MaterialGroup": "default",
               "MaterialOverride": null,
               "Materials": null,
@@ -536,6 +537,7 @@
               "__guid": "d73ef723-c888-41d4-802e-f797c79318be",
               "__enabled": true,
               "__version": 1,
+              "Filter": "Bilinear",
               "Gamma": 2.2,
               "Mode": "Additive",
               "OnComponentDestroy": null,
@@ -642,6 +644,7 @@
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
               "CreateAttachments": false,
+              "LodOverride": null,
               "MaterialGroup": null,
               "MaterialOverride": null,
               "Materials": null,
@@ -770,20 +773,20 @@
                   "-0,0,-1"
                 ],
                 "TextureScale": [
-                  "0.25,0.25",
-                  "0.25,0.25",
-                  "0.25,0.25",
-                  "0.25,0.25",
+                  "0.25,0.2499984",
+                  "0.25,0.2499984",
+                  "0.2499985,0.25",
+                  "0.2499985,0.25",
                   "0.25,0.25",
                   "0.25,0.25"
                 ],
                 "TextureOffset": [
-                  "117.2969,90.29688",
-                  "117.2969,90.29688",
-                  "90.29688,354.971",
-                  "421.7031,354.9709",
-                  "394.7031,354.971",
-                  "117.2969,354.9709"
+                  "117.2979,90.28125",
+                  "117.2979,90.28125",
+                  "90.28149,354.971",
+                  "421.7185,354.9709",
+                  "394.7012,354.971",
+                  "117.2988,354.9709"
                 ],
                 "MaterialIndex": [
                   0,
@@ -925,20 +928,20 @@
                   "-0,0,-1"
                 ],
                 "TextureScale": [
-                  "0.25,0.25",
-                  "0.25,0.25",
-                  "0.2499996,0.25",
-                  "0.2499996,0.25",
+                  "0.25,0.2499986",
+                  "0.25,0.2499986",
+                  "0.2499987,0.25",
+                  "0.2499985,0.25",
                   "0.25,0.25",
                   "0.25,0.25"
                 ],
                 "TextureOffset": [
-                  "117.2959,493.2493",
-                  "117.2959,493.2493",
-                  "493.2517,354.971",
-                  "18.74829,354.9711",
-                  "394.7031,354.971",
-                  "117.2969,354.9709"
+                  "117.2969,493.2575",
+                  "117.2969,493.2576",
+                  "493.2573,354.971",
+                  "18.74133,354.9711",
+                  "394.7012,354.971",
+                  "117.2988,354.9709"
                 ],
                 "MaterialIndex": [
                   0,
@@ -1025,7 +1028,7 @@
               "IsTrigger": false,
               "Mesh": {
                 "Topology": "H4sIAAAAAAAACl2QCQ7CMAwEp4Qj3NBy/f+laMRGsohUVbFn1+t04ANs+Z0VsM69AwfgBFyAKZ9MPXdgk3qLnsI+Um/h/me9i2ZXfFvYOazafTJN0XRgKZmPyWtfXvYVL73PZRd52WdYPa7xtC8veys7u6t17/7t6Tn0ZtFjvIXZR895zjKjPWf4NiOrGt+ivpXZ3XnozaOndVn9vvVkkTjEAQAA",
-                "Position": "-2291.989,-119.2868,88.74274",
+                "Position": "-2291.988,-119.2868,88.74274",
                 "Rotation": "0,0,0.7071067,0.7071068",
                 "Positions": [
                   "-487.7976,-9.682121,106.5136",
@@ -1073,27 +1076,27 @@
                 ],
                 "TextureVAxis": [
                   "1,-0.0000001251081,0",
-                  "1,-0.0000001876717,0",
+                  "1,-0.0000002502352,0",
                   "0,0,-1",
                   "0,0,-1",
                   "0,0,-1",
                   "-0,0,-1"
                 ],
                 "TextureScale": [
-                  "0.25,0.2500063",
-                  "0.25,0.2500063",
-                  "0.2500063,0.25",
-                  "0.2500055,0.25",
+                  "0.2499999,0.2500063",
+                  "0.2499999,0.2500063",
+                  "0.2500047,0.25",
+                  "0.2500047,0.25",
                   "0.25,0.25",
                   "0.25,0.25"
                 ],
                 "TextureOffset": [
-                  "250.1631,463.7239",
-                  "250.1631,463.7239",
-                  "463.7241,354.971",
-                  "48.25073,354.971",
-                  "261.8284,354.971",
-                  "250.1715,354.9709"
+                  "250.1631,463.7229",
+                  "250.1631,463.7219",
+                  "463.7815,354.971",
+                  "48.22144,354.971",
+                  "261.8282,354.971",
+                  "250.1716,354.9709"
                 ],
                 "MaterialIndex": [
                   0,
@@ -1243,10 +1246,10 @@
                   "0.25,0.25"
                 ],
                 "TextureOffset": [
-                  "250.1631,280.2415",
-                  "250.1631,280.2405",
-                  "280.095,354.971",
-                  "231.907,354.971",
+                  "250.1631,280.2434",
+                  "250.1631,280.2424",
+                  "280.0969,354.971",
+                  "231.905,354.971",
                   "261.847,354.971",
                   "250.1528,354.9709"
                 ],
@@ -1607,7 +1610,7 @@
                 "0.25,0.2499932"
               ],
               "TextureOffset": [
-                "43.69849,24.77014",
+                "43.69873,24.77014",
                 "511.398,5.015625",
                 "23.34497,222.4203",
                 "232.6545,222.4203",
@@ -1762,7 +1765,7 @@
                 "0.25,0.2499932"
               ],
               "TextureOffset": [
-                "46.21948,24.77014",
+                "46.21973,24.77014",
                 "511.398,5.015625",
                 "23.34497,222.4203",
                 "232.6545,222.4203",
@@ -2537,7 +2540,7 @@
                 "0.25,0.2499932"
               ],
               "TextureOffset": [
-                "240.3751,24.77014",
+                "240.3748,24.77014",
                 "511.398,5.015625",
                 "23.34497,222.4203",
                 "232.6545,222.4203",
@@ -2692,7 +2695,7 @@
                 "0.25,0.2499932"
               ],
               "TextureOffset": [
-                "242.8961,24.77014",
+                "242.8958,24.77014",
                 "511.398,5.015625",
                 "23.34497,222.4203",
                 "232.6545,222.4203",
@@ -2784,7 +2787,7 @@
             "Property": "Mesh",
             "Value": {
               "Topology": "H4sIAAAAAAAACoWQ2QoCQQwES1dXUfC+/v9HI4UdmAdhB4aQTDpT6T3wAWZ+Zw1skt+BA/AETsAq157xXIGqKutT9Ay9j9S92z9/vaO3thvmTum9pbcWzgwcw2vuX/K/MmtJL8s5e5vL4t6XYWd3tW5u9M2e1qt1RnshuxzNJ5uMvumP3hjbP70YvZLdHVpvdKb15v4CSw/ShsQBAAA=",
-              "Position": "1759.783,-101.2826,-16.79005",
+              "Position": "1759.782,-101.2826,-16.79005",
               "Rotation": "0,0,0,1",
               "Positions": [
                 "-98.76762,-1124.251,1.401409",
@@ -2847,7 +2850,7 @@
                 "0.25,0.2499932"
               ],
               "TextureOffset": [
-                "151.3718,24.77014",
+                "151.3723,24.77014",
                 "511.398,5.015625",
                 "23.34497,222.4203",
                 "232.6545,222.4203",
@@ -2994,7 +2997,7 @@
                 "-0,0,-1"
               ],
               "TextureScale": [
-                "0.7716225,0.9811407",
+                "0.7716219,0.9811409",
                 "0.25,0.25",
                 "0.4999999,0.5000082",
                 "0.4999997,0.5000082",
@@ -3002,7 +3005,7 @@
                 "0.25,0.2499932"
               ],
               "TextureOffset": [
-                "153.8945,24.77002",
+                "153.8931,24.77014",
                 "511.398,5.015625",
                 "23.34497,222.4203",
                 "232.6545,222.4203",
@@ -3094,7 +3097,7 @@
             "Property": "Mesh",
             "Value": {
               "Topology": "H4sIAAAAAAAACoWQ2QoCQQwES1dXUfC+/v9HI4UdmAdhB4aQTDpT6T3wAWZ+Zw1skt+BA/AETsAq157xXIGqKutT9Ay9j9S92z9/vaO3thvmTum9pbcWzgwcw2vuX/K/MmtJL8s5e5vL4t6XYWd3tW5u9M2e1qt1RnshuxzNJ5uMvumP3hjbP70YvZLdHVpvdKb15v4CSw/ShsQBAAA=",
-              "Position": "2317.264,-101.2826,-16.79005",
+              "Position": "2317.263,-101.2826,-16.79005",
               "Rotation": "0,0,0,1",
               "Positions": [
                 "-98.76762,-1124.251,1.401409",
@@ -3157,7 +3160,7 @@
                 "0.25,0.2499932"
               ],
               "TextureOffset": [
-                "196.8926,24.77014",
+                "196.8928,24.77014",
                 "511.398,5.015625",
                 "23.34497,222.4203",
                 "232.6545,222.4203",
@@ -3249,7 +3252,7 @@
             "Property": "Mesh",
             "Value": {
               "Topology": "H4sIAAAAAAAACoWQ2QoCQQwES1dXUfC+/v9HI4UdmAdhB4aQTDpT6T3wAWZ+Zw1skt+BA/AETsAq157xXIGqKutT9Ay9j9S92z9/vaO3thvmTum9pbcWzgwcw2vuX/K/MmtJL8s5e5vL4t6XYWd3tW5u9M2e1qt1RnshuxzNJ5uMvumP3hjbP70YvZLdHVpvdKb15v4CSw/ShsQBAAA=",
-              "Position": "2512.854,-101.2826,-16.79005",
+              "Position": "2512.853,-101.2826,-16.79005",
               "Rotation": "0,0,0,1",
               "Positions": [
                 "-98.76762,-1124.251,1.401409",
@@ -3312,7 +3315,7 @@
                 "0.25,0.2499932"
               ],
               "TextureOffset": [
-                "199.4136,24.77014",
+                "199.4141,24.77014",
                 "511.398,5.015625",
                 "23.34497,222.4203",
                 "232.6545,222.4203",
@@ -3622,7 +3625,7 @@
                 "0.25,0.2499932"
               ],
               "TextureOffset": [
-                "113.0757,24.77014",
+                "113.0754,24.77014",
                 "511.398,5.015625",
                 "23.34497,222.4203",
                 "232.6545,222.4203",
@@ -3714,7 +3717,7 @@
             "Property": "Mesh",
             "Value": {
               "Topology": "H4sIAAAAAAAACoWQ2QoCQQwES1dXUfC+/v9HI4UdmAdhB4aQTDpT6T3wAWZ+Zw1skt+BA/AETsAq157xXIGqKutT9Ay9j9S92z9/vaO3thvmTum9pbcWzgwcw2vuX/K/MmtJL8s5e5vL4t6XYWd3tW5u9M2e1qt1RnshuxzNJ5uMvumP3hjbP70YvZLdHVpvdKb15v4CSw/ShsQBAAA=",
-              "Position": "3623.935,-101.2826,-16.79005",
+              "Position": "3623.934,-101.2826,-16.79005",
               "Rotation": "0,0,0,1",
               "Positions": [
                 "-98.76762,-1124.251,1.401409",
@@ -3777,7 +3780,7 @@
                 "0.25,0.2499932"
               ],
               "TextureOffset": [
-                "39.48438,24.77014",
+                "39.48486,24.77014",
                 "511.398,5.015625",
                 "23.34497,222.4203",
                 "232.6545,222.4203",
@@ -3869,7 +3872,7 @@
             "Property": "Mesh",
             "Value": {
               "Topology": "H4sIAAAAAAAACoWQ2QoCQQwES1dXUfC+/v9HI4UdmAdhB4aQTDpT6T3wAWZ+Zw1skt+BA/AETsAq157xXIGqKutT9Ay9j9S92z9/vaO3thvmTum9pbcWzgwcw2vuX/K/MmtJL8s5e5vL4t6XYWd3tW5u9M2e1qt1RnshuxzNJ5uMvumP3hjbP70YvZLdHVpvdKb15v4CSw/ShsQBAAA=",
-              "Position": "3819.525,-101.2826,-16.79005",
+              "Position": "3819.524,-101.2826,-16.79005",
               "Rotation": "0,0,0,1",
               "Positions": [
                 "-98.76762,-1124.251,1.401409",
@@ -4079,7 +4082,7 @@
                 "-0,0,-1"
               ],
               "TextureScale": [
-                "0.771623,0.9811409",
+                "0.7716219,0.9811409",
                 "0.25,0.25",
                 "0.4999999,0.5000082",
                 "0.4999997,0.5000082",
@@ -4087,7 +4090,7 @@
                 "0.25,0.2499932"
               ],
               "TextureOffset": [
-                "43.62646,24.77014",
+                "43.61914,24.77014",
                 "511.398,5.015625",
                 "23.34497,222.4203",
                 "232.6545,222.4203",
@@ -4946,6 +4949,7 @@
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
               "CreateAttachments": false,
+              "LodOverride": null,
               "MaterialGroup": null,
               "MaterialOverride": null,
               "Materials": null,
@@ -5125,6 +5129,7 @@
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
               "CreateAttachments": false,
+              "LodOverride": null,
               "MaterialGroup": null,
               "MaterialOverride": null,
               "Materials": null,
@@ -5304,6 +5309,7 @@
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
               "CreateAttachments": false,
+              "LodOverride": null,
               "MaterialGroup": null,
               "MaterialOverride": null,
               "Materials": null,
@@ -5483,6 +5489,7 @@
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
               "CreateAttachments": false,
+              "LodOverride": null,
               "MaterialGroup": null,
               "MaterialOverride": null,
               "Materials": null,
