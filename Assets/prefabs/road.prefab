@@ -34,7 +34,7 @@
         "Spawners": [
           {
             "_type": "gameobject",
-            "go": "92640e46-29f5-4213-b757-deee4e948539"
+            "go": "3de0d59a-3e01-49cb-83f3-e10e30d8e280"
           },
           {
             "_type": "gameobject",
@@ -53,12 +53,12 @@
     ],
     "Children": [
       {
-        "__guid": "92640e46-29f5-4213-b757-deee4e948539",
+        "__guid": "3de0d59a-3e01-49cb-83f3-e10e30d8e280",
         "__version": 1,
         "Flags": 0,
         "Name": "Spawn Car: Right",
-        "Position": "-19.45648,-24.32524,173.2306",
-        "Rotation": "0,0,0,1",
+        "Position": "-19.45648,-43.39519,173.2306",
+        "Rotation": "0,0,0.7071068,0.7071068",
         "Scale": "1,1,1",
         "Tags": "",
         "Enabled": true,
@@ -75,8 +75,8 @@
         "__version": 1,
         "Flags": 0,
         "Name": "Spawn Car: Right (1)",
-        "Position": "12.84486,-23.71091,173.2306",
-        "Rotation": "0,0,0,1",
+        "Position": "12.84486,-42.87465,173.2306",
+        "Rotation": "0,0,0.7071068,0.7071068",
         "Scale": "1,1,1",
         "Tags": "",
         "Enabled": true,
@@ -94,7 +94,7 @@
         "Flags": 0,
         "Name": "Spawn Car: Left",
         "Position": "-17.36913,44.83741,173.2306",
-        "Rotation": "0,0,1,-0.00000004371139",
+        "Rotation": "0,-0,-0.7071068,0.7071068",
         "Scale": "1,1,1",
         "Tags": "",
         "Enabled": true,
@@ -112,7 +112,7 @@
         "Flags": 0,
         "Name": "Spawn Car: Left (1)",
         "Position": "13.60357,44.5418,173.2306",
-        "Rotation": "0,0,1,-0.00000004371139",
+        "Rotation": "0,-0,-0.7071068,0.7071068",
         "Scale": "1,1,1",
         "Tags": "",
         "Enabled": true,

@@ -1,3 +1,5 @@
+using Sandbox.Rendering;
+
 public sealed class Road : Component
 {
     [Property] public GameObject CarPrefab { get; set; }
@@ -7,17 +9,28 @@ public sealed class Road : Component
 
     public TimeUntil NextSpawnTime { get; private set; }
 
+    private ObjectPool _carsPool = new(8);
+    
     public void SpawnCar()
     {
         if (!CarPrefab.IsValid()) return;
 
         var randomSpawn = GetRandomSpawnPoint();
-        if (!randomSpawn.IsValid) return;
+        if (!randomSpawn.IsValid()) return;
 
-        var pos = randomSpawn.Position;
-        var rot = randomSpawn.Rotation;
+        var transform = randomSpawn.WorldTransform;
+        var pos = randomSpawn.WorldPosition;
+        var rot = randomSpawn.WorldRotation;
 
-        CarPrefab.Clone(pos, rot);
+        var car = _carsPool.Get(CarPrefab, pos, rot).Components.Get<Car>();
+        if (!car.IsValid()) return;
+
+        car.WorldPosition = pos;
+        car.WorldRotation = rot;
+
+        car.Direction = rot.Forward;
+
+        car.Init();
     }
 
     public void ResetSpawnTimer(float minDelay, float maxDelay)
@@ -30,9 +43,9 @@ public sealed class Road : Component
         ResetSpawnTimer(MinDelaySpawnCar, MaxDelaySpawnCar);
     }
 
-    private Transform GetRandomSpawnPoint()
+    private GameObject GetRandomSpawnPoint()
     {
-        return Game.Random.FromList(Spawners).WorldTransform;
+        return Game.Random.FromList(Spawners);
     }
 
     protected override void OnStart()
