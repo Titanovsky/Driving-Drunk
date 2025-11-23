@@ -83,7 +83,7 @@
         "UseCameraControls": false,
         "UseFovFromPreferences": true,
         "UseInputControls": true,
-        "UseLookControls": true,
+        "UseLookControls": false,
         "WalkSpeed": 110
       },
       {
@@ -319,7 +319,7 @@
         ],
         "Children": [
           {
-            "__guid": "bd24bd42-c6df-4267-a9d5-dde73d87a1a2",
+            "__guid": "8050d442-9b0e-4fed-b893-35f29ad4939e",
             "__version": 1,
             "Flags": 0,
             "Name": "Clothing - flat_shoes",
@@ -336,7 +336,7 @@
             "Components": [
               {
                 "__type": "Sandbox.SkinnedModelRenderer",
-                "__guid": "b80d080b-249f-4e9d-bc9e-02ea0d94c6b5",
+                "__guid": "daa980cd-2575-4595-8b3e-026dddfd1bfe",
                 "__enabled": true,
                 "AnimationGraph": null,
                 "BodyGroups": 18446744073709551615,
@@ -387,7 +387,7 @@
             "Children": []
           },
           {
-            "__guid": "f5576be8-1b73-4370-9294-af2f2aee2ecd",
+            "__guid": "e8a72b72-1e72-4da9-bf53-32ca936caf21",
             "__version": 1,
             "Flags": 0,
             "Name": "Clothing - plump_lips_03",
@@ -404,7 +404,7 @@
             "Components": [
               {
                 "__type": "Sandbox.SkinnedModelRenderer",
-                "__guid": "25ac9b71-87ff-4ef7-9cc7-c07a4d6c25a5",
+                "__guid": "2910370b-8e35-4fa8-bdd2-4371a891e21b",
                 "__enabled": true,
                 "AnimationGraph": null,
                 "BodyGroups": 18446744073709551615,
@@ -455,7 +455,7 @@
             "Children": []
           },
           {
-            "__guid": "9ad0d388-96e2-4def-9065-c457000c4676",
+            "__guid": "e3c26754-d5ed-43aa-a3f7-522f24e26dfc",
             "__version": 1,
             "Flags": 0,
             "Name": "Clothing - skull_helmet",
@@ -472,7 +472,7 @@
             "Components": [
               {
                 "__type": "Sandbox.SkinnedModelRenderer",
-                "__guid": "d827fca5-c38b-41da-8abf-b6f0f833231b",
+                "__guid": "3bee38a8-3534-47d9-9174-d5f28e3e9e14",
                 "__enabled": true,
                 "AnimationGraph": null,
                 "BodyGroups": 18446744073709551615,
@@ -523,7 +523,7 @@
             "Children": []
           },
           {
-            "__guid": "4b9e85e8-5a1c-4890-8810-61d2f46d4fd4",
+            "__guid": "325c79db-6f88-4e96-9081-115a2a072863",
             "__version": 1,
             "Flags": 0,
             "Name": "Clothing - blue_shirt",
@@ -540,7 +540,7 @@
             "Components": [
               {
                 "__type": "Sandbox.SkinnedModelRenderer",
-                "__guid": "f5e56d8b-12ae-49da-a7f3-6dedcdcaaee0",
+                "__guid": "7bc8df36-d1d3-423d-b235-44db7499634e",
                 "__enabled": true,
                 "AnimationGraph": null,
                 "BodyGroups": 18446744073709551615,
@@ -591,7 +591,7 @@
             "Children": []
           },
           {
-            "__guid": "288e4f9a-0878-4e5d-9635-fa9a9eab44bd",
+            "__guid": "200b2bf8-a40f-4a90-acb7-5223b291f80d",
             "__version": 1,
             "Flags": 0,
             "Name": "Clothing - jeans",
@@ -608,7 +608,7 @@
             "Components": [
               {
                 "__type": "Sandbox.SkinnedModelRenderer",
-                "__guid": "34cbc674-eebe-4e1f-bc68-423bfd38721d",
+                "__guid": "0d96d5e0-cf03-4612-b260-655cab3ff822",
                 "__enabled": true,
                 "AnimationGraph": null,
                 "BodyGroups": 18446744073709551615,
@@ -778,7 +778,26 @@
         ],
         "Children": []
       }
-    ]
+    ],
+    "__properties": {
+      "NetworkInterpolation": true,
+      "TimeScale": 1,
+      "WantsSystemScene": true,
+      "Metadata": {},
+      "NavMesh": {
+        "Enabled": false,
+        "IncludeStaticBodies": true,
+        "IncludeKeyframedBodies": true,
+        "EditorAutoUpdate": true,
+        "AgentHeight": 64,
+        "AgentRadius": 16,
+        "AgentStepSize": 18,
+        "AgentMaxSlope": 40,
+        "ExcludedBodies": "",
+        "IncludedBodies": ""
+      }
+    },
+    "__variables": []
   },
   "ResourceVersion": 2,
   "ShowInMenu": false,

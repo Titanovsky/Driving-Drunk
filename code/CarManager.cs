@@ -28,6 +28,7 @@ public sealed class CarManager : Component
             if (!road.IsValid()) continue;
             if (!road.NextSpawnTime) continue;
 
+            road.ResetSpawnTimer();
             road.SpawnCar();
         }
     }
