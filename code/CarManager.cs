@@ -1,47 +1,34 @@
-using Sandbox;
-using System.Linq;
-
 public sealed class CarManager : Component
 {
-    [Property] public GameObject CarPrefab { get; set; }
     [Property] public List<Road> Roads { get; set; } = new();
-    [Property] public float MinDelaySpawnCar { get; set; } = 1f;
-    [Property] public float MaxDelaySpawnCar { get; set; } = 4f;
+    [Property] public GameObject RoadsDirectory { get; set; }
 
-    private TimeUntil _timerSpawnCars;
-
-    protected override void OnStart()
-	{
-        foreach (var road in Scene.GetAll<Road>())
-            Roads.Add(road);
-
-        ResetTimer();
-    }
-
-    protected override void OnUpdate()
+    private void CollectRoads()
     {
-        if (_timerSpawnCars)
-        {
-            ResetTimer();
+        if (!RoadsDirectory.IsValid()) return;
 
-            SpawnCar();
+        foreach (var gameObj in RoadsDirectory.Children)
+        {
+            if (!gameObj.Components.TryGet<Road>(out var road)) continue;
+            if (Roads.Contains(road)) continue;
+
+            Roads.Add(road);
         }
     }
 
-    private void ResetTimer()
+    protected override void OnStart()
     {
-        _timerSpawnCars = Game.Random.Int((int) MinDelaySpawnCar, (int) MaxDelaySpawnCar);
+        CollectRoads();
     }
-
-    public void SpawnCar()
+    
+    protected override void OnUpdate()
     {
         foreach (var road in Roads)
         {
-            Transform randomSpawn = road.GetRandomSpawnPoint();
-            Vector3 pos = randomSpawn.Position;
-            Rotation ang = randomSpawn.Rotation;
+            if (!road.IsValid()) continue;
+            if (!road.NextSpawnTime) continue;
 
-            var obj = CarPrefab.Clone(pos, ang);
+            road.SpawnCar();
         }
     }
 }

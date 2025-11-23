@@ -12,12 +12,19 @@
     "NetworkMode": 2,
     "NetworkInterpolation": true,
     "NetworkOrphaned": 0,
+    "NetworkTransmit": true,
     "OwnerTransfer": 1,
     "Components": [
       {
         "__type": "Road",
         "__guid": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f",
         "__enabled": true,
+        "CarPrefab": {
+          "_type": "gameobject",
+          "prefab": "prefabs/car.prefab"
+        },
+        "MaxDelaySpawnCar": 4,
+        "MinDelaySpawnCar": 1,
         "OnComponentDestroy": null,
         "OnComponentDisabled": null,
         "OnComponentEnabled": null,
@@ -58,6 +65,7 @@
         "NetworkMode": 2,
         "NetworkInterpolation": true,
         "NetworkOrphaned": 0,
+        "NetworkTransmit": true,
         "OwnerTransfer": 1,
         "Components": [],
         "Children": []
@@ -75,6 +83,7 @@
         "NetworkMode": 2,
         "NetworkInterpolation": true,
         "NetworkOrphaned": 0,
+        "NetworkTransmit": true,
         "OwnerTransfer": 1,
         "Components": [],
         "Children": []
@@ -92,6 +101,7 @@
         "NetworkMode": 2,
         "NetworkInterpolation": true,
         "NetworkOrphaned": 0,
+        "NetworkTransmit": true,
         "OwnerTransfer": 1,
         "Components": [],
         "Children": []
@@ -109,6 +119,7 @@
         "NetworkMode": 2,
         "NetworkInterpolation": true,
         "NetworkOrphaned": 0,
+        "NetworkTransmit": true,
         "OwnerTransfer": 1,
         "Components": [],
         "Children": []
@@ -126,12 +137,14 @@
         "NetworkMode": 2,
         "NetworkInterpolation": true,
         "NetworkOrphaned": 0,
+        "NetworkTransmit": true,
         "OwnerTransfer": 1,
         "Components": [
           {
             "__type": "Sandbox.MeshComponent",
             "__guid": "2c83d66f-c045-4223-b9e7-aaaff99d7e62",
             "__enabled": true,
+            "ColliderFlags": 0,
             "Collision": "Mesh",
             "Color": "1,1,1,1",
             "Elasticity": null,
