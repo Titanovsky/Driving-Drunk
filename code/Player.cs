@@ -1,6 +1,8 @@
 using Sandbox;
+using Sandbox.Diagnostics;
 using Sandbox.Services;
 using System.Threading.Tasks;
+using static Sandbox.PlayerController;
 
 public sealed class Player : Component
 {
@@ -36,13 +38,6 @@ public sealed class Player : Component
         _ = RespawnAsync(2.4f);
     }
 
-    private async Task RespawnAsync(float seconds)
-    {
-        await Task.DelaySeconds(seconds);
-
-        Respawn();
-    }
-
     public void Respawn()
     {
         if (_corp.IsValid())
@@ -61,7 +56,51 @@ public sealed class Player : Component
         Log.Info("Respawn");
     }
 
-    private void UpdateTeleportToCorp()
+    private async Task RespawnAsync(float seconds)
+    {
+        await Task.DelaySeconds(seconds);
+
+        Respawn();
+    }
+
+    private void RotateUpdate()
+    {
+        if (!IsAlive || body is null)
+            return;
+
+        // Берём только горизонтальное движение мыши
+        var mouseDeltaX = Input.MouseDelta.x;
+        var mouseSensitivity = Preferences.Sensitivity * 0.1f;
+
+        Angles input = Input.AnalogLook;
+        input *= mouseSensitivity;
+
+        Angles eyeAngles = controller.EyeAngles;
+        eyeAngles += input;
+        eyeAngles.roll = 0f;
+        eyeAngles.pitch = 0f;
+        //if (15f > 0f)
+        //{
+        //    eyeAngles.pitch = eyeAngles.pitch.Clamp(0f - 15f, 15f);
+        //}
+
+        controller.EyeAngles = eyeAngles;
+
+        //controller.EyeAngles = new Angles(0f,1000f * -Time.Delta,0f);
+        Log.Info(controller.EyeAngles);
+
+        //// Локальные углы тела относительно родителя
+        //var angles = controller.Renderer.LocalRotation.Angles();
+
+        //// Крутим только yaw
+        //angles.yaw += mouseDeltaX * mouseSensitivity;
+        //angles.pitch = 0f;
+        //angles.roll = 0f;
+
+        //controller.Renderer.LocalRotation = angles.ToRotation();
+    }
+
+    private void TeleportToCorpUpdate()
     {
         if (IsAlive && !_corp.IsValid()) return;
 
@@ -77,6 +116,7 @@ public sealed class Player : Component
 
     protected override void OnUpdate()
     {
-        UpdateTeleportToCorp();
+        TeleportToCorpUpdate();
+        RotateUpdate();
     }
 }
