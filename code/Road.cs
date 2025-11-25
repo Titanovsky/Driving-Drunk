@@ -7,7 +7,7 @@ public sealed class Road : Component
 
     public TimeUntil NextSpawnTime { get; private set; }
 
-    private GameObjectPool _carsPool = new(8);
+    private GameObjectPool _carsPool = new(1);
     
     public void SpawnCar()
     {

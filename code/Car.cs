@@ -1,6 +1,6 @@
 using Sandbox;
 
-public sealed class Car : Component, Component.ITriggerListener, IObjectPool
+public sealed class Car : Component, Component.ITriggerListener, IGameObjectPool
 {
 	[Property] public float Speed { get; set; } = 1f;
 	[Property] public float DelayToDie { get; set; } = 5f;
