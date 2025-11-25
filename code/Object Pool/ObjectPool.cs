@@ -2,10 +2,6 @@
 {
     private List<GameObject> _objects = new();
 
-    private GameObject _cachePrefab;
-    private Vector3 _cachePos;
-    private Rotation _cacheRot;
-
     public ObjectPool(int capacity)
     {
         _objects.Capacity = capacity;
@@ -14,10 +10,6 @@
     public GameObject Get(GameObject prefab, Vector3 pos, Rotation rot)
     {
         var obj = GetFirstReleased() ?? Clone(prefab, pos, rot);
-
-        _cachePrefab = prefab;
-        _cachePos = pos;
-        _cacheRot = rot;
 
         return obj;
     }
