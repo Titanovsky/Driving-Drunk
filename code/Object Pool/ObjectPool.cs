@@ -13,7 +13,7 @@
 
     public GameObject Get(GameObject prefab, Vector3 pos, Rotation rot)
     {
-        var obj = IsFull() ? GetFirstReleased() : Clone(prefab, pos, rot);
+        var obj = GetFirstReleased() ?? Clone(prefab, pos, rot);
 
         _cachePrefab = prefab;
         _cachePos = pos;
@@ -48,7 +48,7 @@
             }
         }
 
-        return _objects.First();
+        return IsFull() ? _objects.First() : null;
     }
 
     private GameObject Clone(GameObject prefab, Vector3 pos, Rotation rot)
