@@ -1,5 +1,3 @@
-using Sandbox.Rendering;
-
 public sealed class Road : Component
 {
     [Property] public GameObject CarPrefab { get; set; }
@@ -9,7 +7,7 @@ public sealed class Road : Component
 
     public TimeUntil NextSpawnTime { get; private set; }
 
-    private ObjectPool _carsPool = new(8);
+    private GameObjectPool _carsPool = new(8);
     
     public void SpawnCar()
     {
