@@ -126,6 +126,38 @@
             {
               "_type": "gameobject",
               "go": "59867086-aa4a-4e55-98ee-b2bc6d8fd3b2"
+            },
+            {
+              "_type": "gameobject",
+              "go": "7caf57c6-4fe4-4a18-b2cc-4c109d095857"
+            },
+            {
+              "_type": "gameobject",
+              "go": "e77ca9ec-2a6c-4d0f-bbe6-9691687fb169"
+            },
+            {
+              "_type": "gameobject",
+              "go": "39171324-0f7c-45ce-b506-1b039b044cd6"
+            },
+            {
+              "_type": "gameobject",
+              "go": "c04683f7-a699-4b7f-abfd-73cd7a00ff14"
+            },
+            {
+              "_type": "gameobject",
+              "go": "633ac101-51f3-46b3-aefb-f0004bd0af3b"
+            },
+            {
+              "_type": "gameobject",
+              "go": "5a78de1c-d65a-4c49-ad90-9e7bfe37b838"
+            },
+            {
+              "_type": "gameobject",
+              "go": "789c7e44-c0de-4612-b455-38a9d9a23bef"
+            },
+            {
+              "_type": "gameobject",
+              "go": "edfe6c52-aaa9-4174-86af-d9aae0ef16ac"
             }
           ],
           "StartServer": true
@@ -305,6 +337,150 @@
               "Flags": 0,
               "Name": "Spawn Pos (2)",
               "Position": "-2058.836,-211.648,49.62803",
+              "Rotation": "0,0,0,1",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "NetworkTransmit": true,
+              "OwnerTransfer": 1,
+              "Components": [],
+              "Children": []
+            },
+            {
+              "__guid": "7caf57c6-4fe4-4a18-b2cc-4c109d095857",
+              "__version": 1,
+              "Flags": 0,
+              "Name": "Spawn Pos (3)",
+              "Position": "-2058.836,-280.8013,49.62803",
+              "Rotation": "0,0,0,1",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "NetworkTransmit": true,
+              "OwnerTransfer": 1,
+              "Components": [],
+              "Children": []
+            },
+            {
+              "__guid": "e77ca9ec-2a6c-4d0f-bbe6-9691687fb169",
+              "__version": 1,
+              "Flags": 0,
+              "Name": "Spawn Pos (4)",
+              "Position": "-2058.836,-381.7084,49.62803",
+              "Rotation": "0,0,0,1",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "NetworkTransmit": true,
+              "OwnerTransfer": 1,
+              "Components": [],
+              "Children": []
+            },
+            {
+              "__guid": "39171324-0f7c-45ce-b506-1b039b044cd6",
+              "__version": 1,
+              "Flags": 0,
+              "Name": "Spawn Pos (5)",
+              "Position": "-1989.888,-381.7084,49.62803",
+              "Rotation": "0,0,0,1",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "NetworkTransmit": true,
+              "OwnerTransfer": 1,
+              "Components": [],
+              "Children": []
+            },
+            {
+              "__guid": "c04683f7-a699-4b7f-abfd-73cd7a00ff14",
+              "__version": 1,
+              "Flags": 0,
+              "Name": "Spawn Pos (6)",
+              "Position": "-1989.888,-272.9875,49.62803",
+              "Rotation": "0,0,0,1",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "NetworkTransmit": true,
+              "OwnerTransfer": 1,
+              "Components": [],
+              "Children": []
+            },
+            {
+              "__guid": "633ac101-51f3-46b3-aefb-f0004bd0af3b",
+              "__version": 1,
+              "Flags": 0,
+              "Name": "Spawn Pos (7)",
+              "Position": "-1989.888,-170.7671,49.62803",
+              "Rotation": "0,0,0,1",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "NetworkTransmit": true,
+              "OwnerTransfer": 1,
+              "Components": [],
+              "Children": []
+            },
+            {
+              "__guid": "5a78de1c-d65a-4c49-ad90-9e7bfe37b838",
+              "__version": 1,
+              "Flags": 0,
+              "Name": "Spawn Pos (8)",
+              "Position": "-1989.888,151.8624,49.62803",
+              "Rotation": "0,0,0,1",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "NetworkTransmit": true,
+              "OwnerTransfer": 1,
+              "Components": [],
+              "Children": []
+            },
+            {
+              "__guid": "789c7e44-c0de-4612-b455-38a9d9a23bef",
+              "__version": 1,
+              "Flags": 0,
+              "Name": "Spawn Pos (9)",
+              "Position": "-2066.933,151.8624,49.62803",
+              "Rotation": "0,0,0,1",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "NetworkTransmit": true,
+              "OwnerTransfer": 1,
+              "Components": [],
+              "Children": []
+            },
+            {
+              "__guid": "edfe6c52-aaa9-4174-86af-d9aae0ef16ac",
+              "__version": 1,
+              "Flags": 0,
+              "Name": "Spawn Pos (10)",
+              "Position": "-2066.933,43.15952,49.62803",
               "Rotation": "0,0,0,1",
               "Scale": "1,1,1",
               "Tags": "",
@@ -2430,7 +2606,7 @@
                   "IdValue": "2cef42b7-1882-40cc-9a8d-9f090e1a55f1"
                 },
                 "Property": "Position",
-                "Value": "-2078.612,384.7378,-109.7467"
+                "Value": "-2103.786,384.7378,-109.7467"
               }
             ],
             "MovedObjects": []
