@@ -2,7 +2,6 @@ using Sandbox;
 using Sandbox.Diagnostics;
 using Sandbox.Services;
 using System.Threading.Tasks;
-using static Sandbox.PlayerController;
 
 public sealed class Player : Component
 {
@@ -18,6 +17,8 @@ public sealed class Player : Component
 
     public void Die(Car killer)
     {
+        if (IsProxy) return;
+
         if (!IsAlive) return;
         IsAlive = false;
 
@@ -40,6 +41,8 @@ public sealed class Player : Component
 
     public void Respawn()
     {
+        if (IsProxy) return;
+
         if (_corp.IsValid())
             _corp.Destroy();
 
@@ -65,12 +68,14 @@ public sealed class Player : Component
 
     private void RotateUpdate()
     {
+        if (IsProxy) return;
+
         if (!IsAlive || body is null)
             return;
 
         // Берём только горизонтальное движение мыши
         var mouseDeltaX = Input.MouseDelta.x;
-        var mouseSensitivity = Preferences.Sensitivity * 0.1f;
+        var mouseSensitivity = Preferences.Sensitivity * 0.25f;
 
         Angles input = Input.AnalogLook;
         input *= mouseSensitivity;
@@ -102,6 +107,8 @@ public sealed class Player : Component
 
     private void TeleportToCorpUpdate()
     {
+        if (IsProxy) return;
+
         if (IsAlive && !_corp.IsValid()) return;
 
         WorldPosition = _corp.WorldPosition;
