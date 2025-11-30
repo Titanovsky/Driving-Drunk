@@ -7,9 +7,9 @@
         _objects.Capacity = capacity;
     }
 
-    public GameObject Get(GameObject prefab, Vector3 pos, Rotation rot)
+    public GameObject Get(GameObject prefab, CloneConfig config)
     {
-        var obj = GetFirstReleased() ?? Clone(prefab, pos, rot);
+        var obj = GetFirstReleased() ?? Clone(prefab, config);
 
         return obj;
     }
@@ -45,9 +45,9 @@
         return IsFull() ? _objects.FirstOrDefault() : null;
     }
 
-    private GameObject Clone(GameObject prefab, Vector3 pos, Rotation rot)
+    private GameObject Clone(GameObject prefab, CloneConfig config)
     {
-        var obj = prefab.Clone(pos, rot);
+        var obj = prefab.Clone(config);
         _objects.Add(obj);
 
         return obj;
