@@ -20,14 +20,12 @@ public sealed class Road : Component
         var pos = randomSpawn.WorldPosition;
         var rot = randomSpawn.WorldRotation;
 
-        var car = _carsPool.Get(CarPrefab, new CloneConfig(CarPrefab.WorldTransform, parent: GameObject)).Components.Get<Car>();
+        Car car = _carsPool.Get(CarPrefab, new CloneConfig(CarPrefab.WorldTransform, parent: GameObject)).Components.Get<Car>();
         if (!car.IsValid()) return;
 
         car.WorldScale = CarPrefab.WorldScale;
         car.WorldPosition = pos;
         car.WorldRotation = rot;
-        //car.GameObject.Parent = GameObject;
-
         car.Direction = rot.Forward;
 
         car.Init();
