@@ -114,11 +114,16 @@ public sealed class Player : Component
         WorldPosition = _corp.WorldPosition;
     }
 
-    protected override void OnStart()
+    private void InitStart()
     {
         _transformRespawn = WorldTransform;
 
         HudWorld.Name = Connection.Local.DisplayName;
+    }
+
+    protected override void OnStart()
+    {
+        InitStart();
     }
 
     protected override void OnUpdate()
