@@ -8097,6 +8097,71 @@
           ]
         }
       ]
+    },
+    {
+      "__guid": "5067bfe1-0060-48e8-a5f8-ccdeebae5f1b",
+      "__version": 1,
+      "Flags": 0,
+      "Name": "Camera",
+      "Position": "-105.6415,-293.4857,282.4622",
+      "Rotation": "-0.1448582,0.2860239,0.4279631,0.8450171",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Enabled": true,
+      "NetworkMode": 0,
+      "NetworkInterpolation": true,
+      "NetworkOrphaned": 0,
+      "NetworkTransmit": true,
+      "OwnerTransfer": 1,
+      "Components": [
+        {
+          "__type": "Sandbox.CameraComponent",
+          "__guid": "06d37baf-4340-4c60-9a60-4669fe31d1db",
+          "__enabled": true,
+          "BackgroundColor": "0.33333,0.46275,0.52157,1",
+          "ClearFlags": "All",
+          "EnablePostProcessing": true,
+          "FieldOfView": 60,
+          "FovAxis": "Horizontal",
+          "IsMainCamera": true,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Orthographic": true,
+          "OrthographicHeight": 400,
+          "PostProcessAnchor": null,
+          "Priority": 1,
+          "RenderExcludeTags": "",
+          "RenderTags": "",
+          "RenderTexture": null,
+          "TargetEye": "None",
+          "Viewport": "0,0,1,1",
+          "ZFar": 16373,
+          "ZNear": 10
+        },
+        {
+          "__type": "Sandbox.Bloom",
+          "__guid": "6683ae3c-8d40-4c04-b7e4-ef8194d49885",
+          "__enabled": true,
+          "__version": 1,
+          "Filter": "Bilinear",
+          "Gamma": 2.2,
+          "Mode": "Additive",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Strength": 0.5,
+          "Threshold": 1.25,
+          "Tint": "1,1,1,1"
+        }
+      ],
+      "Children": []
     }
   ],
   "SceneProperties": {
