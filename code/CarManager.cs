@@ -16,13 +16,10 @@ public sealed class CarManager : Component
         }
     }
 
-    protected override void OnStart()
+    private void Loop()
     {
-        CollectRoads();
-    }
-    
-    protected override void OnUpdate()
-    {
+        if (!Networking.IsHost) return;
+
         foreach (var road in Roads)
         {
             if (!road.IsValid()) continue;
@@ -31,5 +28,15 @@ public sealed class CarManager : Component
             road.ResetSpawnTimer();
             road.SpawnCar();
         }
+    }
+
+    protected override void OnStart()
+    {
+        CollectRoads();
+    }
+    
+    protected override void OnUpdate()
+    {
+        Loop();
     }
 }

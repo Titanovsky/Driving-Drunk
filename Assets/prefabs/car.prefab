@@ -9,9 +9,10 @@
     "Scale": "0.8,0.8,0.8",
     "Tags": "",
     "Enabled": true,
-    "NetworkMode": 2,
+    "NetworkMode": 1,
     "NetworkInterpolation": true,
     "NetworkOrphaned": 0,
+    "NetworkTransmit": true,
     "OwnerTransfer": 1,
     "Components": [
       {
@@ -19,6 +20,7 @@
         "__guid": "b10330f2-3212-46e7-bd69-40f09b47f299",
         "__enabled": true,
         "Center": "-2.154053,-1.575726,30.08094",
+        "ColliderFlags": 0,
         "Elasticity": null,
         "Friction": null,
         "IsTrigger": true,

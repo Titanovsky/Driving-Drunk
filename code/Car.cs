@@ -5,7 +5,7 @@ public sealed class Car : Component, Component.ITriggerListener, IGameObjectPool
 	[Property] public float Speed { get; set; } = 1f;
 	[Property] public float DelayToDie { get; set; } = 5f;
 
-    public Vector3 Direction { get; set; } = Vector3.Zero;
+    [Sync] public Vector3 Direction { get; set; } = Vector3.Zero;
 
     private TimeUntil _timerToDie { get; set; }
 
@@ -17,7 +17,8 @@ public sealed class Car : Component, Component.ITriggerListener, IGameObjectPool
 
     public void Release()
     {
-        GameObject.Enabled = false;
+        //GameObject.Enabled = false;
+        GameObject.Destroy();
     }
 
     public void OnTriggerEnter(GameObject other)

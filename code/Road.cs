@@ -1,3 +1,5 @@
+using System;
+
 public sealed class Road : Component
 {
     [Property] public GameObject CarPrefab { get; set; }
@@ -8,9 +10,10 @@ public sealed class Road : Component
     public TimeUntil NextSpawnTime { get; private set; }
 
     private GameObjectPool _carsPool = new(8);
-    
+
     public void SpawnCar()
     {
+        if (!Networking.IsHost) return;
         if (!CarPrefab.IsValid()) return;
 
         var randomSpawn = GetRandomSpawnPoint();
@@ -20,14 +23,15 @@ public sealed class Road : Component
         var pos = randomSpawn.WorldPosition;
         var rot = randomSpawn.WorldRotation;
 
-        Car car = _carsPool.Get(CarPrefab, new CloneConfig(CarPrefab.WorldTransform, parent: GameObject)).Components.Get<Car>();
+        //Car car = _carsPool.Get(CarPrefab, new CloneConfig(CarPrefab.WorldTransform, parent: GameObject)).Components.Get<Car>();
+        var car = CarPrefab.Clone(new CloneConfig(CarPrefab.WorldTransform, parent: GameObject)).Components.Get<Car>();
         if (!car.IsValid()) return;
 
-        //car.GameObject.NetworkSpawn(Connection.Host);
         car.WorldScale = CarPrefab.WorldScale;
         car.WorldPosition = pos;
         car.WorldRotation = rot;
         car.Direction = rot.Forward;
+        car.GameObject.NetworkSpawn();
 
         car.Init();
     }
@@ -44,7 +48,10 @@ public sealed class Road : Component
 
     private GameObject GetRandomSpawnPoint()
     {
-        return Game.Random.FromList(Spawners);
+        var seed = (int)(Time.Now * 1000);
+        var rng = new Random(seed);
+
+        return Spawners[rng.Next(Spawners.Count)];
     }
 
     protected override void OnStart()
