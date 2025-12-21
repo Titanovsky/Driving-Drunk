@@ -322,7 +322,7 @@
         ],
         "Children": [
           {
-            "__guid": "10e86865-a714-4d14-816d-8af7801fe015",
+            "__guid": "d6d29479-58f4-45b2-84b7-b3d145bbbadc",
             "__version": 1,
             "Flags": 0,
             "Name": "Clothing - flat_shoes",
@@ -339,7 +339,7 @@
             "Components": [
               {
                 "__type": "Sandbox.SkinnedModelRenderer",
-                "__guid": "77f9a823-700a-4e7b-b01b-e95f338eb448",
+                "__guid": "650d33e3-beec-4988-8b0f-4bcc97a29e07",
                 "__enabled": true,
                 "AnimationGraph": null,
                 "BodyGroups": 18446744073709551615,
@@ -390,7 +390,7 @@
             "Children": []
           },
           {
-            "__guid": "d4ca2715-f78d-4a60-b9c4-6598459869af",
+            "__guid": "ff64778e-5c67-48be-9bca-4bca0cf5546f",
             "__version": 1,
             "Flags": 0,
             "Name": "Clothing - plump_lips_03",
@@ -407,7 +407,7 @@
             "Components": [
               {
                 "__type": "Sandbox.SkinnedModelRenderer",
-                "__guid": "f6962fc7-6c9a-45a8-ac0d-14fc9b379c79",
+                "__guid": "14ec39b5-4dc8-423b-8147-0c77fe87825e",
                 "__enabled": true,
                 "AnimationGraph": null,
                 "BodyGroups": 18446744073709551615,
@@ -458,7 +458,7 @@
             "Children": []
           },
           {
-            "__guid": "6e58eff9-371e-4f68-9c19-91666edbc9b8",
+            "__guid": "ae4e3027-5bcb-43b6-b621-1bf1088c3130",
             "__version": 1,
             "Flags": 0,
             "Name": "Clothing - skull_helmet",
@@ -475,7 +475,7 @@
             "Components": [
               {
                 "__type": "Sandbox.SkinnedModelRenderer",
-                "__guid": "cd3b8785-70a4-461a-ac1c-ac2116a1bcb5",
+                "__guid": "265b07e7-cb1f-4652-928f-a4e8d39fe9b1",
                 "__enabled": true,
                 "AnimationGraph": null,
                 "BodyGroups": 18446744073709551615,
@@ -526,7 +526,7 @@
             "Children": []
           },
           {
-            "__guid": "4de937c8-54d0-41e2-9569-d589479e920f",
+            "__guid": "5ffccdde-c3d0-49eb-9631-5bc666225a90",
             "__version": 1,
             "Flags": 0,
             "Name": "Clothing - blue_shirt",
@@ -543,7 +543,7 @@
             "Components": [
               {
                 "__type": "Sandbox.SkinnedModelRenderer",
-                "__guid": "6cca6560-6e3a-4113-8fa8-3502e71ab344",
+                "__guid": "009adfa5-5230-4557-9f2a-200fa60c929a",
                 "__enabled": true,
                 "AnimationGraph": null,
                 "BodyGroups": 18446744073709551615,
@@ -594,7 +594,7 @@
             "Children": []
           },
           {
-            "__guid": "91d97fbe-89e8-4a75-be65-9f62cba7e687",
+            "__guid": "8703d9db-6f74-4210-95c4-9b1a0656a87e",
             "__version": 1,
             "Flags": 0,
             "Name": "Clothing - jeans",
@@ -611,7 +611,7 @@
             "Components": [
               {
                 "__type": "Sandbox.SkinnedModelRenderer",
-                "__guid": "05a46c39-919e-42a6-af62-70d4a82cb587",
+                "__guid": "d1a6a859-a4c5-419b-b8b0-7eabc5fb383c",
                 "__enabled": true,
                 "AnimationGraph": null,
                 "BodyGroups": 18446744073709551615,
@@ -668,8 +668,8 @@
         "__version": 1,
         "Flags": 0,
         "Name": "HUD World",
-        "Position": "0,0,94.12682",
-        "Rotation": "0,0,0,1",
+        "Position": "0,0,91.80858",
+        "Rotation": "-0.2667292,-0.1388507,-0.8459572,0.4403776",
         "Scale": "1,1,1",
         "Tags": "",
         "Enabled": true,
@@ -696,17 +696,17 @@
             "__enabled": true,
             "HorizontalAlign": "Center",
             "InteractionRange": 1000,
-            "LookAtCamera": true,
+            "LookAtCamera": false,
             "OnComponentDestroy": null,
             "OnComponentDisabled": null,
             "OnComponentEnabled": null,
             "OnComponentFixedUpdate": null,
             "OnComponentStart": null,
             "OnComponentUpdate": null,
-            "PanelSize": "1800,400",
+            "PanelSize": "2000,400",
             "RenderOptions": {
               "GameLayer": true,
-              "OverlayLayer": false,
+              "OverlayLayer": true,
               "BloomLayer": false,
               "AfterUILayer": false
             },
