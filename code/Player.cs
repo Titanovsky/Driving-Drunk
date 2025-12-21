@@ -1,6 +1,3 @@
-using Sandbox;
-using Sandbox.Diagnostics;
-using Sandbox.Services;
 using System.Threading.Tasks;
 
 public sealed class Player : Component
@@ -11,9 +8,12 @@ public sealed class Player : Component
     [Property] public float speed = 10f;
 
     public bool IsAlive { get; set; } = true;
+    private float _timeRespawn = 2.4f;
 
     private GameObject _corp;
     private Transform _transformRespawn;
+    private float _multipleMouseSens = 0.25f; // from facepunch.playercontroller
+    private float _multipleVelocity = 100f;
 
     public void Die(Car killer)
     {
@@ -25,10 +25,11 @@ public sealed class Player : Component
         controller.ColliderObject.Enabled = false;
 
         _corp = controller.CreateRagdoll($"Corp: {Connection.Local.DisplayName}");
+        _corp.NetworkSpawn(Connection.Host);
         var rb = _corp.GetComponentInChildren<Rigidbody>();
 
         var direction = killer.WorldRotation.Forward;
-        rb.Velocity *= direction * killer.Speed * 100f;
+        rb.Velocity *= direction * killer.Speed * _multipleVelocity;
 
         body.GameObject.Enabled = false;
         controller.Enabled = false;
@@ -36,7 +37,7 @@ public sealed class Player : Component
 
         Log.Info("Die");
 
-        _ = RespawnAsync(2.4f);
+        _ = RespawnAsync(_timeRespawn);
     }
 
     public void Respawn()
@@ -75,7 +76,7 @@ public sealed class Player : Component
 
         // Берём только горизонтальное движение мыши
         var mouseDeltaX = Input.MouseDelta.x;
-        var mouseSensitivity = Preferences.Sensitivity * 0.25f;
+        var mouseSensitivity = Preferences.Sensitivity * _multipleMouseSens;
 
         Angles input = Input.AnalogLook;
         input *= mouseSensitivity;
@@ -90,19 +91,6 @@ public sealed class Player : Component
         //}
 
         controller.EyeAngles = eyeAngles;
-
-        //controller.EyeAngles = new Angles(0f,1000f * -Time.Delta,0f);
-        Log.Info(controller.EyeAngles);
-
-        //// Локальные углы тела относительно родителя
-        //var angles = controller.Renderer.LocalRotation.Angles();
-
-        //// Крутим только yaw
-        //angles.yaw += mouseDeltaX * mouseSensitivity;
-        //angles.pitch = 0f;
-        //angles.roll = 0f;
-
-        //controller.Renderer.LocalRotation = angles.ToRotation();
     }
 
     private void TeleportToCorpUpdate()
