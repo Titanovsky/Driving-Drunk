@@ -25,7 +25,7 @@ public sealed class Player : Component
         controller.ColliderObject.Enabled = false;
 
         _corp = controller.CreateRagdoll($"Corp: {Connection.Local.DisplayName}");
-        _corp.NetworkSpawn(Connection.Host);
+        _corp.NetworkSpawn();
         var rb = _corp.GetComponentInChildren<Rigidbody>();
 
         var direction = killer.WorldRotation.Forward;
@@ -104,9 +104,14 @@ public sealed class Player : Component
 
     private void InitStart()
     {
+        HudWorld.Name = Connection.Local.DisplayName;
+
+        if (IsProxy) return;
+
         _transformRespawn = WorldTransform;
 
-        HudWorld.Name = Connection.Local.DisplayName;
+        Scene.Camera.GameObject.Parent = GameObject;
+        Scene.Camera.LocalPosition = new Vector3(-105, -293, 282);
     }
 
     protected override void OnStart()

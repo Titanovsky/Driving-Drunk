@@ -23,6 +23,7 @@ public sealed class Road : Component
         Car car = _carsPool.Get(CarPrefab, new CloneConfig(CarPrefab.WorldTransform, parent: GameObject)).Components.Get<Car>();
         if (!car.IsValid()) return;
 
+        //car.GameObject.NetworkSpawn(Connection.Host);
         car.WorldScale = CarPrefab.WorldScale;
         car.WorldPosition = pos;
         car.WorldRotation = rot;
