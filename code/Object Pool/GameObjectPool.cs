@@ -1,10 +1,12 @@
 ﻿public class GameObjectPool
 {
     private List<GameObject> _objects = new();
+    private bool _isNetwork = false;
 
-    public GameObjectPool(int capacity)
+    public GameObjectPool(int capacity, bool isNetwork)
     {
         _objects.Capacity = capacity;
+        _isNetwork = isNetwork;
     }
 
     public GameObject Get(GameObject prefab, CloneConfig config)
@@ -48,6 +50,9 @@
     private GameObject Clone(GameObject prefab, CloneConfig config)
     {
         var obj = prefab.Clone(config);
+        if (_isNetwork)
+            obj.NetworkSpawn();
+
         _objects.Add(obj);
 
         return obj;

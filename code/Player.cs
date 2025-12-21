@@ -31,13 +31,26 @@ public sealed class Player : Component
         var direction = killer.WorldRotation.Forward;
         rb.Velocity *= direction * killer.Speed * _multipleVelocity;
 
-        body.GameObject.Enabled = false;
+        HideBody();
         controller.Enabled = false;
-        HudWorld.Enabled = false;
 
         Log.Info("Die");
 
         _ = RespawnAsync(_timeRespawn);
+    }
+
+    [Rpc.Broadcast]
+    public void HideBody()
+    {
+        body.GameObject.Enabled = false;
+        //HudWorld.Enabled = false;
+    }
+
+    [Rpc.Broadcast]
+    public void ShowBody()
+    {
+        body.GameObject.Enabled = true;
+        //HudWorld.Enabled = true;
     }
 
     public void Respawn()
@@ -50,9 +63,8 @@ public sealed class Player : Component
         WorldPosition = _transformRespawn.Position;
         WorldRotation = _transformRespawn.Rotation;
 
+        ShowBody();
         controller.ColliderObject.Enabled = true;
-        body.GameObject.Enabled = true;
-        HudWorld.Enabled = true;
         controller.Enabled = true;
 
         IsAlive = true;

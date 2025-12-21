@@ -20,7 +20,6 @@ public sealed class Car : Component, Component.ITriggerListener, IGameObjectPool
         if (!Networking.IsHost) return;
 
         GameObject.Enabled = false;
-        //GameObject.Destroy();
     }
 
     public void OnTriggerEnter(GameObject other)
@@ -42,7 +41,8 @@ public sealed class Car : Component, Component.ITriggerListener, IGameObjectPool
 
 	private void CheckDeath()
 	{
-		if (!_timerToDie) return;
+        if (!Networking.IsHost) return;
+        if (!_timerToDie) return;
 
         Release();
     }
