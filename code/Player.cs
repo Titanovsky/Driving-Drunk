@@ -104,9 +104,9 @@ public sealed class Player : Component
 
     private void InitStart()
     {
-        HudWorld.Name = Connection.Local.DisplayName;
-
         if (IsProxy) return;
+
+        HudWorld.Name = Connection.Local.DisplayName;
 
         _transformRespawn = WorldTransform;
 
