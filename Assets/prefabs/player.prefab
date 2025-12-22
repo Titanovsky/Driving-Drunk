@@ -143,6 +143,10 @@
           "go": "bdb9ea09-2044-4c23-8435-0d83bb98f458",
           "component_type": "SkinnedModelRenderer"
         },
+        "BombPrefab": {
+          "_type": "gameobject",
+          "prefab": "prefabs/pickups/bomb.prefab"
+        },
         "controller": {
           "_type": "component",
           "component_id": "6f21f381-1e42-428a-a411-7cfe3de85b35",
@@ -161,6 +165,10 @@
         "OnComponentFixedUpdate": null,
         "OnComponentStart": null,
         "OnComponentUpdate": null,
+        "ShootObj": {
+          "_type": "gameobject",
+          "go": "ee38bf0f-f9a1-4ea1-bf4f-c6641568fe6d"
+        },
         "speed": 10
       },
       {
@@ -322,7 +330,7 @@
         ],
         "Children": [
           {
-            "__guid": "c2e7cd1d-0c6a-4401-9200-c292121e8b58",
+            "__guid": "d93ac721-394b-4086-9b35-b3f7c6df3228",
             "__version": 1,
             "Flags": 0,
             "Name": "Clothing - flat_shoes",
@@ -339,7 +347,7 @@
             "Components": [
               {
                 "__type": "Sandbox.SkinnedModelRenderer",
-                "__guid": "a929c143-fcc5-4dcd-991a-397c0e5a33be",
+                "__guid": "9bcd2070-1ea5-4475-8429-4a42fd9f1da9",
                 "__enabled": true,
                 "AnimationGraph": null,
                 "BodyGroups": 18446744073709551615,
@@ -390,7 +398,7 @@
             "Children": []
           },
           {
-            "__guid": "ad9fca7d-6fd6-4c8d-8626-c58c20770f65",
+            "__guid": "f4b44a7b-3b67-41fd-8018-a9991144d6c2",
             "__version": 1,
             "Flags": 0,
             "Name": "Clothing - plump_lips_03",
@@ -407,7 +415,7 @@
             "Components": [
               {
                 "__type": "Sandbox.SkinnedModelRenderer",
-                "__guid": "c4c33d08-2920-4e7b-89b4-2f7565e913b3",
+                "__guid": "0422fe70-03b3-4a44-a4d6-518d3d85aa30",
                 "__enabled": true,
                 "AnimationGraph": null,
                 "BodyGroups": 18446744073709551615,
@@ -458,7 +466,7 @@
             "Children": []
           },
           {
-            "__guid": "d4db3350-4a1d-4e6b-a9b4-ee47d806b92f",
+            "__guid": "0fe41226-3077-4af2-a2f3-0a23cf57fc8a",
             "__version": 1,
             "Flags": 0,
             "Name": "Clothing - skull_helmet",
@@ -475,7 +483,7 @@
             "Components": [
               {
                 "__type": "Sandbox.SkinnedModelRenderer",
-                "__guid": "b9eb683f-dc85-47ae-8ca1-88fa9d9ebbd1",
+                "__guid": "14bc434c-43b2-41e4-9f00-088c742a80b2",
                 "__enabled": true,
                 "AnimationGraph": null,
                 "BodyGroups": 18446744073709551615,
@@ -526,7 +534,7 @@
             "Children": []
           },
           {
-            "__guid": "29d5b676-1ec3-49d0-816c-f446f8992798",
+            "__guid": "e458f845-f0e9-4bca-a12a-fa6c4d6fc291",
             "__version": 1,
             "Flags": 0,
             "Name": "Clothing - blue_shirt",
@@ -543,7 +551,7 @@
             "Components": [
               {
                 "__type": "Sandbox.SkinnedModelRenderer",
-                "__guid": "0eaaa50a-47aa-4a72-8169-69c0f276bfee",
+                "__guid": "d79eeb98-7579-4f32-85b5-33aaeff0e4df",
                 "__enabled": true,
                 "AnimationGraph": null,
                 "BodyGroups": 18446744073709551615,
@@ -594,7 +602,7 @@
             "Children": []
           },
           {
-            "__guid": "c82687cd-5b18-46c7-8026-d05387069d76",
+            "__guid": "0bb68c14-4c1c-429b-8372-8f2307c615a7",
             "__version": 1,
             "Flags": 0,
             "Name": "Clothing - jeans",
@@ -611,7 +619,7 @@
             "Components": [
               {
                 "__type": "Sandbox.SkinnedModelRenderer",
-                "__guid": "ea064ba0-6d0e-4608-8957-cfb6de067ea8",
+                "__guid": "44620bf9-8dac-49df-ad74-510b8937ea89",
                 "__enabled": true,
                 "AnimationGraph": null,
                 "BodyGroups": 18446744073709551615,
@@ -659,6 +667,24 @@
                 "UseAnimGraph": true
               }
             ],
+            "Children": []
+          },
+          {
+            "__guid": "ee38bf0f-f9a1-4ea1-bf4f-c6641568fe6d",
+            "__version": 1,
+            "Flags": 0,
+            "Name": "ShotPos",
+            "Position": "27.70885,0,65.05264",
+            "Rotation": "0,0,0,1",
+            "Scale": "1,1,1",
+            "Tags": "",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "NetworkOrphaned": 0,
+            "NetworkTransmit": true,
+            "OwnerTransfer": 1,
+            "Components": [],
             "Children": []
           }
         ]

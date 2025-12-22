@@ -1,4 +1,5 @@
 using System.Threading.Tasks;
+using static Sandbox.Connection;
 
 public sealed class Player : Component, Component.INetworkListener
 {
@@ -7,13 +8,78 @@ public sealed class Player : Component, Component.INetworkListener
     [Property] public HudWorld HudWorld;
     [Property] public float speed = 10f;
 
-    public bool IsAlive { get; set; } = true;
+    [Property] public GameObject BombPrefab { get; set; }
+    //[Property] public GameObject PickUpHealPrefab { get; set; }
+    [Property] public GameObject ShootObj;
+    public PickUpEnum PickUp { get; set; } = PickUpEnum.None;
+
+    [Sync] public bool IsAlive { get; private set; } = true;
     private float _timeRespawn = 2.4f;
 
     private GameObject _corp;
     private Transform _transformRespawn;
     private float _multipleMouseSens = 0.25f; // from facepunch.playercontroller
     private float _multipleVelocity = 100f;
+
+    public void TakePickUp(PickUp pickup)
+    {
+        if (IsProxy) return;
+        if (!IsAlive) return;
+
+        PickUp = pickup.TypePickUp;
+    }
+
+    private void ActivatePickUp()
+    {
+        Log.Info("dsa");
+        if (PickUp == PickUpEnum.None) return;
+
+        switch (PickUp)
+        {
+            default: break;
+            case PickUpEnum.Bomb: ActivatePickUpBomb(); break;
+        }
+
+        PickUp = PickUpEnum.None;
+    }
+
+    private void ActivatePickUpBomb()
+    {
+        if (PickUp == PickUpEnum.None) return;
+
+        var obj = BombPrefab.Clone(ShootObj.WorldPosition, rotation: body.WorldRotation);
+        obj.NetworkSpawn();
+    }
+
+    private void InputActivatePickUp()
+    {
+        if (Input.Down("Attack1"))
+            ActivatePickUp();
+    }
+
+    public void Die(Vector3 direction, float speed)
+    {
+        if (IsProxy) return;
+
+        if (!IsAlive) return;
+        IsAlive = false;
+
+        controller.ColliderObject.Enabled = false;
+
+        _corp = controller.CreateRagdoll($"Corp: {Local.DisplayName}");
+        _corp.NetworkSpawn();
+        var rb = _corp.GetComponentInChildren<Rigidbody>();
+
+        HideBody();
+
+        rb.Velocity *= direction * speed * _multipleVelocity;
+
+        controller.Enabled = false;
+
+        Log.Info("Die");
+
+        _ = RespawnAsync(_timeRespawn);
+    }
 
     public void Die(Car killer)
     {
@@ -28,10 +94,11 @@ public sealed class Player : Component, Component.INetworkListener
         _corp.NetworkSpawn();
         var rb = _corp.GetComponentInChildren<Rigidbody>();
 
+        HideBody();
+
         var direction = killer.WorldRotation.Forward;
         rb.Velocity *= direction * killer.Speed * _multipleVelocity;
 
-        HideBody();
         controller.Enabled = false;
 
         Log.Info("Die");
@@ -133,6 +200,7 @@ public sealed class Player : Component, Component.INetworkListener
 
     protected override void OnUpdate()
     {
+        InputActivatePickUp();
         TeleportToCorpUpdate();
         RotateUpdate();
     }
