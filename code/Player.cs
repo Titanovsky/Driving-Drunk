@@ -1,6 +1,6 @@
 using System.Threading.Tasks;
 
-public sealed class Player : Component
+public sealed class Player : Component, Component.INetworkListener
 {
     [Property] public PlayerController controller;
     [Property] public ModelRenderer body;

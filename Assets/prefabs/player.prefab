@@ -166,7 +166,7 @@
       {
         "__type": "Sandbox.Dresser",
         "__guid": "9ef278aa-5d56-490a-928e-509e3db7f20e",
-        "__enabled": false,
+        "__enabled": true,
         "ApplyHeightScale": true,
         "BodyTarget": {
           "_type": "component",
@@ -322,7 +322,7 @@
         ],
         "Children": [
           {
-            "__guid": "d6d29479-58f4-45b2-84b7-b3d145bbbadc",
+            "__guid": "c2e7cd1d-0c6a-4401-9200-c292121e8b58",
             "__version": 1,
             "Flags": 0,
             "Name": "Clothing - flat_shoes",
@@ -339,7 +339,7 @@
             "Components": [
               {
                 "__type": "Sandbox.SkinnedModelRenderer",
-                "__guid": "650d33e3-beec-4988-8b0f-4bcc97a29e07",
+                "__guid": "a929c143-fcc5-4dcd-991a-397c0e5a33be",
                 "__enabled": true,
                 "AnimationGraph": null,
                 "BodyGroups": 18446744073709551615,
@@ -390,7 +390,7 @@
             "Children": []
           },
           {
-            "__guid": "ff64778e-5c67-48be-9bca-4bca0cf5546f",
+            "__guid": "ad9fca7d-6fd6-4c8d-8626-c58c20770f65",
             "__version": 1,
             "Flags": 0,
             "Name": "Clothing - plump_lips_03",
@@ -407,7 +407,7 @@
             "Components": [
               {
                 "__type": "Sandbox.SkinnedModelRenderer",
-                "__guid": "14ec39b5-4dc8-423b-8147-0c77fe87825e",
+                "__guid": "c4c33d08-2920-4e7b-89b4-2f7565e913b3",
                 "__enabled": true,
                 "AnimationGraph": null,
                 "BodyGroups": 18446744073709551615,
@@ -458,7 +458,7 @@
             "Children": []
           },
           {
-            "__guid": "ae4e3027-5bcb-43b6-b621-1bf1088c3130",
+            "__guid": "d4db3350-4a1d-4e6b-a9b4-ee47d806b92f",
             "__version": 1,
             "Flags": 0,
             "Name": "Clothing - skull_helmet",
@@ -475,7 +475,7 @@
             "Components": [
               {
                 "__type": "Sandbox.SkinnedModelRenderer",
-                "__guid": "265b07e7-cb1f-4652-928f-a4e8d39fe9b1",
+                "__guid": "b9eb683f-dc85-47ae-8ca1-88fa9d9ebbd1",
                 "__enabled": true,
                 "AnimationGraph": null,
                 "BodyGroups": 18446744073709551615,
@@ -526,7 +526,7 @@
             "Children": []
           },
           {
-            "__guid": "5ffccdde-c3d0-49eb-9631-5bc666225a90",
+            "__guid": "29d5b676-1ec3-49d0-816c-f446f8992798",
             "__version": 1,
             "Flags": 0,
             "Name": "Clothing - blue_shirt",
@@ -543,7 +543,7 @@
             "Components": [
               {
                 "__type": "Sandbox.SkinnedModelRenderer",
-                "__guid": "009adfa5-5230-4557-9f2a-200fa60c929a",
+                "__guid": "0eaaa50a-47aa-4a72-8169-69c0f276bfee",
                 "__enabled": true,
                 "AnimationGraph": null,
                 "BodyGroups": 18446744073709551615,
@@ -594,7 +594,7 @@
             "Children": []
           },
           {
-            "__guid": "8703d9db-6f74-4210-95c4-9b1a0656a87e",
+            "__guid": "c82687cd-5b18-46c7-8026-d05387069d76",
             "__version": 1,
             "Flags": 0,
             "Name": "Clothing - jeans",
@@ -611,7 +611,7 @@
             "Components": [
               {
                 "__type": "Sandbox.SkinnedModelRenderer",
-                "__guid": "d1a6a859-a4c5-419b-b8b0-7eabc5fb383c",
+                "__guid": "ea064ba0-6d0e-4608-8957-cfb6de067ea8",
                 "__enabled": true,
                 "AnimationGraph": null,
                 "BodyGroups": 18446744073709551615,
