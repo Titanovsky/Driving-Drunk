@@ -20,11 +20,13 @@ public sealed class Bomb : Component
         if (SoundExplode.IsValid())
             Sound.Play(SoundExplode, WorldPosition);
 
-        var objects = Scene.FindInPhysics(new Sphere(WorldPosition, 128f));
+        var objects = Scene.FindInPhysics(new Sphere(WorldPosition, 256f));
         foreach (GameObject obj in objects)
         {
             if (GameObject == obj) continue;
             if (!obj.Components.TryGet(out Player ply)) continue;
+
+            Log.Info($"{obj}");
 
             ply.Die((WorldPosition - ply.WorldPosition).Normal, 1000f);
         }

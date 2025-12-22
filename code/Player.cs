@@ -77,8 +77,6 @@ public sealed class Player : Component, Component.INetworkListener
 
         controller.Enabled = false;
 
-        Log.Info("Die");
-
         _ = RespawnAsync(_timeRespawn);
     }
 
@@ -101,8 +99,6 @@ public sealed class Player : Component, Component.INetworkListener
         rb.Velocity *= direction * killer.Speed * _multipleVelocity;
 
         controller.Enabled = false;
-
-        Log.Info("Die");
 
         _ = RespawnAsync(_timeRespawn);
     }

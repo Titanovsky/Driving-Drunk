@@ -1372,12 +1372,12 @@
                   "0.25,0.2500052"
                 ],
                 "TextureOffset": [
-                  "3.936523,0.001464844",
-                  "266.2041,232.2778",
+                  "3.937012,0.001464844",
+                  "266.2046,232.2778",
                   "0.0004882812,511.9997",
                   "279.7217,449.0991",
-                  "245.7959,449.0991",
-                  "266.2041,449.0991"
+                  "245.7954,449.0991",
+                  "266.2046,449.0991"
                 ],
                 "MaterialIndex": [
                   1,
@@ -8648,7 +8648,55 @@
         "b8f8b01d-2243-4585-adc7-9ff25a61ef8e": "61ac3263-4e1d-4c1b-87b5-972a7f3ecce8",
         "d95008fe-7621-40a5-9ad9-59065fd11261": "2970892b-bca4-4f4a-8398-baa7d73b159f",
         "69d43aad-a7a7-4ec3-9144-aacee1779422": "35dcaffe-e12a-410c-9ed5-38f2bd2f9131",
-        "0f2841c4-a691-4ac2-8d9a-52eb483307a5": "e9c8809f-a312-4f15-a465-1d0cf31e25a5"
+        "0f2841c4-a691-4ac2-8d9a-52eb483307a5": "e9c8809f-a312-4f15-a465-1d0cf31e25a5",
+        "ee9ee832-3f9c-4ec9-908c-b13696a34401": "13ce7bab-67e8-440f-913d-1a9548f65728",
+        "2916d79a-f3d5-43de-b362-7ede691ff1aa": "553e72af-3419-46ab-bcfd-7e27b3a5c5bd",
+        "a949172b-a9e2-40e3-a2a2-1b605106bd36": "aabfb634-47c1-42da-91e8-a8547c636dd7",
+        "a9ae3880-a5b7-4223-ac34-4ec08193c511": "c8570337-7070-4f3b-8e65-b8f4764c0e3e",
+        "fb56ffee-6fa2-4a22-8293-83c64c7fd53b": "6fa9f48a-b868-4252-90a6-71f6f9b3544b",
+        "d244c728-8cc9-4507-9354-af3b6d06b437": "a5d29457-d299-4ea1-a5bc-7749cf72d4ce"
+      }
+    },
+    {
+      "__guid": "aaa9d628-8443-4303-9c19-c70fe159f3a0",
+      "__version": 1,
+      "__Prefab": "prefabs/pickups/pickup_bomb.prefab",
+      "__PrefabInstancePatch": {
+        "AddedObjects": [],
+        "RemovedObjects": [],
+        "PropertyOverrides": [
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "47139f50-d02a-4c8c-9122-3a2c9af418be"
+            },
+            "Property": "Name",
+            "Value": "pickup_bomb (1)"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "47139f50-d02a-4c8c-9122-3a2c9af418be"
+            },
+            "Property": "Position",
+            "Value": "-1899.974,-316.9229,8.913467"
+          }
+        ],
+        "MovedObjects": []
+      },
+      "__PrefabIdToInstanceId": {
+        "47139f50-d02a-4c8c-9122-3a2c9af418be": "aaa9d628-8443-4303-9c19-c70fe159f3a0",
+        "d1b6135c-121e-41f8-8b2c-77be592b200a": "a3b17774-8ecb-48cc-911e-4ff26afe6a6a",
+        "b8f8b01d-2243-4585-adc7-9ff25a61ef8e": "c373644b-cc82-4c3d-889e-2d5c8bb78b2a",
+        "d95008fe-7621-40a5-9ad9-59065fd11261": "e8828809-8790-4148-bfce-cf87caec9247",
+        "69d43aad-a7a7-4ec3-9144-aacee1779422": "750c8028-ca6d-479c-ba94-caddee47069a",
+        "0f2841c4-a691-4ac2-8d9a-52eb483307a5": "c826db3e-cd3b-422b-a75b-d2404717552c",
+        "ee9ee832-3f9c-4ec9-908c-b13696a34401": "54f50b94-e787-43de-9854-f9efe44b6fa8",
+        "2916d79a-f3d5-43de-b362-7ede691ff1aa": "bb45e595-3ee7-4420-9de0-7da8bc9da6a0",
+        "a949172b-a9e2-40e3-a2a2-1b605106bd36": "4d3e90e5-f1bc-4ab8-bcb5-c315c827a034",
+        "a9ae3880-a5b7-4223-ac34-4ec08193c511": "0dde6713-4838-4608-a692-22ed02bfbccd",
+        "fb56ffee-6fa2-4a22-8293-83c64c7fd53b": "7de0222a-e993-4d2f-80a4-787ca3855978",
+        "d244c728-8cc9-4507-9354-af3b6d06b437": "b02c2115-ffdd-4378-9e57-dd9ad8182445"
       }
     }
   ],
