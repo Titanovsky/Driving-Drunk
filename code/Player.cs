@@ -31,7 +31,7 @@ public sealed class Player : Component, Component.INetworkListener
 
     private void ActivatePickUp()
     {
-        Log.Info("dsa");
+        if (!IsAlive) return;
         if (PickUp == PickUpEnum.None) return;
 
         switch (PickUp)
@@ -45,6 +45,7 @@ public sealed class Player : Component, Component.INetworkListener
 
     private void ActivatePickUpBomb()
     {
+        if (!IsAlive) return;
         if (PickUp == PickUpEnum.None) return;
 
         var obj = BombPrefab.Clone(ShootObj.WorldPosition, rotation: body.WorldRotation);

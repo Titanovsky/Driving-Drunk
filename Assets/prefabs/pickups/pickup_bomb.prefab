@@ -6,7 +6,7 @@
     "Name": "pickup_bomb",
     "Position": "0,0,0",
     "Rotation": "0,0,0,1",
-    "Scale": "0.482152,0.482152,0.482152",
+    "Scale": "0.8643272,0.8643272,0.8643272",
     "Tags": "",
     "Enabled": true,
     "NetworkMode": 2,
@@ -78,7 +78,63 @@
         "TypePickUp": "Bomb"
       }
     ],
-    "Children": []
+    "Children": [
+      {
+        "__guid": "69d43aad-a7a7-4ec3-9144-aacee1779422",
+        "__version": 1,
+        "Flags": 0,
+        "Name": "Point Light",
+        "Position": "0,0,33.64987",
+        "Rotation": "0,0,0,1",
+        "Scale": "1,1,1",
+        "Tags": "light_point,light",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "NetworkOrphaned": 0,
+        "NetworkTransmit": true,
+        "OwnerTransfer": 1,
+        "Components": [
+          {
+            "__type": "Sandbox.PointLight",
+            "__guid": "0f2841c4-a691-4ac2-8d9a-52eb483307a5",
+            "__enabled": true,
+            "Attenuation": 2.7731094,
+            "FogMode": "Disabled",
+            "FogStrength": 1,
+            "LightColor": "0.49222,0.95814,0.2763,1",
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null,
+            "Radius": 200,
+            "Shadows": false
+          }
+        ],
+        "Children": []
+      }
+    ],
+    "__properties": {
+      "NetworkInterpolation": true,
+      "TimeScale": 1,
+      "WantsSystemScene": true,
+      "Metadata": {},
+      "NavMesh": {
+        "Enabled": false,
+        "IncludeStaticBodies": true,
+        "IncludeKeyframedBodies": true,
+        "EditorAutoUpdate": true,
+        "AgentHeight": 64,
+        "AgentRadius": 16,
+        "AgentStepSize": 18,
+        "AgentMaxSlope": 40,
+        "ExcludedBodies": "",
+        "IncludedBodies": ""
+      }
+    },
+    "__variables": []
   },
   "ResourceVersion": 2,
   "ShowInMenu": false,

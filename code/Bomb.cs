@@ -44,7 +44,7 @@ public sealed class Bomb : Component
         var rb = Components.Get<Rigidbody>();
         if (!rb.IsValid()) return;
 
-        rb.Velocity = WorldRotation.Forward * 100f;
+        rb.Velocity = WorldRotation.Forward * 200f;
 
 		_ = ActivateAsync();
     }
