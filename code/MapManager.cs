@@ -1,8 +1,8 @@
 using Sandbox;
 
-public sealed class Gameplay : Component
+public sealed class MapManager : Component
 {
-    public static Gameplay Instance { get; set; }
+    public static MapManager Instance { get; set; }
 
     [Property] public GameObject FinishLineCollider { get; set; }
     private float _minPosForLine = 24f;

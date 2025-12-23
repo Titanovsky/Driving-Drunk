@@ -7,6 +7,6 @@ public sealed class TriggerFinish : Component, Component.ITriggerListener
         var ply = other.GetComponent<Player>();
         if (!ply.IsValid()) return;
 
-        Gameplay.Instance.SendFinishToHost();
+        MapManager.Instance.SendFinishToHost();
     }
 }
