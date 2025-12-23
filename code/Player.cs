@@ -1,8 +1,9 @@
 using System.Threading.Tasks;
-using static Sandbox.Connection;
 
 public sealed class Player : Component, Component.INetworkListener
 {
+    public static Player Local { get; private set; }
+
     [Property] public PlayerController controller;
     [Property] public ModelRenderer body;
     [Property] public HudWorld HudWorld;
@@ -67,7 +68,7 @@ public sealed class Player : Component, Component.INetworkListener
 
         controller.ColliderObject.Enabled = false;
 
-        _corp = controller.CreateRagdoll($"Corp: {Local.DisplayName}");
+        _corp = controller.CreateRagdoll($"Corp: {Connection.Local.DisplayName}");
         _corp.NetworkSpawn();
         var rb = _corp.GetComponentInChildren<Rigidbody>();
 
@@ -182,7 +183,7 @@ public sealed class Player : Component, Component.INetworkListener
     {
         if (IsProxy) return;
 
-        HudWorld.Name = Local.DisplayName;
+        HudWorld.Name = Connection.Local.DisplayName;
 
         _transformRespawn = WorldTransform;
 
@@ -190,8 +191,29 @@ public sealed class Player : Component, Component.INetworkListener
         Scene.Camera.LocalPosition = new Vector3(-105, -293, 282);
     }
 
+    private void CreateSingleton()
+    {
+        if (IsProxy) return;
+        if (Local != null) return;
+
+        Local = this;
+
+        Log.Info($"[Player] Make local player {GameObject.Network.Owner.DisplayName}");
+    }
+
+    private void RemoveSingleton()
+    {
+        if (IsProxy) return;
+        if (Local == null) return;
+
+        Local = null;
+
+        Log.Info($"[Player] Remove local player {GameObject.Network.Owner.DisplayName}");
+    }
+
     protected override void OnStart()
     {
+        CreateSingleton(); // cuz for network
         InitStart();
     }
 
@@ -200,5 +222,10 @@ public sealed class Player : Component, Component.INetworkListener
         InputActivatePickUp();
         TeleportToCorpUpdate();
         RotateUpdate();
+    }
+
+    protected override void OnDestroy()
+    {
+        RemoveSingleton();
     }
 }
