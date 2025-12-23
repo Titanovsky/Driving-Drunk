@@ -19,7 +19,7 @@ public sealed class Player : Component, Component.INetworkListener
     private GameObject _corp;
     private Transform _transformRespawn;
     private float _multipleMouseSens = 0.25f; // from facepunch.playercontroller
-    private float _multipleVelocity = 100f;
+    private float _multipleVelocity = 2000f;
 
     public void TakePickUp(PickUp pickup)
     {
@@ -73,7 +73,7 @@ public sealed class Player : Component, Component.INetworkListener
 
         HideBody();
 
-        rb.Velocity *= direction * speed * _multipleVelocity;
+        rb.Velocity = direction * speed;
 
         controller.Enabled = false;
 
@@ -95,8 +95,8 @@ public sealed class Player : Component, Component.INetworkListener
 
         HideBody();
 
-        var direction = killer.WorldRotation.Forward;
-        rb.Velocity *= direction * killer.Speed * _multipleVelocity;
+        var direction = (WorldPosition - killer.WorldPosition).Normal;
+        rb.Velocity = direction * killer.Speed * _multipleVelocity;
 
         controller.Enabled = false;
 

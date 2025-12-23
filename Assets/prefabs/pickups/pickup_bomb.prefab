@@ -335,7 +335,7 @@
               "AfterUILayer": false
             },
             "RotationOffset": 0,
-            "Scale": 1.5135136,
+            "Scale": 3,
             "Shadows": false,
             "SortMode": "Unsorted",
             "Sprite": {
@@ -350,43 +350,7 @@
                     "LoopMode": "Loop",
                     "Frames": [
                       {
-                        "Texture": {
-                          "$compiler": "texture",
-                          "$source": "imagefile",
-                          "data": {
-                            "FilePath": "textures/shapes/circle1.png",
-                            "MaxSize": 4096,
-                            "ConvertHeightToNormals": false,
-                            "NormalScale": 1,
-                            "Rotate": 0,
-                            "FlipVertical": false,
-                            "FlipHorizontal": false,
-                            "Cropping": {
-                              "Left": 0,
-                              "Top": 0,
-                              "Right": 0,
-                              "Bottom": 0
-                            },
-                            "Padding": {
-                              "Left": 0,
-                              "Top": 0,
-                              "Right": 0,
-                              "Bottom": 0
-                            },
-                            "InvertColor": false,
-                            "Tint": "1,1,1,1",
-                            "Blur": 0,
-                            "Sharpen": 0,
-                            "Brightness": 1,
-                            "Contrast": 1,
-                            "Saturation": 1,
-                            "Hue": 0,
-                            "Colorize": false,
-                            "TargetColor": "1,1,1,1",
-                            "CacheToDisk": true
-                          },
-                          "compiled": null
-                        },
+                        "Texture": "textures/shapes/heart1.vtex",
                         "BroadcastMessages": []
                       }
                     ]
@@ -423,51 +387,6 @@
             "Thickness": 5,
             "VelocityFromCenter": 0,
             "VelocityFromRing": 0
-          }
-        ],
-        "Children": []
-      },
-      {
-        "__guid": "fb56ffee-6fa2-4a22-8293-83c64c7fd53b",
-        "__version": 1,
-        "Flags": 0,
-        "Name": "Cube",
-        "Position": "0,0,-50.28868",
-        "Rotation": "0,0,0,1",
-        "Scale": "4.669182,6.482616,1",
-        "Tags": "",
-        "Enabled": false,
-        "NetworkMode": 2,
-        "NetworkInterpolation": true,
-        "NetworkOrphaned": 0,
-        "NetworkTransmit": true,
-        "OwnerTransfer": 1,
-        "Components": [
-          {
-            "__type": "Sandbox.ModelRenderer",
-            "__guid": "d244c728-8cc9-4507-9354-af3b6d06b437",
-            "__enabled": true,
-            "BodyGroups": 18446744073709551615,
-            "CreateAttachments": false,
-            "LodOverride": null,
-            "MaterialGroup": null,
-            "MaterialOverride": null,
-            "Materials": null,
-            "Model": "models/dev/box.vmdl",
-            "OnComponentDestroy": null,
-            "OnComponentDisabled": null,
-            "OnComponentEnabled": null,
-            "OnComponentFixedUpdate": null,
-            "OnComponentStart": null,
-            "OnComponentUpdate": null,
-            "RenderOptions": {
-              "GameLayer": true,
-              "OverlayLayer": false,
-              "BloomLayer": false,
-              "AfterUILayer": false
-            },
-            "RenderType": "On",
-            "Tint": "1,1,1,1"
           }
         ],
         "Children": []
