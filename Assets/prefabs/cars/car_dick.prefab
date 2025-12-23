@@ -1,12 +1,12 @@
 {
   "RootObject": {
-    "__guid": "185c5385-b522-4307-9ba6-8afa7fb8bd4d",
+    "__guid": "14743af0-fa6d-4bf0-aea3-aef4033f393b",
     "__version": 1,
     "Flags": 0,
-    "Name": "bomb",
+    "Name": "car_dick",
     "Position": "0,0,0",
-    "Rotation": "0,0,0,1",
-    "Scale": "0.482152,0.482152,0.482152",
+    "Rotation": "-0.00000005960464,0.7071067,0.7071067,0.0000001490116",
+    "Scale": "0.2,0.2,0.2",
     "Tags": "",
     "Enabled": true,
     "NetworkMode": 1,
@@ -16,22 +16,47 @@
     "OwnerTransfer": 1,
     "Components": [
       {
-        "__type": "Sandbox.ModelRenderer",
-        "__guid": "57de0e8a-2da2-490d-b96f-e881a0db0ae4",
+        "__type": "Car",
+        "__guid": "21517cdb-5d65-43fb-93da-8c223db1ef82",
         "__enabled": true,
-        "BodyGroups": 18446744073709551615,
-        "CreateAttachments": false,
-        "LodOverride": null,
-        "MaterialGroup": null,
-        "MaterialOverride": null,
-        "Materials": null,
-        "Model": "models/mysterypowerups/dnd_bomb.vmdl",
+        "DelayToDie": 8,
         "OnComponentDestroy": null,
         "OnComponentDisabled": null,
         "OnComponentEnabled": null,
         "OnComponentFixedUpdate": null,
         "OnComponentStart": null,
         "OnComponentUpdate": null,
+        "Speed": 1.5
+      },
+      {
+        "__type": "Sandbox.SkinnedModelRenderer",
+        "__guid": "d1d3e3c9-6506-4a44-a4bf-5d9fdea95227",
+        "__enabled": true,
+        "AnimationGraph": null,
+        "BodyGroups": 18446744073709551615,
+        "BoneMergeTarget": null,
+        "CreateAttachments": false,
+        "CreateBoneObjects": false,
+        "LodOverride": null,
+        "MaterialGroup": "default",
+        "MaterialOverride": null,
+        "Materials": null,
+        "Model": "penis-rock2/penis-rock2.vmdl",
+        "Morphs": {},
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "Parameters": {
+          "bools": {},
+          "ints": {},
+          "floats": {},
+          "vectors": {},
+          "rotations": {}
+        },
+        "PlaybackRate": 1,
         "RenderOptions": {
           "GameLayer": true,
           "OverlayLayer": false,
@@ -39,17 +64,23 @@
           "AfterUILayer": false
         },
         "RenderType": "On",
-        "Tint": "1,1,1,1"
+        "Sequence": {
+          "Name": null,
+          "Looping": true,
+          "Blending": false
+        },
+        "Tint": "1,1,1,1",
+        "UseAnimGraph": false
       },
       {
         "__type": "Sandbox.ModelCollider",
-        "__guid": "4d8059f1-362f-43cc-90bf-ffa28dc48d20",
+        "__guid": "9c480419-bb8b-4549-9f25-e2d06b507ff3",
         "__enabled": true,
         "ColliderFlags": 0,
         "Elasticity": null,
         "Friction": null,
-        "IsTrigger": false,
-        "Model": "models/mysterypowerups/dnd_bomb.vmdl",
+        "IsTrigger": true,
+        "Model": "penis-rock2/penis-rock2.vmdl",
         "OnComponentDestroy": null,
         "OnComponentDisabled": null,
         "OnComponentEnabled": null,
@@ -64,55 +95,6 @@
         "Static": false,
         "Surface": null,
         "SurfaceVelocity": "0,0,0"
-      },
-      {
-        "__type": "Sandbox.Rigidbody",
-        "__guid": "eeabec80-2ba3-4ca3-838e-340c453ce798",
-        "__enabled": true,
-        "AngularDamping": 0,
-        "EnableImpactDamage": false,
-        "Gravity": true,
-        "GravityScale": 1,
-        "ImpactDamage": 0,
-        "LinearDamping": 0,
-        "Locking": {
-          "X": false,
-          "Y": false,
-          "Z": false,
-          "Pitch": false,
-          "Yaw": false,
-          "Roll": false
-        },
-        "MassCenterOverride": "0,0,0",
-        "MassOverride": 15,
-        "MinImpactDamageSpeed": 500,
-        "MotionEnabled": true,
-        "OnComponentDestroy": null,
-        "OnComponentDisabled": null,
-        "OnComponentEnabled": null,
-        "OnComponentFixedUpdate": null,
-        "OnComponentStart": null,
-        "OnComponentUpdate": null,
-        "OverrideMassCenter": false,
-        "RigidbodyFlags": 0,
-        "StartAsleep": false
-      },
-      {
-        "__type": "Bomb",
-        "__guid": "fd76ff99-7480-4845-a6b8-0cddfa783e97",
-        "__enabled": true,
-        "DelayExplode": 2,
-        "ExplodeParticlePrefab": {
-          "_type": "gameobject",
-          "prefab": "prefabs/pickups/bomb/particle_bomb.prefab"
-        },
-        "OnComponentDestroy": null,
-        "OnComponentDisabled": null,
-        "OnComponentEnabled": null,
-        "OnComponentFixedUpdate": null,
-        "OnComponentStart": null,
-        "OnComponentUpdate": null,
-        "SoundExplode": null
       }
     ],
     "Children": [],
@@ -142,7 +124,7 @@
   "MenuIcon": null,
   "DontBreakAsTemplate": false,
   "__references": [
-    "luke.dnd_bomb#59851"
+    "troevvalentin.penisrock2#77275"
   ],
   "__version": 2
 }

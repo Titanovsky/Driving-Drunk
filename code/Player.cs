@@ -182,7 +182,7 @@ public sealed class Player : Component, Component.INetworkListener
     {
         if (IsProxy) return;
 
-        HudWorld.Name = Connection.Local.DisplayName;
+        HudWorld.Name = Local.DisplayName;
 
         _transformRespawn = WorldTransform;
 

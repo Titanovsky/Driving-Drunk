@@ -28,6 +28,7 @@
       "Keyboard": true,
       "VR": false,
       "Gamepad": false
-    }
+    },
+    "LaunchMode": "QuickPlay"
   }
 }

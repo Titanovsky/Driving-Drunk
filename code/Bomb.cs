@@ -9,7 +9,7 @@ public sealed class Bomb : Component
     [Property] public GameObject ExplodeParticlePrefab { get; set; }
     [Property] public SoundEvent SoundExplode { get; set; }
 
-    private float _radius = 128f;
+    private float _radius = 200f;
     private float _speed = 10000f;
     private float _forceThrow = 200f;
 
