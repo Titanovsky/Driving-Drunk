@@ -512,7 +512,7 @@
       "Rotation": "0,0,0,1",
       "Scale": "1,1,1",
       "Tags": "",
-      "Enabled": false,
+      "Enabled": true,
       "NetworkMode": 2,
       "NetworkInterpolation": true,
       "NetworkOrphaned": 0,
@@ -1561,7 +1561,7 @@
           "__version": 1,
           "Flags": 0,
           "Name": "Finish Line",
-          "Position": "-1635.428,45.45475,-108.6155",
+          "Position": "-449.4509,45.45475,-108.6155",
           "Rotation": "0,0,0,1",
           "Scale": "1,1,1",
           "Tags": "",
@@ -1585,7 +1585,7 @@
               "IsTrigger": false,
               "Mesh": {
                 "Topology": "H4sIAAAAAAAACl2QCQ7CMAwEp4Qj3NBy/f+laMRGsohUVbFn1+t04ANs+Z0VsM69AwfgBFyAKZ9MPXdgk3qLnsI+Um/h/me9i2ZXfFvYOazafTJN0XRgKZmPyWtfXvYVL73PZRd52WdYPa7xtC8veys7u6t17/7t6Tn0ZtFjvIXZR895zjKjPWf4NiOrGt+ivpXZ3XnozaOndVn9vvVkkTjEAQAA",
-                "Position": "-1655.878,-72.39795,-16.65455",
+                "Position": "-469.9011,-72.39795,-16.65455",
                 "Rotation": "0,0,0,1",
                 "Positions": [
                   "-43.25488,-1231.206,1.057339",
@@ -1640,20 +1640,20 @@
                   "-0,0,-1"
                 ],
                 "TextureScale": [
-                  "0.2499986,0.25",
-                  "0.25,0.25",
+                  "0.2499985,0.25",
+                  "0.2499999,0.25",
                   "0.25,0.2499984",
                   "0.25,0.2500052",
-                  "0.25,0.2500052",
-                  "0.25,0.2500052"
+                  "0.2499999,0.2500052",
+                  "0.2499999,0.2500052"
                 ],
                 "TextureOffset": [
-                  "217.2529,0.001464844",
-                  "479.5137,232.2778",
+                  "81.31763,0.001464844",
+                  "343.605,232.2778",
                   "0.0004882812,511.9997",
                   "279.7217,449.0991",
-                  "32.48633,449.0991",
-                  "479.5137,449.0991"
+                  "168.3948,449.0991",
+                  "343.6052,449.0991"
                 ],
                 "MaterialIndex": [
                   1,
@@ -2642,6 +2642,14 @@
                   {
                     "Target": {
                       "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "MaxDelaySpawnCar",
+                    "Value": 2
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
                       "IdValue": "2c83d66f-c045-4223-b9e7-aaaff99d7e62"
                     },
                     "Property": "Mesh",
@@ -2799,6 +2807,17 @@
                       "Type": "Component",
                       "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
                     },
+                    "Property": "CarPrefab",
+                    "Value": {
+                      "_type": "gameobject",
+                      "prefab": "prefabs/cars/car_fish.prefab"
+                    }
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
                     "Property": "MaxDelaySpawnCar",
                     "Value": 1.2
                   },
@@ -2881,7 +2900,7 @@
                         "0.25,0.2499932"
                       ],
                       "TextureOffset": [
-                        "35.81702,24.77014",
+                        "35.81738,24.77014",
                         "511.398,5.015625",
                         "23.34497,222.4203",
                         "232.6545,222.4203",
@@ -2973,7 +2992,7 @@
                     "Property": "Mesh",
                     "Value": {
                       "Topology": "H4sIAAAAAAAACoWQ2QoCQQwES1dXUfC+/v9HI4UdmAdhB4aQTDpT6T3wAWZ+Zw1skt+BA/AETsAq157xXIGqKutT9Ay9j9S92z9/vaO3thvmTum9pbcWzgwcw2vuX/K/MmtJL8s5e5vL4t6XYWd3tW5u9M2e1qt1RnshuxzNJ5uMvumP3hjbP70YvZLdHVpvdKb15v4CSw/ShsQBAAA=",
-                      "Position": "-1507.206,-106.3333,-16.79005",
+                      "Position": "-1507.207,-106.3333,-16.79005",
                       "Rotation": "0,0,0,1",
                       "Positions": [
                         "-98.76762,-1124.251,1.401409",
@@ -3036,7 +3055,7 @@
                         "0.25,0.2499932"
                       ],
                       "TextureOffset": [
-                        "33.29614,19.62231",
+                        "33.29663,19.62231",
                         "511.398,5.015625",
                         "13.24365,222.4203",
                         "242.7559,222.4203",
@@ -3275,6 +3294,88 @@
               "OnPropTakeDamage": null,
               "StartAsleep": false,
               "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "9f7c3efb-5863-4ef7-96b5-0b1f3ae3c84c",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "CreateAttachments": false,
+              "LodOverride": null,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Materials": null,
+              "Model": "models/holiday-kit/holiday-tree-snow-b.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "1506e3f8-1eff-4ea5-a0ae-9c0a967cc58c",
+              "__enabled": true,
+              "ColliderFlags": 0,
+              "Elasticity": null,
+              "Friction": null,
+              "IsTrigger": false,
+              "Model": "models/holiday-kit/holiday-tree-snow-b.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnObjectTriggerEnter": null,
+              "OnObjectTriggerExit": null,
+              "OnTriggerEnter": null,
+              "OnTriggerExit": null,
+              "RollingResistance": null,
+              "Static": false,
+              "Surface": null,
+              "SurfaceVelocity": "0,0,0"
+            },
+            {
+              "__type": "Sandbox.Rigidbody",
+              "__guid": "aaa660ac-255c-48ba-b0cf-8bf484046b05",
+              "__enabled": true,
+              "AngularDamping": 0,
+              "EnableImpactDamage": true,
+              "Gravity": true,
+              "GravityScale": 1,
+              "ImpactDamage": 0,
+              "LinearDamping": 0,
+              "Locking": {
+                "X": false,
+                "Y": false,
+                "Z": false,
+                "Pitch": false,
+                "Yaw": false,
+                "Roll": false
+              },
+              "MassCenterOverride": "0,0,0",
+              "MassOverride": 0,
+              "MinImpactDamageSpeed": 500,
+              "MotionEnabled": true,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OverrideMassCenter": false,
+              "RigidbodyFlags": 0,
+              "StartAsleep": false
             }
           ],
           "Children": []
@@ -3314,6 +3415,88 @@
               "OnPropTakeDamage": null,
               "StartAsleep": false,
               "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "84da367e-7fb7-4a54-888a-ec00857197ec",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "CreateAttachments": false,
+              "LodOverride": null,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Materials": null,
+              "Model": "models/holiday-kit/holiday-tree-snow-b.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "d2b0f401-ce27-44f1-95f0-ad87d1431f10",
+              "__enabled": true,
+              "ColliderFlags": 0,
+              "Elasticity": null,
+              "Friction": null,
+              "IsTrigger": false,
+              "Model": "models/holiday-kit/holiday-tree-snow-b.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnObjectTriggerEnter": null,
+              "OnObjectTriggerExit": null,
+              "OnTriggerEnter": null,
+              "OnTriggerExit": null,
+              "RollingResistance": null,
+              "Static": false,
+              "Surface": null,
+              "SurfaceVelocity": "0,0,0"
+            },
+            {
+              "__type": "Sandbox.Rigidbody",
+              "__guid": "60328aa2-6ea9-4732-bd67-b423c6224236",
+              "__enabled": true,
+              "AngularDamping": 0,
+              "EnableImpactDamage": true,
+              "Gravity": true,
+              "GravityScale": 1,
+              "ImpactDamage": 0,
+              "LinearDamping": 0,
+              "Locking": {
+                "X": false,
+                "Y": false,
+                "Z": false,
+                "Pitch": false,
+                "Yaw": false,
+                "Roll": false
+              },
+              "MassCenterOverride": "0,0,0",
+              "MassOverride": 0,
+              "MinImpactDamageSpeed": 500,
+              "MotionEnabled": true,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OverrideMassCenter": false,
+              "RigidbodyFlags": 0,
+              "StartAsleep": false
             }
           ],
           "Children": []
@@ -3353,6 +3536,88 @@
               "OnPropTakeDamage": null,
               "StartAsleep": false,
               "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "bea923b3-7106-4854-8061-9a07068e7491",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "CreateAttachments": false,
+              "LodOverride": null,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Materials": null,
+              "Model": "models/holiday-kit/holiday-tree-snow-b.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "cc4c290b-4553-461a-8b89-f4868b44c2f2",
+              "__enabled": true,
+              "ColliderFlags": 0,
+              "Elasticity": null,
+              "Friction": null,
+              "IsTrigger": false,
+              "Model": "models/holiday-kit/holiday-tree-snow-b.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnObjectTriggerEnter": null,
+              "OnObjectTriggerExit": null,
+              "OnTriggerEnter": null,
+              "OnTriggerExit": null,
+              "RollingResistance": null,
+              "Static": false,
+              "Surface": null,
+              "SurfaceVelocity": "0,0,0"
+            },
+            {
+              "__type": "Sandbox.Rigidbody",
+              "__guid": "75d1e2b8-3ccc-4c6e-84b4-ac657e2361e5",
+              "__enabled": true,
+              "AngularDamping": 0,
+              "EnableImpactDamage": true,
+              "Gravity": true,
+              "GravityScale": 1,
+              "ImpactDamage": 0,
+              "LinearDamping": 0,
+              "Locking": {
+                "X": false,
+                "Y": false,
+                "Z": false,
+                "Pitch": false,
+                "Yaw": false,
+                "Roll": false
+              },
+              "MassCenterOverride": "0,0,0",
+              "MassOverride": 0,
+              "MinImpactDamageSpeed": 500,
+              "MotionEnabled": true,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OverrideMassCenter": false,
+              "RigidbodyFlags": 0,
+              "StartAsleep": false
             }
           ],
           "Children": []
@@ -3392,6 +3657,88 @@
               "OnPropTakeDamage": null,
               "StartAsleep": false,
               "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "94dce199-6365-43c1-965e-4bc322c26ba8",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "CreateAttachments": false,
+              "LodOverride": null,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Materials": null,
+              "Model": "models/holiday-kit/holiday-tree-snow-b.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "8aa0e5cd-6a48-4789-92bb-2265fb5bb938",
+              "__enabled": true,
+              "ColliderFlags": 0,
+              "Elasticity": null,
+              "Friction": null,
+              "IsTrigger": false,
+              "Model": "models/holiday-kit/holiday-tree-snow-b.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnObjectTriggerEnter": null,
+              "OnObjectTriggerExit": null,
+              "OnTriggerEnter": null,
+              "OnTriggerExit": null,
+              "RollingResistance": null,
+              "Static": false,
+              "Surface": null,
+              "SurfaceVelocity": "0,0,0"
+            },
+            {
+              "__type": "Sandbox.Rigidbody",
+              "__guid": "4e2f51b8-d434-4710-8695-1aebb4b776c0",
+              "__enabled": true,
+              "AngularDamping": 0,
+              "EnableImpactDamage": true,
+              "Gravity": true,
+              "GravityScale": 1,
+              "ImpactDamage": 0,
+              "LinearDamping": 0,
+              "Locking": {
+                "X": false,
+                "Y": false,
+                "Z": false,
+                "Pitch": false,
+                "Yaw": false,
+                "Roll": false
+              },
+              "MassCenterOverride": "0,0,0",
+              "MassOverride": 0,
+              "MinImpactDamageSpeed": 500,
+              "MotionEnabled": true,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OverrideMassCenter": false,
+              "RigidbodyFlags": 0,
+              "StartAsleep": false
             }
           ],
           "Children": []
@@ -3401,7 +3748,7 @@
           "__version": 1,
           "Flags": 0,
           "Name": "snow_tree",
-          "Position": "-1256.615,-479.6673,-109.7468",
+          "Position": "-1030.499,-648.3006,-109.7468",
           "Rotation": "0,0,0,1",
           "Scale": "0.7130899,0.7130899,0.7130899",
           "Tags": "",
@@ -3431,6 +3778,88 @@
               "OnPropTakeDamage": null,
               "StartAsleep": false,
               "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "c243cb4d-4f79-4a8f-b2c4-651b3bb0c5b3",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "CreateAttachments": false,
+              "LodOverride": null,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Materials": null,
+              "Model": "models/holiday-kit/holiday-tree-snow-b.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "d6aaae39-6b4c-45bd-ad79-78594fe33cc0",
+              "__enabled": true,
+              "ColliderFlags": 0,
+              "Elasticity": null,
+              "Friction": null,
+              "IsTrigger": false,
+              "Model": "models/holiday-kit/holiday-tree-snow-b.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnObjectTriggerEnter": null,
+              "OnObjectTriggerExit": null,
+              "OnTriggerEnter": null,
+              "OnTriggerExit": null,
+              "RollingResistance": null,
+              "Static": false,
+              "Surface": null,
+              "SurfaceVelocity": "0,0,0"
+            },
+            {
+              "__type": "Sandbox.Rigidbody",
+              "__guid": "68a3b1be-a1bc-4773-8765-3702cd5494fb",
+              "__enabled": true,
+              "AngularDamping": 0,
+              "EnableImpactDamage": true,
+              "Gravity": true,
+              "GravityScale": 1,
+              "ImpactDamage": 0,
+              "LinearDamping": 0,
+              "Locking": {
+                "X": false,
+                "Y": false,
+                "Z": false,
+                "Pitch": false,
+                "Yaw": false,
+                "Roll": false
+              },
+              "MassCenterOverride": "0,0,0",
+              "MassOverride": 0,
+              "MinImpactDamageSpeed": 500,
+              "MotionEnabled": true,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OverrideMassCenter": false,
+              "RigidbodyFlags": 0,
+              "StartAsleep": false
             }
           ],
           "Children": []
@@ -3470,6 +3899,88 @@
               "OnPropTakeDamage": null,
               "StartAsleep": false,
               "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "0bda89cc-ac3e-44d0-8621-54e77dd9ca5d",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "CreateAttachments": false,
+              "LodOverride": null,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Materials": null,
+              "Model": "models/holiday-kit/holiday-tree-snow-b.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "57605e07-41a0-4b6a-bad7-597926a97c50",
+              "__enabled": true,
+              "ColliderFlags": 0,
+              "Elasticity": null,
+              "Friction": null,
+              "IsTrigger": false,
+              "Model": "models/holiday-kit/holiday-tree-snow-b.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnObjectTriggerEnter": null,
+              "OnObjectTriggerExit": null,
+              "OnTriggerEnter": null,
+              "OnTriggerExit": null,
+              "RollingResistance": null,
+              "Static": false,
+              "Surface": null,
+              "SurfaceVelocity": "0,0,0"
+            },
+            {
+              "__type": "Sandbox.Rigidbody",
+              "__guid": "aa6d0665-3b2b-4491-a7cf-b78a8593ccd0",
+              "__enabled": true,
+              "AngularDamping": 0,
+              "EnableImpactDamage": true,
+              "Gravity": true,
+              "GravityScale": 1,
+              "ImpactDamage": 0,
+              "LinearDamping": 0,
+              "Locking": {
+                "X": false,
+                "Y": false,
+                "Z": false,
+                "Pitch": false,
+                "Yaw": false,
+                "Roll": false
+              },
+              "MassCenterOverride": "0,0,0",
+              "MassOverride": 0,
+              "MinImpactDamageSpeed": 500,
+              "MotionEnabled": true,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OverrideMassCenter": false,
+              "RigidbodyFlags": 0,
+              "StartAsleep": false
             }
           ],
           "Children": []
@@ -3509,6 +4020,88 @@
               "OnPropTakeDamage": null,
               "StartAsleep": false,
               "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "377c5e18-8c87-4c19-8f34-97725b6e6843",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "CreateAttachments": false,
+              "LodOverride": null,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Materials": null,
+              "Model": "models/holiday-kit/holiday-tree-snow-b.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "3bd170e9-66bd-429a-80e5-4b41ed4e95fa",
+              "__enabled": true,
+              "ColliderFlags": 0,
+              "Elasticity": null,
+              "Friction": null,
+              "IsTrigger": false,
+              "Model": "models/holiday-kit/holiday-tree-snow-b.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnObjectTriggerEnter": null,
+              "OnObjectTriggerExit": null,
+              "OnTriggerEnter": null,
+              "OnTriggerExit": null,
+              "RollingResistance": null,
+              "Static": false,
+              "Surface": null,
+              "SurfaceVelocity": "0,0,0"
+            },
+            {
+              "__type": "Sandbox.Rigidbody",
+              "__guid": "1187156e-3cf6-421a-8f09-cbc74b10d47b",
+              "__enabled": true,
+              "AngularDamping": 0,
+              "EnableImpactDamage": true,
+              "Gravity": true,
+              "GravityScale": 1,
+              "ImpactDamage": 0,
+              "LinearDamping": 0,
+              "Locking": {
+                "X": false,
+                "Y": false,
+                "Z": false,
+                "Pitch": false,
+                "Yaw": false,
+                "Roll": false
+              },
+              "MassCenterOverride": "0,0,0",
+              "MassOverride": 0,
+              "MinImpactDamageSpeed": 500,
+              "MotionEnabled": true,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OverrideMassCenter": false,
+              "RigidbodyFlags": 0,
+              "StartAsleep": false
             }
           ],
           "Children": []
@@ -3548,6 +4141,88 @@
               "OnPropTakeDamage": null,
               "StartAsleep": false,
               "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "2d3bce13-35db-40fb-a354-3059ad8b7ebe",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "CreateAttachments": false,
+              "LodOverride": null,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Materials": null,
+              "Model": "models/holiday-kit/holiday-tree-snow-b.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "71f4d4b3-7d9b-41c5-a443-cb81e4da8121",
+              "__enabled": true,
+              "ColliderFlags": 0,
+              "Elasticity": null,
+              "Friction": null,
+              "IsTrigger": false,
+              "Model": "models/holiday-kit/holiday-tree-snow-b.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnObjectTriggerEnter": null,
+              "OnObjectTriggerExit": null,
+              "OnTriggerEnter": null,
+              "OnTriggerExit": null,
+              "RollingResistance": null,
+              "Static": false,
+              "Surface": null,
+              "SurfaceVelocity": "0,0,0"
+            },
+            {
+              "__type": "Sandbox.Rigidbody",
+              "__guid": "05498215-f1fe-4659-8c34-294d6140ab49",
+              "__enabled": true,
+              "AngularDamping": 0,
+              "EnableImpactDamage": true,
+              "Gravity": true,
+              "GravityScale": 1,
+              "ImpactDamage": 0,
+              "LinearDamping": 0,
+              "Locking": {
+                "X": false,
+                "Y": false,
+                "Z": false,
+                "Pitch": false,
+                "Yaw": false,
+                "Roll": false
+              },
+              "MassCenterOverride": "0,0,0",
+              "MassOverride": 0,
+              "MinImpactDamageSpeed": 500,
+              "MotionEnabled": true,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OverrideMassCenter": false,
+              "RigidbodyFlags": 0,
+              "StartAsleep": false
             }
           ],
           "Children": []
@@ -3587,6 +4262,88 @@
               "OnPropTakeDamage": null,
               "StartAsleep": false,
               "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "0a143a0a-71ee-41bc-9699-036bbf98d3b8",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "CreateAttachments": false,
+              "LodOverride": null,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Materials": null,
+              "Model": "models/holiday-kit/holiday-tree-snow-b.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "82eb6a19-5521-4f30-b8fa-0066ec43e30a",
+              "__enabled": true,
+              "ColliderFlags": 0,
+              "Elasticity": null,
+              "Friction": null,
+              "IsTrigger": false,
+              "Model": "models/holiday-kit/holiday-tree-snow-b.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnObjectTriggerEnter": null,
+              "OnObjectTriggerExit": null,
+              "OnTriggerEnter": null,
+              "OnTriggerExit": null,
+              "RollingResistance": null,
+              "Static": false,
+              "Surface": null,
+              "SurfaceVelocity": "0,0,0"
+            },
+            {
+              "__type": "Sandbox.Rigidbody",
+              "__guid": "6b53c512-8ae7-4685-9b36-c6885c99a527",
+              "__enabled": true,
+              "AngularDamping": 0,
+              "EnableImpactDamage": true,
+              "Gravity": true,
+              "GravityScale": 1,
+              "ImpactDamage": 0,
+              "LinearDamping": 0,
+              "Locking": {
+                "X": false,
+                "Y": false,
+                "Z": false,
+                "Pitch": false,
+                "Yaw": false,
+                "Roll": false
+              },
+              "MassCenterOverride": "0,0,0",
+              "MassOverride": 0,
+              "MinImpactDamageSpeed": 500,
+              "MotionEnabled": true,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OverrideMassCenter": false,
+              "RigidbodyFlags": 0,
+              "StartAsleep": false
             }
           ],
           "Children": []
@@ -4630,6 +5387,278 @@
             "a1ee2b4e-dbdc-4737-92f5-10833fd05bff": "05f14404-d3df-4bdd-a3b8-c62b8ad95009",
             "4634c50f-cbb0-48e0-bfdf-13f2caf77aab": "c69da967-0023-4736-b6b4-70b81ca7f29f",
             "f6057008-c9a3-4b76-92f1-e8e100d51770": "5c2d9523-b608-4687-8133-caedc83542b4"
+          }
+        },
+        {
+          "__guid": "58a13469-6b9a-4d6c-b320-cf8f33499737",
+          "__version": 1,
+          "__Prefab": "prefabs/pickups/bomb/pickup_bomb.prefab",
+          "__PrefabInstancePatch": {
+            "AddedObjects": [],
+            "RemovedObjects": [],
+            "PropertyOverrides": [
+              {
+                "Target": {
+                  "Type": "GameObject",
+                  "IdValue": "47139f50-d02a-4c8c-9122-3a2c9af418be"
+                },
+                "Property": "Position",
+                "Value": "-1712.465,-102.1279,-75.62839"
+              }
+            ],
+            "MovedObjects": []
+          },
+          "__PrefabIdToInstanceId": {
+            "47139f50-d02a-4c8c-9122-3a2c9af418be": "58a13469-6b9a-4d6c-b320-cf8f33499737",
+            "d1b6135c-121e-41f8-8b2c-77be592b200a": "643c692c-2fa2-4822-86d1-b2c05582833c",
+            "b8f8b01d-2243-4585-adc7-9ff25a61ef8e": "4d470b56-6c6d-4734-af06-751e17537621",
+            "d95008fe-7621-40a5-9ad9-59065fd11261": "6efb729a-3315-4682-9144-52faa0512390",
+            "69d43aad-a7a7-4ec3-9144-aacee1779422": "5661e10a-8a5a-47e7-b918-2f64f763d5dc",
+            "0f2841c4-a691-4ac2-8d9a-52eb483307a5": "8b5b91fc-4001-472b-be56-ad319898edc8",
+            "ee9ee832-3f9c-4ec9-908c-b13696a34401": "434b5079-68ad-4351-a346-37c2003d69f0",
+            "2916d79a-f3d5-43de-b362-7ede691ff1aa": "b2a3744f-1847-471d-b10e-e19aace8f5fe",
+            "a949172b-a9e2-40e3-a2a2-1b605106bd36": "1c7e761f-1a59-4bfa-b1bd-96455d27e89e",
+            "a9ae3880-a5b7-4223-ac34-4ec08193c511": "4e44adb7-3f60-4fbd-bbf6-e1f8e2572861"
+          }
+        },
+        {
+          "__guid": "6fb86180-ea0e-46d0-a548-4119421429b3",
+          "__version": 1,
+          "__Prefab": "prefabs/pickups/bomb/pickup_bomb.prefab",
+          "__PrefabInstancePatch": {
+            "AddedObjects": [],
+            "RemovedObjects": [],
+            "PropertyOverrides": [
+              {
+                "Target": {
+                  "Type": "GameObject",
+                  "IdValue": "47139f50-d02a-4c8c-9122-3a2c9af418be"
+                },
+                "Property": "Name",
+                "Value": "pickup_bomb (1)"
+              },
+              {
+                "Target": {
+                  "Type": "GameObject",
+                  "IdValue": "47139f50-d02a-4c8c-9122-3a2c9af418be"
+                },
+                "Property": "Position",
+                "Value": "-1674.644,130.8358,-75.62839"
+              }
+            ],
+            "MovedObjects": []
+          },
+          "__PrefabIdToInstanceId": {
+            "47139f50-d02a-4c8c-9122-3a2c9af418be": "6fb86180-ea0e-46d0-a548-4119421429b3",
+            "d1b6135c-121e-41f8-8b2c-77be592b200a": "419fad5b-5cda-4b1a-ae62-95a02f0ed322",
+            "b8f8b01d-2243-4585-adc7-9ff25a61ef8e": "0c5e546e-cc68-4151-a16d-0bcb5c5e3766",
+            "d95008fe-7621-40a5-9ad9-59065fd11261": "92e3fe67-3af1-4b7b-81ce-fa4d064a7f7a",
+            "69d43aad-a7a7-4ec3-9144-aacee1779422": "d870f13a-3c1b-4c07-822f-22aa65a9ccc6",
+            "0f2841c4-a691-4ac2-8d9a-52eb483307a5": "3e954c86-2fd1-4490-a5d1-551c77d35f9a",
+            "ee9ee832-3f9c-4ec9-908c-b13696a34401": "c0b6f8ff-e5be-47c3-97b3-4504661a4e05",
+            "2916d79a-f3d5-43de-b362-7ede691ff1aa": "40025b5b-568a-466c-98f5-636ad4f85589",
+            "a949172b-a9e2-40e3-a2a2-1b605106bd36": "982c4f06-bfc3-470d-9dc5-135d8f99806b",
+            "a9ae3880-a5b7-4223-ac34-4ec08193c511": "57deec7c-be9f-4552-aba9-8a28a3123923"
+          }
+        },
+        {
+          "__guid": "23ff6e6d-4774-404c-be36-4ebb02e737c2",
+          "__version": 1,
+          "__Prefab": "prefabs/pickups/bomb/pickup_bomb.prefab",
+          "__PrefabInstancePatch": {
+            "AddedObjects": [],
+            "RemovedObjects": [],
+            "PropertyOverrides": [
+              {
+                "Target": {
+                  "Type": "GameObject",
+                  "IdValue": "47139f50-d02a-4c8c-9122-3a2c9af418be"
+                },
+                "Property": "Name",
+                "Value": "pickup_bomb (2)"
+              },
+              {
+                "Target": {
+                  "Type": "GameObject",
+                  "IdValue": "47139f50-d02a-4c8c-9122-3a2c9af418be"
+                },
+                "Property": "Position",
+                "Value": "-1674.644,-382.4554,-75.62839"
+              }
+            ],
+            "MovedObjects": []
+          },
+          "__PrefabIdToInstanceId": {
+            "47139f50-d02a-4c8c-9122-3a2c9af418be": "23ff6e6d-4774-404c-be36-4ebb02e737c2",
+            "d1b6135c-121e-41f8-8b2c-77be592b200a": "060d2842-28c1-4dad-a541-e373a9f509c9",
+            "b8f8b01d-2243-4585-adc7-9ff25a61ef8e": "2262ab65-216e-4e59-94cf-7737ea0cf568",
+            "d95008fe-7621-40a5-9ad9-59065fd11261": "9b445587-a12f-43b8-b496-64fc61132d38",
+            "69d43aad-a7a7-4ec3-9144-aacee1779422": "8aad5426-73ff-4e72-a7ab-784c382f68f3",
+            "0f2841c4-a691-4ac2-8d9a-52eb483307a5": "222809b6-29fe-4e00-b537-e6440017a70d",
+            "ee9ee832-3f9c-4ec9-908c-b13696a34401": "3c2fbd4a-4037-4c8a-9b66-0de864698c8e",
+            "2916d79a-f3d5-43de-b362-7ede691ff1aa": "2aba8379-8260-444d-b56c-e0608da7722e",
+            "a949172b-a9e2-40e3-a2a2-1b605106bd36": "8be520b8-34e6-4079-be0d-e0daa9503ad9",
+            "a9ae3880-a5b7-4223-ac34-4ec08193c511": "12f56994-9b70-432e-915c-958d53b8a692"
+          }
+        },
+        {
+          "__guid": "d4ca8cae-de5e-4d8b-84a3-5526fd1dbb9b",
+          "__version": 1,
+          "__Prefab": "prefabs/pickups/bomb/pickup_bomb.prefab",
+          "__PrefabInstancePatch": {
+            "AddedObjects": [],
+            "RemovedObjects": [],
+            "PropertyOverrides": [
+              {
+                "Target": {
+                  "Type": "GameObject",
+                  "IdValue": "47139f50-d02a-4c8c-9122-3a2c9af418be"
+                },
+                "Property": "Name",
+                "Value": "pickup_bomb (3)"
+              },
+              {
+                "Target": {
+                  "Type": "GameObject",
+                  "IdValue": "47139f50-d02a-4c8c-9122-3a2c9af418be"
+                },
+                "Property": "Position",
+                "Value": "-1136.57,-382.4554,-75.62839"
+              }
+            ],
+            "MovedObjects": []
+          },
+          "__PrefabIdToInstanceId": {
+            "47139f50-d02a-4c8c-9122-3a2c9af418be": "d4ca8cae-de5e-4d8b-84a3-5526fd1dbb9b",
+            "d1b6135c-121e-41f8-8b2c-77be592b200a": "1e8bd270-7eee-482b-8b55-dff861ab6666",
+            "b8f8b01d-2243-4585-adc7-9ff25a61ef8e": "fb956036-966d-4dc4-a4d6-e1c19896b7e3",
+            "d95008fe-7621-40a5-9ad9-59065fd11261": "04540589-9933-48f4-b01c-a8ccced1c52f",
+            "69d43aad-a7a7-4ec3-9144-aacee1779422": "12aaf0c8-729c-4878-8acf-154e3fad6ce6",
+            "0f2841c4-a691-4ac2-8d9a-52eb483307a5": "58afd1a0-4459-4f60-ba7e-ca78e65b2176",
+            "ee9ee832-3f9c-4ec9-908c-b13696a34401": "bd4438cf-72c3-488b-bc00-ef843d50137c",
+            "2916d79a-f3d5-43de-b362-7ede691ff1aa": "876f58ff-f01c-4631-9346-45410cf6c34f",
+            "a949172b-a9e2-40e3-a2a2-1b605106bd36": "c32d2e08-5485-4090-8759-083fe0fb462d",
+            "a9ae3880-a5b7-4223-ac34-4ec08193c511": "f649b6e0-0473-4313-bad4-5ae235e1d787"
+          }
+        },
+        {
+          "__guid": "2a4e7579-858d-4ba2-a48b-11f808ec569c",
+          "__version": 1,
+          "__Prefab": "prefabs/pickups/bomb/pickup_bomb.prefab",
+          "__PrefabInstancePatch": {
+            "AddedObjects": [],
+            "RemovedObjects": [],
+            "PropertyOverrides": [
+              {
+                "Target": {
+                  "Type": "GameObject",
+                  "IdValue": "47139f50-d02a-4c8c-9122-3a2c9af418be"
+                },
+                "Property": "Name",
+                "Value": "pickup_bomb (4)"
+              },
+              {
+                "Target": {
+                  "Type": "GameObject",
+                  "IdValue": "47139f50-d02a-4c8c-9122-3a2c9af418be"
+                },
+                "Property": "Position",
+                "Value": "-1068.018,-29.43322,-75.62839"
+              }
+            ],
+            "MovedObjects": []
+          },
+          "__PrefabIdToInstanceId": {
+            "47139f50-d02a-4c8c-9122-3a2c9af418be": "2a4e7579-858d-4ba2-a48b-11f808ec569c",
+            "d1b6135c-121e-41f8-8b2c-77be592b200a": "c7cdfbbf-a665-40e2-b707-a6d486a7e103",
+            "b8f8b01d-2243-4585-adc7-9ff25a61ef8e": "2c90d12d-e3f6-4828-b95a-711a9a70d4b6",
+            "d95008fe-7621-40a5-9ad9-59065fd11261": "dc177c20-c309-414b-9d2b-5ca2ebb597c1",
+            "69d43aad-a7a7-4ec3-9144-aacee1779422": "ade11c00-9ea2-41db-a606-f9ebbae59f2f",
+            "0f2841c4-a691-4ac2-8d9a-52eb483307a5": "ff6c3cd1-6988-4ac7-bc49-9628290249f1",
+            "ee9ee832-3f9c-4ec9-908c-b13696a34401": "2c48eedc-e112-4a95-8732-f3d39f0693f0",
+            "2916d79a-f3d5-43de-b362-7ede691ff1aa": "8aedb9ef-c625-4cbb-ae17-0fb578138886",
+            "a949172b-a9e2-40e3-a2a2-1b605106bd36": "13f49b22-5476-49ed-a7a8-6e34f9a72500",
+            "a9ae3880-a5b7-4223-ac34-4ec08193c511": "0c165265-0ccc-4a54-98ff-245cb7b57505"
+          }
+        },
+        {
+          "__guid": "6157e354-16dc-468f-80d1-0d3ed0e1ee4a",
+          "__version": 1,
+          "__Prefab": "prefabs/pickups/bomb/pickup_bomb.prefab",
+          "__PrefabInstancePatch": {
+            "AddedObjects": [],
+            "RemovedObjects": [],
+            "PropertyOverrides": [
+              {
+                "Target": {
+                  "Type": "GameObject",
+                  "IdValue": "47139f50-d02a-4c8c-9122-3a2c9af418be"
+                },
+                "Property": "Name",
+                "Value": "pickup_bomb (5)"
+              },
+              {
+                "Target": {
+                  "Type": "GameObject",
+                  "IdValue": "47139f50-d02a-4c8c-9122-3a2c9af418be"
+                },
+                "Property": "Position",
+                "Value": "-600.9018,-29.43322,-75.62839"
+              }
+            ],
+            "MovedObjects": []
+          },
+          "__PrefabIdToInstanceId": {
+            "47139f50-d02a-4c8c-9122-3a2c9af418be": "6157e354-16dc-468f-80d1-0d3ed0e1ee4a",
+            "d1b6135c-121e-41f8-8b2c-77be592b200a": "0f0122ed-b8ae-4a57-ab28-e416fdac2df7",
+            "b8f8b01d-2243-4585-adc7-9ff25a61ef8e": "21ca7432-4739-4038-ba1f-74688bfe7eaa",
+            "d95008fe-7621-40a5-9ad9-59065fd11261": "404e0307-0c91-4062-a837-9dc92c053033",
+            "69d43aad-a7a7-4ec3-9144-aacee1779422": "bb22db22-bd82-4a3d-8e0c-709e9d79ab9b",
+            "0f2841c4-a691-4ac2-8d9a-52eb483307a5": "53a65340-6aec-4b09-83fd-75d79df01dbb",
+            "ee9ee832-3f9c-4ec9-908c-b13696a34401": "686d9443-12ee-4674-80b1-2439171d97f4",
+            "2916d79a-f3d5-43de-b362-7ede691ff1aa": "ee9ebff6-4f1d-453c-a394-44aa06899267",
+            "a949172b-a9e2-40e3-a2a2-1b605106bd36": "e331e47b-2a2a-45cd-9581-dc4cea4c36db",
+            "a9ae3880-a5b7-4223-ac34-4ec08193c511": "84c74700-daa5-4ecb-ba95-10d162df72de"
+          }
+        },
+        {
+          "__guid": "941a2279-2bf6-434a-951d-16e937087ba3",
+          "__version": 1,
+          "__Prefab": "prefabs/pickups/bomb/pickup_bomb.prefab",
+          "__PrefabInstancePatch": {
+            "AddedObjects": [],
+            "RemovedObjects": [],
+            "PropertyOverrides": [
+              {
+                "Target": {
+                  "Type": "GameObject",
+                  "IdValue": "47139f50-d02a-4c8c-9122-3a2c9af418be"
+                },
+                "Property": "Name",
+                "Value": "pickup_bomb (6)"
+              },
+              {
+                "Target": {
+                  "Type": "GameObject",
+                  "IdValue": "47139f50-d02a-4c8c-9122-3a2c9af418be"
+                },
+                "Property": "Position",
+                "Value": "-2078.437,390.312,-75.62839"
+              }
+            ],
+            "MovedObjects": []
+          },
+          "__PrefabIdToInstanceId": {
+            "47139f50-d02a-4c8c-9122-3a2c9af418be": "941a2279-2bf6-434a-951d-16e937087ba3",
+            "d1b6135c-121e-41f8-8b2c-77be592b200a": "e3b8caae-b980-424b-aea5-fb1b5e782331",
+            "b8f8b01d-2243-4585-adc7-9ff25a61ef8e": "e34ea500-bb8c-4b66-addb-edf7cffd201c",
+            "d95008fe-7621-40a5-9ad9-59065fd11261": "8e694c12-60fc-460d-a632-752adca38aba",
+            "69d43aad-a7a7-4ec3-9144-aacee1779422": "79fb9544-93fd-4328-9c62-66c770fc79bb",
+            "0f2841c4-a691-4ac2-8d9a-52eb483307a5": "8b2d2d09-0d46-402e-add2-dc82d68997f1",
+            "ee9ee832-3f9c-4ec9-908c-b13696a34401": "283d3be9-89fc-42ae-823d-bff3ee016d46",
+            "2916d79a-f3d5-43de-b362-7ede691ff1aa": "1026add5-6ac9-4656-9e32-c7c6a31fffc0",
+            "a949172b-a9e2-40e3-a2a2-1b605106bd36": "d684f8ac-64fd-43e7-bf26-a13bd78e46dc",
+            "a9ae3880-a5b7-4223-ac34-4ec08193c511": "405c53af-b001-4630-9b92-5d6324ea6fd0"
           }
         }
       ]
@@ -5692,7 +6721,7 @@
           "__version": 1,
           "Flags": 0,
           "Name": "Finish Line",
-          "Position": "-1771.561,45.45475,-108.6155",
+          "Position": "-1169.866,45.45475,-108.6155",
           "Rotation": "0,0,0,1",
           "Scale": "1,1,1",
           "Tags": "",
@@ -5716,7 +6745,7 @@
               "IsTrigger": false,
               "Mesh": {
                 "Topology": "H4sIAAAAAAAACl2QCQ7CMAwEp4Qj3NBy/f+laMRGsohUVbFn1+t04ANs+Z0VsM69AwfgBFyAKZ9MPXdgk3qLnsI+Um/h/me9i2ZXfFvYOazafTJN0XRgKZmPyWtfXvYVL73PZRd52WdYPa7xtC8veys7u6t17/7t6Tn0ZtFjvIXZR895zjKjPWf4NiOrGt+ivpXZ3XnozaOndVn9vvVkkTjEAQAA",
-                "Position": "-1792.011,-72.39795,-16.65455",
+                "Position": "-1190.316,-72.39795,-16.65455",
                 "Rotation": "0,0,0,1",
                 "Positions": [
                   "-43.25488,-1231.206,1.057339",
@@ -5779,12 +6808,12 @@
                   "0.25,0.2500052"
                 ],
                 "TextureOffset": [
-                  "249.7876,0.001464844",
-                  "0.04541016,232.2778",
+                  "402.9927,0.001464844",
+                  "153.2637,232.2778",
                   "0.0004882812,511.9997",
                   "279.7217,449.0991",
-                  "511.9546,449.0991",
-                  "0.04541016,449.0991"
+                  "358.7363,449.0991",
+                  "153.2637,449.0991"
                 ],
                 "MaterialIndex": [
                   1,
@@ -11008,7 +12037,7 @@
           "__version": 1,
           "Flags": 0,
           "Name": "Finish Line",
-          "Position": "-1557.93,45.45475,-108.6155",
+          "Position": "169.8414,45.45475,-108.6155",
           "Rotation": "0,0,0,1",
           "Scale": "1,1,1",
           "Tags": "",
@@ -11032,7 +12061,7 @@
               "IsTrigger": false,
               "Mesh": {
                 "Topology": "H4sIAAAAAAAACl2QCQ7CMAwEp4Qj3NBy/f+laMRGsohUVbFn1+t04ANs+Z0VsM69AwfgBFyAKZ9MPXdgk3qLnsI+Um/h/me9i2ZXfFvYOazafTJN0XRgKZmPyWtfXvYVL73PZRd52WdYPa7xtC8veys7u6t17/7t6Tn0ZtFjvIXZR895zjKjPWf4NiOrGt+ivpXZ3XnozaOndVn9vvVkkTjEAQAA",
-                "Position": "-1578.38,-72.39795,-16.65455",
+                "Position": "149.3912,-72.39795,-16.65455",
                 "Rotation": "0,0,0,1",
                 "Positions": [
                   "-43.25488,-1231.206,1.057339",
@@ -11095,12 +12124,12 @@
                   "0.25,0.2500052"
                 ],
                 "TextureOffset": [
-                  "419.2568,0.001464844",
-                  "169.5195,232.2778",
+                  "164.1339,0.001464844",
+                  "426.4351,232.2778",
                   "0.0004882812,511.9997",
                   "279.7217,449.0991",
-                  "342.4805,449.0991",
-                  "169.5195,449.0991"
+                  "85.56494,449.0991",
+                  "426.4351,449.0991"
                 ],
                 "MaterialIndex": [
                   1,
@@ -12557,7 +13586,7 @@
                         "0.25,0.2499932"
                       ],
                       "TextureOffset": [
-                        "5.333374,24.77014",
+                        "5.333618,24.77014",
                         "511.398,5.015625",
                         "23.34497,222.4203",
                         "232.6545,222.4203",
@@ -15096,7 +16125,7 @@
           "__version": 1,
           "Flags": 0,
           "Name": "tree_9 (16)",
-          "Position": "-1349.874,-162.475,-109.7467",
+          "Position": "-1122.217,-162.475,-109.7467",
           "Rotation": "0,0,0.3826834,0.9238796",
           "Scale": "0.2565878,0.2565878,0.2565878",
           "Tags": "",
@@ -15165,7 +16194,7 @@
           "__version": 1,
           "Flags": 0,
           "Name": "tree_9 (17)",
-          "Position": "-1251.156,271.7315,-109.7467",
+          "Position": "-1131.662,271.7315,-109.7467",
           "Rotation": "0,0,0.3826834,0.9238796",
           "Scale": "0.2565878,0.2565878,0.2565878",
           "Tags": "",
@@ -15441,7 +16470,7 @@
           "__version": 1,
           "Flags": 0,
           "Name": "tree_9 (21)",
-          "Position": "-1208.395,236.9292,-109.7467",
+          "Position": "-1088.901,236.9292,-109.7467",
           "Rotation": "0,0,0.3826834,0.9238796",
           "Scale": "0.2565878,0.2565878,0.2565878",
           "Tags": "",
@@ -15579,7 +16608,7 @@
           "__version": 1,
           "Flags": 0,
           "Name": "tree_9 (23)",
-          "Position": "-1335.523,-92.82595,-109.7467",
+          "Position": "-1107.866,-92.82595,-109.7467",
           "Rotation": "0,0,0.3826834,0.9238796",
           "Scale": "0.2565878,0.2565878,0.2565878",
           "Tags": "",
@@ -15648,7 +16677,7 @@
           "__version": 1,
           "Flags": 0,
           "Name": "tree_9 (24)",
-          "Position": "-1270.006,-135.103,-109.7467",
+          "Position": "-1042.349,-135.103,-109.7467",
           "Rotation": "0,0,0.3826834,0.9238796",
           "Scale": "0.2565878,0.2565878,0.2565878",
           "Tags": "",
@@ -15717,7 +16746,7 @@
           "__version": 1,
           "Flags": 0,
           "Name": "tree_9 (25)",
-          "Position": "-1313.738,-313.0937,-109.7467",
+          "Position": "-1031.12,-313.0937,-109.7467",
           "Rotation": "0,0,0.3826834,0.9238796",
           "Scale": "0.2565878,0.2565878,0.2565878",
           "Tags": "",
@@ -15786,7 +16815,7 @@
           "__version": 1,
           "Flags": 0,
           "Name": "dead_tree2",
-          "Position": "-1216.879,189.3923,-109.1772",
+          "Position": "-1143.471,189.3923,-109.1772",
           "Rotation": "0,0,0,1",
           "Scale": "0.3914483,0.3914483,0.3914483",
           "Tags": "",
@@ -16338,7 +17367,7 @@
           "__version": 1,
           "Flags": 0,
           "Name": "log_bench",
-          "Position": "-1260.443,218.6355,-109.4738",
+          "Position": "-1125.519,218.6355,-109.4738",
           "Rotation": "0,0,0.3826834,0.9238796",
           "Scale": "1,1,1",
           "Tags": "",
@@ -17520,7 +18549,7 @@
           "__version": 1,
           "Flags": 0,
           "Name": "Finish Line",
-          "Position": "-1761.377,45.45475,-108.6155",
+          "Position": "136.545,45.45475,-108.6155",
           "Rotation": "0,0,0,1",
           "Scale": "1,1,1",
           "Tags": "",
@@ -17544,7 +18573,7 @@
               "IsTrigger": false,
               "Mesh": {
                 "Topology": "H4sIAAAAAAAACl2QCQ7CMAwEp4Qj3NBy/f+laMRGsohUVbFn1+t04ANs+Z0VsM69AwfgBFyAKZ9MPXdgk3qLnsI+Um/h/me9i2ZXfFvYOazafTJN0XRgKZmPyWtfXvYVL73PZRd52WdYPa7xtC8veys7u6t17/7t6Tn0ZtFjvIXZR895zjKjPWf4NiOrGt+ivpXZ3XnozaOndVn9vvVkkTjEAQAA",
-                "Position": "-1781.827,-72.39795,-16.65455",
+                "Position": "116.0949,-72.39795,-16.65455",
                 "Rotation": "0,0,0,1",
                 "Positions": [
                   "-43.25488,-1231.206,1.057339",
@@ -17600,19 +18629,19 @@
                 ],
                 "TextureScale": [
                   "0.2499986,0.25",
-                  "0.25,0.25",
+                  "0.2499999,0.25",
                   "0.25,0.2499984",
                   "0.25,0.2500052",
-                  "0.25,0.2500052",
-                  "0.25,0.2500052"
+                  "0.2499999,0.2500052",
+                  "0.2499999,0.2500052"
                 ],
                 "TextureOffset": [
-                  "209.0518,0.001464844",
-                  "471.3096,232.2778",
+                  "297.32,0.001464844",
+                  "47.62048,232.2783",
                   "0.0004882812,511.9997",
                   "279.7217,449.0991",
-                  "40.69043,449.0991",
-                  "471.3096,449.0991"
+                  "464.3795,449.0991",
+                  "47.62048,449.0991"
                 ],
                 "MaterialIndex": [
                   1,

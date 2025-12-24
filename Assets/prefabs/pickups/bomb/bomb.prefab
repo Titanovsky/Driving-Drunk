@@ -9,7 +9,7 @@
     "Scale": "0.482152,0.482152,0.482152",
     "Tags": "",
     "Enabled": true,
-    "NetworkMode": 1,
+    "NetworkMode": 2,
     "NetworkInterpolation": true,
     "NetworkOrphaned": 0,
     "NetworkTransmit": true,
