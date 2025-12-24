@@ -23,7 +23,8 @@ public sealed class Road : Component
         var pos = randomSpawn.WorldPosition;
         var rot = randomSpawn.WorldRotation;
 
-        Car car = _carsPool.Get(CarPrefab, new CloneConfig(CarPrefab.WorldTransform, parent: GameObject)).Components.Get<Car>();
+        //Car car = _carsPool.Get(CarPrefab, new CloneConfig(CarPrefab.WorldTransform, parent: GameObject)).Components.Get<Car>();
+        Car car = CarPrefab.Clone(new CloneConfig(CarPrefab.WorldTransform, parent: GameObject)).Components.Get<Car>();
         if (!car.IsValid()) return;
 
         car.WorldScale = CarPrefab.WorldScale;
@@ -32,6 +33,8 @@ public sealed class Road : Component
         car.Direction = rot.Forward;
 
         car.Init();
+
+        car.GameObject.NetworkSpawn();
     }
 
     public void ResetSpawnTimer(float minDelay, float maxDelay)

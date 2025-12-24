@@ -51,7 +51,7 @@
     {
         var obj = prefab.Clone(config);
         if (_isNetwork)
-            obj.NetworkSpawn();
+            obj.NetworkSpawn(Connection.Host);
 
         _objects.Add(obj);
 

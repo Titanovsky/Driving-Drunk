@@ -3,9 +3,11 @@ public sealed class CarManager : Component
     [Property] public List<Road> Roads { get; set; } = new();
     [Property] public GameObject RoadsDirectory { get; set; }
 
-    private void CollectRoads()
+    public void CollectRoads()
     {
         if (!RoadsDirectory.IsValid()) return;
+
+        Roads.Clear();
 
         foreach (var gameObj in RoadsDirectory.Children)
         {
