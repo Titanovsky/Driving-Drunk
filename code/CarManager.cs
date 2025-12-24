@@ -18,6 +18,19 @@ public sealed class CarManager : Component
         }
     }
 
+    public void ClearCars()
+    {
+        if (RoadsDirectory == null) return;
+
+        foreach (var gameObj in RoadsDirectory.Children)
+        {
+            if (!gameObj.IsValid()) continue;
+            if (!gameObj.Components.TryGet<Road>(out var road)) continue;
+
+            road.ClearCars();
+        }
+    }
+
     private void Loop()
     {
         if (!Networking.IsHost) return;

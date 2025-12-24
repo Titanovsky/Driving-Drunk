@@ -197,8 +197,6 @@ public sealed class Player : Component, Component.INetworkListener
         if (Local != null) return;
 
         Local = this;
-
-        Log.Info($"[Player] Make local player {GameObject.Network.Owner.DisplayName}");
     }
 
     private void RemoveSingleton()
@@ -207,8 +205,6 @@ public sealed class Player : Component, Component.INetworkListener
         if (Local == null) return;
 
         Local = null;
-
-        Log.Info($"[Player] Remove local player {GameObject.Network.Owner.DisplayName}");
     }
 
     protected override void OnStart()

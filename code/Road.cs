@@ -9,7 +9,9 @@ public sealed class Road : Component
 
     public TimeUntil NextSpawnTime { get; private set; }
 
-    private GameObjectPool _carsPool = new(8, true);
+    private GameObjectPool _carsPool = new(8, false);
+
+    private List<GameObject> _cars = new();
 
     public void SpawnCar()
     {
@@ -23,8 +25,8 @@ public sealed class Road : Component
         var pos = randomSpawn.WorldPosition;
         var rot = randomSpawn.WorldRotation;
 
-        //Car car = _carsPool.Get(CarPrefab, new CloneConfig(CarPrefab.WorldTransform, parent: GameObject)).Components.Get<Car>();
-        Car car = CarPrefab.Clone(new CloneConfig(CarPrefab.WorldTransform, parent: GameObject)).Components.Get<Car>();
+        Car car = _carsPool.Get(CarPrefab, new CloneConfig(CarPrefab.WorldTransform, parent: GameObject)).Components.Get<Car>();
+        //Car car = CarPrefab.Clone(new CloneConfig(CarPrefab.WorldTransform, parent: GameObject)).Components.Get<Car>();
         if (!car.IsValid()) return;
 
         car.WorldScale = CarPrefab.WorldScale;
@@ -34,7 +36,20 @@ public sealed class Road : Component
 
         car.Init();
 
-        car.GameObject.NetworkSpawn();
+        _cars.Add(car.GameObject);
+
+        car.GameObject.NetworkSpawn(Connection.Host);
+    }
+
+    public void ClearCars()
+    {
+        foreach (GameObject go in _cars)
+        {
+            if (go.IsValid())
+                go.Destroy();
+        }
+
+        _cars.Clear();
     }
 
     public void ResetSpawnTimer(float minDelay, float maxDelay)

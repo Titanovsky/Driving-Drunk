@@ -19,8 +19,8 @@ public sealed class Car : Component, Component.ITriggerListener, IGameObjectPool
     {
         if (!Networking.IsHost) return;
 
-        //GameObject.Enabled = false;
-        GameObject.Destroy();
+        GameObject.Enabled = false;
+        //GameObject.Destroy();
     }
 
     public void OnTriggerEnter(GameObject other)

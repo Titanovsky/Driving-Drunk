@@ -9,7 +9,7 @@ public sealed class MapManager : Component
 
     [Property] public CarManager CarManager { get; set; }
     [Property] public List<Map> Maps { get; set; } = new();
-    [Sync(SyncFlags.FromHost)] public int MapIndex { get; private set; } = 0;
+    public int MapIndex { get; private set; } = 0;
 
     public bool CheckFinish(Player ply)
     {
@@ -48,15 +48,36 @@ public sealed class MapManager : Component
 
         Log.Info("Finished");
 
-        NextMap();
+        NextMapRpc();
         SetupMapRpc();
+    }
+
+    [Rpc.Broadcast]
+    private void NextMapRpc()
+    {
+        if (!Rpc.Caller.IsHost) return;
+
+        NextMap();
+    }
+
+    [Rpc.Broadcast]
+    private void SyncMapIndex(int index)
+    {
+        using (Rpc.FilterInclude(connect => !connect.IsHost))
+        {
+            if (!Rpc.Caller.IsHost) return;
+
+            MapIndex = index;
+
+            Log.Info("Map Index sync from Host");
+
+            SetupMap();
+        }
     }
 
     private void NextMap()
     {
-        if (!Networking.IsHost) return;
-
-        MapIndex++;
+        MapIndex = MapIndex + 1;
 
         MapIndex = (MapIndex >= Maps.Count) ? 0 : MapIndex;
     }
@@ -80,9 +101,11 @@ public sealed class MapManager : Component
         RespawnAll();
 
         var currentMap = Maps[MapIndex];
-        Maps[previousMapIndex].GameObject.Enabled = false;
-        currentMap.GameObject.Enabled = true;
 
+        CarManager.ClearCars();
+        Maps[previousMapIndex].GameObject.Enabled = false;
+
+        currentMap.GameObject.Enabled = true;
         CarManager.RoadsDirectory = currentMap.RoadDirectory;
         CarManager.CollectRoads();
 
@@ -101,6 +124,21 @@ public sealed class MapManager : Component
             ply.Respawn();
         }
 
+    }
+
+    //private void ClearCars(Map map)
+    //{
+    //    foreach (var go in map.RoadDirectory.Children)
+    //    {
+            
+    //    }
+    //}
+
+    [Rpc.Host]
+    private void RequestSyncMapIndex()
+    {
+        CarManager.ClearCars();
+        SyncMapIndex(MapIndex);
     }
 
     private void CreateSingleton()
@@ -130,6 +168,7 @@ public sealed class MapManager : Component
 
     protected override void OnStart()
     {
-        SetupMap();
+        RequestSyncMapIndex();
+        //SetupMap();
     }
 }
