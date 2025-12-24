@@ -4,6 +4,7 @@ public sealed class PickUp : Component, Component.ITriggerListener
 {
     [Property] public PickUpEnum TypePickUp { get; private set; } = PickUpEnum.None;
 
+    [Rpc.Broadcast]
     private void Pickup(Player ply)
     {
         ply.TakePickUp(this);
