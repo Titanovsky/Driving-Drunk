@@ -50,6 +50,8 @@ public sealed class MapManager : Component
 
         NextMapRpc();
         SetupMapRpc();
+        RespawnAll();
+        SpawnPickups();
     }
 
     [Rpc.Broadcast]
@@ -98,8 +100,6 @@ public sealed class MapManager : Component
 
         Log.Info(previousMapIndex);
 
-        RespawnAll();
-
         var currentMap = Maps[MapIndex];
 
         CarManager.ClearCars();
@@ -126,13 +126,18 @@ public sealed class MapManager : Component
 
     }
 
-    //private void ClearCars(Map map)
-    //{
-    //    foreach (var go in map.RoadDirectory.Children)
-    //    {
-            
-    //    }
-    //}
+    [Rpc.Broadcast]
+    private void SpawnPickups()
+    {
+        if (!Rpc.Caller.IsHost) return;
+
+        Map currentMap = Maps[MapIndex];
+
+        foreach (var pickup in Scene.GetAllComponents<PickUp>())
+            pickup.GameObject.Destroy();
+
+
+    }
 
     [Rpc.Host]
     private void RequestSyncMapIndex()
