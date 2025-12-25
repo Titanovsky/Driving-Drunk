@@ -206,7 +206,11 @@
           "OnComponentEnabled": null,
           "OnComponentFixedUpdate": null,
           "OnComponentStart": null,
-          "OnComponentUpdate": null
+          "OnComponentUpdate": null,
+          "PickupPrefab": {
+            "_type": "gameobject",
+            "prefab": "prefabs/pickups/bomb/pickup_bomb.prefab"
+          }
         }
       ],
       "Children": []
@@ -635,6 +639,10 @@
           "SpawnDirectory": {
             "_type": "gameobject",
             "go": "74be3db7-0d4f-47d0-9ca9-563ebef67307"
+          },
+          "SpawnPickupsDirectory": {
+            "_type": "gameobject",
+            "go": "810a17c4-f461-45e1-9efc-699456580c13"
           }
         }
       ],
@@ -1651,11 +1659,120 @@
           "Children": []
         },
         {
+          "__guid": "810a17c4-f461-45e1-9efc-699456580c13",
+          "__version": 1,
+          "Flags": 0,
+          "Name": "Pickups",
+          "Position": "0,0,0",
+          "Rotation": "0,0,0,1",
+          "Scale": "1,1,1",
+          "Tags": "",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "NetworkOrphaned": 0,
+          "NetworkTransmit": true,
+          "OwnerTransfer": 1,
+          "Components": [],
+          "Children": [
+            {
+              "__guid": "3c81dac5-cda9-4b93-9407-205a732f8a53",
+              "__version": 1,
+              "Flags": 0,
+              "Name": "Pos",
+              "Position": "-1704.01,209.168,-88.4341",
+              "Rotation": "0,0,0,1",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "NetworkTransmit": true,
+              "OwnerTransfer": 1,
+              "Components": [],
+              "Children": []
+            },
+            {
+              "__guid": "dc77d639-b08e-49b5-8015-108576704163",
+              "__version": 1,
+              "Flags": 0,
+              "Name": "Pos (1)",
+              "Position": "-1292.645,125.1558,-88.4341",
+              "Rotation": "0,0,0,1",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "NetworkTransmit": true,
+              "OwnerTransfer": 1,
+              "Components": [],
+              "Children": []
+            },
+            {
+              "__guid": "112cc594-c5a8-4996-a300-559292fd06b3",
+              "__version": 1,
+              "Flags": 0,
+              "Name": "Pos (2)",
+              "Position": "-952.6875,-239.1142,-88.4341",
+              "Rotation": "0,0,0,1",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "NetworkTransmit": true,
+              "OwnerTransfer": 1,
+              "Components": [],
+              "Children": []
+            },
+            {
+              "__guid": "f60f6f98-096e-4f33-a332-ad74c96df22f",
+              "__version": 1,
+              "Flags": 0,
+              "Name": "Pos (3)",
+              "Position": "-1211.558,-239.1142,-88.4341",
+              "Rotation": "0,0,0,1",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "NetworkTransmit": true,
+              "OwnerTransfer": 1,
+              "Components": [],
+              "Children": []
+            },
+            {
+              "__guid": "e0ac948c-3d44-4b78-8278-213f55573443",
+              "__version": 1,
+              "Flags": 0,
+              "Name": "Pos (4)",
+              "Position": "-573.9804,-239.1142,-88.4341",
+              "Rotation": "0,0,0,1",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "NetworkTransmit": true,
+              "OwnerTransfer": 1,
+              "Components": [],
+              "Children": []
+            }
+          ]
+        },
+        {
           "__guid": "df4b5300-3a92-42d4-b349-c169a8bfec42",
           "__version": 1,
           "Flags": 0,
           "Name": "Finish Line",
-          "Position": "-1118,45.45475,-108.6155",
+          "Position": "-1606.421,45.45475,-108.6155",
           "Rotation": "0,0,0,1",
           "Scale": "1,1,1",
           "Tags": "",
@@ -1679,7 +1796,7 @@
               "IsTrigger": false,
               "Mesh": {
                 "Topology": "H4sIAAAAAAAACl2QCQ7CMAwEp4Qj3NBy/f+laMRGsohUVbFn1+t04ANs+Z0VsM69AwfgBFyAKZ9MPXdgk3qLnsI+Um/h/me9i2ZXfFvYOazafTJN0XRgKZmPyWtfXvYVL73PZRd52WdYPa7xtC8veys7u6t17/7t6Tn0ZtFjvIXZR895zjKjPWf4NiOrGt+ivpXZ3XnozaOndVn9vvVkkTjEAQAA",
-                "Position": "-1138.45,-72.39795,-16.65455",
+                "Position": "-1626.872,-72.39795,-16.65455",
                 "Rotation": "0,0,0,1",
                 "Positions": [
                   "-43.25488,-1231.206,1.057339",
@@ -1742,12 +1859,12 @@
                   "0.25,0.2500052"
                 ],
                 "TextureOffset": [
-                  "195.5273,0.001464844",
-                  "457.7998,232.2778",
+                  "101.2251,0.001464844",
+                  "363.4863,232.2778",
                   "0.0004882812,511.9997",
                   "279.7217,449.0991",
-                  "54.2002,449.0991",
-                  "457.7998,449.0991"
+                  "148.5137,449.0991",
+                  "363.4863,449.0991"
                 ],
                 "MaterialIndex": [
                   1,
@@ -7084,7 +7201,8 @@
           "SpawnDirectory": {
             "_type": "gameobject",
             "go": "0f0e0bed-7898-4631-bc5e-7f12b0273c6a"
-          }
+          },
+          "SpawnPickupsDirectory": null
         }
       ],
       "Children": [
@@ -8104,7 +8222,7 @@
           "__version": 1,
           "Flags": 0,
           "Name": "Finish Line",
-          "Position": "-1169.866,45.45475,-108.6155",
+          "Position": "-1794.721,45.45475,-108.6155",
           "Rotation": "0,0,0,1",
           "Scale": "1,1,1",
           "Tags": "",
@@ -8128,7 +8246,7 @@
               "IsTrigger": false,
               "Mesh": {
                 "Topology": "H4sIAAAAAAAACl2QCQ7CMAwEp4Qj3NBy/f+laMRGsohUVbFn1+t04ANs+Z0VsM69AwfgBFyAKZ9MPXdgk3qLnsI+Um/h/me9i2ZXfFvYOazafTJN0XRgKZmPyWtfXvYVL73PZRd52WdYPa7xtC8veys7u6t17/7t6Tn0ZtFjvIXZR895zjKjPWf4NiOrGt+ivpXZ3XnozaOndVn9vvVkkTjEAQAA",
-                "Position": "-1190.316,-72.39795,-16.65455",
+                "Position": "-1815.171,-72.39795,-16.65455",
                 "Rotation": "0,0,0,1",
                 "Positions": [
                   "-43.25488,-1231.206,1.057339",
@@ -8191,12 +8309,12 @@
                   "0.25,0.2500052"
                 ],
                 "TextureOffset": [
-                  "402.9927,0.001464844",
-                  "153.2637,232.2778",
+                  "342.4258,0.001464844",
+                  "92.68311,232.2778",
                   "0.0004882812,511.9997",
                   "279.7217,449.0991",
-                  "358.7363,449.0991",
-                  "153.2637,449.0991"
+                  "419.3169,449.0991",
+                  "92.68311,449.0991"
                 ],
                 "MaterialIndex": [
                   1,
@@ -12400,7 +12518,8 @@
           "SpawnDirectory": {
             "_type": "gameobject",
             "go": "45fb73cc-4778-483d-9938-c7cf3e44736e"
-          }
+          },
+          "SpawnPickupsDirectory": null
         }
       ],
       "Children": [
@@ -13420,7 +13539,7 @@
           "__version": 1,
           "Flags": 0,
           "Name": "Finish Line",
-          "Position": "169.8414,45.45475,-108.6155",
+          "Position": "-1560.904,45.45475,-108.6155",
           "Rotation": "0,0,0,1",
           "Scale": "1,1,1",
           "Tags": "",
@@ -13444,7 +13563,7 @@
               "IsTrigger": false,
               "Mesh": {
                 "Topology": "H4sIAAAAAAAACl2QCQ7CMAwEp4Qj3NBy/f+laMRGsohUVbFn1+t04ANs+Z0VsM69AwfgBFyAKZ9MPXdgk3qLnsI+Um/h/me9i2ZXfFvYOazafTJN0XRgKZmPyWtfXvYVL73PZRd52WdYPa7xtC8veys7u6t17/7t6Tn0ZtFjvIXZR895zjKjPWf4NiOrGt+ivpXZ3XnozaOndVn9vvVkkTjEAQAA",
-                "Position": "149.3912,-72.39795,-16.65455",
+                "Position": "-1581.354,-72.39795,-16.65455",
                 "Rotation": "0,0,0,1",
                 "Positions": [
                   "-43.25488,-1231.206,1.057339",
@@ -13507,12 +13626,12 @@
                   "0.25,0.2500052"
                 ],
                 "TextureOffset": [
-                  "164.1339,0.001464844",
-                  "426.4351,232.2778",
+                  "431.1558,0.001464844",
+                  "181.418,232.2778",
                   "0.0004882812,511.9997",
                   "279.7217,449.0991",
-                  "85.56494,449.0991",
-                  "426.4351,449.0991"
+                  "330.582,449.0991",
+                  "181.418,449.0991"
                 ],
                 "MaterialIndex": [
                   1,
@@ -18824,7 +18943,8 @@
           "SpawnDirectory": {
             "_type": "gameobject",
             "go": "dae253d1-acc3-49d7-95b7-4499ebb35b68"
-          }
+          },
+          "SpawnPickupsDirectory": null
         }
       ],
       "Children": [
@@ -19932,7 +20052,7 @@
           "__version": 1,
           "Flags": 0,
           "Name": "Finish Line",
-          "Position": "136.545,45.45475,-108.6155",
+          "Position": "-1480.982,45.45475,-108.6155",
           "Rotation": "0,0,0,1",
           "Scale": "1,1,1",
           "Tags": "",
@@ -19956,7 +20076,7 @@
               "IsTrigger": false,
               "Mesh": {
                 "Topology": "H4sIAAAAAAAACl2QCQ7CMAwEp4Qj3NBy/f+laMRGsohUVbFn1+t04ANs+Z0VsM69AwfgBFyAKZ9MPXdgk3qLnsI+Um/h/me9i2ZXfFvYOazafTJN0XRgKZmPyWtfXvYVL73PZRd52WdYPa7xtC8veys7u6t17/7t6Tn0ZtFjvIXZR895zjKjPWf4NiOrGt+ivpXZ3XnozaOndVn9vvVkkTjEAQAA",
-                "Position": "116.0949,-72.39795,-16.65455",
+                "Position": "-1501.432,-72.39795,-16.65455",
                 "Rotation": "0,0,0,1",
                 "Positions": [
                   "-43.25488,-1231.206,1.057339",
@@ -20012,19 +20132,19 @@
                 ],
                 "TextureScale": [
                   "0.2499986,0.25",
-                  "0.2499999,0.25",
+                  "0.25,0.25",
                   "0.25,0.2499984",
                   "0.25,0.2500052",
-                  "0.2499999,0.2500052",
-                  "0.2499999,0.2500052"
+                  "0.25,0.2500052",
+                  "0.25,0.2500052"
                 ],
                 "TextureOffset": [
-                  "297.32,0.001464844",
-                  "47.62048,232.2783",
+                  "111.4658,0.001464844",
+                  "373.73,232.2778",
                   "0.0004882812,511.9997",
                   "279.7217,449.0991",
-                  "464.3795,449.0991",
-                  "47.62048,449.0991"
+                  "138.27,449.0991",
+                  "373.73,449.0991"
                 ],
                 "MaterialIndex": [
                   1,

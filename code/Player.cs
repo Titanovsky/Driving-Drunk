@@ -1,4 +1,3 @@
-using Sandbox;
 using System.Threading.Tasks;
 
 public sealed class Player : Component

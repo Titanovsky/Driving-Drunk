@@ -11,6 +11,8 @@ public sealed class MapManager : Component
     [Property] public List<Map> Maps { get; set; } = new();
     public int MapIndex { get; private set; } = 0;
 
+    [Property] public GameObject PickupPrefab { get; set; }
+
     public bool CheckFinish(Player ply)
     {
         BoxCollider collider = FinishLineCollider.Components.Get<BoxCollider>();
@@ -122,7 +124,6 @@ public sealed class MapManager : Component
 
             ply.Respawn();
         }
-
     }
 
     [Rpc.Broadcast]
@@ -135,7 +136,13 @@ public sealed class MapManager : Component
         foreach (var pickup in Scene.GetAllComponents<PickUp>())
             pickup.GameObject.Destroy();
 
+        foreach (var go in currentMap.SpawnPickupsDirectory.Children)
+        {
+            //if (Random.Shared.Int(1) == 0) continue;
 
+            var obj = PickupPrefab.Clone(go.WorldPosition);
+            obj.NetworkSpawn();
+        }
     }
 
     [Rpc.Host]
@@ -177,5 +184,8 @@ public sealed class MapManager : Component
             Log.Info("Send Request Sync Map Index to Host");
             RequestSyncMapIndex();
         }
+
+        if (Networking.IsHost)
+            SpawnPickups();
     }
 }
