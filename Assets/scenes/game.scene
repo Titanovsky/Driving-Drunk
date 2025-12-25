@@ -288,8 +288,8 @@
           "RenderTexture": null,
           "TargetEye": "None",
           "Viewport": "0,0,1,1",
-          "ZFar": 16373,
-          "ZNear": 10
+          "ZFar": 8000,
+          "ZNear": -500
         },
         {
           "__type": "Sandbox.Bloom",
