@@ -1,3 +1,4 @@
+using Sandbox;
 using System.Threading.Tasks;
 
 public sealed class Player : Component, Component.INetworkListener
@@ -9,6 +10,7 @@ public sealed class Player : Component, Component.INetworkListener
     [Property] public HudWorld HudWorld;
     [Property] public float speed = 10f;
 
+    [Property] public Dresser Dresser { get; set; }
     [Property] public GameObject BombPrefab { get; set; }
     //[Property] public GameObject PickUpHealPrefab { get; set; }
     [Property] public GameObject ShootObj;
@@ -21,6 +23,15 @@ public sealed class Player : Component, Component.INetworkListener
     private Transform _transformRespawn;
     private float _multipleMouseSens = 0.25f; // from facepunch.playercontroller
     private float _multipleVelocity = 2000f;
+
+    [Rpc.Host]
+    private void DressForHost(Dresser dresser)
+    {
+        Log.Info($"Dresser from: {Rpc.Caller.DisplayName} - {dresser.Network.Owner.DisplayName}");
+
+        Dresser.Clear();
+        Dresser.Apply();
+    }
 
     private string ConvertEnumPickUpToString(PickUpEnum pickupType)
     {
@@ -223,6 +234,8 @@ public sealed class Player : Component, Component.INetworkListener
 
         Scene.Camera.GameObject.Parent = GameObject;
         Scene.Camera.LocalPosition = new Vector3(-105, -293, 282);
+
+        DressForHost(Dresser);
     }
 
     private void CreateSingleton()

@@ -153,6 +153,12 @@
           "go": "174cdd27-a1ed-4d17-acf5-8b186fa0cf65",
           "component_type": "PlayerController"
         },
+        "Dresser": {
+          "_type": "component",
+          "component_id": "b07eb8a0-e64a-4a67-add8-3d818266fcf3",
+          "go": "174cdd27-a1ed-4d17-acf5-8b186fa0cf65",
+          "component_type": "Dresser"
+        },
         "HudWorld": {
           "_type": "component",
           "component_id": "0c2d5f31-0d82-425a-8862-8278400057ba",

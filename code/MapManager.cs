@@ -60,7 +60,7 @@ public sealed class MapManager : Component
         NextMap();
     }
 
-    [Rpc.Broadcast]
+    [Rpc.Owner]
     private void SyncMapIndex(int index)
     {
         using (Rpc.FilterInclude(connect => !connect.IsHost))

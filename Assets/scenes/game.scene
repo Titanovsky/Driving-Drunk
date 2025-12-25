@@ -1655,7 +1655,7 @@
           "__version": 1,
           "Flags": 0,
           "Name": "Finish Line",
-          "Position": "5622.912,45.45475,-108.6155",
+          "Position": "-1118,45.45475,-108.6155",
           "Rotation": "0,0,0,1",
           "Scale": "1,1,1",
           "Tags": "",
@@ -1679,7 +1679,7 @@
               "IsTrigger": false,
               "Mesh": {
                 "Topology": "H4sIAAAAAAAACl2QCQ7CMAwEp4Qj3NBy/f+laMRGsohUVbFn1+t04ANs+Z0VsM69AwfgBFyAKZ9MPXdgk3qLnsI+Um/h/me9i2ZXfFvYOazafTJN0XRgKZmPyWtfXvYVL73PZRd52WdYPa7xtC8veys7u6t17/7t6Tn0ZtFjvIXZR895zjKjPWf4NiOrGt+ivpXZ3XnozaOndVn9vvVkkTjEAQAA",
-                "Position": "5602.462,-72.39795,-16.65455",
+                "Position": "-1138.45,-72.39795,-16.65455",
                 "Rotation": "0,0,0,1",
                 "Positions": [
                   "-43.25488,-1231.206,1.057339",
@@ -1742,12 +1742,12 @@
                   "0.25,0.2500052"
                 ],
                 "TextureOffset": [
-                  "367.7285,0.001464844",
-                  "118.1523,232.2778",
+                  "195.5273,0.001464844",
+                  "457.7998,232.2778",
                   "0.0004882812,511.9997",
                   "279.7217,449.0991",
-                  "393.8477,449.0991",
-                  "118.1523,449.0991"
+                  "54.2002,449.0991",
+                  "457.7998,449.0991"
                 ],
                 "MaterialIndex": [
                   1,
@@ -2913,15 +2913,7 @@
                       "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
                     },
                     "Property": "MaxDelaySpawnCar",
-                    "Value": 1.2
-                  },
-                  {
-                    "Target": {
-                      "Type": "Component",
-                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
-                    },
-                    "Property": "MinDelaySpawnCar",
-                    "Value": 0.6
+                    "Value": 2
                   },
                   {
                     "Target": {
