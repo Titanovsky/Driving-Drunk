@@ -51,7 +51,6 @@ public sealed class MapManager : Component
         NextMapRpc();
         SetupMapRpc();
         RespawnAll();
-        SpawnPickups();
     }
 
     [Rpc.Broadcast]
@@ -98,8 +97,6 @@ public sealed class MapManager : Component
 
         var previousMapIndex = (MapIndex == 0) ? (Maps.Count - 1) : MapIndex - 1;
 
-        Log.Info(previousMapIndex);
-
         var currentMap = Maps[MapIndex];
 
         CarManager.ClearCars();
@@ -108,6 +105,8 @@ public sealed class MapManager : Component
         currentMap.GameObject.Enabled = true;
         CarManager.RoadsDirectory = currentMap.RoadDirectory;
         CarManager.CollectRoads();
+
+        SpawnPickups();
 
         FinishLineCollider = currentMap.FinishCollider;
     }
