@@ -13,7 +13,7 @@ public sealed class Player : Component
     [Property] public GameObject BombPrefab { get; set; }
     //[Property] public GameObject PickUpHealPrefab { get; set; }
     [Property] public GameObject ShootObj;
-    [Sync] public string PickUp { get; set; } = "none"; // cuz for Sync
+    [Sync] public string PickUp { get; set; } = PickUpEnum.None.ToString(); // cuz for Sync
 
     [Sync] public bool IsAlive { get; private set; } = true;
     private float _timeRespawn = 2.4f;
@@ -32,39 +32,26 @@ public sealed class Player : Component
         Dresser.Apply();
     }
 
-    private string ConvertEnumPickUpToString(PickUpEnum pickupType)
-    {
-        var result = "none";
-
-        switch (pickupType)
-        {
-            default: break;
-            case PickUpEnum.Bomb: result = "bomb"; break;
-        }
-
-        return result;
-    }
-
     public void TakePickUp(PickUp pickup)
     {
         if (IsProxy) return;
         if (!IsAlive) return;
 
-        PickUp = ConvertEnumPickUpToString(pickup.TypePickUp);
+        PickUp = pickup.TypePickUp.ToString();
     }
 
     private void ActivatePickUp()
     {
         if (!IsAlive) return;
-        if (PickUp == "none") return;
+        if (PickUp == "None") return;
 
         switch (PickUp)
         {
             default: break;
-            case "bomb": RequestBomb(); break;
+            case "Bomb": RequestBomb(); break;
         }
 
-        PickUp = "none"; // client
+        PickUp = "None"; // client
     }
 
     [Rpc.Host]
@@ -78,8 +65,7 @@ public sealed class Player : Component
             var newConnect = ply.Network.Owner;
             if (newConnect != connect) continue;
             if (!ply.IsAlive) continue;
-            if (ply.PickUp != "bomb") continue;
-            Log.Info("ro");
+            if (ply.PickUp != "Bomb") continue;
 
             ThrowBomb(ply);
 
@@ -91,7 +77,7 @@ public sealed class Player : Component
     {
         if (!Networking.IsHost) return;
 
-        ply.PickUp = "none"; // server
+        ply.PickUp = "None"; // server
 
         var obj = BombPrefab.Clone(ply.ShootObj.WorldPosition, rotation: ply.body.WorldRotation);
         obj.NetworkSpawn(Connection.Host);
@@ -122,6 +108,8 @@ public sealed class Player : Component
 
         controller.Enabled = false;
 
+        PickUp = "None";
+
         _ = RespawnAsync(_timeRespawn);
     }
 
@@ -144,6 +132,8 @@ public sealed class Player : Component
         rb.Velocity = direction * killer.Speed * _multipleVelocity;
 
         controller.Enabled = false;
+
+        PickUp = "None";
 
         _ = RespawnAsync(_timeRespawn);
     }
