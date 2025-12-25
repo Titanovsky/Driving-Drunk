@@ -1,7 +1,7 @@
 using Sandbox;
 using System.Threading.Tasks;
 
-public sealed class Player : Component, Component.INetworkListener
+public sealed class Player : Component
 {
     public static Player Local { get; private set; }
 
@@ -228,6 +228,8 @@ public sealed class Player : Component, Component.INetworkListener
     {
         if (IsProxy) return;
 
+        Log.Info("Init Start");
+
         HudWorld.Name = Connection.Local.DisplayName;
 
         _transformRespawn = WorldTransform;
@@ -242,6 +244,8 @@ public sealed class Player : Component, Component.INetworkListener
     {
         if (IsProxy) return;
         if (Local != null) return;
+
+        Log.Info("Create Singleton");
 
         Local = this;
     }

@@ -168,7 +168,10 @@ public sealed class MapManager : Component
 
     protected override void OnStart()
     {
-        RequestSyncMapIndex();
-        //SetupMap();
+        if (!IsProxy)
+        {
+            Log.Info("Send Request Sync Map Index to Host");
+            RequestSyncMapIndex();
+        }
     }
 }
