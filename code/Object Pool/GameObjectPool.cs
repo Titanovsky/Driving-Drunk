@@ -30,7 +30,7 @@
 
             if (!go.IsValid())
             {
-                Log.Warning("[Object Pool] Deleted GameObject was found");
+                //Log.Warning("[Object Pool] Deleted GameObject was found");
                 _objects.RemoveAt(i);
 
                 continue;
