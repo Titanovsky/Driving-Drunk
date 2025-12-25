@@ -12,7 +12,7 @@ public sealed class Player : Component, Component.INetworkListener
     [Property] public GameObject BombPrefab { get; set; }
     //[Property] public GameObject PickUpHealPrefab { get; set; }
     [Property] public GameObject ShootObj;
-    public PickUpEnum PickUp { get; set; } = PickUpEnum.None;
+    [Sync] public string PickUp { get; set; } = "none"; // cuz for Sync
 
     [Sync] public bool IsAlive { get; private set; } = true;
     private float _timeRespawn = 2.4f;
@@ -22,35 +22,69 @@ public sealed class Player : Component, Component.INetworkListener
     private float _multipleMouseSens = 0.25f; // from facepunch.playercontroller
     private float _multipleVelocity = 2000f;
 
+    private string ConvertEnumPickUpToString(PickUpEnum pickupType)
+    {
+        var result = "none";
+
+        switch (pickupType)
+        {
+            default: break;
+            case PickUpEnum.Bomb: result = "bomb"; break;
+        }
+
+        return result;
+    }
+
     public void TakePickUp(PickUp pickup)
     {
         if (IsProxy) return;
         if (!IsAlive) return;
 
-        PickUp = pickup.TypePickUp;
+        PickUp = ConvertEnumPickUpToString(pickup.TypePickUp);
     }
 
     private void ActivatePickUp()
     {
         if (!IsAlive) return;
-        if (PickUp == PickUpEnum.None) return;
+        if (PickUp == "none") return;
 
         switch (PickUp)
         {
             default: break;
-            case PickUpEnum.Bomb: ActivatePickUpBomb(); break;
+            case "bomb": RequestBomb(); break;
         }
 
-        PickUp = PickUpEnum.None;
+        PickUp = "none"; // client
     }
 
-    private void ActivatePickUpBomb()
+    [Rpc.Host]
+    private void RequestBomb()
     {
-        if (!IsAlive) return;
-        if (PickUp == PickUpEnum.None) return;
+        var connect = Rpc.Caller;
+        if (!connect.IsActive) return;
 
-        var obj = BombPrefab.Clone(ShootObj.WorldPosition, rotation: body.WorldRotation);
-        obj.NetworkSpawn();
+        foreach (var ply in Scene.GetAllComponents<Player>())
+        {
+            var newConnect = ply.Network.Owner;
+            if (newConnect != connect) continue;
+            if (!ply.IsAlive) continue;
+            if (ply.PickUp != "bomb") continue;
+            Log.Info("ro");
+
+            ThrowBomb(ply);
+
+            break;
+        }
+    }
+
+    private void ThrowBomb(Player ply)
+    {
+        if (!Networking.IsHost) return;
+
+        ply.PickUp = "none"; // server
+
+        var obj = BombPrefab.Clone(ply.ShootObj.WorldPosition, rotation: ply.body.WorldRotation);
+        obj.NetworkSpawn(Connection.Host);
     }
 
     private void InputActivatePickUp()

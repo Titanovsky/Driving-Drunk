@@ -5,14 +5,15 @@ using System.Threading.Tasks;
 
 public sealed class Bomb : Component
 {
-	[Property] public float DelayExplode { get; set; } = 2f;
+	[Property] public float DelayExplode { get; set; } = 1.25f;
     [Property] public GameObject ExplodeParticlePrefab { get; set; }
     [Property] public SoundEvent SoundExplode { get; set; }
 
-    private float _radius = 200f;
+    private float _radius = 256f;
     private float _speed = 10000f;
     private float _forceThrow = 200f;
 
+    [Rpc.Broadcast] // ?
     private void Explode()
 	{
         if (ExplodeParticlePrefab.IsValid())
