@@ -15,6 +15,21 @@ public sealed class TriggerFinish : Component, Component.ITriggerListener
 
         Sandbox.Services.Achievements.Unlock("win_map");
 
+        switch (MapManager.Instance.MapIndex)
+        {
+            default:
+                break;
+            case 1:
+                Sandbox.Services.Achievements.Unlock("win_desert");
+                break;
+            case 2:
+                Sandbox.Services.Achievements.Unlock("win_forest");
+                break;
+            case 3:
+                Sandbox.Services.Achievements.Unlock("win_lava");
+                break;
+        }
+
         Log.Info($"{ply.Network.Owner.DisplayName} take finish {GameObject}");
 
         MapManager.Instance.SendFinishToHost();
