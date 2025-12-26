@@ -1,0 +1,18 @@
+Hud {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	justify-content: flex-start;
+	align-items: flex-start;
+	font-weight: bold;
+	border-radius: 20px;
+
+	.title {
+		text-stroke: 4px black;
+		font-size: 28px;
+		font-family: Poppins;
+		color: #fff;
+	}
+}
