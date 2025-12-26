@@ -19,14 +19,14 @@
         "__type": "Car",
         "__guid": "21517cdb-5d65-43fb-93da-8c223db1ef82",
         "__enabled": true,
-        "DelayToDie": 12,
+        "DelayToDie": 7,
         "OnComponentDestroy": null,
         "OnComponentDisabled": null,
         "OnComponentEnabled": null,
         "OnComponentFixedUpdate": null,
         "OnComponentStart": null,
         "OnComponentUpdate": null,
-        "Speed": 2
+        "Speed": 32
       },
       {
         "__type": "Sandbox.SkinnedModelRenderer",

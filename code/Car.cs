@@ -53,7 +53,7 @@ public sealed class Car : Component, Component.ITriggerListener, IGameObjectPool
         Init();
     }
 
-    protected override void OnUpdate()
+    protected override void OnFixedUpdate()
     {
         Moving();
         CheckDeath();
