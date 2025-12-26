@@ -64,16 +64,16 @@ public sealed class MapManager : Component
         NextMap();
     }
 
-    [Rpc.Owner]
+    [Rpc.Broadcast]
     private void SyncMapIndex(int index)
     {
-        using (Rpc.FilterInclude(connect => !connect.IsHost))
+        using (Rpc.FilterInclude(c => !c.IsHost))
         {
             if (!Rpc.Caller.IsHost) return;
 
             MapIndex = index;
 
-            Log.Info("Map Index sync from Host");
+            Log.Info($"Map Index sync from Host: {index}");
 
             SetupMap();
         }
@@ -96,7 +96,7 @@ public sealed class MapManager : Component
 
     private void SetupMap()
     {
-        Log.Info("SetupMap");
+        Log.Info($"SetupMap, Map Index: {MapIndex}");
 
         var previousMapIndex = (MapIndex == 0) ? (Maps.Count - 1) : MapIndex - 1;
 
@@ -125,11 +125,9 @@ public sealed class MapManager : Component
         }
     }
 
-    [Rpc.Broadcast]
+    [Rpc.Host]
     private void SpawnPickups()
     {
-        if (!Rpc.Caller.IsHost) return;
-
         Map currentMap = Maps[MapIndex];
 
         foreach (var pickup in Scene.GetAllComponents<PickUp>())

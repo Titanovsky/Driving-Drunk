@@ -332,7 +332,6 @@
           "__type": "Sandbox.Hud",
           "__guid": "5cab7992-42d7-4e3f-9d95-7c021a0f4fa1",
           "__enabled": true,
-          "MyStringValue": "Hello World!",
           "OnComponentDestroy": null,
           "OnComponentDisabled": null,
           "OnComponentEnabled": null,
