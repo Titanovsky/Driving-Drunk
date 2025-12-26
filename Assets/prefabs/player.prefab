@@ -153,6 +153,7 @@
           "go": "174cdd27-a1ed-4d17-acf5-8b186fa0cf65",
           "component_type": "PlayerController"
         },
+        "DeadSound": "sounds/dio_mingus1.sound",
         "Dresser": {
           "_type": "component",
           "component_id": "b07eb8a0-e64a-4a67-add8-3d818266fcf3",

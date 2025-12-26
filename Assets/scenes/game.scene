@@ -201,6 +201,12 @@
               "component_type": "Map"
             }
           ],
+          "MusicLevel": [
+            "sounds/music/music1.sound",
+            null,
+            null,
+            null
+          ],
           "OnComponentDestroy": null,
           "OnComponentDisabled": null,
           "OnComponentEnabled": null,
@@ -1819,7 +1825,7 @@
           "__version": 1,
           "Flags": 0,
           "Name": "Finish Line",
-          "Position": "538.5632,45.45475,-108.6155",
+          "Position": "1551.317,45.45475,-108.6155",
           "Rotation": "0,0,0,1",
           "Scale": "1,1,1",
           "Tags": "",
@@ -1843,7 +1849,7 @@
               "IsTrigger": false,
               "Mesh": {
                 "Topology": "H4sIAAAAAAAACl2QCQ7CMAwEp4Qj3NBy/f+laMRGsohUVbFn1+t04ANs+Z0VsM69AwfgBFyAKZ9MPXdgk3qLnsI+Um/h/me9i2ZXfFvYOazafTJN0XRgKZmPyWtfXvYVL73PZRd52WdYPa7xtC8veys7u6t17/7t6Tn0ZtFjvIXZR895zjKjPWf4NiOrGt+ivpXZ3XnozaOndVn9vvVkkTjEAQAA",
-                "Position": "518.113,-72.39795,-16.65455",
+                "Position": "1530.867,-72.39795,-16.65455",
                 "Rotation": "0,0,0,1",
                 "Positions": [
                   "-43.25488,-1231.206,1.057339",
@@ -1906,12 +1912,12 @@
                   "0.25,0.2500052"
                 ],
                 "TextureOffset": [
-                  "225.2384,0.001464844",
-                  "487.5479,232.2778",
+                  "270.2007,0.001464844",
+                  "20.53271,232.2778",
                   "0.0004882812,511.9997",
                   "279.7217,449.0991",
-                  "24.45215,449.0991",
-                  "487.5479,449.0991"
+                  "491.4673,449.0991",
+                  "20.53271,449.0991"
                 ],
                 "MaterialIndex": [
                   1,
@@ -2631,15 +2637,7 @@
                       "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
                     },
                     "Property": "MaxDelaySpawnCar",
-                    "Value": 1
-                  },
-                  {
-                    "Target": {
-                      "Type": "Component",
-                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
-                    },
-                    "Property": "MinDelaySpawnCar",
-                    "Value": 0.5
+                    "Value": 2
                   },
                   {
                     "Target": {
@@ -3317,8 +3315,16 @@
                       "Type": "Component",
                       "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
                     },
-                    "Property": "MaxDelaySpawnCar",
+                    "Property": "MinDelaySpawnCar",
                     "Value": 2
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "2c83d66f-c045-4223-b9e7-aaaff99d7e62"
+                    },
+                    "Property": "Color",
+                    "Value": "0.43529,0.75686,0.9098,1"
                   },
                   {
                     "Target": {
@@ -3472,8 +3478,16 @@
                       "Type": "Component",
                       "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
                     },
-                    "Property": "MaxDelaySpawnCar",
+                    "Property": "MinDelaySpawnCar",
                     "Value": 2
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "2c83d66f-c045-4223-b9e7-aaaff99d7e62"
+                    },
+                    "Property": "Color",
+                    "Value": "0.43451,0.75736,0.90698,1"
                   },
                   {
                     "Target": {
@@ -4423,7 +4437,7 @@
           "__version": 1,
           "Flags": 0,
           "Name": "xmas_tree",
-          "Position": "746.2892,4.742325,-110.3753",
+          "Position": "1695.641,4.742325,-110.3753",
           "Rotation": "0,0,-1,0.0000002086163",
           "Scale": "2.025454,2.025454,2.025454",
           "Tags": "",
@@ -8160,75 +8174,6 @@
             {
               "__type": "Sandbox.ModelCollider",
               "__guid": "58d5a029-830e-46de-b54c-d2de65c77ce9",
-              "__enabled": true,
-              "ColliderFlags": 0,
-              "Elasticity": null,
-              "Friction": null,
-              "IsTrigger": false,
-              "Model": "models/holiday-kit/holiday-tree-snow-b.vmdl",
-              "OnComponentDestroy": null,
-              "OnComponentDisabled": null,
-              "OnComponentEnabled": null,
-              "OnComponentFixedUpdate": null,
-              "OnComponentStart": null,
-              "OnComponentUpdate": null,
-              "OnObjectTriggerEnter": null,
-              "OnObjectTriggerExit": null,
-              "OnTriggerEnter": null,
-              "OnTriggerExit": null,
-              "RollingResistance": null,
-              "Static": true,
-              "Surface": null,
-              "SurfaceVelocity": "0,0,0"
-            }
-          ],
-          "Children": []
-        },
-        {
-          "__guid": "bb7a4acf-6003-457b-8474-5345d1fcc80d",
-          "__version": 1,
-          "Flags": 0,
-          "Name": "snow_tree",
-          "Position": "1678.212,-14.21297,-109.7468",
-          "Rotation": "0,0,0,1",
-          "Scale": "0.7130899,0.7130899,0.7130899",
-          "Tags": "",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
-          "NetworkOrphaned": 0,
-          "NetworkTransmit": true,
-          "OwnerTransfer": 1,
-          "Components": [
-            {
-              "__type": "Sandbox.ModelRenderer",
-              "__guid": "15dd5391-c4da-4bfa-b889-6b59974acda2",
-              "__enabled": true,
-              "BodyGroups": 18446744073709551615,
-              "CreateAttachments": false,
-              "LodOverride": null,
-              "MaterialGroup": null,
-              "MaterialOverride": null,
-              "Materials": null,
-              "Model": "models/holiday-kit/holiday-tree-snow-b.vmdl",
-              "OnComponentDestroy": null,
-              "OnComponentDisabled": null,
-              "OnComponentEnabled": null,
-              "OnComponentFixedUpdate": null,
-              "OnComponentStart": null,
-              "OnComponentUpdate": null,
-              "RenderOptions": {
-                "GameLayer": true,
-                "OverlayLayer": false,
-                "BloomLayer": false,
-                "AfterUILayer": false
-              },
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "Sandbox.ModelCollider",
-              "__guid": "4aa83a99-15b3-4f1b-b58c-72f238bbdd1b",
               "__enabled": true,
               "ColliderFlags": 0,
               "Elasticity": null,

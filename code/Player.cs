@@ -23,6 +23,8 @@ public sealed class Player : Component
     private float _multipleMouseSens = 0.25f; // from facepunch.playercontroller
     private float _multipleVelocity = 2000f;
 
+    [Property] public SoundEvent DeadSound { get; set; }
+
     [Rpc.Host]
     private void DressForHost(Dresser dresser)
     {
@@ -127,6 +129,7 @@ public sealed class Player : Component
         var rb = _corp.GetComponentInChildren<Rigidbody>();
 
         HideBody();
+        EmitDeadSound();
 
         var direction = (WorldPosition - killer.WorldPosition).Normal;
         rb.Velocity = direction * killer.Speed * _multipleVelocity;
@@ -143,6 +146,13 @@ public sealed class Player : Component
     {
         body.GameObject.Enabled = false;
         //HudWorld.Enabled = false;
+    }
+
+    [Rpc.Broadcast]
+    public void EmitDeadSound()
+    {
+        if (DeadSound.IsValid())
+            Sound.Play(DeadSound, WorldPosition);
     }
 
     [Rpc.Broadcast]

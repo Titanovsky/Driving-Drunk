@@ -13,6 +13,9 @@ public sealed class MapManager : Component
 
     [Property] public GameObject PickupPrefab { get; set; }
 
+    [Property] public List<SoundEvent> MusicLevel { get; set; } = new();
+    private SoundHandle _music;
+
     public bool CheckFinish(Player ply)
     {
         BoxCollider collider = FinishLineCollider.Components.Get<BoxCollider>();
@@ -42,6 +45,22 @@ public sealed class MapManager : Component
             //else
             //    connect.Kick("suspicion of cheating [Finish]"); //? should be?
         }
+    }
+
+    private void PlayMusic()
+    {
+        if (IsProxy) return;
+
+        var music = MusicLevel[MapIndex];
+        if (!music.IsValid()) return;
+
+        if (_music.IsValid())
+        {
+            _music.Stop();
+            _music = null;
+        }
+
+        _music = Sound.Play(music);
     }
 
     private void Finish()
@@ -117,6 +136,8 @@ public sealed class MapManager : Component
     {
         if (!Rpc.Caller.IsHost) return;
 
+        //PlayMusic();
+
         foreach (var ply in Scene.GetAllComponents<Player>())
         {
             if (!ply.IsAlive) continue;
@@ -180,6 +201,7 @@ public sealed class MapManager : Component
         {
             Log.Info("Send Request Sync Map Index to Host");
             RequestSyncMapIndex();
+            //PlayMusic();
         }
 
         if (Networking.IsHost)
