@@ -229,6 +229,13 @@ public sealed class Player : Component
         DressForHost(Dresser);
     }
 
+    private void StopDuckUpdate()
+    {
+        if (IsProxy) return;
+
+        controller.UpdateDucking(false);
+    }
+
     private void CreateSingleton()
     {
         if (IsProxy) return;
@@ -258,6 +265,7 @@ public sealed class Player : Component
         InputActivatePickUp();
         TeleportToCorpUpdate();
         RotateUpdate();
+        StopDuckUpdate();
     }
 
     protected override void OnDestroy()
