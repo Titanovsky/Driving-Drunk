@@ -286,7 +286,7 @@
           "OnComponentStart": null,
           "OnComponentUpdate": null,
           "Orthographic": true,
-          "OrthographicHeight": 400,
+          "OrthographicHeight": 530,
           "PostProcessAnchor": null,
           "Priority": 1,
           "RenderExcludeTags": "",
@@ -2621,7 +2621,7 @@
                       "IdValue": "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1"
                     },
                     "Property": "Name",
-                    "Value": "road (1)"
+                    "Value": "w"
                   },
                   {
                     "Target": {
@@ -2630,6 +2630,17 @@
                     },
                     "Property": "Position",
                     "Value": "-816.6706,-117.5816,-16.71294"
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "CarPrefab",
+                    "Value": {
+                      "_type": "gameobject",
+                      "prefab": "prefabs/cars/car_high.prefab"
+                    }
                   },
                   {
                     "Target": {
@@ -2793,6 +2804,14 @@
                     },
                     "Property": "Position",
                     "Value": "-396.0602,-117.5816,-16.71294"
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "CarPrefab",
+                    "Value": null
                   },
                   {
                     "Target": {
@@ -2970,6 +2989,14 @@
                       "Type": "Component",
                       "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
                     },
+                    "Property": "CarPrefab",
+                    "Value": null
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
                     "Property": "MaxDelaySpawnCar",
                     "Value": 1.25
                   },
@@ -3141,6 +3168,14 @@
                       "Type": "Component",
                       "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
                     },
+                    "Property": "CarPrefab",
+                    "Value": null
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
                     "Property": "MaxDelaySpawnCar",
                     "Value": 2
                   },
@@ -3289,7 +3324,7 @@
                       "IdValue": "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1"
                     },
                     "Property": "Name",
-                    "Value": "Road (1)"
+                    "Value": "wd"
                   },
                   {
                     "Target": {
@@ -3307,7 +3342,7 @@
                     "Property": "CarPrefab",
                     "Value": {
                       "_type": "gameobject",
-                      "prefab": "prefabs/cars/car_fish.prefab"
+                      "prefab": "prefabs/cars/car_medium.prefab"
                     }
                   },
                   {
@@ -3315,8 +3350,25 @@
                       "Type": "Component",
                       "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
                     },
-                    "Property": "MinDelaySpawnCar",
+                    "Property": "MaxDelaySpawnCar",
                     "Value": 2
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "Spawners",
+                    "Value": [
+                      {
+                        "_type": "gameobject",
+                        "go": "aa6dee25-bba0-4f0d-8adc-c7d617712997"
+                      },
+                      {
+                        "_type": "gameobject",
+                        "go": "aa6dee25-bba0-4f0d-8adc-c7d617712997"
+                      }
+                    ]
                   },
                   {
                     "Target": {
@@ -3478,8 +3530,36 @@
                       "Type": "Component",
                       "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
                     },
+                    "Property": "CarPrefab",
+                    "Value": {
+                      "_type": "gameobject",
+                      "prefab": "prefabs/cars/car_easy.prefab"
+                    }
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
                     "Property": "MinDelaySpawnCar",
                     "Value": 2
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "Spawners",
+                    "Value": [
+                      {
+                        "_type": "gameobject",
+                        "go": "ebcb6bf4-cce2-47ef-b9fa-dee6a6f5bedc"
+                      },
+                      {
+                        "_type": "gameobject",
+                        "go": "e98975fa-1c94-49bc-bbd1-c84323f9cf0a"
+                      }
+                    ]
                   },
                   {
                     "Target": {
@@ -3649,6 +3729,14 @@
                       "Type": "Component",
                       "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
                     },
+                    "Property": "CarPrefab",
+                    "Value": null
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
                     "Property": "MaxDelaySpawnCar",
                     "Value": 1
                   },
@@ -3806,6 +3894,14 @@
                     },
                     "Property": "Position",
                     "Value": "1920.727,-122.6323,-16.71294"
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "CarPrefab",
+                    "Value": null
                   },
                   {
                     "Target": {
@@ -3983,6 +4079,14 @@
                       "Type": "Component",
                       "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
                     },
+                    "Property": "CarPrefab",
+                    "Value": null
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
                     "Property": "MaxDelaySpawnCar",
                     "Value": 1
                   },
@@ -4140,6 +4244,14 @@
                     },
                     "Property": "Position",
                     "Value": "2312.764,-122.6323,-16.71294"
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "CarPrefab",
+                    "Value": null
                   },
                   {
                     "Target": {
@@ -13449,6 +13561,14 @@
                     },
                     "Property": "Enabled",
                     "Value": false
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "CarPrefab",
+                    "Value": null
                   }
                 ],
                 "MovedObjects": []
@@ -13495,6 +13615,14 @@
                     },
                     "Property": "Enabled",
                     "Value": false
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "CarPrefab",
+                    "Value": null
                   }
                 ],
                 "MovedObjects": []
@@ -13541,6 +13669,14 @@
                     },
                     "Property": "Enabled",
                     "Value": false
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "CarPrefab",
+                    "Value": null
                   }
                 ],
                 "MovedObjects": []
@@ -13587,6 +13723,14 @@
                     },
                     "Property": "Enabled",
                     "Value": false
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "CarPrefab",
+                    "Value": null
                   }
                 ],
                 "MovedObjects": []
@@ -13633,6 +13777,14 @@
                     },
                     "Property": "Enabled",
                     "Value": false
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "CarPrefab",
+                    "Value": null
                   }
                 ],
                 "MovedObjects": []
@@ -13679,6 +13831,14 @@
                     },
                     "Property": "Enabled",
                     "Value": false
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "CarPrefab",
+                    "Value": null
                   }
                 ],
                 "MovedObjects": []
@@ -13725,6 +13885,14 @@
                     },
                     "Property": "Enabled",
                     "Value": false
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "CarPrefab",
+                    "Value": null
                   }
                 ],
                 "MovedObjects": []
@@ -13771,6 +13939,14 @@
                     },
                     "Property": "Enabled",
                     "Value": false
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "CarPrefab",
+                    "Value": null
                   }
                 ],
                 "MovedObjects": []
@@ -13817,6 +13993,14 @@
                     },
                     "Property": "Enabled",
                     "Value": false
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "CarPrefab",
+                    "Value": null
                   }
                 ],
                 "MovedObjects": []
@@ -13863,6 +14047,14 @@
                     },
                     "Property": "Enabled",
                     "Value": false
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "CarPrefab",
+                    "Value": null
                   }
                 ],
                 "MovedObjects": []
@@ -13909,6 +14101,14 @@
                     },
                     "Property": "Enabled",
                     "Value": false
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "CarPrefab",
+                    "Value": null
                   }
                 ],
                 "MovedObjects": []
@@ -13955,6 +14155,14 @@
                     },
                     "Property": "Enabled",
                     "Value": false
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "CarPrefab",
+                    "Value": null
                   }
                 ],
                 "MovedObjects": []
@@ -14001,6 +14209,14 @@
                     },
                     "Property": "Enabled",
                     "Value": false
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "CarPrefab",
+                    "Value": null
                   }
                 ],
                 "MovedObjects": []
@@ -14047,6 +14263,14 @@
                     },
                     "Property": "Enabled",
                     "Value": false
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "CarPrefab",
+                    "Value": null
                   }
                 ],
                 "MovedObjects": []
@@ -14093,6 +14317,14 @@
                     },
                     "Property": "Enabled",
                     "Value": false
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "CarPrefab",
+                    "Value": null
                   }
                 ],
                 "MovedObjects": []
@@ -14131,6 +14363,14 @@
                     },
                     "Property": "Position",
                     "Value": "-60.61475,-117.5816,-16.71294"
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "CarPrefab",
+                    "Value": null
                   },
                   {
                     "Target": {
@@ -14300,6 +14540,14 @@
                       "Type": "Component",
                       "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
                     },
+                    "Property": "CarPrefab",
+                    "Value": null
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
                     "Property": "MaxDelaySpawnCar",
                     "Value": 3
                   },
@@ -14457,6 +14705,14 @@
                     },
                     "Property": "Position",
                     "Value": "1230.549,-117.5816,-16.71294"
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "CarPrefab",
+                    "Value": null
                   },
                   {
                     "Target": {
@@ -14626,6 +14882,14 @@
                       "Type": "Component",
                       "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
                     },
+                    "Property": "CarPrefab",
+                    "Value": null
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
                     "Property": "MaxDelaySpawnCar",
                     "Value": 2
                   },
@@ -14783,6 +15047,14 @@
                     },
                     "Property": "Position",
                     "Value": "2246.356,-117.5816,-16.71294"
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "CarPrefab",
+                    "Value": null
                   },
                   {
                     "Target": {
@@ -15142,6 +15414,14 @@
                       "Type": "Component",
                       "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
                     },
+                    "Property": "CarPrefab",
+                    "Value": null
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
                     "Property": "MaxDelaySpawnCar",
                     "Value": 1
                   },
@@ -15313,6 +15593,14 @@
                       "Type": "Component",
                       "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
                     },
+                    "Property": "CarPrefab",
+                    "Value": null
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
                     "Property": "MaxDelaySpawnCar",
                     "Value": 1
                   },
@@ -15478,6 +15766,14 @@
                     },
                     "Property": "Position",
                     "Value": "3976.687,-117.5816,-16.71294"
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "CarPrefab",
+                    "Value": null
                   },
                   {
                     "Target": {
@@ -15839,6 +16135,14 @@
                     },
                     "Property": "Enabled",
                     "Value": false
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "CarPrefab",
+                    "Value": null
                   }
                 ],
                 "MovedObjects": []
@@ -15877,6 +16181,14 @@
                     },
                     "Property": "Position",
                     "Value": "-621.0806,-117.5816,-16.71294"
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "CarPrefab",
+                    "Value": null
                   },
                   {
                     "Target": {
@@ -16032,6 +16344,14 @@
                     },
                     "Property": "Position",
                     "Value": "-816.6706,-117.5816,-16.71294"
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "CarPrefab",
+                    "Value": null
                   },
                   {
                     "Target": {
@@ -16361,6 +16681,14 @@
                     },
                     "Property": "Position",
                     "Value": "-1712.919,-122.6323,-16.71294"
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "CarPrefab",
+                    "Value": null
                   },
                   {
                     "Target": {
@@ -20281,6 +20609,14 @@
                     },
                     "Property": "Enabled",
                     "Value": false
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "CarPrefab",
+                    "Value": null
                   }
                 ],
                 "MovedObjects": []
@@ -20327,6 +20663,14 @@
                     },
                     "Property": "Enabled",
                     "Value": false
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "CarPrefab",
+                    "Value": null
                   }
                 ],
                 "MovedObjects": []
@@ -20373,6 +20717,14 @@
                     },
                     "Property": "Enabled",
                     "Value": false
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "CarPrefab",
+                    "Value": null
                   }
                 ],
                 "MovedObjects": []
@@ -20419,6 +20771,14 @@
                     },
                     "Property": "Enabled",
                     "Value": false
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "CarPrefab",
+                    "Value": null
                   }
                 ],
                 "MovedObjects": []
@@ -20465,6 +20825,14 @@
                     },
                     "Property": "Enabled",
                     "Value": false
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "CarPrefab",
+                    "Value": null
                   }
                 ],
                 "MovedObjects": []
@@ -20511,6 +20879,14 @@
                     },
                     "Property": "Enabled",
                     "Value": false
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "CarPrefab",
+                    "Value": null
                   }
                 ],
                 "MovedObjects": []
@@ -20557,6 +20933,14 @@
                     },
                     "Property": "Enabled",
                     "Value": false
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "CarPrefab",
+                    "Value": null
                   }
                 ],
                 "MovedObjects": []
@@ -20603,6 +20987,14 @@
                     },
                     "Property": "Enabled",
                     "Value": false
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "CarPrefab",
+                    "Value": null
                   }
                 ],
                 "MovedObjects": []
@@ -20649,6 +21041,14 @@
                     },
                     "Property": "Enabled",
                     "Value": false
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "CarPrefab",
+                    "Value": null
                   }
                 ],
                 "MovedObjects": []
@@ -20695,6 +21095,14 @@
                     },
                     "Property": "Enabled",
                     "Value": false
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "CarPrefab",
+                    "Value": null
                   }
                 ],
                 "MovedObjects": []
@@ -20741,6 +21149,14 @@
                     },
                     "Property": "Enabled",
                     "Value": false
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "CarPrefab",
+                    "Value": null
                   }
                 ],
                 "MovedObjects": []
@@ -20787,6 +21203,14 @@
                     },
                     "Property": "Enabled",
                     "Value": false
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "CarPrefab",
+                    "Value": null
                   }
                 ],
                 "MovedObjects": []
@@ -20833,6 +21257,14 @@
                     },
                     "Property": "Enabled",
                     "Value": false
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "CarPrefab",
+                    "Value": null
                   }
                 ],
                 "MovedObjects": []
@@ -20879,6 +21311,14 @@
                     },
                     "Property": "Enabled",
                     "Value": false
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "CarPrefab",
+                    "Value": null
                   }
                 ],
                 "MovedObjects": []
@@ -20925,6 +21365,14 @@
                     },
                     "Property": "Enabled",
                     "Value": false
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "CarPrefab",
+                    "Value": null
                   }
                 ],
                 "MovedObjects": []
@@ -20963,6 +21411,14 @@
                     },
                     "Property": "Position",
                     "Value": "-60.61475,-117.5816,-16.71294"
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "CarPrefab",
+                    "Value": null
                   },
                   {
                     "Target": {
@@ -21130,6 +21586,14 @@
                   {
                     "Target": {
                       "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "CarPrefab",
+                    "Value": null
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
                       "IdValue": "2c83d66f-c045-4223-b9e7-aaaff99d7e62"
                     },
                     "Property": "Mesh",
@@ -21289,6 +21753,14 @@
                     },
                     "Property": "Enabled",
                     "Value": false
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "CarPrefab",
+                    "Value": null
                   }
                 ],
                 "MovedObjects": []
@@ -21327,6 +21799,14 @@
                     },
                     "Property": "Position",
                     "Value": "-621.0806,-117.5816,-16.71294"
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "CarPrefab",
+                    "Value": null
                   },
                   {
                     "Target": {
@@ -21498,6 +21978,14 @@
                     },
                     "Property": "Position",
                     "Value": "-816.6706,-117.5816,-16.71294"
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "CarPrefab",
+                    "Value": null
                   },
                   {
                     "Target": {
@@ -21836,6 +22324,14 @@
                     },
                     "Property": "Position",
                     "Value": "379.5525,-122.6323,-16.71294"
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "CarPrefab",
+                    "Value": null
                   },
                   {
                     "Target": {
@@ -22189,6 +22685,14 @@
                       "Type": "Component",
                       "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
                     },
+                    "Property": "CarPrefab",
+                    "Value": null
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
                     "Property": "MaxDelaySpawnCar",
                     "Value": 1
                   },
@@ -22530,6 +23034,14 @@
                     },
                     "Property": "Position",
                     "Value": "2203.191,-122.6323,-16.71294"
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "CarPrefab",
+                    "Value": null
                   },
                   {
                     "Target": {
@@ -29039,6 +29551,14 @@
                   {
                     "Target": {
                       "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "CarPrefab",
+                    "Value": null
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
                       "IdValue": "2c83d66f-c045-4223-b9e7-aaaff99d7e62"
                     },
                     "Property": "Mesh",
@@ -29191,6 +29711,14 @@
                     },
                     "Property": "Position",
                     "Value": "-621.0806,-117.5816,-16.71294"
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "CarPrefab",
+                    "Value": null
                   },
                   {
                     "Target": {
@@ -29363,6 +29891,14 @@
                     },
                     "Property": "Position",
                     "Value": "-816.6706,-117.5816,-16.71294"
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "CarPrefab",
+                    "Value": null
                   },
                   {
                     "Target": {
