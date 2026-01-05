@@ -19,6 +19,8 @@ public sealed class Car : Component, Component.ITriggerListener, IGameObjectPool
     {
         if (!Networking.IsHost) return;
 
+        //WorldPosition = Vector3.Zero;
+
         GameObject.Enabled = false;
         //GameObject.Destroy();
     }

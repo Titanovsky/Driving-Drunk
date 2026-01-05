@@ -1291,7 +1291,7 @@
       "Rotation": "0,0,0,1",
       "Scale": "1,1,1",
       "Tags": "",
-      "Enabled": true,
+      "Enabled": false,
       "NetworkMode": 2,
       "NetworkInterpolation": true,
       "NetworkOrphaned": 0,
@@ -1825,7 +1825,7 @@
           "__version": 1,
           "Flags": 0,
           "Name": "Finish Line",
-          "Position": "1551.317,45.45475,-108.6155",
+          "Position": "2821.293,45.45475,-108.6155",
           "Rotation": "0,0,0,1",
           "Scale": "1,1,1",
           "Tags": "",
@@ -1849,7 +1849,7 @@
               "IsTrigger": false,
               "Mesh": {
                 "Topology": "H4sIAAAAAAAACl2QCQ7CMAwEp4Qj3NBy/f+laMRGsohUVbFn1+t04ANs+Z0VsM69AwfgBFyAKZ9MPXdgk3qLnsI+Um/h/me9i2ZXfFvYOazafTJN0XRgKZmPyWtfXvYVL73PZRd52WdYPa7xtC8veys7u6t17/7t6Tn0ZtFjvIXZR895zjKjPWf4NiOrGt+ivpXZ3XnozaOndVn9vvVkkTjEAQAA",
-                "Position": "1530.867,-72.39795,-16.65455",
+                "Position": "2800.843,-72.39795,-16.65455",
                 "Rotation": "0,0,0,1",
                 "Positions": [
                   "-43.25488,-1231.206,1.057339",
@@ -1912,12 +1912,12 @@
                   "0.25,0.2500052"
                 ],
                 "TextureOffset": [
-                  "270.2007,0.001464844",
-                  "20.53271,232.2778",
+                  "310.2666,0.001464844",
+                  "60.62695,232.2778",
                   "0.0004882812,511.9997",
                   "279.7217,449.0991",
-                  "491.4673,449.0991",
-                  "20.53271,449.0991"
+                  "451.373,449.0991",
+                  "60.62695,449.0991"
                 ],
                 "MaterialIndex": [
                   1,
@@ -2621,7 +2621,7 @@
                       "IdValue": "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1"
                     },
                     "Property": "Name",
-                    "Value": "w"
+                    "Value": "road dsdssd"
                   },
                   {
                     "Target": {
@@ -2649,6 +2649,23 @@
                     },
                     "Property": "MaxDelaySpawnCar",
                     "Value": 2
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "Spawners",
+                    "Value": [
+                      {
+                        "_type": "gameobject",
+                        "go": "3de0d59a-3e01-49cb-83f3-e10e30d8e280"
+                      },
+                      {
+                        "_type": "gameobject",
+                        "go": "aa6dee25-bba0-4f0d-8adc-c7d617712997"
+                      }
+                    ]
                   },
                   {
                     "Target": {
@@ -2811,7 +2828,10 @@
                       "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
                     },
                     "Property": "CarPrefab",
-                    "Value": null
+                    "Value": {
+                      "_type": "gameobject",
+                      "prefab": "prefabs/cars/car_easy.prefab"
+                    }
                   },
                   {
                     "Target": {
@@ -2828,6 +2848,23 @@
                     },
                     "Property": "MinDelaySpawnCar",
                     "Value": 0.75
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "Spawners",
+                    "Value": [
+                      {
+                        "_type": "gameobject",
+                        "go": "ebcb6bf4-cce2-47ef-b9fa-dee6a6f5bedc"
+                      },
+                      {
+                        "_type": "gameobject",
+                        "go": "e98975fa-1c94-49bc-bbd1-c84323f9cf0a"
+                      }
+                    ]
                   },
                   {
                     "Target": {
@@ -2990,7 +3027,10 @@
                       "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
                     },
                     "Property": "CarPrefab",
-                    "Value": null
+                    "Value": {
+                      "_type": "gameobject",
+                      "prefab": "prefabs/cars/car_medium.prefab"
+                    }
                   },
                   {
                     "Target": {
@@ -3007,6 +3047,23 @@
                     },
                     "Property": "MinDelaySpawnCar",
                     "Value": 0.75
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "Spawners",
+                    "Value": [
+                      {
+                        "_type": "gameobject",
+                        "go": "3de0d59a-3e01-49cb-83f3-e10e30d8e280"
+                      },
+                      {
+                        "_type": "gameobject",
+                        "go": "aa6dee25-bba0-4f0d-8adc-c7d617712997"
+                      }
+                    ]
                   },
                   {
                     "Target": {
@@ -3169,7 +3226,10 @@
                       "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
                     },
                     "Property": "CarPrefab",
-                    "Value": null
+                    "Value": {
+                      "_type": "gameobject",
+                      "prefab": "prefabs/cars/car_high.prefab"
+                    }
                   },
                   {
                     "Target": {
@@ -3177,7 +3237,32 @@
                       "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
                     },
                     "Property": "MaxDelaySpawnCar",
-                    "Value": 2
+                    "Value": 1
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "MinDelaySpawnCar",
+                    "Value": 0.5
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "Spawners",
+                    "Value": [
+                      {
+                        "_type": "gameobject",
+                        "go": "ebcb6bf4-cce2-47ef-b9fa-dee6a6f5bedc"
+                      },
+                      {
+                        "_type": "gameobject",
+                        "go": "e98975fa-1c94-49bc-bbd1-c84323f9cf0a"
+                      }
+                    ]
                   },
                   {
                     "Target": {
@@ -3324,7 +3409,7 @@
                       "IdValue": "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1"
                     },
                     "Property": "Name",
-                    "Value": "wd"
+                    "Value": "road 4334"
                   },
                   {
                     "Target": {
@@ -3351,6 +3436,14 @@
                       "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
                     },
                     "Property": "MaxDelaySpawnCar",
+                    "Value": 3
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "MinDelaySpawnCar",
                     "Value": 2
                   },
                   {
@@ -3730,7 +3823,10 @@
                       "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
                     },
                     "Property": "CarPrefab",
-                    "Value": null
+                    "Value": {
+                      "_type": "gameobject",
+                      "prefab": "prefabs/cars/car_high.prefab"
+                    }
                   },
                   {
                     "Target": {
@@ -3747,6 +3843,23 @@
                     },
                     "Property": "MinDelaySpawnCar",
                     "Value": 0.25
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "Spawners",
+                    "Value": [
+                      {
+                        "_type": "gameobject",
+                        "go": "ebcb6bf4-cce2-47ef-b9fa-dee6a6f5bedc"
+                      },
+                      {
+                        "_type": "gameobject",
+                        "go": "e98975fa-1c94-49bc-bbd1-c84323f9cf0a"
+                      }
+                    ]
                   },
                   {
                     "Target": {
@@ -3901,7 +4014,10 @@
                       "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
                     },
                     "Property": "CarPrefab",
-                    "Value": null
+                    "Value": {
+                      "_type": "gameobject",
+                      "prefab": "prefabs/cars/car_easy.prefab"
+                    }
                   },
                   {
                     "Target": {
@@ -3918,6 +4034,23 @@
                     },
                     "Property": "MinDelaySpawnCar",
                     "Value": 0.25
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "Spawners",
+                    "Value": [
+                      {
+                        "_type": "gameobject",
+                        "go": "3de0d59a-3e01-49cb-83f3-e10e30d8e280"
+                      },
+                      {
+                        "_type": "gameobject",
+                        "go": "aa6dee25-bba0-4f0d-8adc-c7d617712997"
+                      }
+                    ]
                   },
                   {
                     "Target": {
@@ -4080,7 +4213,10 @@
                       "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
                     },
                     "Property": "CarPrefab",
-                    "Value": null
+                    "Value": {
+                      "_type": "gameobject",
+                      "prefab": "prefabs/cars/car_easy.prefab"
+                    }
                   },
                   {
                     "Target": {
@@ -4097,6 +4233,23 @@
                     },
                     "Property": "MinDelaySpawnCar",
                     "Value": 0.5
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "Spawners",
+                    "Value": [
+                      {
+                        "_type": "gameobject",
+                        "go": "ebcb6bf4-cce2-47ef-b9fa-dee6a6f5bedc"
+                      },
+                      {
+                        "_type": "gameobject",
+                        "go": "e98975fa-1c94-49bc-bbd1-c84323f9cf0a"
+                      }
+                    ]
                   },
                   {
                     "Target": {
@@ -4251,7 +4404,10 @@
                       "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
                     },
                     "Property": "CarPrefab",
-                    "Value": null
+                    "Value": {
+                      "_type": "gameobject",
+                      "prefab": "prefabs/cars/car_high.prefab"
+                    }
                   },
                   {
                     "Target": {
@@ -4268,6 +4424,23 @@
                     },
                     "Property": "MinDelaySpawnCar",
                     "Value": 0.5
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "Spawners",
+                    "Value": [
+                      {
+                        "_type": "gameobject",
+                        "go": "3de0d59a-3e01-49cb-83f3-e10e30d8e280"
+                      },
+                      {
+                        "_type": "gameobject",
+                        "go": "aa6dee25-bba0-4f0d-8adc-c7d617712997"
+                      }
+                    ]
                   },
                   {
                     "Target": {
@@ -8315,7 +8488,7 @@
           "__version": 1,
           "Flags": 0,
           "Name": "snow_tree",
-          "Position": "2676.11,-14.21297,-109.7468",
+          "Position": "2949.325,-14.21297,-109.7468",
           "Rotation": "0,0,0,1",
           "Scale": "0.7130899,0.7130899,0.7130899",
           "Tags": "",
@@ -8384,7 +8557,7 @@
           "__version": 1,
           "Flags": 0,
           "Name": "snow_tree",
-          "Position": "2676.11,136.6223,-109.7468",
+          "Position": "2949.325,136.6223,-109.7468",
           "Rotation": "0,0,0,1",
           "Scale": "0.7130899,0.7130899,0.7130899",
           "Tags": "",
@@ -8453,7 +8626,7 @@
           "__version": 1,
           "Flags": 0,
           "Name": "snow_tree",
-          "Position": "2676.11,201.9501,-109.7468",
+          "Position": "2949.325,201.9501,-109.7468",
           "Rotation": "0,0,0,1",
           "Scale": "0.7130899,0.7130899,0.7130899",
           "Tags": "",
@@ -8522,7 +8695,7 @@
           "__version": 1,
           "Flags": 0,
           "Name": "snow_tree",
-          "Position": "2676.11,269.6532,-109.7468",
+          "Position": "2949.325,269.6532,-109.7468",
           "Rotation": "0,0,0,1",
           "Scale": "0.7130899,0.7130899,0.7130899",
           "Tags": "",
@@ -8591,7 +8764,7 @@
           "__version": 1,
           "Flags": 0,
           "Name": "snow_tree",
-          "Position": "2676.11,-99.09316,-109.7468",
+          "Position": "2949.325,-99.09316,-109.7468",
           "Rotation": "0,0,0,1",
           "Scale": "0.7130899,0.7130899,0.7130899",
           "Tags": "",
@@ -8660,7 +8833,7 @@
           "__version": 1,
           "Flags": 0,
           "Name": "snow_tree",
-          "Position": "2676.11,-202.7639,-109.7468",
+          "Position": "2949.325,-202.7639,-109.7468",
           "Rotation": "0,0,0,1",
           "Scale": "0.7130899,0.7130899,0.7130899",
           "Tags": "",
@@ -12770,7 +12943,7 @@
       "Rotation": "0,0,0,1",
       "Scale": "1,1,1",
       "Tags": "",
-      "Enabled": false,
+      "Enabled": true,
       "NetworkMode": 2,
       "NetworkInterpolation": true,
       "NetworkOrphaned": 0,
@@ -14559,7 +14732,7 @@
                     "Property": "Mesh",
                     "Value": {
                       "Topology": "H4sIAAAAAAAACoWQ2QoCQQwES1dXUfC+/v9HI4UdmAdhB4aQTDpT6T3wAWZ+Zw1skt+BA/AETsAq157xXIGqKutT9Ay9j9S92z9/vaO3thvmTum9pbcWzgwcw2vuX/K/MmtJL8s5e5vL4t6XYWd3tW5u9M2e1qt1RnshuxzNJ5uMvumP3hjbP70YvZLdHVpvdKb15v4CSw/ShsQBAAA=",
-                      "Position": "642.687,-101.2826,-16.79005",
+                      "Position": "642.6869,-101.2826,-16.79005",
                       "Rotation": "0,0,0,1",
                       "Positions": [
                         "-98.76762,-1124.251,1.401409",
@@ -14614,7 +14787,7 @@
                         "-0,0,-1"
                       ],
                       "TextureScale": [
-                        "0.7716225,0.9811407",
+                        "0.7716219,0.9811409",
                         "0.25,0.25",
                         "0.4999999,0.5000082",
                         "0.4999997,0.5000082",
@@ -14622,7 +14795,7 @@
                         "0.25,0.2499932"
                       ],
                       "TextureOffset": [
-                        "63.09656,24.77002",
+                        "63.09613,24.77014",
                         "511.398,5.015625",
                         "23.34497,222.4203",
                         "232.6545,222.4203",
@@ -14730,7 +14903,7 @@
                     "Property": "Mesh",
                     "Value": {
                       "Topology": "H4sIAAAAAAAACoWQ2QoCQQwES1dXUfC+/v9HI4UdmAdhB4aQTDpT6T3wAWZ+Zw1skt+BA/AETsAq157xXIGqKutT9Ay9j9S92z9/vaO3thvmTum9pbcWzgwcw2vuX/K/MmtJL8s5e5vL4t6XYWd3tW5u9M2e1qt1RnshuxzNJ5uMvumP3hjbP70YvZLdHVpvdKb15v4CSw/ShsQBAAA=",
-                      "Position": "1230.7,-101.2826,-16.79005",
+                      "Position": "1230.699,-101.2826,-16.79005",
                       "Rotation": "0,0,0,1",
                       "Positions": [
                         "-98.76762,-1124.251,1.401409",
@@ -14793,7 +14966,7 @@
                         "0.25,0.2499932"
                       ],
                       "TextureOffset": [
-                        "69.04822,24.77014",
+                        "69.04871,24.77014",
                         "511.398,5.015625",
                         "23.34497,222.4203",
                         "232.6545,222.4203",
@@ -14964,7 +15137,7 @@
                         "0.25,0.2499932"
                       ],
                       "TextureOffset": [
-                        "70.23035,24.77014",
+                        "70.23083,24.77014",
                         "511.398,5.015625",
                         "23.34497,222.4203",
                         "232.6545,222.4203",
@@ -15262,7 +15435,7 @@
                     "Property": "Mesh",
                     "Value": {
                       "Topology": "H4sIAAAAAAAACoWQ2QoCQQwES1dXUfC+/v9HI4UdmAdhB4aQTDpT6T3wAWZ+Zw1skt+BA/AETsAq157xXIGqKutT9Ay9j9S92z9/vaO3thvmTum9pbcWzgwcw2vuX/K/MmtJL8s5e5vL4t6XYWd3tW5u9M2e1qt1RnshuxzNJ5uMvumP3hjbP70YvZLdHVpvdKb15v4CSw/ShsQBAAA=",
-                      "Position": "2546.923,-101.2826,-16.79005",
+                      "Position": "2546.922,-101.2826,-16.79005",
                       "Rotation": "0,0,0,1",
                       "Positions": [
                         "-98.76762,-1124.251,1.401409",
@@ -15325,7 +15498,7 @@
                         "0.25,0.2499932"
                       ],
                       "TextureOffset": [
-                        "155.2607,24.77014",
+                        "155.2615,24.77014",
                         "511.398,5.015625",
                         "23.34497,222.4203",
                         "232.6545,222.4203",
@@ -15504,7 +15677,7 @@
                         "0.25,0.2499932"
                       ],
                       "TextureOffset": [
-                        "2.364746,24.77014",
+                        "2.364502,24.77014",
                         "511.398,5.015625",
                         "23.34497,222.4203",
                         "232.6545,222.4203",
@@ -15683,7 +15856,7 @@
                         "0.25,0.2499932"
                       ],
                       "TextureOffset": [
-                        "141.8149,24.77014",
+                        "141.814,24.77014",
                         "511.398,5.015625",
                         "23.34497,222.4203",
                         "232.6545,222.4203",
@@ -15799,7 +15972,7 @@
                     "Property": "Mesh",
                     "Value": {
                       "Topology": "H4sIAAAAAAAACoWQ2QoCQQwES1dXUfC+/v9HI4UdmAdhB4aQTDpT6T3wAWZ+Zw1skt+BA/AETsAq157xXIGqKutT9Ay9j9S92z9/vaO3thvmTum9pbcWzgwcw2vuX/K/MmtJL8s5e5vL4t6XYWd3tW5u9M2e1qt1RnshuxzNJ5uMvumP3hjbP70YvZLdHVpvdKb15v4CSw/ShsQBAAA=",
-                      "Position": "3976.838,-101.2826,-16.79005",
+                      "Position": "3976.837,-101.2826,-16.79005",
                       "Rotation": "0,0,0,1",
                       "Positions": [
                         "-98.76762,-1124.251,1.401409",
@@ -16977,7 +17150,138 @@
           "__version": 1,
           "__Prefab": "prefabs/props/palm.prefab",
           "__PrefabInstancePatch": {
-            "AddedObjects": [],
+            "AddedObjects": [
+              {
+                "Id": {
+                  "Type": "Component",
+                  "IdValue": "bfae6d5f-6c80-4fef-8942-0e943cbc11a8"
+                },
+                "Parent": {
+                  "Type": "GameObject",
+                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+                },
+                "PreviousElement": {
+                  "Type": "Component",
+                  "IdValue": "0c781ee5-94d5-44dd-b43c-223e686b594a"
+                },
+                "ContainerProperty": "Components",
+                "IsContainerArray": true,
+                "Data": {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "bfae6d5f-6c80-4fef-8942-0e943cbc11a8",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "CreateAttachments": false,
+                  "LodOverride": null,
+                  "MaterialGroup": null,
+                  "MaterialOverride": null,
+                  "Materials": null,
+                  "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "0.27684,0.66977,0.13395,1"
+                }
+              },
+              {
+                "Id": {
+                  "Type": "Component",
+                  "IdValue": "ce39e1f3-0d28-4116-a0b0-aacfa610922f"
+                },
+                "Parent": {
+                  "Type": "GameObject",
+                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+                },
+                "PreviousElement": {
+                  "Type": "Component",
+                  "IdValue": "bfae6d5f-6c80-4fef-8942-0e943cbc11a8"
+                },
+                "ContainerProperty": "Components",
+                "IsContainerArray": true,
+                "Data": {
+                  "__type": "Sandbox.ModelCollider",
+                  "__guid": "ce39e1f3-0d28-4116-a0b0-aacfa610922f",
+                  "__enabled": true,
+                  "ColliderFlags": 0,
+                  "Elasticity": null,
+                  "Friction": null,
+                  "IsTrigger": false,
+                  "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OnObjectTriggerEnter": null,
+                  "OnObjectTriggerExit": null,
+                  "OnTriggerEnter": null,
+                  "OnTriggerExit": null,
+                  "RollingResistance": null,
+                  "Static": false,
+                  "Surface": null,
+                  "SurfaceVelocity": "0,0,0"
+                }
+              },
+              {
+                "Id": {
+                  "Type": "Component",
+                  "IdValue": "d0b6dc31-68a1-49e7-9b99-1648e6652904"
+                },
+                "Parent": {
+                  "Type": "GameObject",
+                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+                },
+                "PreviousElement": {
+                  "Type": "Component",
+                  "IdValue": "ce39e1f3-0d28-4116-a0b0-aacfa610922f"
+                },
+                "ContainerProperty": "Components",
+                "IsContainerArray": true,
+                "Data": {
+                  "__type": "Sandbox.Rigidbody",
+                  "__guid": "d0b6dc31-68a1-49e7-9b99-1648e6652904",
+                  "__enabled": true,
+                  "AngularDamping": 0,
+                  "EnableImpactDamage": true,
+                  "Gravity": true,
+                  "GravityScale": 1,
+                  "ImpactDamage": 0,
+                  "LinearDamping": 0,
+                  "Locking": {
+                    "X": false,
+                    "Y": false,
+                    "Z": false,
+                    "Pitch": false,
+                    "Yaw": false,
+                    "Roll": false
+                  },
+                  "MassCenterOverride": "0,0,0",
+                  "MassOverride": 0,
+                  "MinImpactDamageSpeed": 500,
+                  "MotionEnabled": true,
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OverrideMassCenter": false,
+                  "RigidbodyFlags": 0,
+                  "StartAsleep": false
+                }
+              }
+            ],
             "RemovedObjects": [
               {
                 "Id": {
@@ -17023,7 +17327,138 @@
           "__version": 1,
           "__Prefab": "prefabs/props/palm.prefab",
           "__PrefabInstancePatch": {
-            "AddedObjects": [],
+            "AddedObjects": [
+              {
+                "Id": {
+                  "Type": "Component",
+                  "IdValue": "3561708a-cd9a-421d-93db-2dbc972a44ee"
+                },
+                "Parent": {
+                  "Type": "GameObject",
+                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+                },
+                "PreviousElement": {
+                  "Type": "Component",
+                  "IdValue": "0c781ee5-94d5-44dd-b43c-223e686b594a"
+                },
+                "ContainerProperty": "Components",
+                "IsContainerArray": true,
+                "Data": {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "3561708a-cd9a-421d-93db-2dbc972a44ee",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "CreateAttachments": false,
+                  "LodOverride": null,
+                  "MaterialGroup": null,
+                  "MaterialOverride": null,
+                  "Materials": null,
+                  "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "0.27684,0.66977,0.13395,1"
+                }
+              },
+              {
+                "Id": {
+                  "Type": "Component",
+                  "IdValue": "f9cf0c16-0e91-4592-8b6f-ce15f156d9b7"
+                },
+                "Parent": {
+                  "Type": "GameObject",
+                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+                },
+                "PreviousElement": {
+                  "Type": "Component",
+                  "IdValue": "3561708a-cd9a-421d-93db-2dbc972a44ee"
+                },
+                "ContainerProperty": "Components",
+                "IsContainerArray": true,
+                "Data": {
+                  "__type": "Sandbox.ModelCollider",
+                  "__guid": "f9cf0c16-0e91-4592-8b6f-ce15f156d9b7",
+                  "__enabled": true,
+                  "ColliderFlags": 0,
+                  "Elasticity": null,
+                  "Friction": null,
+                  "IsTrigger": false,
+                  "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OnObjectTriggerEnter": null,
+                  "OnObjectTriggerExit": null,
+                  "OnTriggerEnter": null,
+                  "OnTriggerExit": null,
+                  "RollingResistance": null,
+                  "Static": false,
+                  "Surface": null,
+                  "SurfaceVelocity": "0,0,0"
+                }
+              },
+              {
+                "Id": {
+                  "Type": "Component",
+                  "IdValue": "97bb9a26-954d-45a5-a21b-0e8fbe42217c"
+                },
+                "Parent": {
+                  "Type": "GameObject",
+                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+                },
+                "PreviousElement": {
+                  "Type": "Component",
+                  "IdValue": "f9cf0c16-0e91-4592-8b6f-ce15f156d9b7"
+                },
+                "ContainerProperty": "Components",
+                "IsContainerArray": true,
+                "Data": {
+                  "__type": "Sandbox.Rigidbody",
+                  "__guid": "97bb9a26-954d-45a5-a21b-0e8fbe42217c",
+                  "__enabled": true,
+                  "AngularDamping": 0,
+                  "EnableImpactDamage": true,
+                  "Gravity": true,
+                  "GravityScale": 1,
+                  "ImpactDamage": 0,
+                  "LinearDamping": 0,
+                  "Locking": {
+                    "X": false,
+                    "Y": false,
+                    "Z": false,
+                    "Pitch": false,
+                    "Yaw": false,
+                    "Roll": false
+                  },
+                  "MassCenterOverride": "0,0,0",
+                  "MassOverride": 0,
+                  "MinImpactDamageSpeed": 500,
+                  "MotionEnabled": true,
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OverrideMassCenter": false,
+                  "RigidbodyFlags": 0,
+                  "StartAsleep": false
+                }
+              }
+            ],
             "RemovedObjects": [
               {
                 "Id": {
@@ -17077,7 +17512,138 @@
           "__version": 1,
           "__Prefab": "prefabs/props/palm.prefab",
           "__PrefabInstancePatch": {
-            "AddedObjects": [],
+            "AddedObjects": [
+              {
+                "Id": {
+                  "Type": "Component",
+                  "IdValue": "759c4411-93a5-4889-9344-681cd3d26348"
+                },
+                "Parent": {
+                  "Type": "GameObject",
+                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+                },
+                "PreviousElement": {
+                  "Type": "Component",
+                  "IdValue": "0c781ee5-94d5-44dd-b43c-223e686b594a"
+                },
+                "ContainerProperty": "Components",
+                "IsContainerArray": true,
+                "Data": {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "759c4411-93a5-4889-9344-681cd3d26348",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "CreateAttachments": false,
+                  "LodOverride": null,
+                  "MaterialGroup": null,
+                  "MaterialOverride": null,
+                  "Materials": null,
+                  "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "0.27684,0.66977,0.13395,1"
+                }
+              },
+              {
+                "Id": {
+                  "Type": "Component",
+                  "IdValue": "af1606c3-d039-44b0-8472-1e5b4b545f4a"
+                },
+                "Parent": {
+                  "Type": "GameObject",
+                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+                },
+                "PreviousElement": {
+                  "Type": "Component",
+                  "IdValue": "759c4411-93a5-4889-9344-681cd3d26348"
+                },
+                "ContainerProperty": "Components",
+                "IsContainerArray": true,
+                "Data": {
+                  "__type": "Sandbox.ModelCollider",
+                  "__guid": "af1606c3-d039-44b0-8472-1e5b4b545f4a",
+                  "__enabled": true,
+                  "ColliderFlags": 0,
+                  "Elasticity": null,
+                  "Friction": null,
+                  "IsTrigger": false,
+                  "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OnObjectTriggerEnter": null,
+                  "OnObjectTriggerExit": null,
+                  "OnTriggerEnter": null,
+                  "OnTriggerExit": null,
+                  "RollingResistance": null,
+                  "Static": false,
+                  "Surface": null,
+                  "SurfaceVelocity": "0,0,0"
+                }
+              },
+              {
+                "Id": {
+                  "Type": "Component",
+                  "IdValue": "0676bca0-129a-4ea7-88fc-36b27c6d3893"
+                },
+                "Parent": {
+                  "Type": "GameObject",
+                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+                },
+                "PreviousElement": {
+                  "Type": "Component",
+                  "IdValue": "af1606c3-d039-44b0-8472-1e5b4b545f4a"
+                },
+                "ContainerProperty": "Components",
+                "IsContainerArray": true,
+                "Data": {
+                  "__type": "Sandbox.Rigidbody",
+                  "__guid": "0676bca0-129a-4ea7-88fc-36b27c6d3893",
+                  "__enabled": true,
+                  "AngularDamping": 0,
+                  "EnableImpactDamage": true,
+                  "Gravity": true,
+                  "GravityScale": 1,
+                  "ImpactDamage": 0,
+                  "LinearDamping": 0,
+                  "Locking": {
+                    "X": false,
+                    "Y": false,
+                    "Z": false,
+                    "Pitch": false,
+                    "Yaw": false,
+                    "Roll": false
+                  },
+                  "MassCenterOverride": "0,0,0",
+                  "MassOverride": 0,
+                  "MinImpactDamageSpeed": 500,
+                  "MotionEnabled": true,
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OverrideMassCenter": false,
+                  "RigidbodyFlags": 0,
+                  "StartAsleep": false
+                }
+              }
+            ],
             "RemovedObjects": [
               {
                 "Id": {
@@ -17131,7 +17697,138 @@
           "__version": 1,
           "__Prefab": "prefabs/props/palm.prefab",
           "__PrefabInstancePatch": {
-            "AddedObjects": [],
+            "AddedObjects": [
+              {
+                "Id": {
+                  "Type": "Component",
+                  "IdValue": "b08f3f68-fae7-47bc-95ef-1bbf1a6f5ca1"
+                },
+                "Parent": {
+                  "Type": "GameObject",
+                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+                },
+                "PreviousElement": {
+                  "Type": "Component",
+                  "IdValue": "0c781ee5-94d5-44dd-b43c-223e686b594a"
+                },
+                "ContainerProperty": "Components",
+                "IsContainerArray": true,
+                "Data": {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "b08f3f68-fae7-47bc-95ef-1bbf1a6f5ca1",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "CreateAttachments": false,
+                  "LodOverride": null,
+                  "MaterialGroup": null,
+                  "MaterialOverride": null,
+                  "Materials": null,
+                  "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "0.27684,0.66977,0.13395,1"
+                }
+              },
+              {
+                "Id": {
+                  "Type": "Component",
+                  "IdValue": "82aed15e-554c-4ee4-83e2-b8dda31a962f"
+                },
+                "Parent": {
+                  "Type": "GameObject",
+                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+                },
+                "PreviousElement": {
+                  "Type": "Component",
+                  "IdValue": "b08f3f68-fae7-47bc-95ef-1bbf1a6f5ca1"
+                },
+                "ContainerProperty": "Components",
+                "IsContainerArray": true,
+                "Data": {
+                  "__type": "Sandbox.ModelCollider",
+                  "__guid": "82aed15e-554c-4ee4-83e2-b8dda31a962f",
+                  "__enabled": true,
+                  "ColliderFlags": 0,
+                  "Elasticity": null,
+                  "Friction": null,
+                  "IsTrigger": false,
+                  "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OnObjectTriggerEnter": null,
+                  "OnObjectTriggerExit": null,
+                  "OnTriggerEnter": null,
+                  "OnTriggerExit": null,
+                  "RollingResistance": null,
+                  "Static": false,
+                  "Surface": null,
+                  "SurfaceVelocity": "0,0,0"
+                }
+              },
+              {
+                "Id": {
+                  "Type": "Component",
+                  "IdValue": "41580efd-3658-4c68-aca1-79b3d039ac7f"
+                },
+                "Parent": {
+                  "Type": "GameObject",
+                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+                },
+                "PreviousElement": {
+                  "Type": "Component",
+                  "IdValue": "82aed15e-554c-4ee4-83e2-b8dda31a962f"
+                },
+                "ContainerProperty": "Components",
+                "IsContainerArray": true,
+                "Data": {
+                  "__type": "Sandbox.Rigidbody",
+                  "__guid": "41580efd-3658-4c68-aca1-79b3d039ac7f",
+                  "__enabled": true,
+                  "AngularDamping": 0,
+                  "EnableImpactDamage": true,
+                  "Gravity": true,
+                  "GravityScale": 1,
+                  "ImpactDamage": 0,
+                  "LinearDamping": 0,
+                  "Locking": {
+                    "X": false,
+                    "Y": false,
+                    "Z": false,
+                    "Pitch": false,
+                    "Yaw": false,
+                    "Roll": false
+                  },
+                  "MassCenterOverride": "0,0,0",
+                  "MassOverride": 0,
+                  "MinImpactDamageSpeed": 500,
+                  "MotionEnabled": true,
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OverrideMassCenter": false,
+                  "RigidbodyFlags": 0,
+                  "StartAsleep": false
+                }
+              }
+            ],
             "RemovedObjects": [
               {
                 "Id": {
@@ -17185,7 +17882,138 @@
           "__version": 1,
           "__Prefab": "prefabs/props/palm.prefab",
           "__PrefabInstancePatch": {
-            "AddedObjects": [],
+            "AddedObjects": [
+              {
+                "Id": {
+                  "Type": "Component",
+                  "IdValue": "b30f1de2-b8fc-4084-981f-cb421a06aaf0"
+                },
+                "Parent": {
+                  "Type": "GameObject",
+                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+                },
+                "PreviousElement": {
+                  "Type": "Component",
+                  "IdValue": "0c781ee5-94d5-44dd-b43c-223e686b594a"
+                },
+                "ContainerProperty": "Components",
+                "IsContainerArray": true,
+                "Data": {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "b30f1de2-b8fc-4084-981f-cb421a06aaf0",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "CreateAttachments": false,
+                  "LodOverride": null,
+                  "MaterialGroup": null,
+                  "MaterialOverride": null,
+                  "Materials": null,
+                  "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "0.27684,0.66977,0.13395,1"
+                }
+              },
+              {
+                "Id": {
+                  "Type": "Component",
+                  "IdValue": "2332e699-69ef-4ccd-a387-e9f666bd1b95"
+                },
+                "Parent": {
+                  "Type": "GameObject",
+                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+                },
+                "PreviousElement": {
+                  "Type": "Component",
+                  "IdValue": "b30f1de2-b8fc-4084-981f-cb421a06aaf0"
+                },
+                "ContainerProperty": "Components",
+                "IsContainerArray": true,
+                "Data": {
+                  "__type": "Sandbox.ModelCollider",
+                  "__guid": "2332e699-69ef-4ccd-a387-e9f666bd1b95",
+                  "__enabled": true,
+                  "ColliderFlags": 0,
+                  "Elasticity": null,
+                  "Friction": null,
+                  "IsTrigger": false,
+                  "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OnObjectTriggerEnter": null,
+                  "OnObjectTriggerExit": null,
+                  "OnTriggerEnter": null,
+                  "OnTriggerExit": null,
+                  "RollingResistance": null,
+                  "Static": false,
+                  "Surface": null,
+                  "SurfaceVelocity": "0,0,0"
+                }
+              },
+              {
+                "Id": {
+                  "Type": "Component",
+                  "IdValue": "64d35145-03d2-4c74-bb12-bea569ff5a49"
+                },
+                "Parent": {
+                  "Type": "GameObject",
+                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+                },
+                "PreviousElement": {
+                  "Type": "Component",
+                  "IdValue": "2332e699-69ef-4ccd-a387-e9f666bd1b95"
+                },
+                "ContainerProperty": "Components",
+                "IsContainerArray": true,
+                "Data": {
+                  "__type": "Sandbox.Rigidbody",
+                  "__guid": "64d35145-03d2-4c74-bb12-bea569ff5a49",
+                  "__enabled": true,
+                  "AngularDamping": 0,
+                  "EnableImpactDamage": true,
+                  "Gravity": true,
+                  "GravityScale": 1,
+                  "ImpactDamage": 0,
+                  "LinearDamping": 0,
+                  "Locking": {
+                    "X": false,
+                    "Y": false,
+                    "Z": false,
+                    "Pitch": false,
+                    "Yaw": false,
+                    "Roll": false
+                  },
+                  "MassCenterOverride": "0,0,0",
+                  "MassOverride": 0,
+                  "MinImpactDamageSpeed": 500,
+                  "MotionEnabled": true,
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OverrideMassCenter": false,
+                  "RigidbodyFlags": 0,
+                  "StartAsleep": false
+                }
+              }
+            ],
             "RemovedObjects": [
               {
                 "Id": {
@@ -17239,7 +18067,138 @@
           "__version": 1,
           "__Prefab": "prefabs/props/palm.prefab",
           "__PrefabInstancePatch": {
-            "AddedObjects": [],
+            "AddedObjects": [
+              {
+                "Id": {
+                  "Type": "Component",
+                  "IdValue": "28db0cde-712f-4ed1-8492-180cc2a824f8"
+                },
+                "Parent": {
+                  "Type": "GameObject",
+                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+                },
+                "PreviousElement": {
+                  "Type": "Component",
+                  "IdValue": "0c781ee5-94d5-44dd-b43c-223e686b594a"
+                },
+                "ContainerProperty": "Components",
+                "IsContainerArray": true,
+                "Data": {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "28db0cde-712f-4ed1-8492-180cc2a824f8",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "CreateAttachments": false,
+                  "LodOverride": null,
+                  "MaterialGroup": null,
+                  "MaterialOverride": null,
+                  "Materials": null,
+                  "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "0.27684,0.66977,0.13395,1"
+                }
+              },
+              {
+                "Id": {
+                  "Type": "Component",
+                  "IdValue": "d8d4bfd1-cf30-4497-a6b5-3f129173cddb"
+                },
+                "Parent": {
+                  "Type": "GameObject",
+                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+                },
+                "PreviousElement": {
+                  "Type": "Component",
+                  "IdValue": "28db0cde-712f-4ed1-8492-180cc2a824f8"
+                },
+                "ContainerProperty": "Components",
+                "IsContainerArray": true,
+                "Data": {
+                  "__type": "Sandbox.ModelCollider",
+                  "__guid": "d8d4bfd1-cf30-4497-a6b5-3f129173cddb",
+                  "__enabled": true,
+                  "ColliderFlags": 0,
+                  "Elasticity": null,
+                  "Friction": null,
+                  "IsTrigger": false,
+                  "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OnObjectTriggerEnter": null,
+                  "OnObjectTriggerExit": null,
+                  "OnTriggerEnter": null,
+                  "OnTriggerExit": null,
+                  "RollingResistance": null,
+                  "Static": false,
+                  "Surface": null,
+                  "SurfaceVelocity": "0,0,0"
+                }
+              },
+              {
+                "Id": {
+                  "Type": "Component",
+                  "IdValue": "3d4416a3-671d-494f-87a7-041d632e5cae"
+                },
+                "Parent": {
+                  "Type": "GameObject",
+                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+                },
+                "PreviousElement": {
+                  "Type": "Component",
+                  "IdValue": "d8d4bfd1-cf30-4497-a6b5-3f129173cddb"
+                },
+                "ContainerProperty": "Components",
+                "IsContainerArray": true,
+                "Data": {
+                  "__type": "Sandbox.Rigidbody",
+                  "__guid": "3d4416a3-671d-494f-87a7-041d632e5cae",
+                  "__enabled": true,
+                  "AngularDamping": 0,
+                  "EnableImpactDamage": true,
+                  "Gravity": true,
+                  "GravityScale": 1,
+                  "ImpactDamage": 0,
+                  "LinearDamping": 0,
+                  "Locking": {
+                    "X": false,
+                    "Y": false,
+                    "Z": false,
+                    "Pitch": false,
+                    "Yaw": false,
+                    "Roll": false
+                  },
+                  "MassCenterOverride": "0,0,0",
+                  "MassOverride": 0,
+                  "MinImpactDamageSpeed": 500,
+                  "MotionEnabled": true,
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OverrideMassCenter": false,
+                  "RigidbodyFlags": 0,
+                  "StartAsleep": false
+                }
+              }
+            ],
             "RemovedObjects": [
               {
                 "Id": {
@@ -17293,7 +18252,138 @@
           "__version": 1,
           "__Prefab": "prefabs/props/palm.prefab",
           "__PrefabInstancePatch": {
-            "AddedObjects": [],
+            "AddedObjects": [
+              {
+                "Id": {
+                  "Type": "Component",
+                  "IdValue": "6e35c9fb-313b-40ea-9cda-ef0b0abb62d6"
+                },
+                "Parent": {
+                  "Type": "GameObject",
+                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+                },
+                "PreviousElement": {
+                  "Type": "Component",
+                  "IdValue": "0c781ee5-94d5-44dd-b43c-223e686b594a"
+                },
+                "ContainerProperty": "Components",
+                "IsContainerArray": true,
+                "Data": {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "6e35c9fb-313b-40ea-9cda-ef0b0abb62d6",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "CreateAttachments": false,
+                  "LodOverride": null,
+                  "MaterialGroup": null,
+                  "MaterialOverride": null,
+                  "Materials": null,
+                  "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "0.27684,0.66977,0.13395,1"
+                }
+              },
+              {
+                "Id": {
+                  "Type": "Component",
+                  "IdValue": "af24e650-ee11-4290-a1b7-dcd93452349f"
+                },
+                "Parent": {
+                  "Type": "GameObject",
+                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+                },
+                "PreviousElement": {
+                  "Type": "Component",
+                  "IdValue": "6e35c9fb-313b-40ea-9cda-ef0b0abb62d6"
+                },
+                "ContainerProperty": "Components",
+                "IsContainerArray": true,
+                "Data": {
+                  "__type": "Sandbox.ModelCollider",
+                  "__guid": "af24e650-ee11-4290-a1b7-dcd93452349f",
+                  "__enabled": true,
+                  "ColliderFlags": 0,
+                  "Elasticity": null,
+                  "Friction": null,
+                  "IsTrigger": false,
+                  "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OnObjectTriggerEnter": null,
+                  "OnObjectTriggerExit": null,
+                  "OnTriggerEnter": null,
+                  "OnTriggerExit": null,
+                  "RollingResistance": null,
+                  "Static": false,
+                  "Surface": null,
+                  "SurfaceVelocity": "0,0,0"
+                }
+              },
+              {
+                "Id": {
+                  "Type": "Component",
+                  "IdValue": "363f37c9-3308-4545-b223-d80974d8804b"
+                },
+                "Parent": {
+                  "Type": "GameObject",
+                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+                },
+                "PreviousElement": {
+                  "Type": "Component",
+                  "IdValue": "af24e650-ee11-4290-a1b7-dcd93452349f"
+                },
+                "ContainerProperty": "Components",
+                "IsContainerArray": true,
+                "Data": {
+                  "__type": "Sandbox.Rigidbody",
+                  "__guid": "363f37c9-3308-4545-b223-d80974d8804b",
+                  "__enabled": true,
+                  "AngularDamping": 0,
+                  "EnableImpactDamage": true,
+                  "Gravity": true,
+                  "GravityScale": 1,
+                  "ImpactDamage": 0,
+                  "LinearDamping": 0,
+                  "Locking": {
+                    "X": false,
+                    "Y": false,
+                    "Z": false,
+                    "Pitch": false,
+                    "Yaw": false,
+                    "Roll": false
+                  },
+                  "MassCenterOverride": "0,0,0",
+                  "MassOverride": 0,
+                  "MinImpactDamageSpeed": 500,
+                  "MotionEnabled": true,
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OverrideMassCenter": false,
+                  "RigidbodyFlags": 0,
+                  "StartAsleep": false
+                }
+              }
+            ],
             "RemovedObjects": [
               {
                 "Id": {
@@ -17347,7 +18437,138 @@
           "__version": 1,
           "__Prefab": "prefabs/props/palm.prefab",
           "__PrefabInstancePatch": {
-            "AddedObjects": [],
+            "AddedObjects": [
+              {
+                "Id": {
+                  "Type": "Component",
+                  "IdValue": "5ef65d58-10ce-49e3-a6de-be401045cde8"
+                },
+                "Parent": {
+                  "Type": "GameObject",
+                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+                },
+                "PreviousElement": {
+                  "Type": "Component",
+                  "IdValue": "0c781ee5-94d5-44dd-b43c-223e686b594a"
+                },
+                "ContainerProperty": "Components",
+                "IsContainerArray": true,
+                "Data": {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "5ef65d58-10ce-49e3-a6de-be401045cde8",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "CreateAttachments": false,
+                  "LodOverride": null,
+                  "MaterialGroup": null,
+                  "MaterialOverride": null,
+                  "Materials": null,
+                  "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "0.27684,0.66977,0.13395,1"
+                }
+              },
+              {
+                "Id": {
+                  "Type": "Component",
+                  "IdValue": "60ff1553-1907-4c9f-b58b-b0208ce712f9"
+                },
+                "Parent": {
+                  "Type": "GameObject",
+                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+                },
+                "PreviousElement": {
+                  "Type": "Component",
+                  "IdValue": "5ef65d58-10ce-49e3-a6de-be401045cde8"
+                },
+                "ContainerProperty": "Components",
+                "IsContainerArray": true,
+                "Data": {
+                  "__type": "Sandbox.ModelCollider",
+                  "__guid": "60ff1553-1907-4c9f-b58b-b0208ce712f9",
+                  "__enabled": true,
+                  "ColliderFlags": 0,
+                  "Elasticity": null,
+                  "Friction": null,
+                  "IsTrigger": false,
+                  "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OnObjectTriggerEnter": null,
+                  "OnObjectTriggerExit": null,
+                  "OnTriggerEnter": null,
+                  "OnTriggerExit": null,
+                  "RollingResistance": null,
+                  "Static": false,
+                  "Surface": null,
+                  "SurfaceVelocity": "0,0,0"
+                }
+              },
+              {
+                "Id": {
+                  "Type": "Component",
+                  "IdValue": "bdb45c0b-862f-41f2-b14c-886216f89ea1"
+                },
+                "Parent": {
+                  "Type": "GameObject",
+                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+                },
+                "PreviousElement": {
+                  "Type": "Component",
+                  "IdValue": "60ff1553-1907-4c9f-b58b-b0208ce712f9"
+                },
+                "ContainerProperty": "Components",
+                "IsContainerArray": true,
+                "Data": {
+                  "__type": "Sandbox.Rigidbody",
+                  "__guid": "bdb45c0b-862f-41f2-b14c-886216f89ea1",
+                  "__enabled": true,
+                  "AngularDamping": 0,
+                  "EnableImpactDamage": true,
+                  "Gravity": true,
+                  "GravityScale": 1,
+                  "ImpactDamage": 0,
+                  "LinearDamping": 0,
+                  "Locking": {
+                    "X": false,
+                    "Y": false,
+                    "Z": false,
+                    "Pitch": false,
+                    "Yaw": false,
+                    "Roll": false
+                  },
+                  "MassCenterOverride": "0,0,0",
+                  "MassOverride": 0,
+                  "MinImpactDamageSpeed": 500,
+                  "MotionEnabled": true,
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OverrideMassCenter": false,
+                  "RigidbodyFlags": 0,
+                  "StartAsleep": false
+                }
+              }
+            ],
             "RemovedObjects": [
               {
                 "Id": {
@@ -17401,7 +18622,138 @@
           "__version": 1,
           "__Prefab": "prefabs/props/palm.prefab",
           "__PrefabInstancePatch": {
-            "AddedObjects": [],
+            "AddedObjects": [
+              {
+                "Id": {
+                  "Type": "Component",
+                  "IdValue": "b45478d8-a624-43ca-96a7-ba5b45404db3"
+                },
+                "Parent": {
+                  "Type": "GameObject",
+                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+                },
+                "PreviousElement": {
+                  "Type": "Component",
+                  "IdValue": "0c781ee5-94d5-44dd-b43c-223e686b594a"
+                },
+                "ContainerProperty": "Components",
+                "IsContainerArray": true,
+                "Data": {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "b45478d8-a624-43ca-96a7-ba5b45404db3",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "CreateAttachments": false,
+                  "LodOverride": null,
+                  "MaterialGroup": null,
+                  "MaterialOverride": null,
+                  "Materials": null,
+                  "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "0.27684,0.66977,0.13395,1"
+                }
+              },
+              {
+                "Id": {
+                  "Type": "Component",
+                  "IdValue": "29ae49ff-78ac-4380-8533-46ae5bfba7e2"
+                },
+                "Parent": {
+                  "Type": "GameObject",
+                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+                },
+                "PreviousElement": {
+                  "Type": "Component",
+                  "IdValue": "b45478d8-a624-43ca-96a7-ba5b45404db3"
+                },
+                "ContainerProperty": "Components",
+                "IsContainerArray": true,
+                "Data": {
+                  "__type": "Sandbox.ModelCollider",
+                  "__guid": "29ae49ff-78ac-4380-8533-46ae5bfba7e2",
+                  "__enabled": true,
+                  "ColliderFlags": 0,
+                  "Elasticity": null,
+                  "Friction": null,
+                  "IsTrigger": false,
+                  "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OnObjectTriggerEnter": null,
+                  "OnObjectTriggerExit": null,
+                  "OnTriggerEnter": null,
+                  "OnTriggerExit": null,
+                  "RollingResistance": null,
+                  "Static": false,
+                  "Surface": null,
+                  "SurfaceVelocity": "0,0,0"
+                }
+              },
+              {
+                "Id": {
+                  "Type": "Component",
+                  "IdValue": "2f64c815-4941-4379-98fe-ed7088c52988"
+                },
+                "Parent": {
+                  "Type": "GameObject",
+                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+                },
+                "PreviousElement": {
+                  "Type": "Component",
+                  "IdValue": "29ae49ff-78ac-4380-8533-46ae5bfba7e2"
+                },
+                "ContainerProperty": "Components",
+                "IsContainerArray": true,
+                "Data": {
+                  "__type": "Sandbox.Rigidbody",
+                  "__guid": "2f64c815-4941-4379-98fe-ed7088c52988",
+                  "__enabled": true,
+                  "AngularDamping": 0,
+                  "EnableImpactDamage": true,
+                  "Gravity": true,
+                  "GravityScale": 1,
+                  "ImpactDamage": 0,
+                  "LinearDamping": 0,
+                  "Locking": {
+                    "X": false,
+                    "Y": false,
+                    "Z": false,
+                    "Pitch": false,
+                    "Yaw": false,
+                    "Roll": false
+                  },
+                  "MassCenterOverride": "0,0,0",
+                  "MassOverride": 0,
+                  "MinImpactDamageSpeed": 500,
+                  "MotionEnabled": true,
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OverrideMassCenter": false,
+                  "RigidbodyFlags": 0,
+                  "StartAsleep": false
+                }
+              }
+            ],
             "RemovedObjects": [
               {
                 "Id": {
@@ -17455,7 +18807,138 @@
           "__version": 1,
           "__Prefab": "prefabs/props/palm.prefab",
           "__PrefabInstancePatch": {
-            "AddedObjects": [],
+            "AddedObjects": [
+              {
+                "Id": {
+                  "Type": "Component",
+                  "IdValue": "dfb53473-48a8-469d-a912-db940fc6a787"
+                },
+                "Parent": {
+                  "Type": "GameObject",
+                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+                },
+                "PreviousElement": {
+                  "Type": "Component",
+                  "IdValue": "0c781ee5-94d5-44dd-b43c-223e686b594a"
+                },
+                "ContainerProperty": "Components",
+                "IsContainerArray": true,
+                "Data": {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "dfb53473-48a8-469d-a912-db940fc6a787",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "CreateAttachments": false,
+                  "LodOverride": null,
+                  "MaterialGroup": null,
+                  "MaterialOverride": null,
+                  "Materials": null,
+                  "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "0.27684,0.66977,0.13395,1"
+                }
+              },
+              {
+                "Id": {
+                  "Type": "Component",
+                  "IdValue": "4d28aa73-1f91-4319-b8c0-b3060a2af3a5"
+                },
+                "Parent": {
+                  "Type": "GameObject",
+                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+                },
+                "PreviousElement": {
+                  "Type": "Component",
+                  "IdValue": "dfb53473-48a8-469d-a912-db940fc6a787"
+                },
+                "ContainerProperty": "Components",
+                "IsContainerArray": true,
+                "Data": {
+                  "__type": "Sandbox.ModelCollider",
+                  "__guid": "4d28aa73-1f91-4319-b8c0-b3060a2af3a5",
+                  "__enabled": true,
+                  "ColliderFlags": 0,
+                  "Elasticity": null,
+                  "Friction": null,
+                  "IsTrigger": false,
+                  "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OnObjectTriggerEnter": null,
+                  "OnObjectTriggerExit": null,
+                  "OnTriggerEnter": null,
+                  "OnTriggerExit": null,
+                  "RollingResistance": null,
+                  "Static": false,
+                  "Surface": null,
+                  "SurfaceVelocity": "0,0,0"
+                }
+              },
+              {
+                "Id": {
+                  "Type": "Component",
+                  "IdValue": "8704b0fc-dd83-40a9-8829-e70e8dec44fd"
+                },
+                "Parent": {
+                  "Type": "GameObject",
+                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+                },
+                "PreviousElement": {
+                  "Type": "Component",
+                  "IdValue": "4d28aa73-1f91-4319-b8c0-b3060a2af3a5"
+                },
+                "ContainerProperty": "Components",
+                "IsContainerArray": true,
+                "Data": {
+                  "__type": "Sandbox.Rigidbody",
+                  "__guid": "8704b0fc-dd83-40a9-8829-e70e8dec44fd",
+                  "__enabled": true,
+                  "AngularDamping": 0,
+                  "EnableImpactDamage": true,
+                  "Gravity": true,
+                  "GravityScale": 1,
+                  "ImpactDamage": 0,
+                  "LinearDamping": 0,
+                  "Locking": {
+                    "X": false,
+                    "Y": false,
+                    "Z": false,
+                    "Pitch": false,
+                    "Yaw": false,
+                    "Roll": false
+                  },
+                  "MassCenterOverride": "0,0,0",
+                  "MassOverride": 0,
+                  "MinImpactDamageSpeed": 500,
+                  "MotionEnabled": true,
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OverrideMassCenter": false,
+                  "RigidbodyFlags": 0,
+                  "StartAsleep": false
+                }
+              }
+            ],
             "RemovedObjects": [
               {
                 "Id": {
@@ -17509,7 +18992,138 @@
           "__version": 1,
           "__Prefab": "prefabs/props/palm.prefab",
           "__PrefabInstancePatch": {
-            "AddedObjects": [],
+            "AddedObjects": [
+              {
+                "Id": {
+                  "Type": "Component",
+                  "IdValue": "4ca9012d-2263-4301-b5ab-04aeff941a74"
+                },
+                "Parent": {
+                  "Type": "GameObject",
+                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+                },
+                "PreviousElement": {
+                  "Type": "Component",
+                  "IdValue": "0c781ee5-94d5-44dd-b43c-223e686b594a"
+                },
+                "ContainerProperty": "Components",
+                "IsContainerArray": true,
+                "Data": {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "4ca9012d-2263-4301-b5ab-04aeff941a74",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "CreateAttachments": false,
+                  "LodOverride": null,
+                  "MaterialGroup": null,
+                  "MaterialOverride": null,
+                  "Materials": null,
+                  "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "0.27684,0.66977,0.13395,1"
+                }
+              },
+              {
+                "Id": {
+                  "Type": "Component",
+                  "IdValue": "a89f8c2d-a10c-405c-b092-008ac8d537ae"
+                },
+                "Parent": {
+                  "Type": "GameObject",
+                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+                },
+                "PreviousElement": {
+                  "Type": "Component",
+                  "IdValue": "4ca9012d-2263-4301-b5ab-04aeff941a74"
+                },
+                "ContainerProperty": "Components",
+                "IsContainerArray": true,
+                "Data": {
+                  "__type": "Sandbox.ModelCollider",
+                  "__guid": "a89f8c2d-a10c-405c-b092-008ac8d537ae",
+                  "__enabled": true,
+                  "ColliderFlags": 0,
+                  "Elasticity": null,
+                  "Friction": null,
+                  "IsTrigger": false,
+                  "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OnObjectTriggerEnter": null,
+                  "OnObjectTriggerExit": null,
+                  "OnTriggerEnter": null,
+                  "OnTriggerExit": null,
+                  "RollingResistance": null,
+                  "Static": false,
+                  "Surface": null,
+                  "SurfaceVelocity": "0,0,0"
+                }
+              },
+              {
+                "Id": {
+                  "Type": "Component",
+                  "IdValue": "b239b34f-37a7-4dc1-9e11-999fcfce03b9"
+                },
+                "Parent": {
+                  "Type": "GameObject",
+                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+                },
+                "PreviousElement": {
+                  "Type": "Component",
+                  "IdValue": "a89f8c2d-a10c-405c-b092-008ac8d537ae"
+                },
+                "ContainerProperty": "Components",
+                "IsContainerArray": true,
+                "Data": {
+                  "__type": "Sandbox.Rigidbody",
+                  "__guid": "b239b34f-37a7-4dc1-9e11-999fcfce03b9",
+                  "__enabled": true,
+                  "AngularDamping": 0,
+                  "EnableImpactDamage": true,
+                  "Gravity": true,
+                  "GravityScale": 1,
+                  "ImpactDamage": 0,
+                  "LinearDamping": 0,
+                  "Locking": {
+                    "X": false,
+                    "Y": false,
+                    "Z": false,
+                    "Pitch": false,
+                    "Yaw": false,
+                    "Roll": false
+                  },
+                  "MassCenterOverride": "0,0,0",
+                  "MassOverride": 0,
+                  "MinImpactDamageSpeed": 500,
+                  "MotionEnabled": true,
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OverrideMassCenter": false,
+                  "RigidbodyFlags": 0,
+                  "StartAsleep": false
+                }
+              }
+            ],
             "RemovedObjects": [
               {
                 "Id": {
@@ -17563,7 +19177,138 @@
           "__version": 1,
           "__Prefab": "prefabs/props/palm.prefab",
           "__PrefabInstancePatch": {
-            "AddedObjects": [],
+            "AddedObjects": [
+              {
+                "Id": {
+                  "Type": "Component",
+                  "IdValue": "ac975ba8-951d-40b5-94ed-5131cdfbc170"
+                },
+                "Parent": {
+                  "Type": "GameObject",
+                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+                },
+                "PreviousElement": {
+                  "Type": "Component",
+                  "IdValue": "0c781ee5-94d5-44dd-b43c-223e686b594a"
+                },
+                "ContainerProperty": "Components",
+                "IsContainerArray": true,
+                "Data": {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "ac975ba8-951d-40b5-94ed-5131cdfbc170",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "CreateAttachments": false,
+                  "LodOverride": null,
+                  "MaterialGroup": null,
+                  "MaterialOverride": null,
+                  "Materials": null,
+                  "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "0.27684,0.66977,0.13395,1"
+                }
+              },
+              {
+                "Id": {
+                  "Type": "Component",
+                  "IdValue": "1913839a-dfa2-4b72-b465-319a1bfa1c3d"
+                },
+                "Parent": {
+                  "Type": "GameObject",
+                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+                },
+                "PreviousElement": {
+                  "Type": "Component",
+                  "IdValue": "ac975ba8-951d-40b5-94ed-5131cdfbc170"
+                },
+                "ContainerProperty": "Components",
+                "IsContainerArray": true,
+                "Data": {
+                  "__type": "Sandbox.ModelCollider",
+                  "__guid": "1913839a-dfa2-4b72-b465-319a1bfa1c3d",
+                  "__enabled": true,
+                  "ColliderFlags": 0,
+                  "Elasticity": null,
+                  "Friction": null,
+                  "IsTrigger": false,
+                  "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OnObjectTriggerEnter": null,
+                  "OnObjectTriggerExit": null,
+                  "OnTriggerEnter": null,
+                  "OnTriggerExit": null,
+                  "RollingResistance": null,
+                  "Static": false,
+                  "Surface": null,
+                  "SurfaceVelocity": "0,0,0"
+                }
+              },
+              {
+                "Id": {
+                  "Type": "Component",
+                  "IdValue": "dded3133-4a5c-4cb3-9add-dcde488073a1"
+                },
+                "Parent": {
+                  "Type": "GameObject",
+                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+                },
+                "PreviousElement": {
+                  "Type": "Component",
+                  "IdValue": "1913839a-dfa2-4b72-b465-319a1bfa1c3d"
+                },
+                "ContainerProperty": "Components",
+                "IsContainerArray": true,
+                "Data": {
+                  "__type": "Sandbox.Rigidbody",
+                  "__guid": "dded3133-4a5c-4cb3-9add-dcde488073a1",
+                  "__enabled": true,
+                  "AngularDamping": 0,
+                  "EnableImpactDamage": true,
+                  "Gravity": true,
+                  "GravityScale": 1,
+                  "ImpactDamage": 0,
+                  "LinearDamping": 0,
+                  "Locking": {
+                    "X": false,
+                    "Y": false,
+                    "Z": false,
+                    "Pitch": false,
+                    "Yaw": false,
+                    "Roll": false
+                  },
+                  "MassCenterOverride": "0,0,0",
+                  "MassOverride": 0,
+                  "MinImpactDamageSpeed": 500,
+                  "MotionEnabled": true,
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OverrideMassCenter": false,
+                  "RigidbodyFlags": 0,
+                  "StartAsleep": false
+                }
+              }
+            ],
             "RemovedObjects": [
               {
                 "Id": {
@@ -17617,7 +19362,138 @@
           "__version": 1,
           "__Prefab": "prefabs/props/palm.prefab",
           "__PrefabInstancePatch": {
-            "AddedObjects": [],
+            "AddedObjects": [
+              {
+                "Id": {
+                  "Type": "Component",
+                  "IdValue": "0d9d154a-e048-4575-aeef-ced0596246cb"
+                },
+                "Parent": {
+                  "Type": "GameObject",
+                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+                },
+                "PreviousElement": {
+                  "Type": "Component",
+                  "IdValue": "0c781ee5-94d5-44dd-b43c-223e686b594a"
+                },
+                "ContainerProperty": "Components",
+                "IsContainerArray": true,
+                "Data": {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "0d9d154a-e048-4575-aeef-ced0596246cb",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "CreateAttachments": false,
+                  "LodOverride": null,
+                  "MaterialGroup": null,
+                  "MaterialOverride": null,
+                  "Materials": null,
+                  "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "0.27684,0.66977,0.13395,1"
+                }
+              },
+              {
+                "Id": {
+                  "Type": "Component",
+                  "IdValue": "42029c16-1166-42fb-bc19-5574c35c6f13"
+                },
+                "Parent": {
+                  "Type": "GameObject",
+                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+                },
+                "PreviousElement": {
+                  "Type": "Component",
+                  "IdValue": "0d9d154a-e048-4575-aeef-ced0596246cb"
+                },
+                "ContainerProperty": "Components",
+                "IsContainerArray": true,
+                "Data": {
+                  "__type": "Sandbox.ModelCollider",
+                  "__guid": "42029c16-1166-42fb-bc19-5574c35c6f13",
+                  "__enabled": true,
+                  "ColliderFlags": 0,
+                  "Elasticity": null,
+                  "Friction": null,
+                  "IsTrigger": false,
+                  "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OnObjectTriggerEnter": null,
+                  "OnObjectTriggerExit": null,
+                  "OnTriggerEnter": null,
+                  "OnTriggerExit": null,
+                  "RollingResistance": null,
+                  "Static": false,
+                  "Surface": null,
+                  "SurfaceVelocity": "0,0,0"
+                }
+              },
+              {
+                "Id": {
+                  "Type": "Component",
+                  "IdValue": "5554dd3c-1988-4d10-9a56-fcf81914c615"
+                },
+                "Parent": {
+                  "Type": "GameObject",
+                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+                },
+                "PreviousElement": {
+                  "Type": "Component",
+                  "IdValue": "42029c16-1166-42fb-bc19-5574c35c6f13"
+                },
+                "ContainerProperty": "Components",
+                "IsContainerArray": true,
+                "Data": {
+                  "__type": "Sandbox.Rigidbody",
+                  "__guid": "5554dd3c-1988-4d10-9a56-fcf81914c615",
+                  "__enabled": true,
+                  "AngularDamping": 0,
+                  "EnableImpactDamage": true,
+                  "Gravity": true,
+                  "GravityScale": 1,
+                  "ImpactDamage": 0,
+                  "LinearDamping": 0,
+                  "Locking": {
+                    "X": false,
+                    "Y": false,
+                    "Z": false,
+                    "Pitch": false,
+                    "Yaw": false,
+                    "Roll": false
+                  },
+                  "MassCenterOverride": "0,0,0",
+                  "MassOverride": 0,
+                  "MinImpactDamageSpeed": 500,
+                  "MotionEnabled": true,
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OverrideMassCenter": false,
+                  "RigidbodyFlags": 0,
+                  "StartAsleep": false
+                }
+              }
+            ],
             "RemovedObjects": [
               {
                 "Id": {
@@ -17671,7 +19547,138 @@
           "__version": 1,
           "__Prefab": "prefabs/props/palm.prefab",
           "__PrefabInstancePatch": {
-            "AddedObjects": [],
+            "AddedObjects": [
+              {
+                "Id": {
+                  "Type": "Component",
+                  "IdValue": "2f84eb75-7fb6-43ed-80b8-583758c0bbb9"
+                },
+                "Parent": {
+                  "Type": "GameObject",
+                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+                },
+                "PreviousElement": {
+                  "Type": "Component",
+                  "IdValue": "0c781ee5-94d5-44dd-b43c-223e686b594a"
+                },
+                "ContainerProperty": "Components",
+                "IsContainerArray": true,
+                "Data": {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "2f84eb75-7fb6-43ed-80b8-583758c0bbb9",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "CreateAttachments": false,
+                  "LodOverride": null,
+                  "MaterialGroup": null,
+                  "MaterialOverride": null,
+                  "Materials": null,
+                  "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "0.27684,0.66977,0.13395,1"
+                }
+              },
+              {
+                "Id": {
+                  "Type": "Component",
+                  "IdValue": "39fbec7d-cea6-4b05-bd87-57730bf46ac0"
+                },
+                "Parent": {
+                  "Type": "GameObject",
+                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+                },
+                "PreviousElement": {
+                  "Type": "Component",
+                  "IdValue": "2f84eb75-7fb6-43ed-80b8-583758c0bbb9"
+                },
+                "ContainerProperty": "Components",
+                "IsContainerArray": true,
+                "Data": {
+                  "__type": "Sandbox.ModelCollider",
+                  "__guid": "39fbec7d-cea6-4b05-bd87-57730bf46ac0",
+                  "__enabled": true,
+                  "ColliderFlags": 0,
+                  "Elasticity": null,
+                  "Friction": null,
+                  "IsTrigger": false,
+                  "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OnObjectTriggerEnter": null,
+                  "OnObjectTriggerExit": null,
+                  "OnTriggerEnter": null,
+                  "OnTriggerExit": null,
+                  "RollingResistance": null,
+                  "Static": false,
+                  "Surface": null,
+                  "SurfaceVelocity": "0,0,0"
+                }
+              },
+              {
+                "Id": {
+                  "Type": "Component",
+                  "IdValue": "80fe4cc7-e768-456e-a836-b9948afdae71"
+                },
+                "Parent": {
+                  "Type": "GameObject",
+                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+                },
+                "PreviousElement": {
+                  "Type": "Component",
+                  "IdValue": "39fbec7d-cea6-4b05-bd87-57730bf46ac0"
+                },
+                "ContainerProperty": "Components",
+                "IsContainerArray": true,
+                "Data": {
+                  "__type": "Sandbox.Rigidbody",
+                  "__guid": "80fe4cc7-e768-456e-a836-b9948afdae71",
+                  "__enabled": true,
+                  "AngularDamping": 0,
+                  "EnableImpactDamage": true,
+                  "Gravity": true,
+                  "GravityScale": 1,
+                  "ImpactDamage": 0,
+                  "LinearDamping": 0,
+                  "Locking": {
+                    "X": false,
+                    "Y": false,
+                    "Z": false,
+                    "Pitch": false,
+                    "Yaw": false,
+                    "Roll": false
+                  },
+                  "MassCenterOverride": "0,0,0",
+                  "MassOverride": 0,
+                  "MinImpactDamageSpeed": 500,
+                  "MotionEnabled": true,
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OverrideMassCenter": false,
+                  "RigidbodyFlags": 0,
+                  "StartAsleep": false
+                }
+              }
+            ],
             "RemovedObjects": [
               {
                 "Id": {
@@ -17725,7 +19732,138 @@
           "__version": 1,
           "__Prefab": "prefabs/props/palm.prefab",
           "__PrefabInstancePatch": {
-            "AddedObjects": [],
+            "AddedObjects": [
+              {
+                "Id": {
+                  "Type": "Component",
+                  "IdValue": "88521b4a-b8af-4cde-a50e-2c7ead086af2"
+                },
+                "Parent": {
+                  "Type": "GameObject",
+                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+                },
+                "PreviousElement": {
+                  "Type": "Component",
+                  "IdValue": "0c781ee5-94d5-44dd-b43c-223e686b594a"
+                },
+                "ContainerProperty": "Components",
+                "IsContainerArray": true,
+                "Data": {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "88521b4a-b8af-4cde-a50e-2c7ead086af2",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "CreateAttachments": false,
+                  "LodOverride": null,
+                  "MaterialGroup": null,
+                  "MaterialOverride": null,
+                  "Materials": null,
+                  "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "0.27684,0.66977,0.13395,1"
+                }
+              },
+              {
+                "Id": {
+                  "Type": "Component",
+                  "IdValue": "532d07d4-a7da-49d1-91ea-b16cdf3bdd34"
+                },
+                "Parent": {
+                  "Type": "GameObject",
+                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+                },
+                "PreviousElement": {
+                  "Type": "Component",
+                  "IdValue": "88521b4a-b8af-4cde-a50e-2c7ead086af2"
+                },
+                "ContainerProperty": "Components",
+                "IsContainerArray": true,
+                "Data": {
+                  "__type": "Sandbox.ModelCollider",
+                  "__guid": "532d07d4-a7da-49d1-91ea-b16cdf3bdd34",
+                  "__enabled": true,
+                  "ColliderFlags": 0,
+                  "Elasticity": null,
+                  "Friction": null,
+                  "IsTrigger": false,
+                  "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OnObjectTriggerEnter": null,
+                  "OnObjectTriggerExit": null,
+                  "OnTriggerEnter": null,
+                  "OnTriggerExit": null,
+                  "RollingResistance": null,
+                  "Static": false,
+                  "Surface": null,
+                  "SurfaceVelocity": "0,0,0"
+                }
+              },
+              {
+                "Id": {
+                  "Type": "Component",
+                  "IdValue": "2d525d79-3310-4c28-8904-cbc06e945dde"
+                },
+                "Parent": {
+                  "Type": "GameObject",
+                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+                },
+                "PreviousElement": {
+                  "Type": "Component",
+                  "IdValue": "532d07d4-a7da-49d1-91ea-b16cdf3bdd34"
+                },
+                "ContainerProperty": "Components",
+                "IsContainerArray": true,
+                "Data": {
+                  "__type": "Sandbox.Rigidbody",
+                  "__guid": "2d525d79-3310-4c28-8904-cbc06e945dde",
+                  "__enabled": true,
+                  "AngularDamping": 0,
+                  "EnableImpactDamage": true,
+                  "Gravity": true,
+                  "GravityScale": 1,
+                  "ImpactDamage": 0,
+                  "LinearDamping": 0,
+                  "Locking": {
+                    "X": false,
+                    "Y": false,
+                    "Z": false,
+                    "Pitch": false,
+                    "Yaw": false,
+                    "Roll": false
+                  },
+                  "MassCenterOverride": "0,0,0",
+                  "MassOverride": 0,
+                  "MinImpactDamageSpeed": 500,
+                  "MotionEnabled": true,
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OverrideMassCenter": false,
+                  "RigidbodyFlags": 0,
+                  "StartAsleep": false
+                }
+              }
+            ],
             "RemovedObjects": [
               {
                 "Id": {
@@ -17779,7 +19917,138 @@
           "__version": 1,
           "__Prefab": "prefabs/props/palm.prefab",
           "__PrefabInstancePatch": {
-            "AddedObjects": [],
+            "AddedObjects": [
+              {
+                "Id": {
+                  "Type": "Component",
+                  "IdValue": "76ab463c-26d2-4430-b212-49bf9094e6d3"
+                },
+                "Parent": {
+                  "Type": "GameObject",
+                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+                },
+                "PreviousElement": {
+                  "Type": "Component",
+                  "IdValue": "0c781ee5-94d5-44dd-b43c-223e686b594a"
+                },
+                "ContainerProperty": "Components",
+                "IsContainerArray": true,
+                "Data": {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "76ab463c-26d2-4430-b212-49bf9094e6d3",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "CreateAttachments": false,
+                  "LodOverride": null,
+                  "MaterialGroup": null,
+                  "MaterialOverride": null,
+                  "Materials": null,
+                  "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "0.27684,0.66977,0.13395,1"
+                }
+              },
+              {
+                "Id": {
+                  "Type": "Component",
+                  "IdValue": "d103cc62-fff3-4efe-91e2-ea2efcdb6204"
+                },
+                "Parent": {
+                  "Type": "GameObject",
+                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+                },
+                "PreviousElement": {
+                  "Type": "Component",
+                  "IdValue": "76ab463c-26d2-4430-b212-49bf9094e6d3"
+                },
+                "ContainerProperty": "Components",
+                "IsContainerArray": true,
+                "Data": {
+                  "__type": "Sandbox.ModelCollider",
+                  "__guid": "d103cc62-fff3-4efe-91e2-ea2efcdb6204",
+                  "__enabled": true,
+                  "ColliderFlags": 0,
+                  "Elasticity": null,
+                  "Friction": null,
+                  "IsTrigger": false,
+                  "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OnObjectTriggerEnter": null,
+                  "OnObjectTriggerExit": null,
+                  "OnTriggerEnter": null,
+                  "OnTriggerExit": null,
+                  "RollingResistance": null,
+                  "Static": false,
+                  "Surface": null,
+                  "SurfaceVelocity": "0,0,0"
+                }
+              },
+              {
+                "Id": {
+                  "Type": "Component",
+                  "IdValue": "70a948bf-df08-4cce-96be-4717c6e9fede"
+                },
+                "Parent": {
+                  "Type": "GameObject",
+                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+                },
+                "PreviousElement": {
+                  "Type": "Component",
+                  "IdValue": "d103cc62-fff3-4efe-91e2-ea2efcdb6204"
+                },
+                "ContainerProperty": "Components",
+                "IsContainerArray": true,
+                "Data": {
+                  "__type": "Sandbox.Rigidbody",
+                  "__guid": "70a948bf-df08-4cce-96be-4717c6e9fede",
+                  "__enabled": true,
+                  "AngularDamping": 0,
+                  "EnableImpactDamage": true,
+                  "Gravity": true,
+                  "GravityScale": 1,
+                  "ImpactDamage": 0,
+                  "LinearDamping": 0,
+                  "Locking": {
+                    "X": false,
+                    "Y": false,
+                    "Z": false,
+                    "Pitch": false,
+                    "Yaw": false,
+                    "Roll": false
+                  },
+                  "MassCenterOverride": "0,0,0",
+                  "MassOverride": 0,
+                  "MinImpactDamageSpeed": 500,
+                  "MotionEnabled": true,
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OverrideMassCenter": false,
+                  "RigidbodyFlags": 0,
+                  "StartAsleep": false
+                }
+              }
+            ],
             "RemovedObjects": [
               {
                 "Id": {
@@ -17833,7 +20102,138 @@
           "__version": 1,
           "__Prefab": "prefabs/props/palm.prefab",
           "__PrefabInstancePatch": {
-            "AddedObjects": [],
+            "AddedObjects": [
+              {
+                "Id": {
+                  "Type": "Component",
+                  "IdValue": "96dc630d-c083-4c69-99c9-79acacda017d"
+                },
+                "Parent": {
+                  "Type": "GameObject",
+                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+                },
+                "PreviousElement": {
+                  "Type": "Component",
+                  "IdValue": "0c781ee5-94d5-44dd-b43c-223e686b594a"
+                },
+                "ContainerProperty": "Components",
+                "IsContainerArray": true,
+                "Data": {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "96dc630d-c083-4c69-99c9-79acacda017d",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "CreateAttachments": false,
+                  "LodOverride": null,
+                  "MaterialGroup": null,
+                  "MaterialOverride": null,
+                  "Materials": null,
+                  "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "0.27684,0.66977,0.13395,1"
+                }
+              },
+              {
+                "Id": {
+                  "Type": "Component",
+                  "IdValue": "0f6b6a58-c86c-4606-a429-2200b740562d"
+                },
+                "Parent": {
+                  "Type": "GameObject",
+                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+                },
+                "PreviousElement": {
+                  "Type": "Component",
+                  "IdValue": "96dc630d-c083-4c69-99c9-79acacda017d"
+                },
+                "ContainerProperty": "Components",
+                "IsContainerArray": true,
+                "Data": {
+                  "__type": "Sandbox.ModelCollider",
+                  "__guid": "0f6b6a58-c86c-4606-a429-2200b740562d",
+                  "__enabled": true,
+                  "ColliderFlags": 0,
+                  "Elasticity": null,
+                  "Friction": null,
+                  "IsTrigger": false,
+                  "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OnObjectTriggerEnter": null,
+                  "OnObjectTriggerExit": null,
+                  "OnTriggerEnter": null,
+                  "OnTriggerExit": null,
+                  "RollingResistance": null,
+                  "Static": false,
+                  "Surface": null,
+                  "SurfaceVelocity": "0,0,0"
+                }
+              },
+              {
+                "Id": {
+                  "Type": "Component",
+                  "IdValue": "0432c5b5-e547-432b-8d52-d0232ba8ad92"
+                },
+                "Parent": {
+                  "Type": "GameObject",
+                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
+                },
+                "PreviousElement": {
+                  "Type": "Component",
+                  "IdValue": "0f6b6a58-c86c-4606-a429-2200b740562d"
+                },
+                "ContainerProperty": "Components",
+                "IsContainerArray": true,
+                "Data": {
+                  "__type": "Sandbox.Rigidbody",
+                  "__guid": "0432c5b5-e547-432b-8d52-d0232ba8ad92",
+                  "__enabled": true,
+                  "AngularDamping": 0,
+                  "EnableImpactDamage": true,
+                  "Gravity": true,
+                  "GravityScale": 1,
+                  "ImpactDamage": 0,
+                  "LinearDamping": 0,
+                  "Locking": {
+                    "X": false,
+                    "Y": false,
+                    "Z": false,
+                    "Pitch": false,
+                    "Yaw": false,
+                    "Roll": false
+                  },
+                  "MassCenterOverride": "0,0,0",
+                  "MassOverride": 0,
+                  "MinImpactDamageSpeed": 500,
+                  "MotionEnabled": true,
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OverrideMassCenter": false,
+                  "RigidbodyFlags": 0,
+                  "StartAsleep": false
+                }
+              }
+            ],
             "RemovedObjects": [
               {
                 "Id": {
@@ -19803,6 +22203,88 @@
               "OnPropTakeDamage": null,
               "StartAsleep": false,
               "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "d62e9c49-3be6-4df8-8924-5d14254c35ea",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "CreateAttachments": false,
+              "LodOverride": null,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Materials": null,
+              "Model": "models/sand_valley/cactus2.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "b514da03-d8dd-4cf5-aca8-f96c5d470dd2",
+              "__enabled": true,
+              "ColliderFlags": 0,
+              "Elasticity": null,
+              "Friction": null,
+              "IsTrigger": false,
+              "Model": "models/sand_valley/cactus2.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnObjectTriggerEnter": null,
+              "OnObjectTriggerExit": null,
+              "OnTriggerEnter": null,
+              "OnTriggerExit": null,
+              "RollingResistance": null,
+              "Static": false,
+              "Surface": null,
+              "SurfaceVelocity": "0,0,0"
+            },
+            {
+              "__type": "Sandbox.Rigidbody",
+              "__guid": "a41fae75-ff95-49ca-9004-ea54f91f02cb",
+              "__enabled": true,
+              "AngularDamping": 0,
+              "EnableImpactDamage": true,
+              "Gravity": true,
+              "GravityScale": 1,
+              "ImpactDamage": 0,
+              "LinearDamping": 0,
+              "Locking": {
+                "X": false,
+                "Y": false,
+                "Z": false,
+                "Pitch": false,
+                "Yaw": false,
+                "Roll": false
+              },
+              "MassCenterOverride": "0,0,0",
+              "MassOverride": 0,
+              "MinImpactDamageSpeed": 500,
+              "MotionEnabled": true,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OverrideMassCenter": false,
+              "RigidbodyFlags": 0,
+              "StartAsleep": false
             }
           ],
           "Children": []
@@ -30757,6 +33239,7 @@
     "fish.rock_c#105289",
     "kenneynl.holidaytreedecoratedsnow#82263",
     "kenneynl.holidaytreesnowb#82267",
+    "kenneynl.palmdetailedbend#87816",
     "pcjr.nightskyhdri0018khdr#95187",
     "titanovsky.fence1#78460"
   ],
