@@ -3,6 +3,8 @@
     private List<GameObject> _objects = new();
     private bool _isNetwork = false;
 
+    private Vector3 _workaroundForFuckingPos = new Vector3(0, 0, 0); // for the spawn shit cars on the middle of road
+
     public GameObjectPool(int capacity, bool isNetwork)
     {
         _objects.Capacity = capacity;
@@ -38,6 +40,8 @@
 
             if (IsReleased(go))
             {
+                Log.Info($"Release: {go}");
+                go.WorldPosition = _workaroundForFuckingPos;
                 go.Enabled = true;
 
                 return go;
