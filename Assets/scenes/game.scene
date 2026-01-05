@@ -178,14 +178,14 @@
           "Maps": [
             {
               "_type": "component",
-              "component_id": "9fdd8bd7-72aa-4089-832b-987028e63b23",
-              "go": "ed38733a-e211-4a55-a159-010cce75c829",
+              "component_id": "3337bac8-daee-4626-a327-1f4556dd2f18",
+              "go": "32391152-2ea6-45b6-96c8-13cf87765f1b",
               "component_type": "Map"
             },
             {
               "_type": "component",
-              "component_id": "3337bac8-daee-4626-a327-1f4556dd2f18",
-              "go": "32391152-2ea6-45b6-96c8-13cf87765f1b",
+              "component_id": "9fdd8bd7-72aa-4089-832b-987028e63b23",
+              "go": "ed38733a-e211-4a55-a159-010cce75c829",
               "component_type": "Map"
             },
             {
@@ -12943,7 +12943,7 @@
       "Rotation": "0,0,0,1",
       "Scale": "1,1,1",
       "Tags": "",
-      "Enabled": true,
+      "Enabled": false,
       "NetworkMode": 2,
       "NetworkInterpolation": true,
       "NetworkOrphaned": 0,
@@ -14543,7 +14543,10 @@
                       "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
                     },
                     "Property": "CarPrefab",
-                    "Value": null
+                    "Value": {
+                      "_type": "gameobject",
+                      "prefab": "prefabs/cars/car_fish.prefab"
+                    }
                   },
                   {
                     "Target": {
@@ -14551,7 +14554,7 @@
                       "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
                     },
                     "Property": "MaxDelaySpawnCar",
-                    "Value": 3
+                    "Value": 2
                   },
                   {
                     "Target": {
@@ -14714,7 +14717,10 @@
                       "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
                     },
                     "Property": "CarPrefab",
-                    "Value": null
+                    "Value": {
+                      "_type": "gameobject",
+                      "prefab": "prefabs/cars/car_fish.prefab"
+                    }
                   },
                   {
                     "Target": {
@@ -14722,7 +14728,7 @@
                       "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
                     },
                     "Property": "MaxDelaySpawnCar",
-                    "Value": 3
+                    "Value": 2
                   },
                   {
                     "Target": {
@@ -14885,7 +14891,10 @@
                       "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
                     },
                     "Property": "CarPrefab",
-                    "Value": null
+                    "Value": {
+                      "_type": "gameobject",
+                      "prefab": "prefabs/cars/car_fish.prefab"
+                    }
                   },
                   {
                     "Target": {
@@ -14894,6 +14903,23 @@
                     },
                     "Property": "MaxDelaySpawnCar",
                     "Value": 2
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "Spawners",
+                    "Value": [
+                      {
+                        "_type": "gameobject",
+                        "go": "3de0d59a-3e01-49cb-83f3-e10e30d8e280"
+                      },
+                      {
+                        "_type": "gameobject",
+                        "go": "aa6dee25-bba0-4f0d-8adc-c7d617712997"
+                      }
+                    ]
                   },
                   {
                     "Target": {
@@ -15056,7 +15082,10 @@
                       "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
                     },
                     "Property": "CarPrefab",
-                    "Value": null
+                    "Value": {
+                      "_type": "gameobject",
+                      "prefab": "prefabs/cars/car_high.prefab"
+                    }
                   },
                   {
                     "Target": {
@@ -15064,7 +15093,32 @@
                       "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
                     },
                     "Property": "MaxDelaySpawnCar",
-                    "Value": 2
+                    "Value": 1
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "MinDelaySpawnCar",
+                    "Value": 0.5
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "Spawners",
+                    "Value": [
+                      {
+                        "_type": "gameobject",
+                        "go": "ebcb6bf4-cce2-47ef-b9fa-dee6a6f5bedc"
+                      },
+                      {
+                        "_type": "gameobject",
+                        "go": "e98975fa-1c94-49bc-bbd1-c84323f9cf0a"
+                      }
+                    ]
                   },
                   {
                     "Target": {
@@ -15227,7 +15281,10 @@
                       "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
                     },
                     "Property": "CarPrefab",
-                    "Value": null
+                    "Value": {
+                      "_type": "gameobject",
+                      "prefab": "prefabs/cars/car_fish.prefab"
+                    }
                   },
                   {
                     "Target": {
@@ -15235,15 +15292,24 @@
                       "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
                     },
                     "Property": "MaxDelaySpawnCar",
-                    "Value": 1
+                    "Value": 2
                   },
                   {
                     "Target": {
                       "Type": "Component",
                       "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
                     },
-                    "Property": "MinDelaySpawnCar",
-                    "Value": 0.5
+                    "Property": "Spawners",
+                    "Value": [
+                      {
+                        "_type": "gameobject",
+                        "go": "3de0d59a-3e01-49cb-83f3-e10e30d8e280"
+                      },
+                      {
+                        "_type": "gameobject",
+                        "go": "aa6dee25-bba0-4f0d-8adc-c7d617712997"
+                      }
+                    ]
                   },
                   {
                     "Target": {
@@ -15398,7 +15464,7 @@
                       "IdValue": "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1"
                     },
                     "Property": "Position",
-                    "Value": "2546.772,-117.5816,-16.71294"
+                    "Value": "2443.194,-117.5816,-16.71294"
                   },
                   {
                     "Target": {
@@ -15408,7 +15474,7 @@
                     "Property": "CarPrefab",
                     "Value": {
                       "_type": "gameobject",
-                      "prefab": "prefabs/cars/car_dick.prefab"
+                      "prefab": "prefabs/cars/car_high.prefab"
                     }
                   },
                   {
@@ -15430,12 +15496,29 @@
                   {
                     "Target": {
                       "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "Spawners",
+                    "Value": [
+                      {
+                        "_type": "gameobject",
+                        "go": "ebcb6bf4-cce2-47ef-b9fa-dee6a6f5bedc"
+                      },
+                      {
+                        "_type": "gameobject",
+                        "go": "e98975fa-1c94-49bc-bbd1-c84323f9cf0a"
+                      }
+                    ]
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
                       "IdValue": "2c83d66f-c045-4223-b9e7-aaaff99d7e62"
                     },
                     "Property": "Mesh",
                     "Value": {
                       "Topology": "H4sIAAAAAAAACoWQ2QoCQQwES1dXUfC+/v9HI4UdmAdhB4aQTDpT6T3wAWZ+Zw1skt+BA/AETsAq157xXIGqKutT9Ay9j9S92z9/vaO3thvmTum9pbcWzgwcw2vuX/K/MmtJL8s5e5vL4t6XYWd3tW5u9M2e1qt1RnshuxzNJ5uMvumP3hjbP70YvZLdHVpvdKb15v4CSw/ShsQBAAA=",
-                      "Position": "2546.922,-101.2826,-16.79005",
+                      "Position": "2443.344,-101.2826,-16.79005",
                       "Rotation": "0,0,0,1",
                       "Positions": [
                         "-98.76762,-1124.251,1.401409",
@@ -15498,7 +15581,7 @@
                         "0.25,0.2499932"
                       ],
                       "TextureOffset": [
-                        "155.2615,24.77014",
+                        "33.49609,24.77014",
                         "511.398,5.015625",
                         "23.34497,222.4203",
                         "232.6545,222.4203",
@@ -15580,7 +15663,7 @@
                       "IdValue": "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1"
                     },
                     "Property": "Position",
-                    "Value": "2862.286,-117.5816,-16.71294"
+                    "Value": "2641.721,-117.5816,-16.71294"
                   },
                   {
                     "Target": {
@@ -15588,7 +15671,10 @@
                       "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
                     },
                     "Property": "CarPrefab",
-                    "Value": null
+                    "Value": {
+                      "_type": "gameobject",
+                      "prefab": "prefabs/cars/car_easy.prefab"
+                    }
                   },
                   {
                     "Target": {
@@ -15604,7 +15690,24 @@
                       "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
                     },
                     "Property": "MinDelaySpawnCar",
-                    "Value": 0.5
+                    "Value": 0.25
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "Spawners",
+                    "Value": [
+                      {
+                        "_type": "gameobject",
+                        "go": "3de0d59a-3e01-49cb-83f3-e10e30d8e280"
+                      },
+                      {
+                        "_type": "gameobject",
+                        "go": "aa6dee25-bba0-4f0d-8adc-c7d617712997"
+                      }
+                    ]
                   },
                   {
                     "Target": {
@@ -15614,7 +15717,7 @@
                     "Property": "Mesh",
                     "Value": {
                       "Topology": "H4sIAAAAAAAACoWQ2QoCQQwES1dXUfC+/v9HI4UdmAdhB4aQTDpT6T3wAWZ+Zw1skt+BA/AETsAq157xXIGqKutT9Ay9j9S92z9/vaO3thvmTum9pbcWzgwcw2vuX/K/MmtJL8s5e5vL4t6XYWd3tW5u9M2e1qt1RnshuxzNJ5uMvumP3hjbP70YvZLdHVpvdKb15v4CSw/ShsQBAAA=",
-                      "Position": "2862.436,-101.2826,-16.79005",
+                      "Position": "2641.872,-101.2826,-16.79005",
                       "Rotation": "0,0,0,1",
                       "Positions": [
                         "-98.76762,-1124.251,1.401409",
@@ -15677,7 +15780,7 @@
                         "0.25,0.2499932"
                       ],
                       "TextureOffset": [
-                        "2.364502,24.77014",
+                        "32.20996,24.77014",
                         "511.398,5.015625",
                         "23.34497,222.4203",
                         "232.6545,222.4203",
@@ -15767,7 +15870,10 @@
                       "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
                     },
                     "Property": "CarPrefab",
-                    "Value": null
+                    "Value": {
+                      "_type": "gameobject",
+                      "prefab": "prefabs/cars/car_high.prefab"
+                    }
                   },
                   {
                     "Target": {
@@ -15784,6 +15890,23 @@
                     },
                     "Property": "MinDelaySpawnCar",
                     "Value": 0.5
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "Spawners",
+                    "Value": [
+                      {
+                        "_type": "gameobject",
+                        "go": "ebcb6bf4-cce2-47ef-b9fa-dee6a6f5bedc"
+                      },
+                      {
+                        "_type": "gameobject",
+                        "go": "e98975fa-1c94-49bc-bbd1-c84323f9cf0a"
+                      }
+                    ]
                   },
                   {
                     "Target": {
@@ -15946,7 +16069,10 @@
                       "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
                     },
                     "Property": "CarPrefab",
-                    "Value": null
+                    "Value": {
+                      "_type": "gameobject",
+                      "prefab": "prefabs/cars/car_fish.prefab"
+                    }
                   },
                   {
                     "Target": {
@@ -15955,14 +16081,6 @@
                     },
                     "Property": "MaxDelaySpawnCar",
                     "Value": 5
-                  },
-                  {
-                    "Target": {
-                      "Type": "Component",
-                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
-                    },
-                    "Property": "MinDelaySpawnCar",
-                    "Value": 2
                   },
                   {
                     "Target": {
@@ -16361,7 +16479,43 @@
                       "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
                     },
                     "Property": "CarPrefab",
-                    "Value": null
+                    "Value": {
+                      "_type": "gameobject",
+                      "prefab": "prefabs/cars/car_high.prefab"
+                    }
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "MaxDelaySpawnCar",
+                    "Value": 1
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "MinDelaySpawnCar",
+                    "Value": 0.5
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "Spawners",
+                    "Value": [
+                      {
+                        "_type": "gameobject",
+                        "go": "ebcb6bf4-cce2-47ef-b9fa-dee6a6f5bedc"
+                      },
+                      {
+                        "_type": "gameobject",
+                        "go": "e98975fa-1c94-49bc-bbd1-c84323f9cf0a"
+                      }
+                    ]
                   },
                   {
                     "Target": {
@@ -16524,7 +16678,35 @@
                       "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
                     },
                     "Property": "CarPrefab",
-                    "Value": null
+                    "Value": {
+                      "_type": "gameobject",
+                      "prefab": "prefabs/cars/car_high.prefab"
+                    }
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "MaxDelaySpawnCar",
+                    "Value": 2
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "Spawners",
+                    "Value": [
+                      {
+                        "_type": "gameobject",
+                        "go": "ebcb6bf4-cce2-47ef-b9fa-dee6a6f5bedc"
+                      },
+                      {
+                        "_type": "gameobject",
+                        "go": "e98975fa-1c94-49bc-bbd1-c84323f9cf0a"
+                      }
+                    ]
                   },
                   {
                     "Target": {
@@ -16689,7 +16871,7 @@
                     "Property": "CarPrefab",
                     "Value": {
                       "_type": "gameobject",
-                      "prefab": "prefabs/cars/car_fish.prefab"
+                      "prefab": "prefabs/cars/car_medium.prefab"
                     }
                   },
                   {
@@ -16707,6 +16889,23 @@
                     },
                     "Property": "MinDelaySpawnCar",
                     "Value": 0.6
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "Spawners",
+                    "Value": [
+                      {
+                        "_type": "gameobject",
+                        "go": "3de0d59a-3e01-49cb-83f3-e10e30d8e280"
+                      },
+                      {
+                        "_type": "gameobject",
+                        "go": "aa6dee25-bba0-4f0d-8adc-c7d617712997"
+                      }
+                    ]
                   },
                   {
                     "Target": {
@@ -16861,7 +17060,10 @@
                       "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
                     },
                     "Property": "CarPrefab",
-                    "Value": null
+                    "Value": {
+                      "_type": "gameobject",
+                      "prefab": "prefabs/cars/car_easy.prefab"
+                    }
                   },
                   {
                     "Target": {
@@ -16870,6 +17072,23 @@
                     },
                     "Property": "MaxDelaySpawnCar",
                     "Value": 2
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "Spawners",
+                    "Value": [
+                      {
+                        "_type": "gameobject",
+                        "go": "3de0d59a-3e01-49cb-83f3-e10e30d8e280"
+                      },
+                      {
+                        "_type": "gameobject",
+                        "go": "aa6dee25-bba0-4f0d-8adc-c7d617712997"
+                      }
+                    ]
                   },
                   {
                     "Target": {
@@ -17150,138 +17369,7 @@
           "__version": 1,
           "__Prefab": "prefabs/props/palm.prefab",
           "__PrefabInstancePatch": {
-            "AddedObjects": [
-              {
-                "Id": {
-                  "Type": "Component",
-                  "IdValue": "bfae6d5f-6c80-4fef-8942-0e943cbc11a8"
-                },
-                "Parent": {
-                  "Type": "GameObject",
-                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
-                },
-                "PreviousElement": {
-                  "Type": "Component",
-                  "IdValue": "0c781ee5-94d5-44dd-b43c-223e686b594a"
-                },
-                "ContainerProperty": "Components",
-                "IsContainerArray": true,
-                "Data": {
-                  "__type": "Sandbox.ModelRenderer",
-                  "__guid": "bfae6d5f-6c80-4fef-8942-0e943cbc11a8",
-                  "__enabled": true,
-                  "BodyGroups": 18446744073709551615,
-                  "CreateAttachments": false,
-                  "LodOverride": null,
-                  "MaterialGroup": null,
-                  "MaterialOverride": null,
-                  "Materials": null,
-                  "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
-                  "OnComponentDestroy": null,
-                  "OnComponentDisabled": null,
-                  "OnComponentEnabled": null,
-                  "OnComponentFixedUpdate": null,
-                  "OnComponentStart": null,
-                  "OnComponentUpdate": null,
-                  "RenderOptions": {
-                    "GameLayer": true,
-                    "OverlayLayer": false,
-                    "BloomLayer": false,
-                    "AfterUILayer": false
-                  },
-                  "RenderType": "On",
-                  "Tint": "0.27684,0.66977,0.13395,1"
-                }
-              },
-              {
-                "Id": {
-                  "Type": "Component",
-                  "IdValue": "ce39e1f3-0d28-4116-a0b0-aacfa610922f"
-                },
-                "Parent": {
-                  "Type": "GameObject",
-                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
-                },
-                "PreviousElement": {
-                  "Type": "Component",
-                  "IdValue": "bfae6d5f-6c80-4fef-8942-0e943cbc11a8"
-                },
-                "ContainerProperty": "Components",
-                "IsContainerArray": true,
-                "Data": {
-                  "__type": "Sandbox.ModelCollider",
-                  "__guid": "ce39e1f3-0d28-4116-a0b0-aacfa610922f",
-                  "__enabled": true,
-                  "ColliderFlags": 0,
-                  "Elasticity": null,
-                  "Friction": null,
-                  "IsTrigger": false,
-                  "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
-                  "OnComponentDestroy": null,
-                  "OnComponentDisabled": null,
-                  "OnComponentEnabled": null,
-                  "OnComponentFixedUpdate": null,
-                  "OnComponentStart": null,
-                  "OnComponentUpdate": null,
-                  "OnObjectTriggerEnter": null,
-                  "OnObjectTriggerExit": null,
-                  "OnTriggerEnter": null,
-                  "OnTriggerExit": null,
-                  "RollingResistance": null,
-                  "Static": false,
-                  "Surface": null,
-                  "SurfaceVelocity": "0,0,0"
-                }
-              },
-              {
-                "Id": {
-                  "Type": "Component",
-                  "IdValue": "d0b6dc31-68a1-49e7-9b99-1648e6652904"
-                },
-                "Parent": {
-                  "Type": "GameObject",
-                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
-                },
-                "PreviousElement": {
-                  "Type": "Component",
-                  "IdValue": "ce39e1f3-0d28-4116-a0b0-aacfa610922f"
-                },
-                "ContainerProperty": "Components",
-                "IsContainerArray": true,
-                "Data": {
-                  "__type": "Sandbox.Rigidbody",
-                  "__guid": "d0b6dc31-68a1-49e7-9b99-1648e6652904",
-                  "__enabled": true,
-                  "AngularDamping": 0,
-                  "EnableImpactDamage": true,
-                  "Gravity": true,
-                  "GravityScale": 1,
-                  "ImpactDamage": 0,
-                  "LinearDamping": 0,
-                  "Locking": {
-                    "X": false,
-                    "Y": false,
-                    "Z": false,
-                    "Pitch": false,
-                    "Yaw": false,
-                    "Roll": false
-                  },
-                  "MassCenterOverride": "0,0,0",
-                  "MassOverride": 0,
-                  "MinImpactDamageSpeed": 500,
-                  "MotionEnabled": true,
-                  "OnComponentDestroy": null,
-                  "OnComponentDisabled": null,
-                  "OnComponentEnabled": null,
-                  "OnComponentFixedUpdate": null,
-                  "OnComponentStart": null,
-                  "OnComponentUpdate": null,
-                  "OverrideMassCenter": false,
-                  "RigidbodyFlags": 0,
-                  "StartAsleep": false
-                }
-              }
-            ],
+            "AddedObjects": [],
             "RemovedObjects": [
               {
                 "Id": {
@@ -17327,138 +17415,7 @@
           "__version": 1,
           "__Prefab": "prefabs/props/palm.prefab",
           "__PrefabInstancePatch": {
-            "AddedObjects": [
-              {
-                "Id": {
-                  "Type": "Component",
-                  "IdValue": "3561708a-cd9a-421d-93db-2dbc972a44ee"
-                },
-                "Parent": {
-                  "Type": "GameObject",
-                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
-                },
-                "PreviousElement": {
-                  "Type": "Component",
-                  "IdValue": "0c781ee5-94d5-44dd-b43c-223e686b594a"
-                },
-                "ContainerProperty": "Components",
-                "IsContainerArray": true,
-                "Data": {
-                  "__type": "Sandbox.ModelRenderer",
-                  "__guid": "3561708a-cd9a-421d-93db-2dbc972a44ee",
-                  "__enabled": true,
-                  "BodyGroups": 18446744073709551615,
-                  "CreateAttachments": false,
-                  "LodOverride": null,
-                  "MaterialGroup": null,
-                  "MaterialOverride": null,
-                  "Materials": null,
-                  "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
-                  "OnComponentDestroy": null,
-                  "OnComponentDisabled": null,
-                  "OnComponentEnabled": null,
-                  "OnComponentFixedUpdate": null,
-                  "OnComponentStart": null,
-                  "OnComponentUpdate": null,
-                  "RenderOptions": {
-                    "GameLayer": true,
-                    "OverlayLayer": false,
-                    "BloomLayer": false,
-                    "AfterUILayer": false
-                  },
-                  "RenderType": "On",
-                  "Tint": "0.27684,0.66977,0.13395,1"
-                }
-              },
-              {
-                "Id": {
-                  "Type": "Component",
-                  "IdValue": "f9cf0c16-0e91-4592-8b6f-ce15f156d9b7"
-                },
-                "Parent": {
-                  "Type": "GameObject",
-                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
-                },
-                "PreviousElement": {
-                  "Type": "Component",
-                  "IdValue": "3561708a-cd9a-421d-93db-2dbc972a44ee"
-                },
-                "ContainerProperty": "Components",
-                "IsContainerArray": true,
-                "Data": {
-                  "__type": "Sandbox.ModelCollider",
-                  "__guid": "f9cf0c16-0e91-4592-8b6f-ce15f156d9b7",
-                  "__enabled": true,
-                  "ColliderFlags": 0,
-                  "Elasticity": null,
-                  "Friction": null,
-                  "IsTrigger": false,
-                  "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
-                  "OnComponentDestroy": null,
-                  "OnComponentDisabled": null,
-                  "OnComponentEnabled": null,
-                  "OnComponentFixedUpdate": null,
-                  "OnComponentStart": null,
-                  "OnComponentUpdate": null,
-                  "OnObjectTriggerEnter": null,
-                  "OnObjectTriggerExit": null,
-                  "OnTriggerEnter": null,
-                  "OnTriggerExit": null,
-                  "RollingResistance": null,
-                  "Static": false,
-                  "Surface": null,
-                  "SurfaceVelocity": "0,0,0"
-                }
-              },
-              {
-                "Id": {
-                  "Type": "Component",
-                  "IdValue": "97bb9a26-954d-45a5-a21b-0e8fbe42217c"
-                },
-                "Parent": {
-                  "Type": "GameObject",
-                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
-                },
-                "PreviousElement": {
-                  "Type": "Component",
-                  "IdValue": "f9cf0c16-0e91-4592-8b6f-ce15f156d9b7"
-                },
-                "ContainerProperty": "Components",
-                "IsContainerArray": true,
-                "Data": {
-                  "__type": "Sandbox.Rigidbody",
-                  "__guid": "97bb9a26-954d-45a5-a21b-0e8fbe42217c",
-                  "__enabled": true,
-                  "AngularDamping": 0,
-                  "EnableImpactDamage": true,
-                  "Gravity": true,
-                  "GravityScale": 1,
-                  "ImpactDamage": 0,
-                  "LinearDamping": 0,
-                  "Locking": {
-                    "X": false,
-                    "Y": false,
-                    "Z": false,
-                    "Pitch": false,
-                    "Yaw": false,
-                    "Roll": false
-                  },
-                  "MassCenterOverride": "0,0,0",
-                  "MassOverride": 0,
-                  "MinImpactDamageSpeed": 500,
-                  "MotionEnabled": true,
-                  "OnComponentDestroy": null,
-                  "OnComponentDisabled": null,
-                  "OnComponentEnabled": null,
-                  "OnComponentFixedUpdate": null,
-                  "OnComponentStart": null,
-                  "OnComponentUpdate": null,
-                  "OverrideMassCenter": false,
-                  "RigidbodyFlags": 0,
-                  "StartAsleep": false
-                }
-              }
-            ],
+            "AddedObjects": [],
             "RemovedObjects": [
               {
                 "Id": {
@@ -17512,138 +17469,7 @@
           "__version": 1,
           "__Prefab": "prefabs/props/palm.prefab",
           "__PrefabInstancePatch": {
-            "AddedObjects": [
-              {
-                "Id": {
-                  "Type": "Component",
-                  "IdValue": "759c4411-93a5-4889-9344-681cd3d26348"
-                },
-                "Parent": {
-                  "Type": "GameObject",
-                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
-                },
-                "PreviousElement": {
-                  "Type": "Component",
-                  "IdValue": "0c781ee5-94d5-44dd-b43c-223e686b594a"
-                },
-                "ContainerProperty": "Components",
-                "IsContainerArray": true,
-                "Data": {
-                  "__type": "Sandbox.ModelRenderer",
-                  "__guid": "759c4411-93a5-4889-9344-681cd3d26348",
-                  "__enabled": true,
-                  "BodyGroups": 18446744073709551615,
-                  "CreateAttachments": false,
-                  "LodOverride": null,
-                  "MaterialGroup": null,
-                  "MaterialOverride": null,
-                  "Materials": null,
-                  "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
-                  "OnComponentDestroy": null,
-                  "OnComponentDisabled": null,
-                  "OnComponentEnabled": null,
-                  "OnComponentFixedUpdate": null,
-                  "OnComponentStart": null,
-                  "OnComponentUpdate": null,
-                  "RenderOptions": {
-                    "GameLayer": true,
-                    "OverlayLayer": false,
-                    "BloomLayer": false,
-                    "AfterUILayer": false
-                  },
-                  "RenderType": "On",
-                  "Tint": "0.27684,0.66977,0.13395,1"
-                }
-              },
-              {
-                "Id": {
-                  "Type": "Component",
-                  "IdValue": "af1606c3-d039-44b0-8472-1e5b4b545f4a"
-                },
-                "Parent": {
-                  "Type": "GameObject",
-                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
-                },
-                "PreviousElement": {
-                  "Type": "Component",
-                  "IdValue": "759c4411-93a5-4889-9344-681cd3d26348"
-                },
-                "ContainerProperty": "Components",
-                "IsContainerArray": true,
-                "Data": {
-                  "__type": "Sandbox.ModelCollider",
-                  "__guid": "af1606c3-d039-44b0-8472-1e5b4b545f4a",
-                  "__enabled": true,
-                  "ColliderFlags": 0,
-                  "Elasticity": null,
-                  "Friction": null,
-                  "IsTrigger": false,
-                  "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
-                  "OnComponentDestroy": null,
-                  "OnComponentDisabled": null,
-                  "OnComponentEnabled": null,
-                  "OnComponentFixedUpdate": null,
-                  "OnComponentStart": null,
-                  "OnComponentUpdate": null,
-                  "OnObjectTriggerEnter": null,
-                  "OnObjectTriggerExit": null,
-                  "OnTriggerEnter": null,
-                  "OnTriggerExit": null,
-                  "RollingResistance": null,
-                  "Static": false,
-                  "Surface": null,
-                  "SurfaceVelocity": "0,0,0"
-                }
-              },
-              {
-                "Id": {
-                  "Type": "Component",
-                  "IdValue": "0676bca0-129a-4ea7-88fc-36b27c6d3893"
-                },
-                "Parent": {
-                  "Type": "GameObject",
-                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
-                },
-                "PreviousElement": {
-                  "Type": "Component",
-                  "IdValue": "af1606c3-d039-44b0-8472-1e5b4b545f4a"
-                },
-                "ContainerProperty": "Components",
-                "IsContainerArray": true,
-                "Data": {
-                  "__type": "Sandbox.Rigidbody",
-                  "__guid": "0676bca0-129a-4ea7-88fc-36b27c6d3893",
-                  "__enabled": true,
-                  "AngularDamping": 0,
-                  "EnableImpactDamage": true,
-                  "Gravity": true,
-                  "GravityScale": 1,
-                  "ImpactDamage": 0,
-                  "LinearDamping": 0,
-                  "Locking": {
-                    "X": false,
-                    "Y": false,
-                    "Z": false,
-                    "Pitch": false,
-                    "Yaw": false,
-                    "Roll": false
-                  },
-                  "MassCenterOverride": "0,0,0",
-                  "MassOverride": 0,
-                  "MinImpactDamageSpeed": 500,
-                  "MotionEnabled": true,
-                  "OnComponentDestroy": null,
-                  "OnComponentDisabled": null,
-                  "OnComponentEnabled": null,
-                  "OnComponentFixedUpdate": null,
-                  "OnComponentStart": null,
-                  "OnComponentUpdate": null,
-                  "OverrideMassCenter": false,
-                  "RigidbodyFlags": 0,
-                  "StartAsleep": false
-                }
-              }
-            ],
+            "AddedObjects": [],
             "RemovedObjects": [
               {
                 "Id": {
@@ -17697,138 +17523,7 @@
           "__version": 1,
           "__Prefab": "prefabs/props/palm.prefab",
           "__PrefabInstancePatch": {
-            "AddedObjects": [
-              {
-                "Id": {
-                  "Type": "Component",
-                  "IdValue": "b08f3f68-fae7-47bc-95ef-1bbf1a6f5ca1"
-                },
-                "Parent": {
-                  "Type": "GameObject",
-                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
-                },
-                "PreviousElement": {
-                  "Type": "Component",
-                  "IdValue": "0c781ee5-94d5-44dd-b43c-223e686b594a"
-                },
-                "ContainerProperty": "Components",
-                "IsContainerArray": true,
-                "Data": {
-                  "__type": "Sandbox.ModelRenderer",
-                  "__guid": "b08f3f68-fae7-47bc-95ef-1bbf1a6f5ca1",
-                  "__enabled": true,
-                  "BodyGroups": 18446744073709551615,
-                  "CreateAttachments": false,
-                  "LodOverride": null,
-                  "MaterialGroup": null,
-                  "MaterialOverride": null,
-                  "Materials": null,
-                  "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
-                  "OnComponentDestroy": null,
-                  "OnComponentDisabled": null,
-                  "OnComponentEnabled": null,
-                  "OnComponentFixedUpdate": null,
-                  "OnComponentStart": null,
-                  "OnComponentUpdate": null,
-                  "RenderOptions": {
-                    "GameLayer": true,
-                    "OverlayLayer": false,
-                    "BloomLayer": false,
-                    "AfterUILayer": false
-                  },
-                  "RenderType": "On",
-                  "Tint": "0.27684,0.66977,0.13395,1"
-                }
-              },
-              {
-                "Id": {
-                  "Type": "Component",
-                  "IdValue": "82aed15e-554c-4ee4-83e2-b8dda31a962f"
-                },
-                "Parent": {
-                  "Type": "GameObject",
-                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
-                },
-                "PreviousElement": {
-                  "Type": "Component",
-                  "IdValue": "b08f3f68-fae7-47bc-95ef-1bbf1a6f5ca1"
-                },
-                "ContainerProperty": "Components",
-                "IsContainerArray": true,
-                "Data": {
-                  "__type": "Sandbox.ModelCollider",
-                  "__guid": "82aed15e-554c-4ee4-83e2-b8dda31a962f",
-                  "__enabled": true,
-                  "ColliderFlags": 0,
-                  "Elasticity": null,
-                  "Friction": null,
-                  "IsTrigger": false,
-                  "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
-                  "OnComponentDestroy": null,
-                  "OnComponentDisabled": null,
-                  "OnComponentEnabled": null,
-                  "OnComponentFixedUpdate": null,
-                  "OnComponentStart": null,
-                  "OnComponentUpdate": null,
-                  "OnObjectTriggerEnter": null,
-                  "OnObjectTriggerExit": null,
-                  "OnTriggerEnter": null,
-                  "OnTriggerExit": null,
-                  "RollingResistance": null,
-                  "Static": false,
-                  "Surface": null,
-                  "SurfaceVelocity": "0,0,0"
-                }
-              },
-              {
-                "Id": {
-                  "Type": "Component",
-                  "IdValue": "41580efd-3658-4c68-aca1-79b3d039ac7f"
-                },
-                "Parent": {
-                  "Type": "GameObject",
-                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
-                },
-                "PreviousElement": {
-                  "Type": "Component",
-                  "IdValue": "82aed15e-554c-4ee4-83e2-b8dda31a962f"
-                },
-                "ContainerProperty": "Components",
-                "IsContainerArray": true,
-                "Data": {
-                  "__type": "Sandbox.Rigidbody",
-                  "__guid": "41580efd-3658-4c68-aca1-79b3d039ac7f",
-                  "__enabled": true,
-                  "AngularDamping": 0,
-                  "EnableImpactDamage": true,
-                  "Gravity": true,
-                  "GravityScale": 1,
-                  "ImpactDamage": 0,
-                  "LinearDamping": 0,
-                  "Locking": {
-                    "X": false,
-                    "Y": false,
-                    "Z": false,
-                    "Pitch": false,
-                    "Yaw": false,
-                    "Roll": false
-                  },
-                  "MassCenterOverride": "0,0,0",
-                  "MassOverride": 0,
-                  "MinImpactDamageSpeed": 500,
-                  "MotionEnabled": true,
-                  "OnComponentDestroy": null,
-                  "OnComponentDisabled": null,
-                  "OnComponentEnabled": null,
-                  "OnComponentFixedUpdate": null,
-                  "OnComponentStart": null,
-                  "OnComponentUpdate": null,
-                  "OverrideMassCenter": false,
-                  "RigidbodyFlags": 0,
-                  "StartAsleep": false
-                }
-              }
-            ],
+            "AddedObjects": [],
             "RemovedObjects": [
               {
                 "Id": {
@@ -17882,138 +17577,7 @@
           "__version": 1,
           "__Prefab": "prefabs/props/palm.prefab",
           "__PrefabInstancePatch": {
-            "AddedObjects": [
-              {
-                "Id": {
-                  "Type": "Component",
-                  "IdValue": "b30f1de2-b8fc-4084-981f-cb421a06aaf0"
-                },
-                "Parent": {
-                  "Type": "GameObject",
-                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
-                },
-                "PreviousElement": {
-                  "Type": "Component",
-                  "IdValue": "0c781ee5-94d5-44dd-b43c-223e686b594a"
-                },
-                "ContainerProperty": "Components",
-                "IsContainerArray": true,
-                "Data": {
-                  "__type": "Sandbox.ModelRenderer",
-                  "__guid": "b30f1de2-b8fc-4084-981f-cb421a06aaf0",
-                  "__enabled": true,
-                  "BodyGroups": 18446744073709551615,
-                  "CreateAttachments": false,
-                  "LodOverride": null,
-                  "MaterialGroup": null,
-                  "MaterialOverride": null,
-                  "Materials": null,
-                  "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
-                  "OnComponentDestroy": null,
-                  "OnComponentDisabled": null,
-                  "OnComponentEnabled": null,
-                  "OnComponentFixedUpdate": null,
-                  "OnComponentStart": null,
-                  "OnComponentUpdate": null,
-                  "RenderOptions": {
-                    "GameLayer": true,
-                    "OverlayLayer": false,
-                    "BloomLayer": false,
-                    "AfterUILayer": false
-                  },
-                  "RenderType": "On",
-                  "Tint": "0.27684,0.66977,0.13395,1"
-                }
-              },
-              {
-                "Id": {
-                  "Type": "Component",
-                  "IdValue": "2332e699-69ef-4ccd-a387-e9f666bd1b95"
-                },
-                "Parent": {
-                  "Type": "GameObject",
-                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
-                },
-                "PreviousElement": {
-                  "Type": "Component",
-                  "IdValue": "b30f1de2-b8fc-4084-981f-cb421a06aaf0"
-                },
-                "ContainerProperty": "Components",
-                "IsContainerArray": true,
-                "Data": {
-                  "__type": "Sandbox.ModelCollider",
-                  "__guid": "2332e699-69ef-4ccd-a387-e9f666bd1b95",
-                  "__enabled": true,
-                  "ColliderFlags": 0,
-                  "Elasticity": null,
-                  "Friction": null,
-                  "IsTrigger": false,
-                  "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
-                  "OnComponentDestroy": null,
-                  "OnComponentDisabled": null,
-                  "OnComponentEnabled": null,
-                  "OnComponentFixedUpdate": null,
-                  "OnComponentStart": null,
-                  "OnComponentUpdate": null,
-                  "OnObjectTriggerEnter": null,
-                  "OnObjectTriggerExit": null,
-                  "OnTriggerEnter": null,
-                  "OnTriggerExit": null,
-                  "RollingResistance": null,
-                  "Static": false,
-                  "Surface": null,
-                  "SurfaceVelocity": "0,0,0"
-                }
-              },
-              {
-                "Id": {
-                  "Type": "Component",
-                  "IdValue": "64d35145-03d2-4c74-bb12-bea569ff5a49"
-                },
-                "Parent": {
-                  "Type": "GameObject",
-                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
-                },
-                "PreviousElement": {
-                  "Type": "Component",
-                  "IdValue": "2332e699-69ef-4ccd-a387-e9f666bd1b95"
-                },
-                "ContainerProperty": "Components",
-                "IsContainerArray": true,
-                "Data": {
-                  "__type": "Sandbox.Rigidbody",
-                  "__guid": "64d35145-03d2-4c74-bb12-bea569ff5a49",
-                  "__enabled": true,
-                  "AngularDamping": 0,
-                  "EnableImpactDamage": true,
-                  "Gravity": true,
-                  "GravityScale": 1,
-                  "ImpactDamage": 0,
-                  "LinearDamping": 0,
-                  "Locking": {
-                    "X": false,
-                    "Y": false,
-                    "Z": false,
-                    "Pitch": false,
-                    "Yaw": false,
-                    "Roll": false
-                  },
-                  "MassCenterOverride": "0,0,0",
-                  "MassOverride": 0,
-                  "MinImpactDamageSpeed": 500,
-                  "MotionEnabled": true,
-                  "OnComponentDestroy": null,
-                  "OnComponentDisabled": null,
-                  "OnComponentEnabled": null,
-                  "OnComponentFixedUpdate": null,
-                  "OnComponentStart": null,
-                  "OnComponentUpdate": null,
-                  "OverrideMassCenter": false,
-                  "RigidbodyFlags": 0,
-                  "StartAsleep": false
-                }
-              }
-            ],
+            "AddedObjects": [],
             "RemovedObjects": [
               {
                 "Id": {
@@ -18067,138 +17631,7 @@
           "__version": 1,
           "__Prefab": "prefabs/props/palm.prefab",
           "__PrefabInstancePatch": {
-            "AddedObjects": [
-              {
-                "Id": {
-                  "Type": "Component",
-                  "IdValue": "28db0cde-712f-4ed1-8492-180cc2a824f8"
-                },
-                "Parent": {
-                  "Type": "GameObject",
-                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
-                },
-                "PreviousElement": {
-                  "Type": "Component",
-                  "IdValue": "0c781ee5-94d5-44dd-b43c-223e686b594a"
-                },
-                "ContainerProperty": "Components",
-                "IsContainerArray": true,
-                "Data": {
-                  "__type": "Sandbox.ModelRenderer",
-                  "__guid": "28db0cde-712f-4ed1-8492-180cc2a824f8",
-                  "__enabled": true,
-                  "BodyGroups": 18446744073709551615,
-                  "CreateAttachments": false,
-                  "LodOverride": null,
-                  "MaterialGroup": null,
-                  "MaterialOverride": null,
-                  "Materials": null,
-                  "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
-                  "OnComponentDestroy": null,
-                  "OnComponentDisabled": null,
-                  "OnComponentEnabled": null,
-                  "OnComponentFixedUpdate": null,
-                  "OnComponentStart": null,
-                  "OnComponentUpdate": null,
-                  "RenderOptions": {
-                    "GameLayer": true,
-                    "OverlayLayer": false,
-                    "BloomLayer": false,
-                    "AfterUILayer": false
-                  },
-                  "RenderType": "On",
-                  "Tint": "0.27684,0.66977,0.13395,1"
-                }
-              },
-              {
-                "Id": {
-                  "Type": "Component",
-                  "IdValue": "d8d4bfd1-cf30-4497-a6b5-3f129173cddb"
-                },
-                "Parent": {
-                  "Type": "GameObject",
-                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
-                },
-                "PreviousElement": {
-                  "Type": "Component",
-                  "IdValue": "28db0cde-712f-4ed1-8492-180cc2a824f8"
-                },
-                "ContainerProperty": "Components",
-                "IsContainerArray": true,
-                "Data": {
-                  "__type": "Sandbox.ModelCollider",
-                  "__guid": "d8d4bfd1-cf30-4497-a6b5-3f129173cddb",
-                  "__enabled": true,
-                  "ColliderFlags": 0,
-                  "Elasticity": null,
-                  "Friction": null,
-                  "IsTrigger": false,
-                  "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
-                  "OnComponentDestroy": null,
-                  "OnComponentDisabled": null,
-                  "OnComponentEnabled": null,
-                  "OnComponentFixedUpdate": null,
-                  "OnComponentStart": null,
-                  "OnComponentUpdate": null,
-                  "OnObjectTriggerEnter": null,
-                  "OnObjectTriggerExit": null,
-                  "OnTriggerEnter": null,
-                  "OnTriggerExit": null,
-                  "RollingResistance": null,
-                  "Static": false,
-                  "Surface": null,
-                  "SurfaceVelocity": "0,0,0"
-                }
-              },
-              {
-                "Id": {
-                  "Type": "Component",
-                  "IdValue": "3d4416a3-671d-494f-87a7-041d632e5cae"
-                },
-                "Parent": {
-                  "Type": "GameObject",
-                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
-                },
-                "PreviousElement": {
-                  "Type": "Component",
-                  "IdValue": "d8d4bfd1-cf30-4497-a6b5-3f129173cddb"
-                },
-                "ContainerProperty": "Components",
-                "IsContainerArray": true,
-                "Data": {
-                  "__type": "Sandbox.Rigidbody",
-                  "__guid": "3d4416a3-671d-494f-87a7-041d632e5cae",
-                  "__enabled": true,
-                  "AngularDamping": 0,
-                  "EnableImpactDamage": true,
-                  "Gravity": true,
-                  "GravityScale": 1,
-                  "ImpactDamage": 0,
-                  "LinearDamping": 0,
-                  "Locking": {
-                    "X": false,
-                    "Y": false,
-                    "Z": false,
-                    "Pitch": false,
-                    "Yaw": false,
-                    "Roll": false
-                  },
-                  "MassCenterOverride": "0,0,0",
-                  "MassOverride": 0,
-                  "MinImpactDamageSpeed": 500,
-                  "MotionEnabled": true,
-                  "OnComponentDestroy": null,
-                  "OnComponentDisabled": null,
-                  "OnComponentEnabled": null,
-                  "OnComponentFixedUpdate": null,
-                  "OnComponentStart": null,
-                  "OnComponentUpdate": null,
-                  "OverrideMassCenter": false,
-                  "RigidbodyFlags": 0,
-                  "StartAsleep": false
-                }
-              }
-            ],
+            "AddedObjects": [],
             "RemovedObjects": [
               {
                 "Id": {
@@ -18252,138 +17685,7 @@
           "__version": 1,
           "__Prefab": "prefabs/props/palm.prefab",
           "__PrefabInstancePatch": {
-            "AddedObjects": [
-              {
-                "Id": {
-                  "Type": "Component",
-                  "IdValue": "6e35c9fb-313b-40ea-9cda-ef0b0abb62d6"
-                },
-                "Parent": {
-                  "Type": "GameObject",
-                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
-                },
-                "PreviousElement": {
-                  "Type": "Component",
-                  "IdValue": "0c781ee5-94d5-44dd-b43c-223e686b594a"
-                },
-                "ContainerProperty": "Components",
-                "IsContainerArray": true,
-                "Data": {
-                  "__type": "Sandbox.ModelRenderer",
-                  "__guid": "6e35c9fb-313b-40ea-9cda-ef0b0abb62d6",
-                  "__enabled": true,
-                  "BodyGroups": 18446744073709551615,
-                  "CreateAttachments": false,
-                  "LodOverride": null,
-                  "MaterialGroup": null,
-                  "MaterialOverride": null,
-                  "Materials": null,
-                  "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
-                  "OnComponentDestroy": null,
-                  "OnComponentDisabled": null,
-                  "OnComponentEnabled": null,
-                  "OnComponentFixedUpdate": null,
-                  "OnComponentStart": null,
-                  "OnComponentUpdate": null,
-                  "RenderOptions": {
-                    "GameLayer": true,
-                    "OverlayLayer": false,
-                    "BloomLayer": false,
-                    "AfterUILayer": false
-                  },
-                  "RenderType": "On",
-                  "Tint": "0.27684,0.66977,0.13395,1"
-                }
-              },
-              {
-                "Id": {
-                  "Type": "Component",
-                  "IdValue": "af24e650-ee11-4290-a1b7-dcd93452349f"
-                },
-                "Parent": {
-                  "Type": "GameObject",
-                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
-                },
-                "PreviousElement": {
-                  "Type": "Component",
-                  "IdValue": "6e35c9fb-313b-40ea-9cda-ef0b0abb62d6"
-                },
-                "ContainerProperty": "Components",
-                "IsContainerArray": true,
-                "Data": {
-                  "__type": "Sandbox.ModelCollider",
-                  "__guid": "af24e650-ee11-4290-a1b7-dcd93452349f",
-                  "__enabled": true,
-                  "ColliderFlags": 0,
-                  "Elasticity": null,
-                  "Friction": null,
-                  "IsTrigger": false,
-                  "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
-                  "OnComponentDestroy": null,
-                  "OnComponentDisabled": null,
-                  "OnComponentEnabled": null,
-                  "OnComponentFixedUpdate": null,
-                  "OnComponentStart": null,
-                  "OnComponentUpdate": null,
-                  "OnObjectTriggerEnter": null,
-                  "OnObjectTriggerExit": null,
-                  "OnTriggerEnter": null,
-                  "OnTriggerExit": null,
-                  "RollingResistance": null,
-                  "Static": false,
-                  "Surface": null,
-                  "SurfaceVelocity": "0,0,0"
-                }
-              },
-              {
-                "Id": {
-                  "Type": "Component",
-                  "IdValue": "363f37c9-3308-4545-b223-d80974d8804b"
-                },
-                "Parent": {
-                  "Type": "GameObject",
-                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
-                },
-                "PreviousElement": {
-                  "Type": "Component",
-                  "IdValue": "af24e650-ee11-4290-a1b7-dcd93452349f"
-                },
-                "ContainerProperty": "Components",
-                "IsContainerArray": true,
-                "Data": {
-                  "__type": "Sandbox.Rigidbody",
-                  "__guid": "363f37c9-3308-4545-b223-d80974d8804b",
-                  "__enabled": true,
-                  "AngularDamping": 0,
-                  "EnableImpactDamage": true,
-                  "Gravity": true,
-                  "GravityScale": 1,
-                  "ImpactDamage": 0,
-                  "LinearDamping": 0,
-                  "Locking": {
-                    "X": false,
-                    "Y": false,
-                    "Z": false,
-                    "Pitch": false,
-                    "Yaw": false,
-                    "Roll": false
-                  },
-                  "MassCenterOverride": "0,0,0",
-                  "MassOverride": 0,
-                  "MinImpactDamageSpeed": 500,
-                  "MotionEnabled": true,
-                  "OnComponentDestroy": null,
-                  "OnComponentDisabled": null,
-                  "OnComponentEnabled": null,
-                  "OnComponentFixedUpdate": null,
-                  "OnComponentStart": null,
-                  "OnComponentUpdate": null,
-                  "OverrideMassCenter": false,
-                  "RigidbodyFlags": 0,
-                  "StartAsleep": false
-                }
-              }
-            ],
+            "AddedObjects": [],
             "RemovedObjects": [
               {
                 "Id": {
@@ -18437,138 +17739,7 @@
           "__version": 1,
           "__Prefab": "prefabs/props/palm.prefab",
           "__PrefabInstancePatch": {
-            "AddedObjects": [
-              {
-                "Id": {
-                  "Type": "Component",
-                  "IdValue": "5ef65d58-10ce-49e3-a6de-be401045cde8"
-                },
-                "Parent": {
-                  "Type": "GameObject",
-                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
-                },
-                "PreviousElement": {
-                  "Type": "Component",
-                  "IdValue": "0c781ee5-94d5-44dd-b43c-223e686b594a"
-                },
-                "ContainerProperty": "Components",
-                "IsContainerArray": true,
-                "Data": {
-                  "__type": "Sandbox.ModelRenderer",
-                  "__guid": "5ef65d58-10ce-49e3-a6de-be401045cde8",
-                  "__enabled": true,
-                  "BodyGroups": 18446744073709551615,
-                  "CreateAttachments": false,
-                  "LodOverride": null,
-                  "MaterialGroup": null,
-                  "MaterialOverride": null,
-                  "Materials": null,
-                  "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
-                  "OnComponentDestroy": null,
-                  "OnComponentDisabled": null,
-                  "OnComponentEnabled": null,
-                  "OnComponentFixedUpdate": null,
-                  "OnComponentStart": null,
-                  "OnComponentUpdate": null,
-                  "RenderOptions": {
-                    "GameLayer": true,
-                    "OverlayLayer": false,
-                    "BloomLayer": false,
-                    "AfterUILayer": false
-                  },
-                  "RenderType": "On",
-                  "Tint": "0.27684,0.66977,0.13395,1"
-                }
-              },
-              {
-                "Id": {
-                  "Type": "Component",
-                  "IdValue": "60ff1553-1907-4c9f-b58b-b0208ce712f9"
-                },
-                "Parent": {
-                  "Type": "GameObject",
-                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
-                },
-                "PreviousElement": {
-                  "Type": "Component",
-                  "IdValue": "5ef65d58-10ce-49e3-a6de-be401045cde8"
-                },
-                "ContainerProperty": "Components",
-                "IsContainerArray": true,
-                "Data": {
-                  "__type": "Sandbox.ModelCollider",
-                  "__guid": "60ff1553-1907-4c9f-b58b-b0208ce712f9",
-                  "__enabled": true,
-                  "ColliderFlags": 0,
-                  "Elasticity": null,
-                  "Friction": null,
-                  "IsTrigger": false,
-                  "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
-                  "OnComponentDestroy": null,
-                  "OnComponentDisabled": null,
-                  "OnComponentEnabled": null,
-                  "OnComponentFixedUpdate": null,
-                  "OnComponentStart": null,
-                  "OnComponentUpdate": null,
-                  "OnObjectTriggerEnter": null,
-                  "OnObjectTriggerExit": null,
-                  "OnTriggerEnter": null,
-                  "OnTriggerExit": null,
-                  "RollingResistance": null,
-                  "Static": false,
-                  "Surface": null,
-                  "SurfaceVelocity": "0,0,0"
-                }
-              },
-              {
-                "Id": {
-                  "Type": "Component",
-                  "IdValue": "bdb45c0b-862f-41f2-b14c-886216f89ea1"
-                },
-                "Parent": {
-                  "Type": "GameObject",
-                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
-                },
-                "PreviousElement": {
-                  "Type": "Component",
-                  "IdValue": "60ff1553-1907-4c9f-b58b-b0208ce712f9"
-                },
-                "ContainerProperty": "Components",
-                "IsContainerArray": true,
-                "Data": {
-                  "__type": "Sandbox.Rigidbody",
-                  "__guid": "bdb45c0b-862f-41f2-b14c-886216f89ea1",
-                  "__enabled": true,
-                  "AngularDamping": 0,
-                  "EnableImpactDamage": true,
-                  "Gravity": true,
-                  "GravityScale": 1,
-                  "ImpactDamage": 0,
-                  "LinearDamping": 0,
-                  "Locking": {
-                    "X": false,
-                    "Y": false,
-                    "Z": false,
-                    "Pitch": false,
-                    "Yaw": false,
-                    "Roll": false
-                  },
-                  "MassCenterOverride": "0,0,0",
-                  "MassOverride": 0,
-                  "MinImpactDamageSpeed": 500,
-                  "MotionEnabled": true,
-                  "OnComponentDestroy": null,
-                  "OnComponentDisabled": null,
-                  "OnComponentEnabled": null,
-                  "OnComponentFixedUpdate": null,
-                  "OnComponentStart": null,
-                  "OnComponentUpdate": null,
-                  "OverrideMassCenter": false,
-                  "RigidbodyFlags": 0,
-                  "StartAsleep": false
-                }
-              }
-            ],
+            "AddedObjects": [],
             "RemovedObjects": [
               {
                 "Id": {
@@ -18622,138 +17793,7 @@
           "__version": 1,
           "__Prefab": "prefabs/props/palm.prefab",
           "__PrefabInstancePatch": {
-            "AddedObjects": [
-              {
-                "Id": {
-                  "Type": "Component",
-                  "IdValue": "b45478d8-a624-43ca-96a7-ba5b45404db3"
-                },
-                "Parent": {
-                  "Type": "GameObject",
-                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
-                },
-                "PreviousElement": {
-                  "Type": "Component",
-                  "IdValue": "0c781ee5-94d5-44dd-b43c-223e686b594a"
-                },
-                "ContainerProperty": "Components",
-                "IsContainerArray": true,
-                "Data": {
-                  "__type": "Sandbox.ModelRenderer",
-                  "__guid": "b45478d8-a624-43ca-96a7-ba5b45404db3",
-                  "__enabled": true,
-                  "BodyGroups": 18446744073709551615,
-                  "CreateAttachments": false,
-                  "LodOverride": null,
-                  "MaterialGroup": null,
-                  "MaterialOverride": null,
-                  "Materials": null,
-                  "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
-                  "OnComponentDestroy": null,
-                  "OnComponentDisabled": null,
-                  "OnComponentEnabled": null,
-                  "OnComponentFixedUpdate": null,
-                  "OnComponentStart": null,
-                  "OnComponentUpdate": null,
-                  "RenderOptions": {
-                    "GameLayer": true,
-                    "OverlayLayer": false,
-                    "BloomLayer": false,
-                    "AfterUILayer": false
-                  },
-                  "RenderType": "On",
-                  "Tint": "0.27684,0.66977,0.13395,1"
-                }
-              },
-              {
-                "Id": {
-                  "Type": "Component",
-                  "IdValue": "29ae49ff-78ac-4380-8533-46ae5bfba7e2"
-                },
-                "Parent": {
-                  "Type": "GameObject",
-                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
-                },
-                "PreviousElement": {
-                  "Type": "Component",
-                  "IdValue": "b45478d8-a624-43ca-96a7-ba5b45404db3"
-                },
-                "ContainerProperty": "Components",
-                "IsContainerArray": true,
-                "Data": {
-                  "__type": "Sandbox.ModelCollider",
-                  "__guid": "29ae49ff-78ac-4380-8533-46ae5bfba7e2",
-                  "__enabled": true,
-                  "ColliderFlags": 0,
-                  "Elasticity": null,
-                  "Friction": null,
-                  "IsTrigger": false,
-                  "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
-                  "OnComponentDestroy": null,
-                  "OnComponentDisabled": null,
-                  "OnComponentEnabled": null,
-                  "OnComponentFixedUpdate": null,
-                  "OnComponentStart": null,
-                  "OnComponentUpdate": null,
-                  "OnObjectTriggerEnter": null,
-                  "OnObjectTriggerExit": null,
-                  "OnTriggerEnter": null,
-                  "OnTriggerExit": null,
-                  "RollingResistance": null,
-                  "Static": false,
-                  "Surface": null,
-                  "SurfaceVelocity": "0,0,0"
-                }
-              },
-              {
-                "Id": {
-                  "Type": "Component",
-                  "IdValue": "2f64c815-4941-4379-98fe-ed7088c52988"
-                },
-                "Parent": {
-                  "Type": "GameObject",
-                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
-                },
-                "PreviousElement": {
-                  "Type": "Component",
-                  "IdValue": "29ae49ff-78ac-4380-8533-46ae5bfba7e2"
-                },
-                "ContainerProperty": "Components",
-                "IsContainerArray": true,
-                "Data": {
-                  "__type": "Sandbox.Rigidbody",
-                  "__guid": "2f64c815-4941-4379-98fe-ed7088c52988",
-                  "__enabled": true,
-                  "AngularDamping": 0,
-                  "EnableImpactDamage": true,
-                  "Gravity": true,
-                  "GravityScale": 1,
-                  "ImpactDamage": 0,
-                  "LinearDamping": 0,
-                  "Locking": {
-                    "X": false,
-                    "Y": false,
-                    "Z": false,
-                    "Pitch": false,
-                    "Yaw": false,
-                    "Roll": false
-                  },
-                  "MassCenterOverride": "0,0,0",
-                  "MassOverride": 0,
-                  "MinImpactDamageSpeed": 500,
-                  "MotionEnabled": true,
-                  "OnComponentDestroy": null,
-                  "OnComponentDisabled": null,
-                  "OnComponentEnabled": null,
-                  "OnComponentFixedUpdate": null,
-                  "OnComponentStart": null,
-                  "OnComponentUpdate": null,
-                  "OverrideMassCenter": false,
-                  "RigidbodyFlags": 0,
-                  "StartAsleep": false
-                }
-              }
-            ],
+            "AddedObjects": [],
             "RemovedObjects": [
               {
                 "Id": {
@@ -18807,138 +17847,7 @@
           "__version": 1,
           "__Prefab": "prefabs/props/palm.prefab",
           "__PrefabInstancePatch": {
-            "AddedObjects": [
-              {
-                "Id": {
-                  "Type": "Component",
-                  "IdValue": "dfb53473-48a8-469d-a912-db940fc6a787"
-                },
-                "Parent": {
-                  "Type": "GameObject",
-                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
-                },
-                "PreviousElement": {
-                  "Type": "Component",
-                  "IdValue": "0c781ee5-94d5-44dd-b43c-223e686b594a"
-                },
-                "ContainerProperty": "Components",
-                "IsContainerArray": true,
-                "Data": {
-                  "__type": "Sandbox.ModelRenderer",
-                  "__guid": "dfb53473-48a8-469d-a912-db940fc6a787",
-                  "__enabled": true,
-                  "BodyGroups": 18446744073709551615,
-                  "CreateAttachments": false,
-                  "LodOverride": null,
-                  "MaterialGroup": null,
-                  "MaterialOverride": null,
-                  "Materials": null,
-                  "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
-                  "OnComponentDestroy": null,
-                  "OnComponentDisabled": null,
-                  "OnComponentEnabled": null,
-                  "OnComponentFixedUpdate": null,
-                  "OnComponentStart": null,
-                  "OnComponentUpdate": null,
-                  "RenderOptions": {
-                    "GameLayer": true,
-                    "OverlayLayer": false,
-                    "BloomLayer": false,
-                    "AfterUILayer": false
-                  },
-                  "RenderType": "On",
-                  "Tint": "0.27684,0.66977,0.13395,1"
-                }
-              },
-              {
-                "Id": {
-                  "Type": "Component",
-                  "IdValue": "4d28aa73-1f91-4319-b8c0-b3060a2af3a5"
-                },
-                "Parent": {
-                  "Type": "GameObject",
-                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
-                },
-                "PreviousElement": {
-                  "Type": "Component",
-                  "IdValue": "dfb53473-48a8-469d-a912-db940fc6a787"
-                },
-                "ContainerProperty": "Components",
-                "IsContainerArray": true,
-                "Data": {
-                  "__type": "Sandbox.ModelCollider",
-                  "__guid": "4d28aa73-1f91-4319-b8c0-b3060a2af3a5",
-                  "__enabled": true,
-                  "ColliderFlags": 0,
-                  "Elasticity": null,
-                  "Friction": null,
-                  "IsTrigger": false,
-                  "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
-                  "OnComponentDestroy": null,
-                  "OnComponentDisabled": null,
-                  "OnComponentEnabled": null,
-                  "OnComponentFixedUpdate": null,
-                  "OnComponentStart": null,
-                  "OnComponentUpdate": null,
-                  "OnObjectTriggerEnter": null,
-                  "OnObjectTriggerExit": null,
-                  "OnTriggerEnter": null,
-                  "OnTriggerExit": null,
-                  "RollingResistance": null,
-                  "Static": false,
-                  "Surface": null,
-                  "SurfaceVelocity": "0,0,0"
-                }
-              },
-              {
-                "Id": {
-                  "Type": "Component",
-                  "IdValue": "8704b0fc-dd83-40a9-8829-e70e8dec44fd"
-                },
-                "Parent": {
-                  "Type": "GameObject",
-                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
-                },
-                "PreviousElement": {
-                  "Type": "Component",
-                  "IdValue": "4d28aa73-1f91-4319-b8c0-b3060a2af3a5"
-                },
-                "ContainerProperty": "Components",
-                "IsContainerArray": true,
-                "Data": {
-                  "__type": "Sandbox.Rigidbody",
-                  "__guid": "8704b0fc-dd83-40a9-8829-e70e8dec44fd",
-                  "__enabled": true,
-                  "AngularDamping": 0,
-                  "EnableImpactDamage": true,
-                  "Gravity": true,
-                  "GravityScale": 1,
-                  "ImpactDamage": 0,
-                  "LinearDamping": 0,
-                  "Locking": {
-                    "X": false,
-                    "Y": false,
-                    "Z": false,
-                    "Pitch": false,
-                    "Yaw": false,
-                    "Roll": false
-                  },
-                  "MassCenterOverride": "0,0,0",
-                  "MassOverride": 0,
-                  "MinImpactDamageSpeed": 500,
-                  "MotionEnabled": true,
-                  "OnComponentDestroy": null,
-                  "OnComponentDisabled": null,
-                  "OnComponentEnabled": null,
-                  "OnComponentFixedUpdate": null,
-                  "OnComponentStart": null,
-                  "OnComponentUpdate": null,
-                  "OverrideMassCenter": false,
-                  "RigidbodyFlags": 0,
-                  "StartAsleep": false
-                }
-              }
-            ],
+            "AddedObjects": [],
             "RemovedObjects": [
               {
                 "Id": {
@@ -18992,138 +17901,7 @@
           "__version": 1,
           "__Prefab": "prefabs/props/palm.prefab",
           "__PrefabInstancePatch": {
-            "AddedObjects": [
-              {
-                "Id": {
-                  "Type": "Component",
-                  "IdValue": "4ca9012d-2263-4301-b5ab-04aeff941a74"
-                },
-                "Parent": {
-                  "Type": "GameObject",
-                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
-                },
-                "PreviousElement": {
-                  "Type": "Component",
-                  "IdValue": "0c781ee5-94d5-44dd-b43c-223e686b594a"
-                },
-                "ContainerProperty": "Components",
-                "IsContainerArray": true,
-                "Data": {
-                  "__type": "Sandbox.ModelRenderer",
-                  "__guid": "4ca9012d-2263-4301-b5ab-04aeff941a74",
-                  "__enabled": true,
-                  "BodyGroups": 18446744073709551615,
-                  "CreateAttachments": false,
-                  "LodOverride": null,
-                  "MaterialGroup": null,
-                  "MaterialOverride": null,
-                  "Materials": null,
-                  "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
-                  "OnComponentDestroy": null,
-                  "OnComponentDisabled": null,
-                  "OnComponentEnabled": null,
-                  "OnComponentFixedUpdate": null,
-                  "OnComponentStart": null,
-                  "OnComponentUpdate": null,
-                  "RenderOptions": {
-                    "GameLayer": true,
-                    "OverlayLayer": false,
-                    "BloomLayer": false,
-                    "AfterUILayer": false
-                  },
-                  "RenderType": "On",
-                  "Tint": "0.27684,0.66977,0.13395,1"
-                }
-              },
-              {
-                "Id": {
-                  "Type": "Component",
-                  "IdValue": "a89f8c2d-a10c-405c-b092-008ac8d537ae"
-                },
-                "Parent": {
-                  "Type": "GameObject",
-                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
-                },
-                "PreviousElement": {
-                  "Type": "Component",
-                  "IdValue": "4ca9012d-2263-4301-b5ab-04aeff941a74"
-                },
-                "ContainerProperty": "Components",
-                "IsContainerArray": true,
-                "Data": {
-                  "__type": "Sandbox.ModelCollider",
-                  "__guid": "a89f8c2d-a10c-405c-b092-008ac8d537ae",
-                  "__enabled": true,
-                  "ColliderFlags": 0,
-                  "Elasticity": null,
-                  "Friction": null,
-                  "IsTrigger": false,
-                  "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
-                  "OnComponentDestroy": null,
-                  "OnComponentDisabled": null,
-                  "OnComponentEnabled": null,
-                  "OnComponentFixedUpdate": null,
-                  "OnComponentStart": null,
-                  "OnComponentUpdate": null,
-                  "OnObjectTriggerEnter": null,
-                  "OnObjectTriggerExit": null,
-                  "OnTriggerEnter": null,
-                  "OnTriggerExit": null,
-                  "RollingResistance": null,
-                  "Static": false,
-                  "Surface": null,
-                  "SurfaceVelocity": "0,0,0"
-                }
-              },
-              {
-                "Id": {
-                  "Type": "Component",
-                  "IdValue": "b239b34f-37a7-4dc1-9e11-999fcfce03b9"
-                },
-                "Parent": {
-                  "Type": "GameObject",
-                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
-                },
-                "PreviousElement": {
-                  "Type": "Component",
-                  "IdValue": "a89f8c2d-a10c-405c-b092-008ac8d537ae"
-                },
-                "ContainerProperty": "Components",
-                "IsContainerArray": true,
-                "Data": {
-                  "__type": "Sandbox.Rigidbody",
-                  "__guid": "b239b34f-37a7-4dc1-9e11-999fcfce03b9",
-                  "__enabled": true,
-                  "AngularDamping": 0,
-                  "EnableImpactDamage": true,
-                  "Gravity": true,
-                  "GravityScale": 1,
-                  "ImpactDamage": 0,
-                  "LinearDamping": 0,
-                  "Locking": {
-                    "X": false,
-                    "Y": false,
-                    "Z": false,
-                    "Pitch": false,
-                    "Yaw": false,
-                    "Roll": false
-                  },
-                  "MassCenterOverride": "0,0,0",
-                  "MassOverride": 0,
-                  "MinImpactDamageSpeed": 500,
-                  "MotionEnabled": true,
-                  "OnComponentDestroy": null,
-                  "OnComponentDisabled": null,
-                  "OnComponentEnabled": null,
-                  "OnComponentFixedUpdate": null,
-                  "OnComponentStart": null,
-                  "OnComponentUpdate": null,
-                  "OverrideMassCenter": false,
-                  "RigidbodyFlags": 0,
-                  "StartAsleep": false
-                }
-              }
-            ],
+            "AddedObjects": [],
             "RemovedObjects": [
               {
                 "Id": {
@@ -19177,138 +17955,7 @@
           "__version": 1,
           "__Prefab": "prefabs/props/palm.prefab",
           "__PrefabInstancePatch": {
-            "AddedObjects": [
-              {
-                "Id": {
-                  "Type": "Component",
-                  "IdValue": "ac975ba8-951d-40b5-94ed-5131cdfbc170"
-                },
-                "Parent": {
-                  "Type": "GameObject",
-                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
-                },
-                "PreviousElement": {
-                  "Type": "Component",
-                  "IdValue": "0c781ee5-94d5-44dd-b43c-223e686b594a"
-                },
-                "ContainerProperty": "Components",
-                "IsContainerArray": true,
-                "Data": {
-                  "__type": "Sandbox.ModelRenderer",
-                  "__guid": "ac975ba8-951d-40b5-94ed-5131cdfbc170",
-                  "__enabled": true,
-                  "BodyGroups": 18446744073709551615,
-                  "CreateAttachments": false,
-                  "LodOverride": null,
-                  "MaterialGroup": null,
-                  "MaterialOverride": null,
-                  "Materials": null,
-                  "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
-                  "OnComponentDestroy": null,
-                  "OnComponentDisabled": null,
-                  "OnComponentEnabled": null,
-                  "OnComponentFixedUpdate": null,
-                  "OnComponentStart": null,
-                  "OnComponentUpdate": null,
-                  "RenderOptions": {
-                    "GameLayer": true,
-                    "OverlayLayer": false,
-                    "BloomLayer": false,
-                    "AfterUILayer": false
-                  },
-                  "RenderType": "On",
-                  "Tint": "0.27684,0.66977,0.13395,1"
-                }
-              },
-              {
-                "Id": {
-                  "Type": "Component",
-                  "IdValue": "1913839a-dfa2-4b72-b465-319a1bfa1c3d"
-                },
-                "Parent": {
-                  "Type": "GameObject",
-                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
-                },
-                "PreviousElement": {
-                  "Type": "Component",
-                  "IdValue": "ac975ba8-951d-40b5-94ed-5131cdfbc170"
-                },
-                "ContainerProperty": "Components",
-                "IsContainerArray": true,
-                "Data": {
-                  "__type": "Sandbox.ModelCollider",
-                  "__guid": "1913839a-dfa2-4b72-b465-319a1bfa1c3d",
-                  "__enabled": true,
-                  "ColliderFlags": 0,
-                  "Elasticity": null,
-                  "Friction": null,
-                  "IsTrigger": false,
-                  "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
-                  "OnComponentDestroy": null,
-                  "OnComponentDisabled": null,
-                  "OnComponentEnabled": null,
-                  "OnComponentFixedUpdate": null,
-                  "OnComponentStart": null,
-                  "OnComponentUpdate": null,
-                  "OnObjectTriggerEnter": null,
-                  "OnObjectTriggerExit": null,
-                  "OnTriggerEnter": null,
-                  "OnTriggerExit": null,
-                  "RollingResistance": null,
-                  "Static": false,
-                  "Surface": null,
-                  "SurfaceVelocity": "0,0,0"
-                }
-              },
-              {
-                "Id": {
-                  "Type": "Component",
-                  "IdValue": "dded3133-4a5c-4cb3-9add-dcde488073a1"
-                },
-                "Parent": {
-                  "Type": "GameObject",
-                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
-                },
-                "PreviousElement": {
-                  "Type": "Component",
-                  "IdValue": "1913839a-dfa2-4b72-b465-319a1bfa1c3d"
-                },
-                "ContainerProperty": "Components",
-                "IsContainerArray": true,
-                "Data": {
-                  "__type": "Sandbox.Rigidbody",
-                  "__guid": "dded3133-4a5c-4cb3-9add-dcde488073a1",
-                  "__enabled": true,
-                  "AngularDamping": 0,
-                  "EnableImpactDamage": true,
-                  "Gravity": true,
-                  "GravityScale": 1,
-                  "ImpactDamage": 0,
-                  "LinearDamping": 0,
-                  "Locking": {
-                    "X": false,
-                    "Y": false,
-                    "Z": false,
-                    "Pitch": false,
-                    "Yaw": false,
-                    "Roll": false
-                  },
-                  "MassCenterOverride": "0,0,0",
-                  "MassOverride": 0,
-                  "MinImpactDamageSpeed": 500,
-                  "MotionEnabled": true,
-                  "OnComponentDestroy": null,
-                  "OnComponentDisabled": null,
-                  "OnComponentEnabled": null,
-                  "OnComponentFixedUpdate": null,
-                  "OnComponentStart": null,
-                  "OnComponentUpdate": null,
-                  "OverrideMassCenter": false,
-                  "RigidbodyFlags": 0,
-                  "StartAsleep": false
-                }
-              }
-            ],
+            "AddedObjects": [],
             "RemovedObjects": [
               {
                 "Id": {
@@ -19362,138 +18009,7 @@
           "__version": 1,
           "__Prefab": "prefabs/props/palm.prefab",
           "__PrefabInstancePatch": {
-            "AddedObjects": [
-              {
-                "Id": {
-                  "Type": "Component",
-                  "IdValue": "0d9d154a-e048-4575-aeef-ced0596246cb"
-                },
-                "Parent": {
-                  "Type": "GameObject",
-                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
-                },
-                "PreviousElement": {
-                  "Type": "Component",
-                  "IdValue": "0c781ee5-94d5-44dd-b43c-223e686b594a"
-                },
-                "ContainerProperty": "Components",
-                "IsContainerArray": true,
-                "Data": {
-                  "__type": "Sandbox.ModelRenderer",
-                  "__guid": "0d9d154a-e048-4575-aeef-ced0596246cb",
-                  "__enabled": true,
-                  "BodyGroups": 18446744073709551615,
-                  "CreateAttachments": false,
-                  "LodOverride": null,
-                  "MaterialGroup": null,
-                  "MaterialOverride": null,
-                  "Materials": null,
-                  "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
-                  "OnComponentDestroy": null,
-                  "OnComponentDisabled": null,
-                  "OnComponentEnabled": null,
-                  "OnComponentFixedUpdate": null,
-                  "OnComponentStart": null,
-                  "OnComponentUpdate": null,
-                  "RenderOptions": {
-                    "GameLayer": true,
-                    "OverlayLayer": false,
-                    "BloomLayer": false,
-                    "AfterUILayer": false
-                  },
-                  "RenderType": "On",
-                  "Tint": "0.27684,0.66977,0.13395,1"
-                }
-              },
-              {
-                "Id": {
-                  "Type": "Component",
-                  "IdValue": "42029c16-1166-42fb-bc19-5574c35c6f13"
-                },
-                "Parent": {
-                  "Type": "GameObject",
-                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
-                },
-                "PreviousElement": {
-                  "Type": "Component",
-                  "IdValue": "0d9d154a-e048-4575-aeef-ced0596246cb"
-                },
-                "ContainerProperty": "Components",
-                "IsContainerArray": true,
-                "Data": {
-                  "__type": "Sandbox.ModelCollider",
-                  "__guid": "42029c16-1166-42fb-bc19-5574c35c6f13",
-                  "__enabled": true,
-                  "ColliderFlags": 0,
-                  "Elasticity": null,
-                  "Friction": null,
-                  "IsTrigger": false,
-                  "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
-                  "OnComponentDestroy": null,
-                  "OnComponentDisabled": null,
-                  "OnComponentEnabled": null,
-                  "OnComponentFixedUpdate": null,
-                  "OnComponentStart": null,
-                  "OnComponentUpdate": null,
-                  "OnObjectTriggerEnter": null,
-                  "OnObjectTriggerExit": null,
-                  "OnTriggerEnter": null,
-                  "OnTriggerExit": null,
-                  "RollingResistance": null,
-                  "Static": false,
-                  "Surface": null,
-                  "SurfaceVelocity": "0,0,0"
-                }
-              },
-              {
-                "Id": {
-                  "Type": "Component",
-                  "IdValue": "5554dd3c-1988-4d10-9a56-fcf81914c615"
-                },
-                "Parent": {
-                  "Type": "GameObject",
-                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
-                },
-                "PreviousElement": {
-                  "Type": "Component",
-                  "IdValue": "42029c16-1166-42fb-bc19-5574c35c6f13"
-                },
-                "ContainerProperty": "Components",
-                "IsContainerArray": true,
-                "Data": {
-                  "__type": "Sandbox.Rigidbody",
-                  "__guid": "5554dd3c-1988-4d10-9a56-fcf81914c615",
-                  "__enabled": true,
-                  "AngularDamping": 0,
-                  "EnableImpactDamage": true,
-                  "Gravity": true,
-                  "GravityScale": 1,
-                  "ImpactDamage": 0,
-                  "LinearDamping": 0,
-                  "Locking": {
-                    "X": false,
-                    "Y": false,
-                    "Z": false,
-                    "Pitch": false,
-                    "Yaw": false,
-                    "Roll": false
-                  },
-                  "MassCenterOverride": "0,0,0",
-                  "MassOverride": 0,
-                  "MinImpactDamageSpeed": 500,
-                  "MotionEnabled": true,
-                  "OnComponentDestroy": null,
-                  "OnComponentDisabled": null,
-                  "OnComponentEnabled": null,
-                  "OnComponentFixedUpdate": null,
-                  "OnComponentStart": null,
-                  "OnComponentUpdate": null,
-                  "OverrideMassCenter": false,
-                  "RigidbodyFlags": 0,
-                  "StartAsleep": false
-                }
-              }
-            ],
+            "AddedObjects": [],
             "RemovedObjects": [
               {
                 "Id": {
@@ -19547,138 +18063,7 @@
           "__version": 1,
           "__Prefab": "prefabs/props/palm.prefab",
           "__PrefabInstancePatch": {
-            "AddedObjects": [
-              {
-                "Id": {
-                  "Type": "Component",
-                  "IdValue": "2f84eb75-7fb6-43ed-80b8-583758c0bbb9"
-                },
-                "Parent": {
-                  "Type": "GameObject",
-                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
-                },
-                "PreviousElement": {
-                  "Type": "Component",
-                  "IdValue": "0c781ee5-94d5-44dd-b43c-223e686b594a"
-                },
-                "ContainerProperty": "Components",
-                "IsContainerArray": true,
-                "Data": {
-                  "__type": "Sandbox.ModelRenderer",
-                  "__guid": "2f84eb75-7fb6-43ed-80b8-583758c0bbb9",
-                  "__enabled": true,
-                  "BodyGroups": 18446744073709551615,
-                  "CreateAttachments": false,
-                  "LodOverride": null,
-                  "MaterialGroup": null,
-                  "MaterialOverride": null,
-                  "Materials": null,
-                  "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
-                  "OnComponentDestroy": null,
-                  "OnComponentDisabled": null,
-                  "OnComponentEnabled": null,
-                  "OnComponentFixedUpdate": null,
-                  "OnComponentStart": null,
-                  "OnComponentUpdate": null,
-                  "RenderOptions": {
-                    "GameLayer": true,
-                    "OverlayLayer": false,
-                    "BloomLayer": false,
-                    "AfterUILayer": false
-                  },
-                  "RenderType": "On",
-                  "Tint": "0.27684,0.66977,0.13395,1"
-                }
-              },
-              {
-                "Id": {
-                  "Type": "Component",
-                  "IdValue": "39fbec7d-cea6-4b05-bd87-57730bf46ac0"
-                },
-                "Parent": {
-                  "Type": "GameObject",
-                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
-                },
-                "PreviousElement": {
-                  "Type": "Component",
-                  "IdValue": "2f84eb75-7fb6-43ed-80b8-583758c0bbb9"
-                },
-                "ContainerProperty": "Components",
-                "IsContainerArray": true,
-                "Data": {
-                  "__type": "Sandbox.ModelCollider",
-                  "__guid": "39fbec7d-cea6-4b05-bd87-57730bf46ac0",
-                  "__enabled": true,
-                  "ColliderFlags": 0,
-                  "Elasticity": null,
-                  "Friction": null,
-                  "IsTrigger": false,
-                  "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
-                  "OnComponentDestroy": null,
-                  "OnComponentDisabled": null,
-                  "OnComponentEnabled": null,
-                  "OnComponentFixedUpdate": null,
-                  "OnComponentStart": null,
-                  "OnComponentUpdate": null,
-                  "OnObjectTriggerEnter": null,
-                  "OnObjectTriggerExit": null,
-                  "OnTriggerEnter": null,
-                  "OnTriggerExit": null,
-                  "RollingResistance": null,
-                  "Static": false,
-                  "Surface": null,
-                  "SurfaceVelocity": "0,0,0"
-                }
-              },
-              {
-                "Id": {
-                  "Type": "Component",
-                  "IdValue": "80fe4cc7-e768-456e-a836-b9948afdae71"
-                },
-                "Parent": {
-                  "Type": "GameObject",
-                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
-                },
-                "PreviousElement": {
-                  "Type": "Component",
-                  "IdValue": "39fbec7d-cea6-4b05-bd87-57730bf46ac0"
-                },
-                "ContainerProperty": "Components",
-                "IsContainerArray": true,
-                "Data": {
-                  "__type": "Sandbox.Rigidbody",
-                  "__guid": "80fe4cc7-e768-456e-a836-b9948afdae71",
-                  "__enabled": true,
-                  "AngularDamping": 0,
-                  "EnableImpactDamage": true,
-                  "Gravity": true,
-                  "GravityScale": 1,
-                  "ImpactDamage": 0,
-                  "LinearDamping": 0,
-                  "Locking": {
-                    "X": false,
-                    "Y": false,
-                    "Z": false,
-                    "Pitch": false,
-                    "Yaw": false,
-                    "Roll": false
-                  },
-                  "MassCenterOverride": "0,0,0",
-                  "MassOverride": 0,
-                  "MinImpactDamageSpeed": 500,
-                  "MotionEnabled": true,
-                  "OnComponentDestroy": null,
-                  "OnComponentDisabled": null,
-                  "OnComponentEnabled": null,
-                  "OnComponentFixedUpdate": null,
-                  "OnComponentStart": null,
-                  "OnComponentUpdate": null,
-                  "OverrideMassCenter": false,
-                  "RigidbodyFlags": 0,
-                  "StartAsleep": false
-                }
-              }
-            ],
+            "AddedObjects": [],
             "RemovedObjects": [
               {
                 "Id": {
@@ -19732,138 +18117,7 @@
           "__version": 1,
           "__Prefab": "prefabs/props/palm.prefab",
           "__PrefabInstancePatch": {
-            "AddedObjects": [
-              {
-                "Id": {
-                  "Type": "Component",
-                  "IdValue": "88521b4a-b8af-4cde-a50e-2c7ead086af2"
-                },
-                "Parent": {
-                  "Type": "GameObject",
-                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
-                },
-                "PreviousElement": {
-                  "Type": "Component",
-                  "IdValue": "0c781ee5-94d5-44dd-b43c-223e686b594a"
-                },
-                "ContainerProperty": "Components",
-                "IsContainerArray": true,
-                "Data": {
-                  "__type": "Sandbox.ModelRenderer",
-                  "__guid": "88521b4a-b8af-4cde-a50e-2c7ead086af2",
-                  "__enabled": true,
-                  "BodyGroups": 18446744073709551615,
-                  "CreateAttachments": false,
-                  "LodOverride": null,
-                  "MaterialGroup": null,
-                  "MaterialOverride": null,
-                  "Materials": null,
-                  "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
-                  "OnComponentDestroy": null,
-                  "OnComponentDisabled": null,
-                  "OnComponentEnabled": null,
-                  "OnComponentFixedUpdate": null,
-                  "OnComponentStart": null,
-                  "OnComponentUpdate": null,
-                  "RenderOptions": {
-                    "GameLayer": true,
-                    "OverlayLayer": false,
-                    "BloomLayer": false,
-                    "AfterUILayer": false
-                  },
-                  "RenderType": "On",
-                  "Tint": "0.27684,0.66977,0.13395,1"
-                }
-              },
-              {
-                "Id": {
-                  "Type": "Component",
-                  "IdValue": "532d07d4-a7da-49d1-91ea-b16cdf3bdd34"
-                },
-                "Parent": {
-                  "Type": "GameObject",
-                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
-                },
-                "PreviousElement": {
-                  "Type": "Component",
-                  "IdValue": "88521b4a-b8af-4cde-a50e-2c7ead086af2"
-                },
-                "ContainerProperty": "Components",
-                "IsContainerArray": true,
-                "Data": {
-                  "__type": "Sandbox.ModelCollider",
-                  "__guid": "532d07d4-a7da-49d1-91ea-b16cdf3bdd34",
-                  "__enabled": true,
-                  "ColliderFlags": 0,
-                  "Elasticity": null,
-                  "Friction": null,
-                  "IsTrigger": false,
-                  "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
-                  "OnComponentDestroy": null,
-                  "OnComponentDisabled": null,
-                  "OnComponentEnabled": null,
-                  "OnComponentFixedUpdate": null,
-                  "OnComponentStart": null,
-                  "OnComponentUpdate": null,
-                  "OnObjectTriggerEnter": null,
-                  "OnObjectTriggerExit": null,
-                  "OnTriggerEnter": null,
-                  "OnTriggerExit": null,
-                  "RollingResistance": null,
-                  "Static": false,
-                  "Surface": null,
-                  "SurfaceVelocity": "0,0,0"
-                }
-              },
-              {
-                "Id": {
-                  "Type": "Component",
-                  "IdValue": "2d525d79-3310-4c28-8904-cbc06e945dde"
-                },
-                "Parent": {
-                  "Type": "GameObject",
-                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
-                },
-                "PreviousElement": {
-                  "Type": "Component",
-                  "IdValue": "532d07d4-a7da-49d1-91ea-b16cdf3bdd34"
-                },
-                "ContainerProperty": "Components",
-                "IsContainerArray": true,
-                "Data": {
-                  "__type": "Sandbox.Rigidbody",
-                  "__guid": "2d525d79-3310-4c28-8904-cbc06e945dde",
-                  "__enabled": true,
-                  "AngularDamping": 0,
-                  "EnableImpactDamage": true,
-                  "Gravity": true,
-                  "GravityScale": 1,
-                  "ImpactDamage": 0,
-                  "LinearDamping": 0,
-                  "Locking": {
-                    "X": false,
-                    "Y": false,
-                    "Z": false,
-                    "Pitch": false,
-                    "Yaw": false,
-                    "Roll": false
-                  },
-                  "MassCenterOverride": "0,0,0",
-                  "MassOverride": 0,
-                  "MinImpactDamageSpeed": 500,
-                  "MotionEnabled": true,
-                  "OnComponentDestroy": null,
-                  "OnComponentDisabled": null,
-                  "OnComponentEnabled": null,
-                  "OnComponentFixedUpdate": null,
-                  "OnComponentStart": null,
-                  "OnComponentUpdate": null,
-                  "OverrideMassCenter": false,
-                  "RigidbodyFlags": 0,
-                  "StartAsleep": false
-                }
-              }
-            ],
+            "AddedObjects": [],
             "RemovedObjects": [
               {
                 "Id": {
@@ -19917,138 +18171,7 @@
           "__version": 1,
           "__Prefab": "prefabs/props/palm.prefab",
           "__PrefabInstancePatch": {
-            "AddedObjects": [
-              {
-                "Id": {
-                  "Type": "Component",
-                  "IdValue": "76ab463c-26d2-4430-b212-49bf9094e6d3"
-                },
-                "Parent": {
-                  "Type": "GameObject",
-                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
-                },
-                "PreviousElement": {
-                  "Type": "Component",
-                  "IdValue": "0c781ee5-94d5-44dd-b43c-223e686b594a"
-                },
-                "ContainerProperty": "Components",
-                "IsContainerArray": true,
-                "Data": {
-                  "__type": "Sandbox.ModelRenderer",
-                  "__guid": "76ab463c-26d2-4430-b212-49bf9094e6d3",
-                  "__enabled": true,
-                  "BodyGroups": 18446744073709551615,
-                  "CreateAttachments": false,
-                  "LodOverride": null,
-                  "MaterialGroup": null,
-                  "MaterialOverride": null,
-                  "Materials": null,
-                  "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
-                  "OnComponentDestroy": null,
-                  "OnComponentDisabled": null,
-                  "OnComponentEnabled": null,
-                  "OnComponentFixedUpdate": null,
-                  "OnComponentStart": null,
-                  "OnComponentUpdate": null,
-                  "RenderOptions": {
-                    "GameLayer": true,
-                    "OverlayLayer": false,
-                    "BloomLayer": false,
-                    "AfterUILayer": false
-                  },
-                  "RenderType": "On",
-                  "Tint": "0.27684,0.66977,0.13395,1"
-                }
-              },
-              {
-                "Id": {
-                  "Type": "Component",
-                  "IdValue": "d103cc62-fff3-4efe-91e2-ea2efcdb6204"
-                },
-                "Parent": {
-                  "Type": "GameObject",
-                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
-                },
-                "PreviousElement": {
-                  "Type": "Component",
-                  "IdValue": "76ab463c-26d2-4430-b212-49bf9094e6d3"
-                },
-                "ContainerProperty": "Components",
-                "IsContainerArray": true,
-                "Data": {
-                  "__type": "Sandbox.ModelCollider",
-                  "__guid": "d103cc62-fff3-4efe-91e2-ea2efcdb6204",
-                  "__enabled": true,
-                  "ColliderFlags": 0,
-                  "Elasticity": null,
-                  "Friction": null,
-                  "IsTrigger": false,
-                  "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
-                  "OnComponentDestroy": null,
-                  "OnComponentDisabled": null,
-                  "OnComponentEnabled": null,
-                  "OnComponentFixedUpdate": null,
-                  "OnComponentStart": null,
-                  "OnComponentUpdate": null,
-                  "OnObjectTriggerEnter": null,
-                  "OnObjectTriggerExit": null,
-                  "OnTriggerEnter": null,
-                  "OnTriggerExit": null,
-                  "RollingResistance": null,
-                  "Static": false,
-                  "Surface": null,
-                  "SurfaceVelocity": "0,0,0"
-                }
-              },
-              {
-                "Id": {
-                  "Type": "Component",
-                  "IdValue": "70a948bf-df08-4cce-96be-4717c6e9fede"
-                },
-                "Parent": {
-                  "Type": "GameObject",
-                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
-                },
-                "PreviousElement": {
-                  "Type": "Component",
-                  "IdValue": "d103cc62-fff3-4efe-91e2-ea2efcdb6204"
-                },
-                "ContainerProperty": "Components",
-                "IsContainerArray": true,
-                "Data": {
-                  "__type": "Sandbox.Rigidbody",
-                  "__guid": "70a948bf-df08-4cce-96be-4717c6e9fede",
-                  "__enabled": true,
-                  "AngularDamping": 0,
-                  "EnableImpactDamage": true,
-                  "Gravity": true,
-                  "GravityScale": 1,
-                  "ImpactDamage": 0,
-                  "LinearDamping": 0,
-                  "Locking": {
-                    "X": false,
-                    "Y": false,
-                    "Z": false,
-                    "Pitch": false,
-                    "Yaw": false,
-                    "Roll": false
-                  },
-                  "MassCenterOverride": "0,0,0",
-                  "MassOverride": 0,
-                  "MinImpactDamageSpeed": 500,
-                  "MotionEnabled": true,
-                  "OnComponentDestroy": null,
-                  "OnComponentDisabled": null,
-                  "OnComponentEnabled": null,
-                  "OnComponentFixedUpdate": null,
-                  "OnComponentStart": null,
-                  "OnComponentUpdate": null,
-                  "OverrideMassCenter": false,
-                  "RigidbodyFlags": 0,
-                  "StartAsleep": false
-                }
-              }
-            ],
+            "AddedObjects": [],
             "RemovedObjects": [
               {
                 "Id": {
@@ -20102,138 +18225,7 @@
           "__version": 1,
           "__Prefab": "prefabs/props/palm.prefab",
           "__PrefabInstancePatch": {
-            "AddedObjects": [
-              {
-                "Id": {
-                  "Type": "Component",
-                  "IdValue": "96dc630d-c083-4c69-99c9-79acacda017d"
-                },
-                "Parent": {
-                  "Type": "GameObject",
-                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
-                },
-                "PreviousElement": {
-                  "Type": "Component",
-                  "IdValue": "0c781ee5-94d5-44dd-b43c-223e686b594a"
-                },
-                "ContainerProperty": "Components",
-                "IsContainerArray": true,
-                "Data": {
-                  "__type": "Sandbox.ModelRenderer",
-                  "__guid": "96dc630d-c083-4c69-99c9-79acacda017d",
-                  "__enabled": true,
-                  "BodyGroups": 18446744073709551615,
-                  "CreateAttachments": false,
-                  "LodOverride": null,
-                  "MaterialGroup": null,
-                  "MaterialOverride": null,
-                  "Materials": null,
-                  "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
-                  "OnComponentDestroy": null,
-                  "OnComponentDisabled": null,
-                  "OnComponentEnabled": null,
-                  "OnComponentFixedUpdate": null,
-                  "OnComponentStart": null,
-                  "OnComponentUpdate": null,
-                  "RenderOptions": {
-                    "GameLayer": true,
-                    "OverlayLayer": false,
-                    "BloomLayer": false,
-                    "AfterUILayer": false
-                  },
-                  "RenderType": "On",
-                  "Tint": "0.27684,0.66977,0.13395,1"
-                }
-              },
-              {
-                "Id": {
-                  "Type": "Component",
-                  "IdValue": "0f6b6a58-c86c-4606-a429-2200b740562d"
-                },
-                "Parent": {
-                  "Type": "GameObject",
-                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
-                },
-                "PreviousElement": {
-                  "Type": "Component",
-                  "IdValue": "96dc630d-c083-4c69-99c9-79acacda017d"
-                },
-                "ContainerProperty": "Components",
-                "IsContainerArray": true,
-                "Data": {
-                  "__type": "Sandbox.ModelCollider",
-                  "__guid": "0f6b6a58-c86c-4606-a429-2200b740562d",
-                  "__enabled": true,
-                  "ColliderFlags": 0,
-                  "Elasticity": null,
-                  "Friction": null,
-                  "IsTrigger": false,
-                  "Model": "models/pirate-kit/palm-detailed-bend.vmdl",
-                  "OnComponentDestroy": null,
-                  "OnComponentDisabled": null,
-                  "OnComponentEnabled": null,
-                  "OnComponentFixedUpdate": null,
-                  "OnComponentStart": null,
-                  "OnComponentUpdate": null,
-                  "OnObjectTriggerEnter": null,
-                  "OnObjectTriggerExit": null,
-                  "OnTriggerEnter": null,
-                  "OnTriggerExit": null,
-                  "RollingResistance": null,
-                  "Static": false,
-                  "Surface": null,
-                  "SurfaceVelocity": "0,0,0"
-                }
-              },
-              {
-                "Id": {
-                  "Type": "Component",
-                  "IdValue": "0432c5b5-e547-432b-8d52-d0232ba8ad92"
-                },
-                "Parent": {
-                  "Type": "GameObject",
-                  "IdValue": "92221169-c5ad-4b07-8205-56f6489813c1"
-                },
-                "PreviousElement": {
-                  "Type": "Component",
-                  "IdValue": "0f6b6a58-c86c-4606-a429-2200b740562d"
-                },
-                "ContainerProperty": "Components",
-                "IsContainerArray": true,
-                "Data": {
-                  "__type": "Sandbox.Rigidbody",
-                  "__guid": "0432c5b5-e547-432b-8d52-d0232ba8ad92",
-                  "__enabled": true,
-                  "AngularDamping": 0,
-                  "EnableImpactDamage": true,
-                  "Gravity": true,
-                  "GravityScale": 1,
-                  "ImpactDamage": 0,
-                  "LinearDamping": 0,
-                  "Locking": {
-                    "X": false,
-                    "Y": false,
-                    "Z": false,
-                    "Pitch": false,
-                    "Yaw": false,
-                    "Roll": false
-                  },
-                  "MassCenterOverride": "0,0,0",
-                  "MassOverride": 0,
-                  "MinImpactDamageSpeed": 500,
-                  "MotionEnabled": true,
-                  "OnComponentDestroy": null,
-                  "OnComponentDisabled": null,
-                  "OnComponentEnabled": null,
-                  "OnComponentFixedUpdate": null,
-                  "OnComponentStart": null,
-                  "OnComponentUpdate": null,
-                  "OverrideMassCenter": false,
-                  "RigidbodyFlags": 0,
-                  "StartAsleep": false
-                }
-              }
-            ],
+            "AddedObjects": [],
             "RemovedObjects": [
               {
                 "Id": {
@@ -22203,88 +20195,6 @@
               "OnPropTakeDamage": null,
               "StartAsleep": false,
               "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "Sandbox.ModelRenderer",
-              "__guid": "d62e9c49-3be6-4df8-8924-5d14254c35ea",
-              "__enabled": true,
-              "BodyGroups": 18446744073709551615,
-              "CreateAttachments": false,
-              "LodOverride": null,
-              "MaterialGroup": null,
-              "MaterialOverride": null,
-              "Materials": null,
-              "Model": "models/sand_valley/cactus2.vmdl",
-              "OnComponentDestroy": null,
-              "OnComponentDisabled": null,
-              "OnComponentEnabled": null,
-              "OnComponentFixedUpdate": null,
-              "OnComponentStart": null,
-              "OnComponentUpdate": null,
-              "RenderOptions": {
-                "GameLayer": true,
-                "OverlayLayer": false,
-                "BloomLayer": false,
-                "AfterUILayer": false
-              },
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "Sandbox.ModelCollider",
-              "__guid": "b514da03-d8dd-4cf5-aca8-f96c5d470dd2",
-              "__enabled": true,
-              "ColliderFlags": 0,
-              "Elasticity": null,
-              "Friction": null,
-              "IsTrigger": false,
-              "Model": "models/sand_valley/cactus2.vmdl",
-              "OnComponentDestroy": null,
-              "OnComponentDisabled": null,
-              "OnComponentEnabled": null,
-              "OnComponentFixedUpdate": null,
-              "OnComponentStart": null,
-              "OnComponentUpdate": null,
-              "OnObjectTriggerEnter": null,
-              "OnObjectTriggerExit": null,
-              "OnTriggerEnter": null,
-              "OnTriggerExit": null,
-              "RollingResistance": null,
-              "Static": false,
-              "Surface": null,
-              "SurfaceVelocity": "0,0,0"
-            },
-            {
-              "__type": "Sandbox.Rigidbody",
-              "__guid": "a41fae75-ff95-49ca-9004-ea54f91f02cb",
-              "__enabled": true,
-              "AngularDamping": 0,
-              "EnableImpactDamage": true,
-              "Gravity": true,
-              "GravityScale": 1,
-              "ImpactDamage": 0,
-              "LinearDamping": 0,
-              "Locking": {
-                "X": false,
-                "Y": false,
-                "Z": false,
-                "Pitch": false,
-                "Yaw": false,
-                "Roll": false
-              },
-              "MassCenterOverride": "0,0,0",
-              "MassOverride": 0,
-              "MinImpactDamageSpeed": 500,
-              "MotionEnabled": true,
-              "OnComponentDestroy": null,
-              "OnComponentDisabled": null,
-              "OnComponentEnabled": null,
-              "OnComponentFixedUpdate": null,
-              "OnComponentStart": null,
-              "OnComponentUpdate": null,
-              "OverrideMassCenter": false,
-              "RigidbodyFlags": 0,
-              "StartAsleep": false
             }
           ],
           "Children": []
@@ -22921,12 +20831,12 @@
                   "0.25,0.2500052"
                 ],
                 "TextureOffset": [
-                  "41.46289,0.001464844",
-                  "303.8711,232.2778",
+                  "41.46484,0.001464844",
+                  "303.873,232.2778",
                   "0.0004882812,511.9997",
                   "279.7217,449.0991",
-                  "208.1289,449.0991",
-                  "303.8711,449.0991"
+                  "208.127,449.0991",
+                  "303.873,449.0991"
                 ],
                 "MaterialIndex": [
                   1,
@@ -23900,7 +21810,27 @@
                       "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
                     },
                     "Property": "CarPrefab",
-                    "Value": null
+                    "Value": {
+                      "_type": "gameobject",
+                      "prefab": "prefabs/cars/car_high.prefab"
+                    }
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "Spawners",
+                    "Value": [
+                      {
+                        "_type": "gameobject",
+                        "go": "ebcb6bf4-cce2-47ef-b9fa-dee6a6f5bedc"
+                      },
+                      {
+                        "_type": "gameobject",
+                        "go": "e98975fa-1c94-49bc-bbd1-c84323f9cf0a"
+                      }
+                    ]
                   },
                   {
                     "Target": {
@@ -24071,7 +22001,43 @@
                       "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
                     },
                     "Property": "CarPrefab",
-                    "Value": null
+                    "Value": {
+                      "_type": "gameobject",
+                      "prefab": "prefabs/cars/car_high.prefab"
+                    }
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "MaxDelaySpawnCar",
+                    "Value": 1
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "MinDelaySpawnCar",
+                    "Value": 0.5
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "Spawners",
+                    "Value": [
+                      {
+                        "_type": "gameobject",
+                        "go": "ebcb6bf4-cce2-47ef-b9fa-dee6a6f5bedc"
+                      },
+                      {
+                        "_type": "gameobject",
+                        "go": "e98975fa-1c94-49bc-bbd1-c84323f9cf0a"
+                      }
+                    ]
                   },
                   {
                     "Target": {
@@ -24081,7 +22047,7 @@
                     "Property": "Mesh",
                     "Value": {
                       "Topology": "H4sIAAAAAAAACoWQ2QoCQQwES1dXUfC+/v9HI4UdmAdhB4aQTDpT6T3wAWZ+Zw1skt+BA/AETsAq157xXIGqKutT9Ay9j9S92z9/vaO3thvmTum9pbcWzgwcw2vuX/K/MmtJL8s5e5vL4t6XYWd3tW5u9M2e1qt1RnshuxzNJ5uMvumP3hjbP70YvZLdHVpvdKb15v4CSw/ShsQBAAA=",
-                      "Position": "4279.397,-103.391,-16.79005",
+                      "Position": "4279.398,-103.391,-16.79005",
                       "Rotation": "0,0,0.258819,0.9659259",
                       "Positions": [
                         "-98.76762,-1124.251,1.401409",
@@ -24144,10 +22110,10 @@
                         "0.25,0.2499932"
                       ],
                       "TextureOffset": [
-                        "0.04199219,159.9122",
+                        "0.04150391,159.912",
                         "511.398,5.015625",
-                        "119.4341,222.4203",
-                        "136.5667,222.4203",
+                        "119.4336,222.4203",
+                        "136.5671,222.4203",
                         "0.6022949,511.6917",
                         "511.3979,511.6917"
                       ],
@@ -24202,6 +22168,412 @@
                 "afdcf159-1039-4fe9-a81e-f45e8831a22e": "7aa03da2-7ed8-4ace-801a-0b349abb2208",
                 "2c83d66f-c045-4223-b9e7-aaaff99d7e62": "962bf8f1-df84-4963-bc3d-b10bc09ffaf5",
                 "3de0d59a-3e01-49cb-83f3-e10e30d8e280": "cb5a1077-9a05-4dc6-8a91-f4990559832d"
+              }
+            },
+            {
+              "__guid": "7f1a0489-0cb1-489b-8c4a-90d325c0c5d8",
+              "__version": 1,
+              "__Prefab": "prefabs/road.prefab",
+              "__PrefabInstancePatch": {
+                "AddedObjects": [],
+                "RemovedObjects": [],
+                "PropertyOverrides": [
+                  {
+                    "Target": {
+                      "Type": "GameObject",
+                      "IdValue": "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1"
+                    },
+                    "Property": "Name",
+                    "Value": "Road (3)"
+                  },
+                  {
+                    "Target": {
+                      "Type": "GameObject",
+                      "IdValue": "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1"
+                    },
+                    "Property": "Position",
+                    "Value": "4492.158,-117.5816,-16.71294"
+                  },
+                  {
+                    "Target": {
+                      "Type": "GameObject",
+                      "IdValue": "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1"
+                    },
+                    "Property": "Rotation",
+                    "Value": "0,0,0.258819,0.9659259"
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "CarPrefab",
+                    "Value": {
+                      "_type": "gameobject",
+                      "prefab": "prefabs/cars/car_high.prefab"
+                    }
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "MaxDelaySpawnCar",
+                    "Value": 1
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "MinDelaySpawnCar",
+                    "Value": 0.5
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "Spawners",
+                    "Value": [
+                      {
+                        "_type": "gameobject",
+                        "go": "3de0d59a-3e01-49cb-83f3-e10e30d8e280"
+                      },
+                      {
+                        "_type": "gameobject",
+                        "go": "aa6dee25-bba0-4f0d-8adc-c7d617712997"
+                      }
+                    ]
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "2c83d66f-c045-4223-b9e7-aaaff99d7e62"
+                    },
+                    "Property": "Mesh",
+                    "Value": {
+                      "Topology": "H4sIAAAAAAAACoWQ2QoCQQwES1dXUfC+/v9HI4UdmAdhB4aQTDpT6T3wAWZ+Zw1skt+BA/AETsAq157xXIGqKutT9Ay9j9S92z9/vaO3thvmTum9pbcWzgwcw2vuX/K/MmtJL8s5e5vL4t6XYWd3tW5u9M2e1qt1RnshuxzNJ5uMvumP3hjbP70YvZLdHVpvdKb15v4CSw/ShsQBAAA=",
+                      "Position": "4484.139,-103.391,-16.79005",
+                      "Rotation": "0,0,0.258819,0.9659259",
+                      "Positions": [
+                        "-98.76762,-1124.251,1.401409",
+                        "98.76762,-1124.251,1.401409",
+                        "98.76762,1184.494,1.401409",
+                        "-98.76762,1184.494,1.401409",
+                        "-98.76762,1184.494,-1.401409",
+                        "98.76762,1184.494,-1.401409",
+                        "98.76762,-1124.251,-1.401409",
+                        "-98.76762,-1124.251,-1.401409"
+                      ],
+                      "TextureCoord": [
+                        "-0.0000004172325,4.976017",
+                        "-2.771622,0.9890514",
+                        "-0.0000004172325,-4.215868",
+                        "-8.665677,0.9890513",
+                        "-1,-4.215868",
+                        "2.228379,0.9890514",
+                        "-1,4.976017",
+                        "-8.371398,0.9890513",
+                        "-1.228378,-8.371398",
+                        "3.771622,1.010949",
+                        "-1.228378,9.665671",
+                        "9.3714,1.010948",
+                        "-2.771622,9.665671",
+                        "-1.228378,1.010949",
+                        "-2.771622,-8.371398",
+                        "9.665671,1.010948",
+                        "9.665671,0.9890513",
+                        "-2.771622,1.010949",
+                        "-8.371398,1.010948",
+                        "3.771622,0.9890514",
+                        "-8.665677,1.010948",
+                        "-1.228378,0.9890514",
+                        "9.3714,0.9890513",
+                        "2.228379,1.010949"
+                      ],
+                      "TextureUAxis": [
+                        "0.8660254,0.5,0",
+                        "1,0,-0",
+                        "0.5000001,-0.8660254,0",
+                        "-0.4999999,0.8660254,0",
+                        "-1,0,0",
+                        "1,-0,0"
+                      ],
+                      "TextureVAxis": [
+                        "0.5000001,-0.8660254,0",
+                        "0,-1,0",
+                        "0,0,-1",
+                        "0,0,-1",
+                        "0,0,-1",
+                        "-0,0,-1"
+                      ],
+                      "TextureScale": [
+                        "0.7716225,0.9811411",
+                        "0.25,0.25",
+                        "0.5000001,0.5000082",
+                        "0.4999998,0.5000082",
+                        "0.2500001,0.2499932",
+                        "0.25,0.2499932"
+                      ],
+                      "TextureOffset": [
+                        "26.25146,55.57361",
+                        "511.398,5.015625",
+                        "170.6924,222.4203",
+                        "85.30835,222.4203",
+                        "0.6022949,511.6917",
+                        "511.3979,511.6917"
+                      ],
+                      "MaterialIndex": [
+                        0,
+                        1,
+                        0,
+                        0,
+                        1,
+                        1
+                      ],
+                      "EdgeFlags": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+                      "Materials": [
+                        "materials/road1.vmat"
+                      ]
+                    }
+                  }
+                ],
+                "MovedObjects": []
+              },
+              "__PrefabIdToInstanceId": {
+                "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1": "7f1a0489-0cb1-489b-8c4a-90d325c0c5d8",
+                "ebcb6bf4-cce2-47ef-b9fa-dee6a6f5bedc": "481315e9-e329-4617-8220-3f2da0c6b10d",
+                "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f": "d37cf57c-7b60-40f4-bd40-0899d82454e9",
+                "e98975fa-1c94-49bc-bbd1-c84323f9cf0a": "e361176f-8499-4606-9f4d-22fcab8fdea5",
+                "aa6dee25-bba0-4f0d-8adc-c7d617712997": "f3297b36-46f6-456f-a019-a572f61eb46a",
+                "afdcf159-1039-4fe9-a81e-f45e8831a22e": "58852216-22b4-4986-9c2a-b58c588ccd8f",
+                "2c83d66f-c045-4223-b9e7-aaaff99d7e62": "222024de-9186-4c38-b276-5085bedb4eec",
+                "3de0d59a-3e01-49cb-83f3-e10e30d8e280": "f47384ce-a9c8-48f0-834d-bdd6bd0fcdfe"
+              }
+            },
+            {
+              "__guid": "706aa63d-84b5-4c1a-b6b0-c22a02208fd9",
+              "__version": 1,
+              "__Prefab": "prefabs/road.prefab",
+              "__PrefabInstancePatch": {
+                "AddedObjects": [],
+                "RemovedObjects": [],
+                "PropertyOverrides": [
+                  {
+                    "Target": {
+                      "Type": "GameObject",
+                      "IdValue": "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1"
+                    },
+                    "Property": "Name",
+                    "Value": "Road (3)"
+                  },
+                  {
+                    "Target": {
+                      "Type": "GameObject",
+                      "IdValue": "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1"
+                    },
+                    "Property": "Position",
+                    "Value": "4058.61,-117.5816,-16.71294"
+                  },
+                  {
+                    "Target": {
+                      "Type": "GameObject",
+                      "IdValue": "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1"
+                    },
+                    "Property": "Rotation",
+                    "Value": "0,0,0.258819,0.9659259"
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "CarPrefab",
+                    "Value": {
+                      "_type": "gameobject",
+                      "prefab": "prefabs/cars/car_high.prefab"
+                    }
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "MaxDelaySpawnCar",
+                    "Value": 2
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "Spawners",
+                    "Value": [
+                      {
+                        "_type": "gameobject",
+                        "go": "3de0d59a-3e01-49cb-83f3-e10e30d8e280"
+                      },
+                      {
+                        "_type": "gameobject",
+                        "go": "aa6dee25-bba0-4f0d-8adc-c7d617712997"
+                      }
+                    ]
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "2c83d66f-c045-4223-b9e7-aaaff99d7e62"
+                    },
+                    "Property": "Mesh",
+                    "Value": {
+                      "Topology": "H4sIAAAAAAAACoWQ2QoCQQwES1dXUfC+/v9HI4UdmAdhB4aQTDpT6T3wAWZ+Zw1skt+BA/AETsAq157xXIGqKutT9Ay9j9S92z9/vaO3thvmTum9pbcWzgwcw2vuX/K/MmtJL8s5e5vL4t6XYWd3tW5u9M2e1qt1RnshuxzNJ5uMvumP3hjbP70YvZLdHVpvdKb15v4CSw/ShsQBAAA=",
+                      "Position": "4050.591,-103.391,-16.79005",
+                      "Rotation": "0,0,0.258819,0.9659259",
+                      "Positions": [
+                        "-98.76762,-1124.251,1.401409",
+                        "98.76762,-1124.251,1.401409",
+                        "98.76762,1184.494,1.401409",
+                        "-98.76762,1184.494,1.401409",
+                        "-98.76762,1184.494,-1.401409",
+                        "98.76762,1184.494,-1.401409",
+                        "98.76762,-1124.251,-1.401409",
+                        "-98.76762,-1124.251,-1.401409"
+                      ],
+                      "TextureCoord": [
+                        "-0.0000004172325,4.976017",
+                        "-2.771622,0.9890514",
+                        "-0.0000004172325,-4.215868",
+                        "-8.665677,0.9890513",
+                        "-1,-4.215868",
+                        "2.228379,0.9890514",
+                        "-1,4.976017",
+                        "-8.371398,0.9890513",
+                        "-1.228378,-8.371398",
+                        "3.771622,1.010949",
+                        "-1.228378,9.665671",
+                        "9.3714,1.010948",
+                        "-2.771622,9.665671",
+                        "-1.228378,1.010949",
+                        "-2.771622,-8.371398",
+                        "9.665671,1.010948",
+                        "9.665671,0.9890513",
+                        "-2.771622,1.010949",
+                        "-8.371398,1.010948",
+                        "3.771622,0.9890514",
+                        "-8.665677,1.010948",
+                        "-1.228378,0.9890514",
+                        "9.3714,0.9890513",
+                        "2.228379,1.010949"
+                      ],
+                      "TextureUAxis": [
+                        "0.8660254,0.5,0",
+                        "1,0,-0",
+                        "0.5,-0.8660254,0",
+                        "-0.5000001,0.8660254,0",
+                        "-1,0,0",
+                        "1,-0,0"
+                      ],
+                      "TextureVAxis": [
+                        "0.4999992,-0.8660259,0",
+                        "0,-1,0",
+                        "0,0,-1",
+                        "0,0,-1",
+                        "0,0,-1",
+                        "-0,0,-1"
+                      ],
+                      "TextureScale": [
+                        "0.7716232,0.9811411",
+                        "0.25,0.25",
+                        "0.5000001,0.5000082",
+                        "0.4999998,0.5000082",
+                        "0.2500001,0.2499932",
+                        "0.25,0.2499932"
+                      ],
+                      "TextureOffset": [
+                        "0.8460846,20.51807",
+                        "511.398,5.015625",
+                        "92.24109,222.4203",
+                        "163.7609,222.4203",
+                        "0.6022949,511.6917",
+                        "511.3979,511.6917"
+                      ],
+                      "MaterialIndex": [
+                        0,
+                        1,
+                        0,
+                        0,
+                        1,
+                        1
+                      ],
+                      "EdgeFlags": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+                      "Materials": [
+                        "materials/road1.vmat"
+                      ]
+                    }
+                  }
+                ],
+                "MovedObjects": []
+              },
+              "__PrefabIdToInstanceId": {
+                "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1": "706aa63d-84b5-4c1a-b6b0-c22a02208fd9",
+                "ebcb6bf4-cce2-47ef-b9fa-dee6a6f5bedc": "b1444667-ef87-4075-9fb6-adfd97faf555",
+                "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f": "5721441b-75a1-40e5-8bb4-dd2ce3da72d4",
+                "e98975fa-1c94-49bc-bbd1-c84323f9cf0a": "ec372c50-3e52-4967-8eb3-47b8c7c2a785",
+                "aa6dee25-bba0-4f0d-8adc-c7d617712997": "0af998a3-ed6c-4f48-a7af-a92f865293c5",
+                "afdcf159-1039-4fe9-a81e-f45e8831a22e": "cd82c66a-5e0c-4f95-97d8-e9d727f223eb",
+                "2c83d66f-c045-4223-b9e7-aaaff99d7e62": "9259ff2f-8baf-40a4-bb15-1a97048b64ad",
+                "3de0d59a-3e01-49cb-83f3-e10e30d8e280": "119d7f3e-9ee9-420f-8384-f0deafd2e7ed"
               }
             },
             {
@@ -24288,7 +22660,10 @@
                       "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
                     },
                     "Property": "CarPrefab",
-                    "Value": null
+                    "Value": {
+                      "_type": "gameobject",
+                      "prefab": "prefabs/cars/car_easy.prefab"
+                    }
                   },
                   {
                     "Target": {
@@ -24296,7 +22671,7 @@
                       "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
                     },
                     "Property": "MaxDelaySpawnCar",
-                    "Value": 3
+                    "Value": 1
                   },
                   {
                     "Target": {
@@ -24304,7 +22679,24 @@
                       "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
                     },
                     "Property": "MinDelaySpawnCar",
-                    "Value": 2
+                    "Value": 0.5
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "Spawners",
+                    "Value": [
+                      {
+                        "_type": "gameobject",
+                        "go": "3de0d59a-3e01-49cb-83f3-e10e30d8e280"
+                      },
+                      {
+                        "_type": "gameobject",
+                        "go": "aa6dee25-bba0-4f0d-8adc-c7d617712997"
+                      }
+                    ]
                   },
                   {
                     "Target": {
@@ -24467,15 +22859,35 @@
                       "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
                     },
                     "Property": "CarPrefab",
-                    "Value": null
+                    "Value": {
+                      "_type": "gameobject",
+                      "prefab": "prefabs/cars/car_medium.prefab"
+                    }
                   },
                   {
                     "Target": {
                       "Type": "Component",
                       "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
                     },
-                    "Property": "MinDelaySpawnCar",
+                    "Property": "MaxDelaySpawnCar",
                     "Value": 2
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "Spawners",
+                    "Value": [
+                      {
+                        "_type": "gameobject",
+                        "go": "ebcb6bf4-cce2-47ef-b9fa-dee6a6f5bedc"
+                      },
+                      {
+                        "_type": "gameobject",
+                        "go": "e98975fa-1c94-49bc-bbd1-c84323f9cf0a"
+                      }
+                    ]
                   },
                   {
                     "Target": {
@@ -24662,6 +23074,23 @@
                   {
                     "Target": {
                       "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "Spawners",
+                    "Value": [
+                      {
+                        "_type": "gameobject",
+                        "go": "ebcb6bf4-cce2-47ef-b9fa-dee6a6f5bedc"
+                      },
+                      {
+                        "_type": "gameobject",
+                        "go": "e98975fa-1c94-49bc-bbd1-c84323f9cf0a"
+                      }
+                    ]
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
                       "IdValue": "2c83d66f-c045-4223-b9e7-aaaff99d7e62"
                     },
                     "Property": "Mesh",
@@ -24813,7 +23242,10 @@
                       "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
                     },
                     "Property": "CarPrefab",
-                    "Value": null
+                    "Value": {
+                      "_type": "gameobject",
+                      "prefab": "prefabs/cars/car_high.prefab"
+                    }
                   },
                   {
                     "Target": {
@@ -24830,6 +23262,23 @@
                     },
                     "Property": "MinDelaySpawnCar",
                     "Value": 0.5
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "Spawners",
+                    "Value": [
+                      {
+                        "_type": "gameobject",
+                        "go": "3de0d59a-3e01-49cb-83f3-e10e30d8e280"
+                      },
+                      {
+                        "_type": "gameobject",
+                        "go": "aa6dee25-bba0-4f0d-8adc-c7d617712997"
+                      }
+                    ]
                   },
                   {
                     "Target": {
@@ -25017,6 +23466,23 @@
                   {
                     "Target": {
                       "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "Spawners",
+                    "Value": [
+                      {
+                        "_type": "gameobject",
+                        "go": "ebcb6bf4-cce2-47ef-b9fa-dee6a6f5bedc"
+                      },
+                      {
+                        "_type": "gameobject",
+                        "go": "e98975fa-1c94-49bc-bbd1-c84323f9cf0a"
+                      }
+                    ]
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
                       "IdValue": "2c83d66f-c045-4223-b9e7-aaaff99d7e62"
                     },
                     "Property": "Mesh",
@@ -25168,7 +23634,10 @@
                       "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
                     },
                     "Property": "CarPrefab",
-                    "Value": null
+                    "Value": {
+                      "_type": "gameobject",
+                      "prefab": "prefabs/cars/car_easy.prefab"
+                    }
                   },
                   {
                     "Target": {
@@ -25189,12 +23658,29 @@
                   {
                     "Target": {
                       "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "Spawners",
+                    "Value": [
+                      {
+                        "_type": "gameobject",
+                        "go": "ebcb6bf4-cce2-47ef-b9fa-dee6a6f5bedc"
+                      },
+                      {
+                        "_type": "gameobject",
+                        "go": "e98975fa-1c94-49bc-bbd1-c84323f9cf0a"
+                      }
+                    ]
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
                       "IdValue": "2c83d66f-c045-4223-b9e7-aaaff99d7e62"
                     },
                     "Property": "Mesh",
                     "Value": {
                       "Topology": "H4sIAAAAAAAACoWQ2QoCQQwES1dXUfC+/v9HI4UdmAdhB4aQTDpT6T3wAWZ+Zw1skt+BA/AETsAq157xXIGqKutT9Ay9j9S92z9/vaO3thvmTum9pbcWzgwcw2vuX/K/MmtJL8s5e5vL4t6XYWd3tW5u9M2e1qt1RnshuxzNJ5uMvumP3hjbP70YvZLdHVpvdKb15v4CSw/ShsQBAAA=",
-                      "Position": "1343.367,-106.3333,-16.79005",
+                      "Position": "1343.366,-106.3333,-16.79005",
                       "Rotation": "0,0,0,1",
                       "Positions": [
                         "-98.76762,-1124.251,1.401409",
@@ -25257,7 +23743,7 @@
                         "0.25,0.2499932"
                       ],
                       "TextureOffset": [
-                        "179.0353,19.62231",
+                        "179.0354,19.62231",
                         "511.398,5.015625",
                         "13.24365,222.4203",
                         "242.7559,222.4203",
@@ -25350,7 +23836,7 @@
                     "Property": "CarPrefab",
                     "Value": {
                       "_type": "gameobject",
-                      "prefab": "prefabs/cars/car_fish.prefab"
+                      "prefab": "prefabs/cars/car_high.prefab"
                     }
                   },
                   {
@@ -25368,6 +23854,23 @@
                     },
                     "Property": "MinDelaySpawnCar",
                     "Value": 0.25
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "Spawners",
+                    "Value": [
+                      {
+                        "_type": "gameobject",
+                        "go": "3de0d59a-3e01-49cb-83f3-e10e30d8e280"
+                      },
+                      {
+                        "_type": "gameobject",
+                        "go": "aa6dee25-bba0-4f0d-8adc-c7d617712997"
+                      }
+                    ]
                   },
                   {
                     "Target": {
@@ -25440,7 +23943,7 @@
                         "0.25,0.2499932"
                       ],
                       "TextureOffset": [
-                        "86.16919,24.77014",
+                        "86.16895,24.77014",
                         "511.398,5.015625",
                         "23.34497,222.4203",
                         "232.6545,222.4203",
@@ -25523,7 +24026,10 @@
                       "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
                     },
                     "Property": "CarPrefab",
-                    "Value": null
+                    "Value": {
+                      "_type": "gameobject",
+                      "prefab": "prefabs/cars/car_high.prefab"
+                    }
                   },
                   {
                     "Target": {
@@ -25540,6 +24046,23 @@
                     },
                     "Property": "MinDelaySpawnCar",
                     "Value": 0.5
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "Spawners",
+                    "Value": [
+                      {
+                        "_type": "gameobject",
+                        "go": "ebcb6bf4-cce2-47ef-b9fa-dee6a6f5bedc"
+                      },
+                      {
+                        "_type": "gameobject",
+                        "go": "e98975fa-1c94-49bc-bbd1-c84323f9cf0a"
+                      }
+                    ]
                   },
                   {
                     "Target": {
@@ -25695,7 +24218,7 @@
                       "IdValue": "e4e672c1-a2cd-4bd8-a957-05db43e0b0b1"
                     },
                     "Property": "Position",
-                    "Value": "3264.243,-117.5816,-16.71294"
+                    "Value": "3262.997,-117.5816,-16.71311"
                   },
                   {
                     "Target": {
@@ -25727,12 +24250,29 @@
                   {
                     "Target": {
                       "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "Spawners",
+                    "Value": [
+                      {
+                        "_type": "gameobject",
+                        "go": "3de0d59a-3e01-49cb-83f3-e10e30d8e280"
+                      },
+                      {
+                        "_type": "gameobject",
+                        "go": "aa6dee25-bba0-4f0d-8adc-c7d617712997"
+                      }
+                    ]
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
                       "IdValue": "2c83d66f-c045-4223-b9e7-aaaff99d7e62"
                     },
                     "Property": "Mesh",
                     "Value": {
                       "Topology": "H4sIAAAAAAAACoWQ2QoCQQwES1dXUfC+/v9HI4UdmAdhB4aQTDpT6T3wAWZ+Zw1skt+BA/AETsAq157xXIGqKutT9Ay9j9S92z9/vaO3thvmTum9pbcWzgwcw2vuX/K/MmtJL8s5e5vL4t6XYWd3tW5u9M2e1qt1RnshuxzNJ5uMvumP3hjbP70YvZLdHVpvdKb15v4CSw/ShsQBAAA=",
-                      "Position": "3264.394,-101.2826,-16.79005",
+                      "Position": "3263.148,-101.2826,-16.79023",
                       "Rotation": "0,0,0,1",
                       "Positions": [
                         "-98.76762,-1124.251,1.401409",
@@ -25795,10 +24335,10 @@
                         "0.25,0.2499932"
                       ],
                       "TextureOffset": [
-                        "249.439,24.77014",
+                        "251.0537,24.77014",
                         "511.398,5.015625",
-                        "23.34497,222.4203",
-                        "232.6545,222.4203",
+                        "23.34497,222.42",
+                        "232.6545,222.42",
                         "0.6022949,511.6917",
                         "511.3979,511.6917"
                       ],
@@ -25902,6 +24442,23 @@
                   {
                     "Target": {
                       "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "Spawners",
+                    "Value": [
+                      {
+                        "_type": "gameobject",
+                        "go": "ebcb6bf4-cce2-47ef-b9fa-dee6a6f5bedc"
+                      },
+                      {
+                        "_type": "gameobject",
+                        "go": "e98975fa-1c94-49bc-bbd1-c84323f9cf0a"
+                      }
+                    ]
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
                       "IdValue": "2c83d66f-c045-4223-b9e7-aaaff99d7e62"
                     },
                     "Property": "Mesh",
@@ -25970,7 +24527,7 @@
                         "0.25,0.2499932"
                       ],
                       "TextureOffset": [
-                        "251.8025,19.62231",
+                        "251.8018,19.62231",
                         "511.398,5.015625",
                         "13.24365,222.4203",
                         "242.7559,222.4203",
@@ -28669,282 +27226,6 @@
             {
               "__type": "Sandbox.ModelCollider",
               "__guid": "61a0e5f9-8a8c-442f-b6ac-2455f1c0a92f",
-              "__enabled": true,
-              "ColliderFlags": 0,
-              "Elasticity": null,
-              "Friction": null,
-              "IsTrigger": false,
-              "Model": "models/forest/tree_9.vmdl",
-              "OnComponentDestroy": null,
-              "OnComponentDisabled": null,
-              "OnComponentEnabled": null,
-              "OnComponentFixedUpdate": null,
-              "OnComponentStart": null,
-              "OnComponentUpdate": null,
-              "OnObjectTriggerEnter": null,
-              "OnObjectTriggerExit": null,
-              "OnTriggerEnter": null,
-              "OnTriggerExit": null,
-              "RollingResistance": null,
-              "Static": true,
-              "Surface": null,
-              "SurfaceVelocity": "0,0,0"
-            }
-          ],
-          "Children": []
-        },
-        {
-          "__guid": "8eac20cd-261f-41d2-92fb-e93cf32b6be2",
-          "__version": 1,
-          "Flags": 0,
-          "Name": "tree_9 (2)",
-          "Position": "3730.58,332.3702,-109.7467",
-          "Rotation": "0,0,0.3826834,0.9238796",
-          "Scale": "0.2565878,0.2565878,0.2565878",
-          "Tags": "",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
-          "NetworkOrphaned": 0,
-          "NetworkTransmit": true,
-          "OwnerTransfer": 1,
-          "Components": [
-            {
-              "__type": "Sandbox.ModelRenderer",
-              "__guid": "a46a825c-0389-41c1-b879-51682bab60a6",
-              "__enabled": true,
-              "BodyGroups": 18446744073709551615,
-              "CreateAttachments": false,
-              "LodOverride": null,
-              "MaterialGroup": null,
-              "MaterialOverride": null,
-              "Materials": null,
-              "Model": "models/forest/tree_9.vmdl",
-              "OnComponentDestroy": null,
-              "OnComponentDisabled": null,
-              "OnComponentEnabled": null,
-              "OnComponentFixedUpdate": null,
-              "OnComponentStart": null,
-              "OnComponentUpdate": null,
-              "RenderOptions": {
-                "GameLayer": true,
-                "OverlayLayer": false,
-                "BloomLayer": false,
-                "AfterUILayer": false
-              },
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "Sandbox.ModelCollider",
-              "__guid": "9541529d-14ee-40c2-9c70-29498a32c5bd",
-              "__enabled": true,
-              "ColliderFlags": 0,
-              "Elasticity": null,
-              "Friction": null,
-              "IsTrigger": false,
-              "Model": "models/forest/tree_9.vmdl",
-              "OnComponentDestroy": null,
-              "OnComponentDisabled": null,
-              "OnComponentEnabled": null,
-              "OnComponentFixedUpdate": null,
-              "OnComponentStart": null,
-              "OnComponentUpdate": null,
-              "OnObjectTriggerEnter": null,
-              "OnObjectTriggerExit": null,
-              "OnTriggerEnter": null,
-              "OnTriggerExit": null,
-              "RollingResistance": null,
-              "Static": true,
-              "Surface": null,
-              "SurfaceVelocity": "0,0,0"
-            }
-          ],
-          "Children": []
-        },
-        {
-          "__guid": "d1826e0d-ed43-40d4-a9b4-623474081a52",
-          "__version": 1,
-          "Flags": 0,
-          "Name": "tree_9 (2)",
-          "Position": "3730.58,211.3074,-109.7467",
-          "Rotation": "0,0,0.3826834,0.9238796",
-          "Scale": "0.2565878,0.2565878,0.2565878",
-          "Tags": "",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
-          "NetworkOrphaned": 0,
-          "NetworkTransmit": true,
-          "OwnerTransfer": 1,
-          "Components": [
-            {
-              "__type": "Sandbox.ModelRenderer",
-              "__guid": "dd450552-2ba5-4db4-8790-76d5c82c57ca",
-              "__enabled": true,
-              "BodyGroups": 18446744073709551615,
-              "CreateAttachments": false,
-              "LodOverride": null,
-              "MaterialGroup": null,
-              "MaterialOverride": null,
-              "Materials": null,
-              "Model": "models/forest/tree_9.vmdl",
-              "OnComponentDestroy": null,
-              "OnComponentDisabled": null,
-              "OnComponentEnabled": null,
-              "OnComponentFixedUpdate": null,
-              "OnComponentStart": null,
-              "OnComponentUpdate": null,
-              "RenderOptions": {
-                "GameLayer": true,
-                "OverlayLayer": false,
-                "BloomLayer": false,
-                "AfterUILayer": false
-              },
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "Sandbox.ModelCollider",
-              "__guid": "41814799-19d1-468d-8332-942b4e922c73",
-              "__enabled": true,
-              "ColliderFlags": 0,
-              "Elasticity": null,
-              "Friction": null,
-              "IsTrigger": false,
-              "Model": "models/forest/tree_9.vmdl",
-              "OnComponentDestroy": null,
-              "OnComponentDisabled": null,
-              "OnComponentEnabled": null,
-              "OnComponentFixedUpdate": null,
-              "OnComponentStart": null,
-              "OnComponentUpdate": null,
-              "OnObjectTriggerEnter": null,
-              "OnObjectTriggerExit": null,
-              "OnTriggerEnter": null,
-              "OnTriggerExit": null,
-              "RollingResistance": null,
-              "Static": true,
-              "Surface": null,
-              "SurfaceVelocity": "0,0,0"
-            }
-          ],
-          "Children": []
-        },
-        {
-          "__guid": "fe67ae3e-e3c7-40d4-80c4-b50f2b07ddb1",
-          "__version": 1,
-          "Flags": 0,
-          "Name": "tree_9 (2)",
-          "Position": "3836.191,211.3074,-109.7467",
-          "Rotation": "0,0,0.3826834,0.9238796",
-          "Scale": "0.2565878,0.2565878,0.2565878",
-          "Tags": "",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
-          "NetworkOrphaned": 0,
-          "NetworkTransmit": true,
-          "OwnerTransfer": 1,
-          "Components": [
-            {
-              "__type": "Sandbox.ModelRenderer",
-              "__guid": "2663fef6-7331-409f-922c-3f348ea25df7",
-              "__enabled": true,
-              "BodyGroups": 18446744073709551615,
-              "CreateAttachments": false,
-              "LodOverride": null,
-              "MaterialGroup": null,
-              "MaterialOverride": null,
-              "Materials": null,
-              "Model": "models/forest/tree_9.vmdl",
-              "OnComponentDestroy": null,
-              "OnComponentDisabled": null,
-              "OnComponentEnabled": null,
-              "OnComponentFixedUpdate": null,
-              "OnComponentStart": null,
-              "OnComponentUpdate": null,
-              "RenderOptions": {
-                "GameLayer": true,
-                "OverlayLayer": false,
-                "BloomLayer": false,
-                "AfterUILayer": false
-              },
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "Sandbox.ModelCollider",
-              "__guid": "97f2c230-5d4d-4939-9e34-4450b9b8fd61",
-              "__enabled": true,
-              "ColliderFlags": 0,
-              "Elasticity": null,
-              "Friction": null,
-              "IsTrigger": false,
-              "Model": "models/forest/tree_9.vmdl",
-              "OnComponentDestroy": null,
-              "OnComponentDisabled": null,
-              "OnComponentEnabled": null,
-              "OnComponentFixedUpdate": null,
-              "OnComponentStart": null,
-              "OnComponentUpdate": null,
-              "OnObjectTriggerEnter": null,
-              "OnObjectTriggerExit": null,
-              "OnTriggerEnter": null,
-              "OnTriggerExit": null,
-              "RollingResistance": null,
-              "Static": true,
-              "Surface": null,
-              "SurfaceVelocity": "0,0,0"
-            }
-          ],
-          "Children": []
-        },
-        {
-          "__guid": "b07ee295-95b7-4c53-a8e5-9b5671658923",
-          "__version": 1,
-          "Flags": 0,
-          "Name": "tree_9 (2)",
-          "Position": "3836.191,40.31975,-109.7467",
-          "Rotation": "0,0,0.3826834,0.9238796",
-          "Scale": "0.2565878,0.2565878,0.2565878",
-          "Tags": "",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
-          "NetworkOrphaned": 0,
-          "NetworkTransmit": true,
-          "OwnerTransfer": 1,
-          "Components": [
-            {
-              "__type": "Sandbox.ModelRenderer",
-              "__guid": "dc3195e5-e121-4bfb-a78e-0c07be57e738",
-              "__enabled": true,
-              "BodyGroups": 18446744073709551615,
-              "CreateAttachments": false,
-              "LodOverride": null,
-              "MaterialGroup": null,
-              "MaterialOverride": null,
-              "Materials": null,
-              "Model": "models/forest/tree_9.vmdl",
-              "OnComponentDestroy": null,
-              "OnComponentDisabled": null,
-              "OnComponentEnabled": null,
-              "OnComponentFixedUpdate": null,
-              "OnComponentStart": null,
-              "OnComponentUpdate": null,
-              "RenderOptions": {
-                "GameLayer": true,
-                "OverlayLayer": false,
-                "BloomLayer": false,
-                "AfterUILayer": false
-              },
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "Sandbox.ModelCollider",
-              "__guid": "e2ad9289-7d11-4e19-8170-11a2bbfe6fee",
               "__enabled": true,
               "ColliderFlags": 0,
               "Elasticity": null,
@@ -31701,7 +29982,7 @@
                   "-0,0,-1"
                 ],
                 "TextureScale": [
-                  "0.25,0.2499999",
+                  "0.4999999,0.4999999",
                   "0.25,0.2499999",
                   "0.2499999,0.2500003",
                   "0.2499999,0.2500003",
@@ -31709,7 +29990,7 @@
                   "0.25,0.2500003"
                 ],
                 "TextureOffset": [
-                  "0.001953125,0.0009765625",
+                  "0.0009765625,0.0004882812",
                   "0.001953125,0.0009765625",
                   "0.0009765625,17.68001",
                   "511.999,17.68002",
@@ -32036,7 +30317,26 @@
                       "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
                     },
                     "Property": "CarPrefab",
-                    "Value": null
+                    "Value": {
+                      "_type": "gameobject",
+                      "prefab": "prefabs/cars/car_dick_horror.prefab"
+                    }
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "MaxDelaySpawnCar",
+                    "Value": 1
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "MinDelaySpawnCar",
+                    "Value": 0.1
                   },
                   {
                     "Target": {
@@ -32200,7 +30500,10 @@
                       "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
                     },
                     "Property": "CarPrefab",
-                    "Value": null
+                    "Value": {
+                      "_type": "gameobject",
+                      "prefab": "prefabs/cars/car_dick_horror.prefab"
+                    }
                   },
                   {
                     "Target": {
@@ -32217,6 +30520,23 @@
                     },
                     "Property": "MinDelaySpawnCar",
                     "Value": 0.1
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "Spawners",
+                    "Value": [
+                      {
+                        "_type": "gameobject",
+                        "go": "ebcb6bf4-cce2-47ef-b9fa-dee6a6f5bedc"
+                      },
+                      {
+                        "_type": "gameobject",
+                        "go": "e98975fa-1c94-49bc-bbd1-c84323f9cf0a"
+                      }
+                    ]
                   },
                   {
                     "Target": {
@@ -32380,7 +30700,10 @@
                       "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
                     },
                     "Property": "CarPrefab",
-                    "Value": null
+                    "Value": {
+                      "_type": "gameobject",
+                      "prefab": "prefabs/cars/car_dick_horror.prefab"
+                    }
                   },
                   {
                     "Target": {
@@ -32397,6 +30720,23 @@
                     },
                     "Property": "MinDelaySpawnCar",
                     "Value": 0.1
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "Spawners",
+                    "Value": [
+                      {
+                        "_type": "gameobject",
+                        "go": "3de0d59a-3e01-49cb-83f3-e10e30d8e280"
+                      },
+                      {
+                        "_type": "gameobject",
+                        "go": "aa6dee25-bba0-4f0d-8adc-c7d617712997"
+                      }
+                    ]
                   },
                   {
                     "Target": {
@@ -32571,7 +30911,24 @@
                       "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
                     },
                     "Property": "MinDelaySpawnCar",
-                    "Value": 0.1
+                    "Value": 0.5
+                  },
+                  {
+                    "Target": {
+                      "Type": "Component",
+                      "IdValue": "b7edf929-4c78-4b78-9cf5-37b6e8b4bb3f"
+                    },
+                    "Property": "Spawners",
+                    "Value": [
+                      {
+                        "_type": "gameobject",
+                        "go": "3de0d59a-3e01-49cb-83f3-e10e30d8e280"
+                      },
+                      {
+                        "_type": "gameobject",
+                        "go": "aa6dee25-bba0-4f0d-8adc-c7d617712997"
+                      }
+                    ]
                   },
                   {
                     "Target": {
@@ -33239,7 +31596,6 @@
     "fish.rock_c#105289",
     "kenneynl.holidaytreedecoratedsnow#82263",
     "kenneynl.holidaytreesnowb#82267",
-    "kenneynl.palmdetailedbend#87816",
     "pcjr.nightskyhdri0018khdr#95187",
     "titanovsky.fence1#78460"
   ],

@@ -27,6 +27,8 @@ public sealed class Car : Component, Component.ITriggerListener, IGameObjectPool
 
     public void OnTriggerEnter(GameObject other)
     {
+        if (GameObject.Enabled == false) return;
+
         var ply = other.GetComponent<Player>();
         if (!ply.IsValid()) return;
 
